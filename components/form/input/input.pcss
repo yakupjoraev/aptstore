@@ -1,0 +1,24 @@
+@import url('../../../layouts/variables.pcss');
+
+.input {
+	position: relative;
+	display: block;
+}
+
+.input__input {
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid var(--light-gray);
+	border-radius: 20px;
+	padding: 11px 20px;
+	width: 100%;
+	height: 40px;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 16px;
+	outline: none;
+
+	&:hover {
+		box-shadow: 0 4px 8px rgba(139, 189, 63, 0.25);
+	}
+}

@@ -1,0 +1,30 @@
+<param name={$methods} value={['online', 'courier', 'cash']} />
+
+<variable name={$labels} value={[
+	'online': 'Картой онлайн',
+	'courier': 'Картой курьеру',
+	'cash': 'Наличными курьеру'
+]} />
+
+<div class="payment-methods">
+	<for-each item={$method} key={$index} from={$methods}>
+		<input class="payment-methods__input" type="radio" name="payment-type" value={$method} id={"payment-type-" ++ $method} checked={$index == 0} />
+		<label class="payment-methods__element" for={"payment-type-" ++ $method}>
+			<div class="payment-methods__label">{$labels[$method]}</div>
+
+			<div class="payment-methods__icon">
+				<switch>
+					<case test={$method == "online"}>
+						<inline-svg src="./payment-method-online.svg" />
+					</case>
+					<case test={$method == "courier"}>
+						<inline-svg src="./payment-method-courier.svg" />
+					</case>
+					<case test={$method == "cash"}>
+						<inline-svg src="./payment-method-cash.svg" />
+					</case>
+				</switch>
+			</div>
+		</label>
+	</for-each>
+</div>

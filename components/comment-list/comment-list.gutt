@@ -1,0 +1,207 @@
+<import name="sharing-popup" from="../sharing-popup/sharing-popup.gutt" />
+
+<param name={$comments} value={[]} />
+
+<div class="comment-list">
+	<for-each item={$comment} from={$comments}>
+		<div class="comment-list__comment">
+			<div class="comment-list__head">
+				<div class="comment-list__userbar">
+					<div class="comment-list__name">
+						<div class="comment-list__userpic">
+							<switch>
+								<case test={$comment.userpic?}>
+									<img src={$comment.userpic} alt={$comment.name} />
+								</case>
+								<default>
+									{str_upper(str_sub($comment.name, 0, 1))}
+								</default>
+							</switch>
+						</div>
+
+						<div>
+							<if test={$comment.verified? && $comment.verified}>
+								<img class="comment-list__verified" src="components/comment-list/verified.svg" alt="Верифицированный пользователь" />
+							</if>
+
+							{$comment.name}
+
+							<if test={$comment.reply?}>
+								<div class="comment-list__reply">в ответ {$comment.reply}</div>
+							</if>
+						</div>
+					</div>
+					<div class="comment-list__date">{$comment.date}</div>
+
+					<if test={$comment.rating?}>
+						<div class="comment-list__rating">
+							<div class="comment-list__stars">
+								<div class="comment-list__stars-progress" style={"width: " ++ ((num_round($comment.rating - 1) / 5) * 100) ++ "%"}></div>
+							</div>
+						</div>
+					</if>
+				</div>
+
+				<if test={$comment.bought? && $comment.bought}>
+					<div class="comment-list__bought">Товар куплен на aptstore.ru</div>
+				</if>
+			</div>
+
+			<div class="comment-list__content">
+				<if test={$comment.worth?}>
+					<dl>
+						<dt>Достоинства</dt>
+						<dd>{$comment.worth}</dd>
+					</dl>
+				</if>
+
+				<if test={$comment.defect}>
+					<dl>
+						<dt>Недостатки</dt>
+						<dd>{$comment.defect}</dd>
+					</dl>
+				</if>
+
+				<dl>
+					<dt>Комментарий</dt>
+					<dd>{$comment.comment}</dd>
+				</dl>
+
+				<if test={$comment.attachments?}>
+					<ul class="comment-list__attachments">
+						<for-each item={$attachment} from={$comment.attachments}>
+							<li class="comment-list__attachment">
+								<a href={"storage/" ++ $attachment} class="comment-list__attachment-link">
+									<img src={"storage/" ++ $attachment} class="comment-list__attachment-img" />
+								</a>
+							</li>
+						</for-each>
+					</ul>
+				</if>
+
+				<div class="comment-list__vote">
+					<div class="comment-list__vote-label">Вам помог этот отзыв?</div>
+
+					<div class="comment-list__vote-buttons">
+						<button
+							type="button"
+							class={classes(
+								"comment-list__vote-button",
+								$comment.active? && $comment.active == "like" ?? "comment-list__vote-button--active" !! ""
+							)}
+						>
+							Да {$comment.likes}
+						</button>
+						<button
+							type="button"
+							class={classes(
+								"comment-list__vote-button",
+								$comment.active? && $comment.active == "dislike" ?? "comment-list__vote-button--active" !! ""
+							)}
+						>
+							Нет {$comment.dislikes}
+						</button>
+
+						<button class="comment-list__answer-button" type="button">Ответить</button>
+
+						<div class="comment-list__share">
+							<sharing-popup class="comment-list__share-popup">
+								<button type="button" class="comment-list__share-button">share</button>
+							</sharing-popup>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<if test={$comment.answers? && arr_len($comment.answers) > 0}>
+				<div class="comment-list__answers">
+					<for-each item={$answer} from={$comment.answers}>
+						<div class="comment-list__answer">
+							<div class="comment-list__head">
+								<div class="comment-list__userbar">
+									<div class="comment-list__name">
+										<div class="comment-list__userpic">
+											<switch>
+												<case test={$answer.userpic?}>
+													<img src={"storage/" ++ $answer.userpic} alt={$answer.name} />
+												</case>
+												<default>
+													{str_upper(str_sub($answer.name, 0, 1))}
+												</default>
+											</switch>
+										</div>
+
+
+										<div>
+											<if test={$answer.verified? && $answer.verified}>
+												<img class="comment-list__verified" src="components/comment-list/verified.svg" alt="Верифицированный пользователь" />
+											</if>
+
+											{$answer.name}
+
+											<if test={$answer.reply?}>
+												<div class="comment-list__reply">в ответ {$answer.reply}</div>
+											</if>
+										</div>
+									</div>
+									<div class="comment-list__date">{$answer.date}</div>
+								</div>
+							</div>
+							<div class="comment-list__content">
+								<p>{$answer.comment}</p>
+
+								<if test={$answer.attachments?}>
+									<ul class="comment-list__attachments">
+										<for-each item={$attachment} from={$answer.attachments}>
+											<li class="comment-list__attachment">
+												<a href={"storage/" ++ $attachment} class="comment-list__attachment-link">
+													<img src={"storage/" ++ $attachment} class="comment-list__attachment-img" />
+												</a>
+											</li>
+										</for-each>
+									</ul>
+								</if>
+
+								<div class="comment-list__vote">
+									<div class="comment-list__vote-buttons">
+										<button
+											type="button"
+											class={classes(
+												"comment-list__vote-button",
+												$answer.active? && $answer.active == "like" ?? "comment-list__vote-button--active" !! ""
+											)}
+										>
+											<inline-svg src="./like.svg" />
+											{$comment.likes}
+										</button>
+										<button
+											type="button"
+											class={classes(
+												"comment-list__vote-button",
+												$answer.active? && $answer.active == "dislike" ?? "comment-list__vote-button--active" !! ""
+											)}
+										>
+											<inline-svg src="./dislike.svg" />
+											{$comment.dislikes}
+										</button>
+
+										<button class="comment-list__answer-button" type="button">Ответить</button>
+
+										<div class="comment-list__share">
+											<sharing-popup class="comment-list__share-popup">
+												<button type="button" class="comment-list__share-button">share</button>
+											</sharing-popup>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</for-each>
+				</div>
+			</if>
+		</div>
+	</for-each>
+
+	<hr class="comment-list__separator" />
+	<button class="comment-list__load-more" type="button">Показать больше отзывов</button>
+</div>

@@ -1,0 +1,193 @@
+<import name="signin-modal" from="../auth-modal/signin-modal.gutt" />
+<import name="signup-modal" from="../auth-modal/signup-modal.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+<import name="shop-aside" from="../shop-aside/shop-aside.gutt" />
+
+<param name={$empty-basket} value={false} />
+
+<ul class="shop-widget">
+	<li class="shop-widget__item">
+		<button type="button" class="shop-widget__link shop-widget__link--profile" data-open-modal="signin">
+			<span class="shop-widget__label">Профиль</span>
+		</button>
+
+		<div class="shop-widget__profile">
+			<shop-aside compact={true} />
+		</div>
+	</li>
+	<li class="shop-widget__item">
+		<a href="" class="shop-widget__link shop-widget__link--favorite">
+			<span class="shop-widget__label">Избранное</span>
+		</a>
+	</li>
+	<li class="shop-widget__item">
+		<a href="" class={classes("shop-widget__link shop-widget__link--shop",
+			!$empty-basket ?? "shop-widget__link--bordered shop-widget__link--contented" !! ""
+		)}>
+			<if test={!$empty-basket}>
+				<span class="shop-widget__content">856 ₽</span>
+			</if>
+
+			<span class="shop-widget__label">Корзина</span>
+
+			<if test={!$empty-basket}>
+				<span class="shop-widget__notification">23</span>
+			</if>
+		</a>
+
+		<div class="shop-widget__basket">
+			<div class="shop-widget__products">
+				<div class="shop-widget__product">
+					<a href="" class="shop-widget__product-link">
+						<span class="shop-widget__product-picture">
+							<img src="components/search-form/product1.png" alt="" class="shop-widget__product-logo" />
+						</span>
+
+						<span class="shop-widget__product-title">Стельребратозин</span>
+
+						<span class="shop-widget__product-prices">
+							<span class="shop-widget__product-origin">580 ₽</span>
+							<span class="shop-widget__product-price">550 ₽</span>
+							<span class="shop-widget__product-discount">−15%</span>
+						</span>
+					</a>
+
+					<div class="shop-widget__product-controls">
+						<button type="button" class="shop-widget__product-decrease">−</button>
+						<input type="text" class="shop-widget__product-input" value="1" />
+						<button type="button" class="shop-widget__product-increase">+</button>
+					</div>
+				</div>
+
+				<div class="shop-widget__product">
+					<a href="" class="shop-widget__product-link">
+						<span class="shop-widget__product-picture">
+							<img src="components/search-form/product1.png" alt="" class="shop-widget__product-logo" />
+						</span>
+
+						<span class="shop-widget__product-title">Стелька LightStep</span>
+
+						<span class="shop-widget__product-prices">
+							<span class="shop-widget__product-price">550 ₽</span>
+						</span>
+					</a>
+
+					<div class="shop-widget__product-controls">
+						<button type="button" class="shop-widget__product-decrease">−</button>
+						<input type="text" class="shop-widget__product-input" value="1" />
+						<button type="button" class="shop-widget__product-increase">+</button>
+					</div>
+				</div>
+
+				<div class="shop-widget__product">
+					<a href="" class="shop-widget__product-link">
+						<span class="shop-widget__product-picture">
+							<img src="components/search-form/product1.png" alt="" class="shop-widget__product-logo" />
+						</span>
+
+						<span class="shop-widget__product-title">
+							Стелька Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)
+						</span>
+
+						<span class="shop-widget__product-prices">
+							<span class="shop-widget__product-origin">580 ₽</span>
+							<span class="shop-widget__product-price">550 ₽</span>
+							<span class="shop-widget__product-discount">−15%</span>
+						</span>
+					</a>
+
+					<div class="shop-widget__product-controls">
+						<button type="button" class="shop-widget__product-decrease">−</button>
+						<input type="text" class="shop-widget__product-input" value="1" />
+						<button type="button" class="shop-widget__product-increase">+</button>
+					</div>
+				</div>
+
+				<div class="shop-widget__product">
+					<a href="" class="shop-widget__product-link">
+						<span class="shop-widget__product-picture">
+							<img src="components/search-form/product1.png" alt="" class="shop-widget__product-logo" />
+						</span>
+
+						<span class="shop-widget__product-title">Стельребратозин</span>
+
+						<span class="shop-widget__product-prices">
+							<span class="shop-widget__product-origin">580 ₽</span>
+							<span class="shop-widget__product-price">550 ₽</span>
+							<span class="shop-widget__product-discount">−15%</span>
+						</span>
+					</a>
+
+					<div class="shop-widget__product-controls">
+						<button type="button" class="shop-widget__product-decrease">−</button>
+						<input type="text" class="shop-widget__product-input" value="1" />
+						<button type="button" class="shop-widget__product-increase">+</button>
+					</div>
+				</div>
+
+				<div class="shop-widget__product">
+					<a href="" class="shop-widget__product-link">
+						<span class="shop-widget__product-picture">
+							<img src="components/search-form/product1.png" alt="" class="shop-widget__product-logo" />
+						</span>
+
+						<span class="shop-widget__product-title">Стельребратозин</span>
+
+						<span class="shop-widget__product-prices">
+							<span class="shop-widget__product-origin">580 ₽</span>
+							<span class="shop-widget__product-price">550 ₽</span>
+							<span class="shop-widget__product-discount">−15%</span>
+						</span>
+					</a>
+
+					<div class="shop-widget__product-controls">
+						<button type="button" class="shop-widget__product-decrease">−</button>
+						<input type="text" class="shop-widget__product-input" value="1" />
+						<button type="button" class="shop-widget__product-increase">+</button>
+					</div>
+				</div>
+
+				<div class="shop-widget__product">
+					<a href="" class="shop-widget__product-link">
+						<span class="shop-widget__product-picture">
+							<img src="components/search-form/product1.png" alt="" class="shop-widget__product-logo" />
+						</span>
+
+						<span class="shop-widget__product-title">Стельребратозин</span>
+
+						<span class="shop-widget__product-prices">
+							<span class="shop-widget__product-origin">580 ₽</span>
+							<span class="shop-widget__product-price">550 ₽</span>
+							<span class="shop-widget__product-discount">−15%</span>
+						</span>
+					</a>
+
+					<div class="shop-widget__product-controls">
+						<button type="button" class="shop-widget__product-decrease">−</button>
+						<input type="text" class="shop-widget__product-input" value="1" />
+						<button type="button" class="shop-widget__product-increase">+</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="shop-widget__summary">
+				<div>
+					<div class="shop-widget__summary-total">Итого</div>
+					<div class="shop-widget__summary-origin">2500 ₽</div>
+					<div class="shop-widget__summary-price">2000 ₽ <span class="shop-widget__summary-discount">−99%</span></div>
+				</div>
+
+				<div>
+					<form-button href="" size="large">Начать оформление</form-button>
+				</div>
+			</div>
+
+			<div class="shop-widget__see-more">
+				<a href="" class="shop-widget__see-more-link">Посмотреть ещё 15 отложенных товаров</a>
+			</div>
+		</div>
+	</li>
+</ul>
+
+<signin-modal />
+<signup-modal />

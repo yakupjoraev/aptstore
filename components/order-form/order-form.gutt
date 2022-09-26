@@ -1,0 +1,207 @@
+<import name="common-header" from="../common-header/common-header.gutt" />
+<import name="swich-button" from="../form/swich-button/swich-button.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+<import name="shop-terminal" from="../shop-terminal/shop-terminal.gutt" />
+<import name="payment-methods" from="../payment-methods/payment-methods.gutt" />
+<import name="select-address-map-modal" from="../select-address-map-modal/select-address-map-modal.gutt" />
+<import name="account-pane" from="../account/account-pane/account-pane.gutt" />
+<import name="account-location" from="../account/account-location/account-location.gutt" />
+
+<div class="order-form__location">
+	<account-location />
+</div>
+
+<div class="order-form order-form__error">
+	<account-pane since="large">
+		<div class="order-form__inner">
+			<common-header>Оформление заказа</common-header>
+
+			<form class="order-form__form" action="#">
+				<div class="order-form__header">
+					<div class="order-form__searching">
+						<div class="order-form__row order-form__row-address">
+							<label class="order-form__label" for="order-form__address">Адрес доставки</label>
+
+							<input autocomplete="off" type="text" id="order-form__address"
+								class="order-form__input order-form__input-search order-form__error" />
+
+							<div class="order-form__error-text">
+								<p>Уточните адрес доставки</p>
+							</div>
+
+							<button type="submit" class="order-form__btn-address">
+								<inline-svg src="order-form-address.svg" />
+							</button>
+						</div>
+
+						<button type="button" data-open-modal="select-address-map-gift" class="order-form__gift-button" action="open-modal" action-value="select-address-map-gift">
+							Выбрать на&nbsp;карте
+						</button>
+					</div>
+
+					<div class="order-form__row">
+						<label class="order-form__label" for="order-form__entrance">Подъезд</label>
+						<input autocomplete="off" type="number" id="order-form__entrance" class="order-form__input" />
+					</div>
+
+					<div class="order-form__row">
+						<label class="order-form__label" for="order-form__flat">Квартира</label>
+						<input autocomplete="off" type="number" id="order-form__flat" class="order-form__input" />
+					</div>
+
+					<div class="order-form__row">
+						<label class="order-form__label" for="order-form__floor">Этаж</label>
+						<input autocomplete="off" type="number" id="order-form__floor" class="order-form__input" />
+					</div>
+
+					<div class="order-form__row">
+						<label class="order-form__label" for="order-form__txt">Комментарий</label>
+						<textarea autocomplete="off" id="order-form__txt" class="order-form__txt"></textarea>
+					</div>
+
+					<div class="order-form__row">
+						<label class="order-form__label" for="order-form__name">Имя</label>
+						<input autocomplete="off" type="text" id="order-form__name" class="order-form__input" />
+					</div>
+
+					<div class="order-form__row">
+						<label class="order-form__label" for="order-form__tel">Телефон</label>
+						<input autocomplete="off" type="number" id="order-form__tel" class="order-form__input" />
+					</div>
+				</div>
+
+				<div class="order-form__middle">
+					<h2 class="order-form__heading">Дата и время</h2>
+
+					<div class="order-form__dates">
+						<input class="order-form__date-input" type="radio" name="order-form__date" value="date1"
+							id="order-form__date1" checked />
+						<label for="order-form__date1" class="order-form__date-label">
+							<span>Сегодня</span>
+							<time>09 февраля</time>
+						</label>
+
+						<input class="order-form__date-input" type="radio" name="order-form__date" value="date2"
+							id="order-form__date2" />
+						<label for="order-form__date2" class="order-form__date-label">
+							<span>Завтра</span>
+							<time>10 февраля</time>
+						</label>
+
+						<input class="order-form__date-input" type="radio" name="order-form__date" value="date3"
+							id="order-form__date3" disabled />
+						<label for="order-form__date3" class="order-form__date-label">
+						</label><input class="order-form__date-input" type="radio" name="order-form__date" value="date4"
+							id="order-form__date4" disabled />
+						<label for="order-form__date4" class="order-form__date-label"></label>
+
+						<input class="order-form__date-input" type="radio" name="order-form__date" value="date5"
+							id="order-form__date5" disabled />
+						<label for="order-form__date5" class="order-form__date-label"></label>
+
+						<input class="order-form__date-input" type="radio" name="order-form__date" value="date6"
+							id="order-form__date6" disabled />
+						<label for="order-form__date6" class="order-form__date-label"></label>
+					</div>
+
+					<div class="order-form__times">
+						<input class="order-form__time-input" type="radio" name="order-form__time" value="time1"
+							id="order-form__time1" checked />
+						<label for="order-form__time1" class="order-form__time-label">
+							<span>Бесплатно</span>
+							<time>09:00-12:00</time>
+						</label>
+
+						<input class="order-form__time-input" type="radio" name="order-form__time" value="time2"
+							id="order-form__time2" />
+						<label for="order-form__time2" class="order-form__time-label">
+							<span>Бесплатно</span>
+							<time>12:00-14:00</time>
+						</label>
+
+						<input class="order-form__time-input" type="radio" name="order-form__time" value="time3"
+							id="order-form__time3" />
+						<label for="order-form__time3" class="order-form__time-label">
+							<span>Бесплатно</span>
+							<time>14:00-18:00</time>
+						</label>
+
+						<input class="order-form__time-input" type="radio" name="order-form__time" value="time4"
+							id="order-form__time4" disabled />
+						<label for="order-form__time4" class="order-form__time-label"></label>
+
+						<input class="order-form__time-input" type="radio" name="order-form__time" value="time5"
+							id="order-form__time5" disabled />
+						<label for="order-form__time5" class="order-form__time-label"></label>
+
+						<input class="order-form__time-input" type="radio" name="order-form__time" value="time6"
+							id="order-form__time6" disabled />
+						<label for="order-form__time6" class="order-form__time-label"></label>
+					</div>
+
+					<div class="order-form__payment">
+						<h2 class="order-form__heading">Оплата</h2>
+
+						<payment-methods />
+					</div>
+				</div>
+
+				<div class="order-form__footer">
+					<div class="order-form__send-receipt">
+						<label for="send-receipt" class="order-form__heading">Прислать электронный чек</label>
+						<swich-button id="send-receipt" class="order-form__swich" action="send-receipt" />
+					</div>
+
+					<div class="order-form__footer-row">
+						<label class="order-form__label" for="order-form__phone">Эл. почта</label>
+						<input
+							autocomplete="email"
+							type="email"
+							id="order-form__email"
+							class="order-form__footer-input"
+							disabled
+						/>
+					</div>
+				</div>
+
+				<form-button class="order-form__button" disabled={true} type="submit" size="large" theme="colored"
+					full-width={true}>
+					Оплатить 950 ₽
+				</form-button>
+			</form>
+		</div>
+	</account-pane>
+
+	<div class="order-form__aside">
+		<div class="order-form__notice">
+			<inline-svg src="order-form-notice.svg" />
+			<p>Укажите адрес</p>
+		</div>
+
+		<div class="order-form__terminal">
+			<account-pane>
+				<shop-terminal show-buttons={false} show-promo={false}>
+					<div class="order-form__delivery">
+
+						<div class="order-form__delivery-data">
+							<span>09 февраля</span>
+							<span>14:00-18:00</span>
+						</div>
+
+						<div class="order-form__delivery-selected">
+							<h4 class="order-form__delivery-title">Адрес доставки</h4>
+
+							<div class="order-form__payment-address">Москва, 3-я Парковая улица, 3</div>
+
+							<div class="order-form__payment-type">
+								<inline-svg src="./order-form-pay.svg" />Оплата картой онлайн
+							</div>
+						</div>
+					</div>
+				</shop-terminal>
+			</account-pane>
+		</div>
+	</div>
+</div>
+
+<select-address-map-modal />

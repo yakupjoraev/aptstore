@@ -1,0 +1,119 @@
+@import url('../../layouts/variables.pcss');
+
+.search-location {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 6;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	pointer-events: none;
+	display: none;
+
+	&.show {
+		opacity: 1;
+		pointer-events: auto;
+
+		& .search-location__list {
+			transform: translateY(0);
+			pointer-events: auto;
+		}
+
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+
+			& > * {
+				top: 10%;
+			}
+		}
+	}
+
+	&.hide {
+		opacity: 0;
+		pointer-events: none;
+
+		& .search-location__list {
+			transform: translateY(30px);
+			pointer-events: none;
+		}
+	}
+
+	@media (--tablet) {
+		display: block;
+	}
+}
+
+.search-location__list {
+	position: absolute;
+	top: 130px;
+	left: var(--padding-desktop);
+	right: var(--padding-desktop);
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 16px;
+	padding: 17px 0;
+	background: #f9faf7;
+	box-shadow: 0px 30px 30px rgba(153, 171, 125, 0.1);
+	transform: translateY(-30px);
+	pointer-events: none;
+	transition: transform 0.2s ease-in-out;
+
+	@media (--desktop-small) {
+		top: 170px;
+	}
+
+	@media (--desktop-medium) {
+		top: 210px;
+	}
+
+	@media (width >= 1354px) {
+		left: 50%;
+		margin-left: -650px;
+		width: 1300px;
+	}
+}
+
+.search-location__item {
+	margin-top: 3px;
+	width: 33.3333%;
+}
+
+.search-location__item--all {
+	margin-top: 0;
+	width: 100%;
+}
+
+.search-location__button {
+	box-sizing: border-box;
+	border: 0;
+	padding: 7px 0 8px 50px;
+	width: 100%;
+	background: resolve('./search-location-arrow.svg') left 23px center no-repeat;
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: left;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #eef4e3;
+	}
+
+	&.checked {
+		color: var(--secondary);
+		background-image: resolve('./search-location-checked.svg');
+		background-position: left 17px center;
+	}
+}
+
+.search-location__item--all .search-location__button {
+	width: 33.33333%;
+}

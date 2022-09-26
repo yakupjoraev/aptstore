@@ -1,0 +1,9 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="selected-pharmacy-page" from="../components/selected-pharmacy-page/selected-pharmacy-page.gutt" />
+
+<default-layout headless={true}>
+	<div class="container">
+
+		<selected-pharmacy-page />
+	</div>
+</default-layout>

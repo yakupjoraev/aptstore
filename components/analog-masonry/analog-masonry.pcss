@@ -1,0 +1,56 @@
+@import url('../../layouts/variables.pcss');
+
+.analog-masonry {
+	position: relative;
+	display: flex;
+	box-sizing: border-box;
+	padding: 20px 20px 30px;
+	color: var(--black);
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.analog-masonry__preview {
+	flex-shrink: 0;
+	width: 83px;
+	height: 83px;
+	font-size: 10px;
+	text-align: center;
+
+	& img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+.analog-masonry__title {
+	margin-left: 10px;
+	max-width: 250px;
+}
+
+.analog-masonry__price {
+	position: absolute;
+	right: 20px;
+	bottom: 12px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	color: var(--primary);
+	text-align: right;
+
+	& stroke {
+		font-weight: normal;
+		color: var(--black);
+		text-decoration: line-through;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+.analog-masonry__special-price {
+	display: block;
+}
+
+.analog-masonry__special-label {
+	font-weight: normal;
+}

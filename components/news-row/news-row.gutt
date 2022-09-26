@@ -1,0 +1,28 @@
+<param name={$news} value={[]} />
+
+<div class="news-row">
+	<div class="news-row__header">
+		<h3 class="news-row__header-label">Новости и&nbsp;статьи</h3>
+		<div class="news-row__more news-row__more--top">
+			<a href="" class="news-row__more-link">Больше информации &gt;</a>
+		</div>
+	</div>
+
+	<for-each item={$item} from={$news}>
+		<div class="news-row__item">
+			<figure class="news-row__preview">
+				<img src={"storage/" ++ $item.preview} alt={$item.title} />
+			</figure>
+
+			<div class="news-row__content">
+				<div class="news-row__title">{$item.title}</div>
+				<div class="news-row__date">{$item.date}</div>
+			</div>
+		</div>
+	</for-each>
+
+	<div class="news-row__more news-row__more--bottom">
+		<a href="" class="news-row__more-link">Больше информации &gt;</a>
+	</div>
+
+</div>

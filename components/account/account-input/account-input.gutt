@@ -1,0 +1,26 @@
+<param name={$label} value="" />
+<param name={$value} value="" />
+<param name={$name} value="" />
+<param name={$placeholder} value="" />
+<param name={$type} value="text" /><!-- text, email, phone -->
+<param name={$align} value="left" /><!-- left, center -->
+<param name={$show-label} value={false} />
+<param name={$required} value={false} />
+
+<div class={classes(
+	"account-input",
+	"account-input--align-" ++ $align,
+	$show-label ?? "account-input--show-label" !! ""
+)}>
+	<input class="account-input__input" type={$type} name={$name} value={$value} placeholder={$show-label ?? $placeholder !! $label} />
+	<label class="account-input__label" for={$name}>
+		{$label}
+		<if test={$required}>
+			<span class="account-input__required">*</span>
+		</if>
+	</label>
+
+	<if test={$type != "date"}>
+		<button class="account-input__clear" type="button" data-account-clear>Очистить</button>
+	</if>
+</div>

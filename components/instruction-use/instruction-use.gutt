@@ -1,0 +1,25 @@
+<import name="content-block" from="../content-block/content-block.gutt" />
+
+<param name={$preview} value="" />
+<param name={$title} value="" />
+
+<div class="instruction-use" data-instruction-use>
+	<label class="instruction-use__label" for="instruction-use-input">Открыть</label>
+	<input class="instruction-use__input" type="checkbox" id="instruction-use-input" data-instruction-use-input />
+
+	<div class="instruction-use__head">
+		<figure class="instruction-use__preview">
+			<img src={"storage/" ++ $preview} alt={$title} />
+		</figure>
+
+		<h3 class="instruction-use__title">{$title}</h3>
+
+		<inline-svg src="./instruction-use-arrow.svg" />
+	</div>
+
+	<div class="instruction-use__content" data-instruction-use-content>
+		<content-block>
+			{$children}
+		</content-block>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="order-form" from="../components/order-form/order-form.gutt" />
+
+<default-layout headless={true}>
+	<div class="container">
+		<order-form />
+	</div>
+</default-layout>

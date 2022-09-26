@@ -1,0 +1,36 @@
+<import name="x-pagination" from="../pagination/pagination.gutt" />
+
+<param name={$data} value={[
+	"-20% на витамины Mini Doctor",
+	"Шампунь 50 мл в подарок - при покупке любого Vichy",
+	"-20% на косметику СОБиО Этик + подарок за 0р. вместо 1700",
+	"Парфюмированное масло для душа 50 мл в подарок при покупке Nuxe",
+	"Скидка 15% на ополаскиватели Perio",
+	"Щетка в подарок - при покупке продукции Curaprox от 1500р.",
+	"В подарок маска-флюид Фитодензия 50 мл - при покупке любого PHYTO",
+	"Молочко в подарок (30 мл) - при покупке любого продукта Lierac",
+	"Лавандовая свеча в подарок при покупке Мелаксен",
+	"До -35% на Merries",
+	"-10% на Ингалятор компрессорный LD-215C",
+	"Скидка 25% на продукцию Сеттуа"
+]} />
+
+<div class="product-discounts">
+	<h1 class="product-discounts__title">
+		Акции
+	</h1>
+
+	<div class="product-discounts__list">
+		<for-each item={$item} key={$index} from={$data}>
+			<a href="" class="product-discounts__item">
+				<figure class="product-discounts__figure">
+					<img class="product-discounts__preview" src={"./storage/feature-discounts" ++ (num_int($index) + 1) ++ ".jpg"} alt={$item} />
+				</figure>
+
+				<p class="product-discounts__description">{$item}</p>
+			</a>
+		</for-each>
+	</div>
+
+	<x-pagination class="product-discounts__pagination" />
+</div>

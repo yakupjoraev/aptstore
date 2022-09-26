@@ -1,0 +1,39 @@
+<param name={$rating} value={3.5} />
+<param name={$details} value={[114, 80, 180, 150, 10]} />
+
+<variable name={$labels} value={["звезд", "звезды", "звезды", "звезды", "звезда"]} />
+
+<div class="product-comments-rating">
+	<div class="product-comments-rating__summary">
+		<div class="product-comments-rating__stars">
+			<div class="product-comments-rating__stars-progress" style={"width: " ++ ((num_round($rating - 1) / 5) * 100) ++ "%"}></div>
+		</div>
+		<div class="product-comments-rating__total">{str_replace($rating ++ "", ".", ",")} / 5</div>
+	</div>
+
+	<variable name={$summ} value={0} />
+	<for-each item={$item} key={$index} from={$details}>
+		<variable name={$summ} value={$summ + $item} />
+	</for-each>
+
+	<table class="product-comments-rating__table">
+		<colgroup>
+			<col />
+			<col width="*" />
+			<col />
+		</colgroup>
+		<tbody>
+			<for-each item={$item} key={$index} from={$details}>
+				<tr>
+					<td>{5 - $index}&nbsp;{$labels[$index]}</td>
+					<td>
+						<div class="product-comments-rating__range">
+							<div class="product-comments-rating__range-progress" style={"width: " ++ (($item / $summ) * 100) ++ "%"}></div>
+						</div>
+					</td>
+					<td>{$item}</td>
+				</tr>
+			</for-each>
+		</tbody>
+	</table>
+</div>

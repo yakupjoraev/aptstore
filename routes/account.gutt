@@ -1,0 +1,137 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="form-checkbox" from="../components/form/checkbox/checkbox.gutt" />
+<import name="form-button" from="../components/form/button/button.gutt" />
+<import name="account-input" from="../components/account/account-input/account-input.gutt" />
+<import name="gender-selector" from="../components/account/gender-selector/gender-selector.gutt" />
+<import name="account-pane" from="../components/account/account-pane/account-pane.gutt" />
+<import name="info-pane" from="../components/account/info-pane/info-pane.gutt" />
+<import name="settings-pane" from="../components/account/settings-pane/settings-pane.gutt" />
+<import name="account-location" from="../components/account/account-location/account-location.gutt" />
+<import name="banner-element" from="../components/banner/banner.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps
+			path={[
+				[
+					"url": "index.html",
+					"label": "Главная"
+				],
+				[
+					"label": "Личный данные"
+				]
+			]}
+		/>
+
+		<div class="account">
+			<div class="account__banners">
+				<banner-element data={[
+					"href": "index.html",
+					"source": [
+						"l": "banner8-l.png",
+						"m": "banner8-m.png",
+						"s": "banner8-s.png",
+						"xs": "banner8-xs.png"
+					]
+				]} />
+				<banner-element data={[
+					"href": "index.html",
+					"source": [
+						"l": "banner9-l.png",
+						"m": "banner9-m.png",
+						"s": "banner9-s.png",
+						"xs": "banner9-xs.png"
+					]
+				]} />
+				<banner-element data={[
+					"href": "index.html",
+					"source": [
+						"l": "banner10-l.png",
+						"m": "banner10-m.png",
+						"s": "banner10-s.png",
+						"xs": "banner10-xs.png"
+					]
+				]} />
+				<banner-element data={[
+					"href": "index.html",
+					"source": [
+						"l": "banner11-l.png",
+						"m": "banner10-m.png",
+						"s": "banner10-s.png",
+						"xs": "banner10-xs.png"
+					]
+				]} />
+			</div>
+
+			<account-pane class="account__content">
+				<common-header>Личный кабинет</common-header>
+
+				<form action="" class="account__form">
+					<div class="account__upload">
+						<div class="account__userpic">ФИ</div>
+
+						<div class="account__upload-controls">
+							<form-button type="upload" size="small" action="upload">Загрузить</form-button>
+							<div class="account__format">.jpg, .png не более 1 Мб</div>
+						</div>
+					</div>
+
+					<account-location />
+
+					<div class="account__row">
+						<account-input label="Имя" value="Иван" />
+					</div>
+
+					<div class="account__row">
+						<account-input label="Отчество" />
+					</div>
+
+					<div class="account__row">
+						<account-input label="Фамилия" />
+					</div>
+
+					<div class="account__row">
+						<gender-selector />
+
+						<account-input label="Дата рождения" align="center" type="date" show-label={true} placeholder="ДД.ММ.ГГГГ" />
+					</div>
+
+					<div class="account__row">
+						<account-input label="Телефон" value="+7 902 653 23 12" type="phone" required={true} />
+					</div>
+
+					<div class="account__row">
+						<account-input label="E-mail/Логин" value="ivanov.ivan@yandex.ru" type="email" required={true} />
+					</div>
+
+					<div class="account__row">
+						<div class="account__checkbox">
+							<form-checkbox name="agree-news" size="s">
+								<span class="account__agree">Да, я соглашаюсь получать новости и&nbsp;информацию об&nbsp;акциях</span>
+							</form-checkbox>
+						</div>
+					</div>
+
+					<div class="account__row">
+						<div class="account__checkbox">
+							<form-checkbox name="agree-rules" size="s">
+								<span class="account__agree">Я согласен с&nbsp;правилами сайта</span>
+							</form-checkbox>
+						</div>
+					</div>
+
+					<div class="account__buttons">
+						<form-button size="large">Сохранить изменения</form-button>
+					</div>
+				</form>
+			</account-pane>
+
+			<div class="account__aside">
+				<info-pane class="account__info" />
+
+				<settings-pane class="account__settings" />
+			</div>
+		</div>
+	</div>
+</default-layout>

@@ -1,0 +1,110 @@
+<import name="form-button" from="../form/button/button.gutt" />
+
+<form class="add-comment" action="" method="post">
+	<h1 class="add-comment__head">Ваш отзыв о&nbsp;товаре</h1>
+
+	<div class="add-comment__product">
+		<figure class="add-comment__figure">
+			<img src="storage/product1.jpg" alt="" class="add-comment__preview" />
+		</figure>
+
+		<p class="add-comment__title">
+			Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)
+		</p>
+	</div>
+
+	<div class="add-comment__disclaimer">
+		Если качество покупки вас устроило, можете поставить только оценку товара. Остальные поля - не обязательны.
+	</div>
+
+	<div class="add-comment__rating">
+		<div class="add-comment__field-head">Оцените покупку</div>
+
+		<div>
+			<input type="radio" name="rating" id="rating1" value="1" class="add-comment__hidden-input" />
+			<input type="radio" name="rating" id="rating2" value="2" class="add-comment__hidden-input" />
+			<input type="radio" name="rating" id="rating3" value="3" class="add-comment__hidden-input" />
+			<input type="radio" name="rating" id="rating4" value="4" class="add-comment__hidden-input" />
+			<input type="radio" name="rating" id="rating5" value="5" class="add-comment__hidden-input" />
+
+			<div class="add-comment__rating-stars">
+				<label for="rating1" class="add-comment__rating-label"></label>
+				<label for="rating2" class="add-comment__rating-label"></label>
+				<label for="rating3" class="add-comment__rating-label"></label>
+				<label for="rating4" class="add-comment__rating-label"></label>
+				<label for="rating5" class="add-comment__rating-label"></label>
+			</div>
+		</div>
+	</div>
+
+	<div class="add-comment__description">
+		<div class="add-comment__field-head">Поделитесь впечатлениями о&nbsp;товаре</div>
+
+		<div class="add-comment__field">
+			<textarea type="text" class="add-comment__input" placeholder="Достоинства"></textarea>
+		</div>
+
+		<div class="add-comment__field">
+			<textarea type="text" class="add-comment__input" placeholder="Недостатки"></textarea>
+		</div>
+
+		<div class="add-comment__field">
+			<textarea type="text" class="add-comment__input" placeholder="Комментарий к отзыву"></textarea>
+		</div>
+	</div>
+
+	<div class="add-comment__upload" data-add-comment-upload data-type="photo">
+		<div class="add-comment__field-head">Добавьте фотографии</div>
+
+		<div class="add-comment__uploads" data-add-comment-uploads>
+			<label class="add-comment__upload-label add-comment__upload-label--photo" data-upload-label>
+				<input type="file" name="" id="" class="add-comment__upload-file" multiple data-add-comment-input-file />
+			</label>
+		</div>
+
+		<div class="add-comment__upload-text">
+			<span class="add-comment__upload-instruction">Нажмите на кнопку или перетащите фото в эту область<br /><br /></span>
+			до 10 изображений в формате PNG, JPEG.
+		</div>
+	</div>
+
+	<div class="add-comment__upload" data-add-comment-upload data-type="video">
+		<div class="add-comment__field-head">Добавьте видео</div>
+
+		<div class="add-comment__upload-control">
+			<label class="add-comment__upload-label add-comment__upload-label--video">
+				<input type="file" name="" id="" class="add-comment__upload-file" data-add-comment-input-file />
+			</label>
+
+			<div class="add-comment__upload-text">
+				<span class="add-comment__upload-instruction">Нажмите на кнопку или перетащите фото в эту область<br /><br /></span>
+				до 3 видео длительностью не более 5 минут
+			</div>
+		</div>
+
+		<div class="add-comment__upload-video-cover">
+			<span class="add-comment__upload-video-name" data-add-comment-video-name></span>
+			<button class="add-comment__upload-delete"></button>
+		</div>
+	</div>
+
+	<div class="add-comment__footer">
+		<div class="add-comment__intriduce">Вы оставляете отзыв как:</div>
+		<div class="add-comment__name">Иван И.</div>
+
+		<div class="add-comment__buttons">
+			<input type="checkbox" class="add-comment__hidden-input" id="add-comment-public" />
+			<label class="add-comment__public" for="add-comment-public">
+				Скрыть мои данные в отзыве
+			</label>
+
+			<div class="add-comment__submit">
+				<form-button type="submit" size="large" full-width={true}>Оставить отзыв</form-button>
+			</div>
+		</div>
+
+		<div class="add-comment__lagal">
+			Перед отправкой отзыва, пожалуйста, ознакомьтесь с <a href="">правилами публикации</a>.
+		</div>
+	</div>
+</form>

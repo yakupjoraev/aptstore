@@ -1,0 +1,21 @@
+<import name="modal-window" from="../modal-window/modal-window.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+
+<modal-window name="select-address-map-gift">
+	<div class="select-address-map-modal">
+			<div class="select-address-map-modal__header">
+				<h3 class="select-address-map-modal__title">
+					Найти на карте
+				</h3>
+			</div>
+
+			<div class="select-address-map-modal__map"></div>
+
+			<div class="select-address-map-modal__footer">
+				<div class="select-address-map-modal__address">Москва, 3-я Парковая улица, 58</div>
+				<form-button class="select-address-map-modal__button" type="submit" size="large" theme="colored" full-width={false}>
+					Доставить сюда
+				</form-button>
+			</div>
+		</div>
+</modal-window>

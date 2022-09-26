@@ -1,0 +1,57 @@
+@import url('../../layouts/variables.pcss');
+
+.section-links {
+	justify-content: space-between;
+
+	@media (--desktop-small) {
+		display: flex;
+	}
+}
+
+.section-links__title {
+	font-size: 20px;
+	line-height: 23px;
+	color: var(--black);
+	font-weight: bold;
+	text-align: center;
+
+	@media (--mobile-medium) {
+		text-align: left;
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+.section-links__list {
+	margin-top: 25px;
+	display: flex;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: bold;
+	justify-content: center;
+
+	@media (--mobile-medium) {
+		font-size: 18px;
+		line-height: 21px;
+		justify-content: flex-start;
+	}
+
+	@media (--desktop-small) {
+		margin-top: 10px;
+	}
+}
+
+.section-links__list > * {
+	margin-right: 20px;
+}
+
+.section-links__link {
+	color: var(--black);
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+}
+
+.section-links__link:hover {
+	color: var(--primary);
+	border-bottom: 2px solid var(--primary);
+}

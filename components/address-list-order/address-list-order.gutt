@@ -1,0 +1,102 @@
+<import name="form-button" from="../form/button/button.gutt" />
+
+	<div class="address-list-order">
+		<ul class="address-list-order__items">
+
+			<li class="address-list-order__item">
+				<h5 class="address-list-order__title">Ваша № 1</h5>
+				<address class="address-list-order__address">ул. Раменки,<br /> д. 3. с1</address>
+			</li>
+
+			<li class="address-list-order__item">
+				<p class="address-list-order__text">м. Раменки <br /><span>3 мин</span></p>
+			</li>
+
+			<li class="address-list-order__item">
+				<time class="address-list-order__time">Ежедневно: 09:00-21:00</time>
+			</li>
+
+			<li class="address-list-order__item">
+				<!-- address-list-order__button-active active btn -->
+				<form-button class="address-list-order__button address-list-order__button-active" type="submit" size="large" theme="light" full-width={true}>
+					Забрать через 1-2 дня
+				</form-button>
+			</li>
+
+		</ul>
+
+		<ul class="address-list-order__items">
+
+			<li class="address-list-order__item">
+				<h5 class="address-list-order__title">Ваша № 1</h5>
+				<address class="address-list-order__address">ул. Большая Филевская, <br /> д. 21, с. 1</address>
+			</li>
+
+			<li class="address-list-order__item">
+				<p class="address-list-order__text">м. Фили<br /><span>1 мин</span></p>
+			</li>
+
+			<li class="address-list-order__item">
+				<time class="address-list-order__time">Понедельник-Пятница: 09:30-18:30</time>
+				<time class="address-list-order__time">Cуббота-Воскресенье 08:00-15:00</time>
+			</li>
+
+			<li class="address-list-order__item">
+				<form-button class="address-list-order__button" type="submit" size="large" theme="light" full-width={true}>
+					Забрать через 1-2 дня
+				</form-button>
+			</li>
+
+		</ul>
+
+		<ul class="address-list-order__items">
+
+			<li class="address-list-order__item">
+				<h5 class="address-list-order__title">Ваша № 1</h5>
+				<address class="address-list-order__address">ул. Промылшленная, <br />д. 2к, с. 1, корпус 32в</address>
+			</li>
+
+			<li class="address-list-order__item">
+				<p class="address-list-order__text">м. Раменким. Филевский парк<br /><span>3 мин</span></p>
+			</li>
+
+			<li class="address-list-order__item">
+				<time class="address-list-order__time">Понедельник-Пятница: 08:00-21:00</time>
+				<time class="address-list-order__time">Воскресенье: 10:00-21:00</time>
+				<time class="address-list-order__time">Cуббота: 09:00-21:00</time>
+			</li>
+
+			<li class="address-list-order__item">
+				<form-button class="address-list-order__button" type="submit" size="large" theme="light" full-width={true}>
+					Забрать через 1-2 дня
+				</form-button>
+			</li>
+
+		</ul>
+
+		<ul class="address-list-order__items">
+
+			<li class="address-list-order__item">
+				<h5 class="address-list-order__title">Ваша № 1</h5>
+				<address class="address-list-order__address">ш. Валоколамское,<br />д. 21, с. 1</address>
+			</li>
+
+			<li class="address-list-order__item">
+				<p class="address-list-order__text">м. Академика<br /> Королева<br /><span>12 мин</span></p>
+			</li>
+
+			<li class="address-list-order__item">
+				<time class="address-list-order__time">Понедельник-Пятница: 09:30-18:30</time>
+				<time class="address-list-order__time">Cуббота-Воскресенье 08:00-15:00</time>
+			</li>
+
+			<li class="address-list-order__item">
+				<form-button class="address-list-order__button" type="submit" size="large" theme="light" full-width={true}>
+					Забрать через 1-2 дня
+				</form-button>
+			</li>
+			
+		</ul>
+
+	</div>
+

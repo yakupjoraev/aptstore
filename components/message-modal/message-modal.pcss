@@ -1,0 +1,84 @@
+@import url('../../layouts/variables.pcss');
+
+.message-modal {
+	overflow: hidden;
+	border-radius: 20px;
+	background: var(--white);
+}
+
+.message-modal__content {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: 290px;
+	padding: 30px 12px 22px;
+	color: var(--black);
+	font: 16px/20px 'Roboto', sans-serif;
+	text-align: center;
+
+	@media (width >= 440px) {
+		padding: 65px 40px 40px;
+		width: 350px;
+		text-align: left;
+	}
+}
+
+.message-modal__title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.message-modal__description {
+	margin-top: 24px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.message-modal__action-holder {
+	margin-top: 80px;
+}
+
+.message-modal__action {
+	display: inline-block;
+	border: 0;
+	border-radius: 25px;
+	padding: 14px 20px;
+	font: inherit;
+	font-size: 18px;
+	line-height: 21px;
+	color: var(--white);
+	background: var(--secondary);
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.message-modal__banner {
+	box-sizing: border-box;
+	width: 290px;
+	height: 412px;
+	background: var(--secondary);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+.message-modal__banner--basket {
+	background-image: resolve('./basket.png');
+}
+
+.message-modal__banner--coins {
+	background-image: resolve('./coins.png');
+}
+
+.message-modal__banner--gift {
+	background-image: resolve('./gift.png');
+}
+
+.message-modal__banner--message {
+	background-image: resolve('./message.png');
+}

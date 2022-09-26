@@ -1,0 +1,46 @@
+<import name="drop-down" from="../dropdown/dropdown.gutt" />
+<import name="shop-category-filters" from="../shop-category-filters/shop-category-filters.gutt" />
+<import name="shop-category-sorting" from="../shop-category-sorting/shop-category-sorting.gutt" />
+
+<div class="shop-category">
+	<div class="shop-category__aside">
+		<div class="shop-category__category">
+			<drop-down label="БАД" value="bads">
+				<button type="button" class="shop-category__category-option" data-value="promo">Акционные товары</button>
+				<button type="button" class="shop-category__category-option" data-value="bads">БАД</button>
+				<button type="button" class="shop-category__category-option" data-value="">Бытовая химия</button>
+				<button type="button" class="shop-category__category-option" data-value="vitamins">Витамины</button>
+				<button type="button" class="shop-category__category-option" data-value="">Гигиена и косметика</button>
+				<button type="button" class="shop-category__category-option" data-value="">Диета, спорт, питание</button>
+				<button type="button" class="shop-category__category-option" data-value="">Лекарственные препараты</button>
+				<button type="button" class="shop-category__category-option" data-value="">Мама и малыш</button>
+				<button type="button" class="shop-category__category-option" data-value="">Медицинские изделия</button>
+				<button type="button" class="shop-category__category-option" data-value="">Медицинские приборы</button>
+				<button type="button" class="shop-category__category-option" data-value="">Оптика</button>
+				<button type="button" class="shop-category__category-option" data-value="">Ортопедические изделия</button>
+				<button type="button" class="shop-category__category-option" data-value="">Какое-то невероятно длинное название категории</button>
+				<button type="button" class="shop-category__category-option" data-value="">Прочие товары</button>
+				<button type="button" class="shop-category__category-option" data-value="">Разное</button>
+				<button type="button" class="shop-category__category-option" data-value="">Средства от насекомых</button>
+				<button type="button" class="shop-category__category-option" data-value="">Наборы</button>
+			</drop-down>
+		</div>
+
+		<shop-category-filters />
+
+		<shop-category-sorting media="mobile" />
+	</div>
+
+	<div class="shop-category__content">
+		<div class="shop-category__header">
+			<h2 class="shop-category__heading">Лекарственные препараты</h2>
+
+			<shop-category-sorting media="tablet" />
+		</div>
+
+
+		<div class="shop-category__products">
+			{$children}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,2463 @@
+<import name="filter-accordeon" from="../filter-accordeon/filter-accordeon.gutt" />
+<import name="filter-search-list" from="../filter-search-list/filter-search-list.gutt" />
+<import name="price-selector" from="../price-selector/price-selector.gutt" />
+<import name="filter-search-checkbox" from="../filter-search-checkbox/filter-search-checkbox.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+
+<form class="shop-category-filters" action="" data-shop-category-filters>
+	<button class="shop-category-filters__toggle" type="button" data-shop-category-filter-toggle>
+		<inline-svg src="./shop-category-settings.svg" />
+	</button>
+
+	<div class="shop-category-filters__content">
+		<div class="shop-category-filters__filter">
+			<filter-accordeon title="Категория" type="category">
+				<filter-search-list items={[
+					[
+						"value": "balzami",
+						"label": "Бальзамы"
+					],
+					[
+						"value": "vitaminx",
+						"label": "Витаминные добавки"
+					],
+					[
+						"value": "eyes-vitamins",
+						"label": "Витаминные добавки для глаз"
+					],
+					[
+						"value": "women-vitamins",
+						"label": "Витаминные добавки для женщин"
+					],
+					[
+						"value": "men-vitamins",
+						"label": "Витаминные добавки для мужчин"
+					],
+					[
+						"value": "snacks",
+						"label": "Гематоген и батончики"
+					],
+					[
+						"value": "brew-yeest",
+						"label": "Пивные дрожжи"
+					],
+					[
+						"value": "bads",
+						"label": "прочие БАД для внутреннего применения"
+					],
+					[
+						"value": "omega3",
+						"label": "Рыбий жир и омега-3"
+					],
+					[
+						"value": "tee",
+						"label": "Фиточай/чай"
+					]
+				]} />
+			</filter-accordeon>
+		</div>
+
+		<div class="shop-category-filters__filter">
+			<filter-accordeon title="Цена, ₽" type="price">
+				<price-selector />
+			</filter-accordeon>
+		</div>
+
+		<div class="shop-category-filters__filter">
+			<filter-accordeon title="Новинки" type="type-newbie">
+				<filter-search-checkbox value="newbie" label="Да" />
+			</filter-accordeon>
+		</div>
+
+		<div class="shop-category-filters__filter">
+			<filter-accordeon title="Производитель" type="vendor">
+				<filter-search-list items={[
+					[
+						"value": "vendor1",
+						"label": "AB-Biotics S.A"
+					],
+					[
+						"value": "vendor2",
+						"label": "ADM Protexin"
+					],
+					[
+						"value": "vendor3",
+						"label": "ADM Protexin Ltd / Биовид ООО"
+					],
+					[
+						"value": "vendor4",
+						"label": "Accurex Healthcare Manufacturing Inc."
+					],
+					[
+						"value": "vendor5",
+						"label": "Advance Pharma GmbH"
+					],
+					[
+						"value": "vendor6",
+						"label": "Alifarm Sa"
+					],
+					[
+						"value": "vendor7",
+						"label": "Amapharm GmbH"
+					],
+					[
+						"value": "vendor8",
+						"label": "Amoi Pharmaceutical private limited"
+					],
+					[
+						"value": "vendor9",
+						"label": "Axellus A/C"
+					],
+					[
+						"value": "vendor10",
+						"label": "B$S Corporation"
+					],
+					[
+						"value": "vendor11",
+						"label": "BESINS HEALTHCARE MONACO S.A.M/ LABORATOIRE DIEPHEZ"
+					],
+					[
+						"value": "vendor12",
+						"label": "Bayer Sante Familiale"
+					],
+					[
+						"value": "vendor13",
+						"label": "Ben Venue Lab./Фармстандарт-УфаВита ОАО"
+					],
+					[
+						"value": "vendor14",
+						"label": "Bio Products Laboratory"
+					],
+					[
+						"value": "vendor15",
+						"label": "BioGaia AB"
+					],
+					[
+						"value": "vendor16",
+						"label": "Biocodex Lab."
+					],
+					[
+						"value": "vendor17",
+						"label": "Biogal"
+					],
+					[
+						"value": "vendor18",
+						"label": "Biomeda GmbH"
+					],
+					[
+						"value": "vendor19",
+						"label": "Bioriginal Europe/Asia"
+					],
+					[
+						"value": "vendor20",
+						"label": "Brudy Technology"
+					],
+					[
+						"value": "vendor21",
+						"label": "Capsugel Ploermel"
+					],
+					[
+						"value": "vendor22",
+						"label": "Catalent Pharma Solutions"
+					],
+					[
+						"value": "vendor23",
+						"label": "Chintamani International"
+					],
+					[
+						"value": "vendor24",
+						"label": "Chr.Hansen A/S"
+					],
+					[
+						"value": "vendor25",
+						"label": "Chr.Hansen A/S/Medana Pharma S.A."
+					],
+					[
+						"value": "vendor26",
+						"label": "Cintamani Poland"
+					],
+					[
+						"value": "vendor27",
+						"label": "Coast Pacific Limited CN"
+					],
+					[
+						"value": "vendor28",
+						"label": "Crosscare limited"
+					],
+					[
+						"value": "vendor29",
+						"label": "Curtis Health Capa Sp.Z.O.O."
+					],
+					[
+						"value": "vendor30",
+						"label": "Damaco"
+					],
+					[
+						"value": "vendor31",
+						"label": "Danapha Pharmaceutical Joint Stock Compa"
+					],
+					[
+						"value": "vendor32",
+						"label": "Danisco France"
+					],
+					[
+						"value": "vendor33",
+						"label": "Dansk Droge/ Nycomed"
+					],
+					[
+						"value": "vendor34",
+						"label": "Disch AG"
+					],
+					[
+						"value": "vendor35",
+						"label": "Dr. A&amp;L Schmidgall"
+					],
+					[
+						"value": "vendor36",
+						"label": "Dr. Reddys Laboratories"
+					],
+					[
+						"value": "vendor37",
+						"label": "Dr. Theiss Naturwaren GmbH"
+					],
+					[
+						"value": "vendor38",
+						"label": "Dragenopharm Apotheker Puschi GmbH"
+					],
+					[
+						"value": "vendor39",
+						"label": "E-Pharma Trento SPA"
+					],
+					[
+						"value": "vendor40",
+						"label": "Eagle Nutrionals Inc"
+					],
+					[
+						"value": "vendor41",
+						"label": "Engelhart Arzneimittel GmbH"
+					],
+					[
+						"value": "vendor42",
+						"label": "Esi S.p.A."
+					],
+					[
+						"value": "vendor43",
+						"label": "F.Hunziker &amp; Co/Amapharm Gmbh"
+					],
+					[
+						"value": "vendor44",
+						"label": "Famar Italia S.p.A."
+					],
+					[
+						"value": "vendor45",
+						"label": "FarmaNutra S.r.L."
+					],
+					[
+						"value": "vendor46",
+						"label": "Farmaceutici Procemsa S.p.A."
+					],
+					[
+						"value": "vendor47",
+						"label": "Farmasierra Manufacturing S.L."
+					],
+					[
+						"value": "vendor48",
+						"label": "Ferrosan"
+					],
+					[
+						"value": "vendor49",
+						"label": "Fresenius Kabi Deutschland GmbH"
+					],
+					[
+						"value": "vendor50",
+						"label": "Generica Spol.s.r.o."
+					],
+					[
+						"value": "vendor51",
+						"label": "Genexo Sp.z.o.o."
+					],
+					[
+						"value": "vendor52",
+						"label": "Glenmery Biotechnologies"
+					],
+					[
+						"value": "vendor53",
+						"label": "Gricar chemical S.R.Lit"
+					],
+					[
+						"value": "vendor54",
+						"label": "Grokam GBL spz oo of Group Master Pharm SA"
+					],
+					[
+						"value": "vendor55",
+						"label": "Hainan Doctor Pharmaceutical Factory"
+					],
+					[
+						"value": "vendor56",
+						"label": "Hankintatukku Oy"
+					],
+					[
+						"value": "vendor57",
+						"label": "Hemofarm A.D."
+					],
+					[
+						"value": "vendor58",
+						"label": "Herbalage Ltd"
+					],
+					[
+						"value": "vendor59",
+						"label": "Herbapol"
+					],
+					[
+						"value": "vendor60",
+						"label": "Herbion Pakistan Ltd"
+					],
+					[
+						"value": "vendor61",
+						"label": "Hisunit Ltd."
+					],
+					[
+						"value": "vendor62",
+						"label": "Humana Pharma International S.p.A."
+					],
+					[
+						"value": "vendor63",
+						"label": "I.D.C. Holding"
+					],
+					[
+						"value": "vendor64",
+						"label": "ICN Pharmaceuticals"
+					],
+					[
+						"value": "vendor65",
+						"label": "IND Diagnostic Inc."
+					],
+					[
+						"value": "vendor66",
+						"label": "Ikong Pharmaceutical Industry"
+					],
+					[
+						"value": "vendor67",
+						"label": "Indofarma"
+					],
+					[
+						"value": "vendor68",
+						"label": "Innopharma s.r.o."
+					],
+					[
+						"value": "vendor69",
+						"label": "Innothera Chouzy"
+					],
+					[
+						"value": "vendor70",
+						"label": "Italfarmaco S.p.A."
+					],
+					[
+						"value": "vendor71",
+						"label": "Jadran Galenski Lab."
+					],
+					[
+						"value": "vendor72",
+						"label": "Jelfa Pharmaceutical Company S.A."
+					],
+					[
+						"value": "vendor73",
+						"label": "KRKA d.d."
+					],
+					[
+						"value": "vendor74",
+						"label": "KRKA d.d. Novo Mesto"
+					],
+					[
+						"value": "vendor75",
+						"label": "Kendy Ltd"
+					],
+					[
+						"value": "vendor76",
+						"label": "Klocke Pharma-service/Ever Neuro Pharma"
+					],
+					[
+						"value": "vendor77",
+						"label": "Koelbel GmbH"
+					],
+					[
+						"value": "vendor78",
+						"label": "Kurtsan Ilaclari"
+					],
+					[
+						"value": "vendor79",
+						"label": "LABOMAR S.R.L"
+					],
+					[
+						"value": "vendor80",
+						"label": "Laboratoires Thea"
+					],
+					[
+						"value": "vendor81",
+						"label": "Laboratorios Liconsa S.A."
+					],
+					[
+						"value": "vendor82",
+						"label": "Lek d.d."
+					],
+					[
+						"value": "vendor83",
+						"label": "Lisi"
+					],
+					[
+						"value": "vendor84",
+						"label": "Lozen Pharma"
+					],
+					[
+						"value": "vendor85",
+						"label": "Lysi HF"
+					],
+					[
+						"value": "vendor86",
+						"label": "Master Pharm Polska Sp.z.o.o."
+					],
+					[
+						"value": "vendor87",
+						"label": "Medana Pharma Terpol Group / Акрихин"
+					],
+					[
+						"value": "vendor88",
+						"label": "Medana Pharma Terpol Group J.S.Co."
+					],
+					[
+						"value": "vendor89",
+						"label": "Medico Domus D.O.O."
+					],
+					[
+						"value": "vendor90",
+						"label": "Merck KGa&amp;Co Werk Spittall/Merck Selbstm"
+					],
+					[
+						"value": "vendor91",
+						"label": "Merk Selbstmedikation GmbH"
+					],
+					[
+						"value": "vendor92",
+						"label": "Merz Pharma GmbH &amp; Co. KGaA"
+					],
+					[
+						"value": "vendor93",
+						"label": "Mitim S.r.L./Фармакор Продакшн ООО"
+					],
+					[
+						"value": "vendor94",
+						"label": "Montavit Pharmazeutische Fabrik GmbH"
+					],
+					[
+						"value": "vendor95",
+						"label": "NOW FOODS/NOU INTERNATIONAL"
+					],
+					[
+						"value": "vendor96",
+						"label": "NOW International"
+					],
+					[
+						"value": "vendor97",
+						"label": "Napro Pharma AS"
+					],
+					[
+						"value": "vendor98",
+						"label": "Narex"
+					],
+					[
+						"value": "vendor99",
+						"label": "Natumin Pharma AB"
+					],
+					[
+						"value": "vendor100",
+						"label": "Natur Produkt"
+					],
+					[
+						"value": "vendor101",
+						"label": "Natur Produkt Europa"
+					],
+					[
+						"value": "vendor102",
+						"label": "Natur Produkt Pharma Sp. Z.o.o."
+					],
+					[
+						"value": "vendor103",
+						"label": "Natures Bounty Inc."
+					],
+					[
+						"value": "vendor104",
+						"label": "Natures Way Products"
+					],
+					[
+						"value": "vendor105",
+						"label": "Nestle"
+					],
+					[
+						"value": "vendor106",
+						"label": "Nilen Alliance Group LLC"
+					],
+					[
+						"value": "vendor107",
+						"label": "Norwegian Fish Oil"
+					],
+					[
+						"value": "vendor108",
+						"label": "Noventis S.r.o."
+					],
+					[
+						"value": "vendor109",
+						"label": "Nutra Source"
+					],
+					[
+						"value": "vendor110",
+						"label": "Nutrichen Now Inc."
+					],
+					[
+						"value": "vendor111",
+						"label": "Nutrilo GmbH"
+					],
+					[
+						"value": "vendor112",
+						"label": "Nutrilo GmbH "
+					],
+					[
+						"value": "vendor113",
+						"label": "Orion Corparation"
+					],
+					[
+						"value": "vendor114",
+						"label": "Orkla Health A/S"
+					],
+					[
+						"value": "vendor115",
+						"label": "Orling"
+					],
+					[
+						"value": "vendor116",
+						"label": "Ortomol Pharmazeutische Vertriebs GmbH"
+					],
+					[
+						"value": "vendor117",
+						"label": "Osmos S.p.A."
+					],
+					[
+						"value": "vendor118",
+						"label": "Otmuchow SA"
+					],
+					[
+						"value": "vendor119",
+						"label": "Oxford Laboratories Pvt. Ltd"
+					],
+					[
+						"value": "vendor120",
+						"label": "PT Ikong Pharmaceutical Industry"
+					],
+					[
+						"value": "vendor121",
+						"label": "PT Industry Jamu Borobudur"
+					],
+					[
+						"value": "vendor122",
+						"label": "PT Industry Jamu Borobudur "
+					],
+					[
+						"value": "vendor123",
+						"label": "PURESSENTIEL"
+					],
+					[
+						"value": "vendor124",
+						"label": "Packom International"
+					],
+					[
+						"value": "vendor125",
+						"label": "Park Lane"
+					],
+					[
+						"value": "vendor126",
+						"label": "Peter Gillhams Natural Vitaliti"
+					],
+					[
+						"value": "vendor127",
+						"label": "Pez Production Europe"
+					],
+					[
+						"value": "vendor128",
+						"label": "Pfizer"
+					],
+					[
+						"value": "vendor129",
+						"label": "Pfizer Consumer Manufacturing Italy S.R.L"
+					],
+					[
+						"value": "vendor130",
+						"label": "Pharma-Vinci A/S"
+					],
+					[
+						"value": "vendor131",
+						"label": "PharmaMed Naturals"
+					],
+					[
+						"value": "vendor132",
+						"label": "Pharmas D.O.O"
+					],
+					[
+						"value": "vendor133",
+						"label": "Pharmatech AS"
+					],
+					[
+						"value": "vendor134",
+						"label": "Pharmtech As"
+					],
+					[
+						"value": "vendor135",
+						"label": "Phytonet"
+					],
+					[
+						"value": "vendor136",
+						"label": "Pierre Fabre"
+					],
+					[
+						"value": "vendor137",
+						"label": "Primea Ltd"
+					],
+					[
+						"value": "vendor138",
+						"label": "Probiotical S.p.A."
+					],
+					[
+						"value": "vendor139",
+						"label": "Probiotics International Ltd"
+					],
+					[
+						"value": "vendor140",
+						"label": "Protina Pharmazeutische GmbH"
+					],
+					[
+						"value": "vendor141",
+						"label": "Provero Pharma V.O.F."
+					],
+					[
+						"value": "vendor142",
+						"label": "Queisser Pharma GmbH&amp;Co.KG"
+					],
+					[
+						"value": "vendor143",
+						"label": "Rexal Sundow"
+					],
+					[
+						"value": "vendor144",
+						"label": "Rottendorf Pharma GmbH"
+					],
+					[
+						"value": "vendor145",
+						"label": "S.C.SWISSCAPS ROMANIA S.R.L."
+					],
+					[
+						"value": "vendor146",
+						"label": "SCANPHARM A/S"
+					],
+					[
+						"value": "vendor147",
+						"label": "SSL Healthcare Manufacturing S.A."
+					],
+					[
+						"value": "vendor148",
+						"label": "Sagitus Ltd"
+					],
+					[
+						"value": "vendor149",
+						"label": "Sagmel Inc."
+					],
+					[
+						"value": "vendor150",
+						"label": "Salus Haus"
+					],
+					[
+						"value": "vendor151",
+						"label": "Sanatur GmbH"
+					],
+					[
+						"value": "vendor152",
+						"label": "Sandoz GmbH"
+					],
+					[
+						"value": "vendor153",
+						"label": "Sanofi-Aventis"
+					],
+					[
+						"value": "vendor154",
+						"label": "Santa Cruz Nutriotionals"
+					],
+					[
+						"value": "vendor155",
+						"label": "Sari Sekhat"
+					],
+					[
+						"value": "vendor156",
+						"label": "Sia Medpro Nutraceuticals"
+					],
+					[
+						"value": "vendor157",
+						"label": "Sidler Remedies Pvt. Ltd"
+					],
+					[
+						"value": "vendor158",
+						"label": "Sifi"
+					],
+					[
+						"value": "vendor159",
+						"label": "Sincropharm S.L."
+					],
+					[
+						"value": "vendor160",
+						"label": "Slovakofarma SA"
+					],
+					[
+						"value": "vendor161",
+						"label": "Sockim Int"
+					],
+					[
+						"value": "vendor162",
+						"label": "Softgrl Healthcare Private Limited"
+					],
+					[
+						"value": "vendor163",
+						"label": "Solgar Vitamin and Herb"
+					],
+					[
+						"value": "vendor164",
+						"label": "SteriPharm"
+					],
+					[
+						"value": "vendor165",
+						"label": "Stericon Pharma Priva"
+					],
+					[
+						"value": "vendor166",
+						"label": "Supplement Sciences Inc."
+					],
+					[
+						"value": "vendor167",
+						"label": "Supranaturals LLC"
+					],
+					[
+						"value": "vendor168",
+						"label": "Sweet Tec GmbH"
+					],
+					[
+						"value": "vendor169",
+						"label": "Swiss Caps AG"
+					],
+					[
+						"value": "vendor170",
+						"label": "Sydler Remedies PVT LTD"
+					],
+					[
+						"value": "vendor171",
+						"label": "SymbioPharm"
+					],
+					[
+						"value": "vendor172",
+						"label": "Tekmar Slovensko"
+					],
+					[
+						"value": "vendor173",
+						"label": "The Madras Pharmaceutikals"
+					],
+					[
+						"value": "vendor174",
+						"label": "Thompson&amp;Capper Ltd/Central Pharma"
+					],
+					[
+						"value": "vendor175",
+						"label": "Trell GMBH"
+					],
+					[
+						"value": "vendor176",
+						"label": "Trolli GmBH"
+					],
+					[
+						"value": "vendor177",
+						"label": "Trommsdorf"
+					],
+					[
+						"value": "vendor178",
+						"label": "UCB Pharma Oy Finland"
+					],
+					[
+						"value": "vendor179",
+						"label": "Unipharm Inc."
+					],
+					[
+						"value": "vendor180",
+						"label": "Universal Medicare"
+					],
+					[
+						"value": "vendor181",
+						"label": "VP Laboratory LTD"
+					],
+					[
+						"value": "vendor182",
+						"label": "Verman AB"
+					],
+					[
+						"value": "vendor183",
+						"label": "Vitabiotics"
+					],
+					[
+						"value": "vendor184",
+						"label": "Vitapharm Canada Ltd."
+					],
+					[
+						"value": "vendor185",
+						"label": "West Coast Lab. Inc."
+					],
+					[
+						"value": "vendor186",
+						"label": "Whitehall"
+					],
+					[
+						"value": "vendor187",
+						"label": "Winclove Bio Industries B.V."
+					],
+					[
+						"value": "vendor188",
+						"label": "Woerwag Pharma GmbH"
+					],
+					[
+						"value": "vendor189",
+						"label": "Wyeth Lederle S.p.A."
+					],
+					[
+						"value": "vendor190",
+						"label": "Yves Ponroy"
+					],
+					[
+						"value": "vendor191",
+						"label": "АВВА РУС ОАО"
+					],
+					[
+						"value": "vendor192",
+						"label": "АВЗ С-П ООО"
+					],
+					[
+						"value": "vendor193",
+						"label": "АС-Ком НПК ООО"
+					],
+					[
+						"value": "vendor194",
+						"label": "Авен ООО"
+					],
+					[
+						"value": "vendor195",
+						"label": "Адамед"
+					],
+					[
+						"value": "vendor196",
+						"label": "Аква МТД"
+					],
+					[
+						"value": "vendor197",
+						"label": "Аквамир"
+					],
+					[
+						"value": "vendor198",
+						"label": "Аквион ЗАО"
+					],
+					[
+						"value": "vendor199",
+						"label": "Акрихин ХФК ОАО"
+					],
+					[
+						"value": "vendor200",
+						"label": "Алина Фарма ООО"
+					],
+					[
+						"value": "vendor201",
+						"label": "Алкой-Холдинг"
+					],
+					[
+						"value": "vendor202",
+						"label": "Алмаксфарм"
+					],
+					[
+						"value": "vendor203",
+						"label": "Алсу ООО"
+					],
+					[
+						"value": "vendor204",
+						"label": "Алтай Селигор"
+					],
+					[
+						"value": "vendor205",
+						"label": "Алтай Фарм ООО"
+					],
+					[
+						"value": "vendor206",
+						"label": "Алтайвитамины ЗАО"
+					],
+					[
+						"value": "vendor207",
+						"label": "Алтайский Кедр ЗАО"
+					],
+					[
+						"value": "vendor208",
+						"label": "Альценой-БАД"
+					],
+					[
+						"value": "vendor209",
+						"label": "Аматег ОДО"
+					],
+					[
+						"value": "vendor210",
+						"label": "Амфита ООО"
+					],
+					[
+						"value": "vendor211",
+						"label": "Анииталиву АОО/Вулкан НПО"
+					],
+					[
+						"value": "vendor212",
+						"label": "Анииталиву АОО/Вулкан НПО "
+					],
+					[
+						"value": "vendor213",
+						"label": "Арт Лайф ООО"
+					],
+					[
+						"value": "vendor214",
+						"label": "Артемизия НПП"
+					],
+					[
+						"value": "vendor215",
+						"label": "Аскопром ООО"
+					],
+					[
+						"value": "vendor216",
+						"label": "Астромар"
+					],
+					[
+						"value": "vendor217",
+						"label": "Астромар "
+					],
+					[
+						"value": "vendor218",
+						"label": "Асфарма-Рос"
+					],
+					[
+						"value": "vendor219",
+						"label": "Багира ООО"
+					],
+					[
+						"value": "vendor220",
+						"label": "Белгородвитамины  ОАО"
+					],
+					[
+						"value": "vendor221",
+						"label": "Био Тон НПФ ООО"
+					],
+					[
+						"value": "vendor222",
+						"label": "Био-Веста ООО"
+					],
+					[
+						"value": "vendor223",
+						"label": "БиоВид ООО"
+					],
+					[
+						"value": "vendor224",
+						"label": "БиоКонтур ООО"
+					],
+					[
+						"value": "vendor225",
+						"label": "Биоинвентика ООО"
+					],
+					[
+						"value": "vendor226",
+						"label": "Биоинженерная Компания Чжин Юань Тхан ООО"
+					],
+					[
+						"value": "vendor227",
+						"label": "Биоком ЗАО"
+					],
+					[
+						"value": "vendor228",
+						"label": "Биокон МНПО"
+					],
+					[
+						"value": "vendor229",
+						"label": "Биокор ЗАО"
+					],
+					[
+						"value": "vendor230",
+						"label": "Биокорп Фармасьютикалс ЗАО"
+					],
+					[
+						"value": "vendor231",
+						"label": "Биолайн ООО"
+					],
+					[
+						"value": "vendor232",
+						"label": "Бионет"
+					],
+					[
+						"value": "vendor233",
+						"label": "Биосинтез ОАО"
+					],
+					[
+						"value": "vendor234",
+						"label": "Биосфера ООО"
+					],
+					[
+						"value": "vendor235",
+						"label": "Биотерра ООО"
+					],
+					[
+						"value": "vendor236",
+						"label": "Биотики"
+					],
+					[
+						"value": "vendor237",
+						"label": "Биотт ООО"
+					],
+					[
+						"value": "vendor238",
+						"label": "Биофарм ООО"
+					],
+					[
+						"value": "vendor239",
+						"label": "Биохит"
+					],
+					[
+						"value": "vendor240",
+						"label": "Битра"
+					],
+					[
+						"value": "vendor241",
+						"label": "Бифилюкс ЗАО"
+					],
+					[
+						"value": "vendor242",
+						"label": "В-Мин+ ООО"
+					],
+					[
+						"value": "vendor243",
+						"label": "ВТФ ООО"
+					],
+					[
+						"value": "vendor244",
+						"label": "Веда ООО"
+					],
+					[
+						"value": "vendor245",
+						"label": "Вектор-БиАльгам ДГУ ЭПП"
+					],
+					[
+						"value": "vendor246",
+						"label": "Вертекс АО"
+					],
+					[
+						"value": "vendor247",
+						"label": "Визит-А ООО"
+					],
+					[
+						"value": "vendor248",
+						"label": "Вилар ПЭЗ ГУП"
+					],
+					[
+						"value": "vendor249",
+						"label": "Вис ООО"
+					],
+					[
+						"value": "vendor250",
+						"label": "Вис ООО/Полярис ОАО"
+					],
+					[
+						"value": "vendor251",
+						"label": "Витабиотикс ЛТД"
+					],
+					[
+						"value": "vendor252",
+						"label": "Витал-Фарма НПФ ООО"
+					],
+					[
+						"value": "vendor253",
+						"label": "Витамер"
+					],
+					[
+						"value": "vendor254",
+						"label": "Витаминный Рай ООО"
+					],
+					[
+						"value": "vendor255",
+						"label": "Витаминный рай"
+					],
+					[
+						"value": "vendor256",
+						"label": "Витапром ООО"
+					],
+					[
+						"value": "vendor257",
+						"label": "Витаукт-Пром ООО"
+					],
+					[
+						"value": "vendor258",
+						"label": "Витачай ООО"
+					],
+					[
+						"value": "vendor259",
+						"label": "Витро Лайф ,ООО"
+					],
+					[
+						"value": "vendor260",
+						"label": "Вифитех ЗАО"
+					],
+					[
+						"value": "vendor261",
+						"label": "Внешторг Фарма ООО"
+					],
+					[
+						"value": "vendor262",
+						"label": "Возрождение и Развитие"
+					],
+					[
+						"value": "vendor263",
+						"label": "Возрождение и Развитие "
+					],
+					[
+						"value": "vendor264",
+						"label": "ГНЦ ПМ Фарма ЗАО"
+					],
+					[
+						"value": "vendor265",
+						"label": "Гален Фармацевтический Завод Барнаул"
+					],
+					[
+						"value": "vendor266",
+						"label": "Генесс ПКФ ООО"
+					],
+					[
+						"value": "vendor267",
+						"label": "Гольфстрим Компания "
+					],
+					[
+						"value": "vendor268",
+						"label": "Грин Сайд"
+					],
+					[
+						"value": "vendor269",
+						"label": "Грин Сайд, ООО"
+					],
+					[
+						"value": "vendor270",
+						"label": "Грокам"
+					],
+					[
+						"value": "vendor271",
+						"label": "Гротекс ООО"
+					],
+					[
+						"value": "vendor272",
+						"label": "Декос НПФК ООО"
+					],
+					[
+						"value": "vendor273",
+						"label": "Дель Риос ООО/Тринита НПП ЗАО"
+					],
+					[
+						"value": "vendor274",
+						"label": "Дижа Агрофирма"
+					],
+					[
+						"value": "vendor275",
+						"label": "Дина+ ООО"
+					],
+					[
+						"value": "vendor276",
+						"label": "Диод Московский Завод Экопитания"
+					],
+					[
+						"value": "vendor277",
+						"label": "Дом Соусов"
+					],
+					[
+						"value": "vendor278",
+						"label": "Дрожжевые Технологии ООО"
+					],
+					[
+						"value": "vendor279",
+						"label": "Ева ЗАО"
+					],
+					[
+						"value": "vendor280",
+						"label": "Здоровье Нации"
+					],
+					[
+						"value": "vendor281",
+						"label": "Здоровье Фирма ЗАО"
+					],
+					[
+						"value": "vendor282",
+						"label": "Зеленый доктор ООО"
+					],
+					[
+						"value": "vendor283",
+						"label": "Золотая долина ОАО"
+					],
+					[
+						"value": "vendor284",
+						"label": "Иван Чай"
+					],
+					[
+						"value": "vendor285",
+						"label": "Иван Чай "
+					],
+					[
+						"value": "vendor286",
+						"label": "Иван-да-Марья ООО"
+					],
+					[
+						"value": "vendor287",
+						"label": "Инат-Фарма ООО"
+					],
+					[
+						"value": "vendor288",
+						"label": "Ипок косметик ООО"
+					],
+					[
+						"value": "vendor289",
+						"label": "Исследовательский Центр НПФ"
+					],
+					[
+						"value": "vendor290",
+						"label": "Источник долголетия ООО"
+					],
+					[
+						"value": "vendor291",
+						"label": "Камелия НПП ООО"
+					],
+					[
+						"value": "vendor292",
+						"label": "Камелия-ЛТ"
+					],
+					[
+						"value": "vendor293",
+						"label": "Квадрат-С ООО"
+					],
+					[
+						"value": "vendor294",
+						"label": "Кима Фирма ООО"
+					],
+					[
+						"value": "vendor295",
+						"label": "Клиника Институту Биорегуляции и Геронтологии"
+					],
+					[
+						"value": "vendor296",
+						"label": "Комфорт Комплекс ООО"
+					],
+					[
+						"value": "vendor297",
+						"label": "Кондитерская Фабрика Диво-Хлеб ООО"
+					],
+					[
+						"value": "vendor298",
+						"label": "КоролевФарм ООО"
+					],
+					[
+						"value": "vendor299",
+						"label": "Корпорация Олифен ООО"
+					],
+					[
+						"value": "vendor300",
+						"label": "Красногорсклексредства"
+					],
+					[
+						"value": "vendor301",
+						"label": "Крафт ООО"
+					],
+					[
+						"value": "vendor302",
+						"label": "КурортМедСервис"
+					],
+					[
+						"value": "vendor303",
+						"label": "Лаборатории Витармонил"
+					],
+					[
+						"value": "vendor304",
+						"label": "Лек С Фирма ООО"
+					],
+					[
+						"value": "vendor305",
+						"label": "Лекопт ООО"
+					],
+					[
+						"value": "vendor306",
+						"label": "Лекра-Сэт ООО"
+					],
+					[
+						"value": "vendor307",
+						"label": "Леовит Нутрио"
+					],
+					[
+						"value": "vendor308",
+						"label": "Лето"
+					],
+					[
+						"value": "vendor309",
+						"label": "Летофарм ООО"
+					],
+					[
+						"value": "vendor310",
+						"label": "Линфас ПК ЗАО"
+					],
+					[
+						"value": "vendor311",
+						"label": "Люйшаньцзю Пекинская Компания"
+					],
+					[
+						"value": "vendor312",
+						"label": "Люйшаньцзю Пекинская Компания "
+					],
+					[
+						"value": "vendor313",
+						"label": "Малкут НП ЗАО"
+					],
+					[
+						"value": "vendor314",
+						"label": "Марбиофарм ОАО"
+					],
+					[
+						"value": "vendor315",
+						"label": "Медикомед НПФ ООО"
+					],
+					[
+						"value": "vendor316",
+						"label": "Медина Фарма АО"
+					],
+					[
+						"value": "vendor317",
+						"label": "Мелиген ЗАО"
+					],
+					[
+						"value": "vendor318",
+						"label": "МираксБиофарм ЗАО"
+					],
+					[
+						"value": "vendor319",
+						"label": "МираксБиофарма ЗАО"
+					],
+					[
+						"value": "vendor320",
+						"label": "Мираксфарма ЗАО"
+					],
+					[
+						"value": "vendor321",
+						"label": "Миролла"
+					],
+					[
+						"value": "vendor322",
+						"label": "Мирра ООО"
+					],
+					[
+						"value": "vendor323",
+						"label": "Мирролла ООО"
+					],
+					[
+						"value": "vendor324",
+						"label": "Мосфарм ОАО"
+					],
+					[
+						"value": "vendor325",
+						"label": "Мустика рату"
+					],
+					[
+						"value": "vendor326",
+						"label": "Мясной Край ООО"
+					],
+					[
+						"value": "vendor327",
+						"label": "НИИЭМ им.Пастера"
+					],
+					[
+						"value": "vendor328",
+						"label": "НП ЗАО Малкут"
+					],
+					[
+						"value": "vendor329",
+						"label": "НПК Базовый Индивидуальный Комплекс ООО"
+					],
+					[
+						"value": "vendor330",
+						"label": "НПК Растительные Ресурсы ООО"
+					],
+					[
+						"value": "vendor331",
+						"label": "НФК ООО"
+					],
+					[
+						"value": "vendor332",
+						"label": "Нарине ООО"
+					],
+					[
+						"value": "vendor333",
+						"label": "Натуральные Косметические Масла ООО"
+					],
+					[
+						"value": "vendor334",
+						"label": "Натуральные Масла ООО"
+					],
+					[
+						"value": "vendor335",
+						"label": "Натурофарм"
+					],
+					[
+						"value": "vendor336",
+						"label": "Натурфарм"
+					],
+					[
+						"value": "vendor337",
+						"label": "Нижфарм ОАО"
+					],
+					[
+						"value": "vendor338",
+						"label": "ОФМ ООО"
+					],
+					[
+						"value": "vendor339",
+						"label": "Обновление ЗАО ПФК"
+					],
+					[
+						"value": "vendor340",
+						"label": "Оболенское Фармацевтическое Предприятие АО"
+					],
+					[
+						"value": "vendor341",
+						"label": "Озон ООО"
+					],
+					[
+						"value": "vendor342",
+						"label": "ОмниФарма"
+					],
+					[
+						"value": "vendor343",
+						"label": "Отисифарм ПАО"
+					],
+					[
+						"value": "vendor344",
+						"label": "Ою Врман АБ АО"
+					],
+					[
+						"value": "vendor345",
+						"label": "Парафарм ЗАО"
+					],
+					[
+						"value": "vendor346",
+						"label": "Парафарм ООО"
+					],
+					[
+						"value": "vendor347",
+						"label": "Пик-III ООО"
+					],
+					[
+						"value": "vendor348",
+						"label": "Пищевые технологии"
+					],
+					[
+						"value": "vendor349",
+						"label": "Планета Здоровья 2000 ООО"
+					],
+					[
+						"value": "vendor350",
+						"label": "Планета Здоровья 2000 ООО "
+					],
+					[
+						"value": "vendor351",
+						"label": "Полисервис-М"
+					],
+					[
+						"value": "vendor352",
+						"label": "Полисорб"
+					],
+					[
+						"value": "vendor353",
+						"label": "Полярис ОАО"
+					],
+					[
+						"value": "vendor354",
+						"label": "Полярис ООО"
+					],
+					[
+						"value": "vendor355",
+						"label": "Пробиотика НПФ ООО"
+					],
+					[
+						"value": "vendor356",
+						"label": "Ранет"
+					],
+					[
+						"value": "vendor357",
+						"label": "РеалКапс"
+					],
+					[
+						"value": "vendor358",
+						"label": "РеалКапс "
+					],
+					[
+						"value": "vendor359",
+						"label": "Рубин ООО"
+					],
+					[
+						"value": "vendor360",
+						"label": "Руссаль Конфетная Компания"
+					],
+					[
+						"value": "vendor361",
+						"label": "СОиК ООО"
+					],
+					[
+						"value": "vendor362",
+						"label": "СТ-Медифарм ЗАО"
+					],
+					[
+						"value": "vendor363",
+						"label": "Сантэфарм"
+					],
+					[
+						"value": "vendor364",
+						"label": "Свободный-20 ЗАО"
+					],
+					[
+						"value": "vendor365",
+						"label": "Свободный-20 ЗАО "
+					],
+					[
+						"value": "vendor366",
+						"label": "Селл Биотек Лтд"
+					],
+					[
+						"value": "vendor367",
+						"label": "Сенгилевское ХПП"
+					],
+					[
+						"value": "vendor368",
+						"label": "Сесана ЗАО"
+					],
+					[
+						"value": "vendor369",
+						"label": "Сибирская Клетчатка ООО"
+					],
+					[
+						"value": "vendor370",
+						"label": "Сибирское ЗАО"
+					],
+					[
+						"value": "vendor371",
+						"label": "Сибирское Здоровье 2000"
+					],
+					[
+						"value": "vendor372",
+						"label": "Сибфармконтракт ООО"
+					],
+					[
+						"value": "vendor373",
+						"label": "Силванолс ООО"
+					],
+					[
+						"value": "vendor374",
+						"label": "Смирнов и Партнеры ООО"
+					],
+					[
+						"value": "vendor375",
+						"label": "Совет-Европродукт ООО"
+					],
+					[
+						"value": "vendor376",
+						"label": "Современные Научные Технологии"
+					],
+					[
+						"value": "vendor377",
+						"label": "ТПК Тер Групп"
+					],
+					[
+						"value": "vendor378",
+						"label": "Твинс Тэк ЗАО/Стрелец ЗАО"
+					],
+					[
+						"value": "vendor379",
+						"label": "Терра"
+					],
+					[
+						"value": "vendor380",
+						"label": "Техпластсервис"
+					],
+					[
+						"value": "vendor381",
+						"label": "Травы Алтая ООО"
+					],
+					[
+						"value": "vendor382",
+						"label": "Укрмедпром Опытный Завод ГНЦЛС ДП ГАК"
+					],
+					[
+						"value": "vendor383",
+						"label": "УфаВита"
+					],
+					[
+						"value": "vendor384",
+						"label": "УфаВита "
+					],
+					[
+						"value": "vendor385",
+						"label": "ФАРМАКОР ПРОДАКШН ООО"
+					],
+					[
+						"value": "vendor386",
+						"label": "Фаин Фудс&amp;Фармасьютикалз"
+					],
+					[
+						"value": "vendor387",
+						"label": "Факел-Дизайн ПКП ООО"
+					],
+					[
+						"value": "vendor388",
+						"label": "Фарм-Про ПК ООО"
+					],
+					[
+						"value": "vendor389",
+						"label": "Фарм-Продукт ООО"
+					],
+					[
+						"value": "vendor390",
+						"label": "Фарм-Тигода"
+					],
+					[
+						"value": "vendor391",
+						"label": "ФармВилар НПО ООО"
+					],
+					[
+						"value": "vendor392",
+						"label": "ФармВилар НПО ООО/Витамер ООО"
+					],
+					[
+						"value": "vendor393",
+						"label": "ФармПро ООО"
+					],
+					[
+						"value": "vendor394",
+						"label": "Фармакор-Продакшн"
+					],
+					[
+						"value": "vendor395",
+						"label": "Фармамед ООО"
+					],
+					[
+						"value": "vendor396",
+						"label": "Фармацевт завод Амара"
+					],
+					[
+						"value": "vendor397",
+						"label": "Фармацевтическая Фабрика"
+					],
+					[
+						"value": "vendor398",
+						"label": "Фармацевтическое Объединение им.Пастера"
+					],
+					[
+						"value": "vendor399",
+						"label": "Фармгрупп ООО"
+					],
+					[
+						"value": "vendor400",
+						"label": "Фарминдустрия ООО"
+					],
+					[
+						"value": "vendor401",
+						"label": "Фармоушн Лаб ООО"
+					],
+					[
+						"value": "vendor402",
+						"label": "Фармпродукт ООО"
+					],
+					[
+						"value": "vendor403",
+						"label": "Фармстандарт-Лексредства ОАО Курск"
+					],
+					[
+						"value": "vendor404",
+						"label": "Фармстандарт-Марбиофарм ОАО"
+					],
+					[
+						"value": "vendor405",
+						"label": "Фармстандарт-Томскхимфарм ОАО"
+					],
+					[
+						"value": "vendor406",
+						"label": "Фармстандарт-УфаВита ОАО"
+					],
+					[
+						"value": "vendor407",
+						"label": "Фелицата Холдинг ООО"
+					],
+					[
+						"value": "vendor408",
+						"label": "Фермент Москва"
+					],
+					[
+						"value": "vendor409",
+						"label": "Филицата Холдинг ООО"
+					],
+					[
+						"value": "vendor410",
+						"label": "Фирма Вита"
+					],
+					[
+						"value": "vendor411",
+						"label": "Фитера ООО"
+					],
+					[
+						"value": "vendor412",
+						"label": "Фитолон-Fitolon ООО"
+					],
+					[
+						"value": "vendor413",
+						"label": "Фитофарм ПКФ Анапа ООО"
+					],
+					[
+						"value": "vendor414",
+						"label": "Фора-Фарм ООО"
+					],
+					[
+						"value": "vendor415",
+						"label": "Хорст Компания ООО"
+					],
+					[
+						"value": "vendor416",
+						"label": "Хс Кловер"
+					],
+					[
+						"value": "vendor417",
+						"label": "ЦНКБ ФГУП"
+					],
+					[
+						"value": "vendor418",
+						"label": "Царь Сиропов ООО"
+					],
+					[
+						"value": "vendor419",
+						"label": "Цэрера ТД ООО"
+					],
+					[
+						"value": "vendor420",
+						"label": "Черникова Г.В. ЧП"
+					],
+					[
+						"value": "vendor421",
+						"label": "Щелковский Витаминный Завод"
+					],
+					[
+						"value": "vendor422",
+						"label": "Эвалар ЗАО"
+					],
+					[
+						"value": "vendor423",
+						"label": "Экзон РУП"
+					],
+					[
+						"value": "vendor424",
+						"label": "Экко Плюс"
+					],
+					[
+						"value": "vendor425",
+						"label": "Экко Плюс "
+					],
+					[
+						"value": "vendor426",
+						"label": "Эко-Мон ООО"
+					],
+					[
+						"value": "vendor427",
+						"label": "ЭкоФарм НПЦ ООО"
+					],
+					[
+						"value": "vendor428",
+						"label": "Экология Питания НПО"
+					],
+					[
+						"value": "vendor429",
+						"label": "Экотекс ООО"
+					],
+					[
+						"value": "vendor430",
+						"label": "Экспертбио ООО"
+					],
+					[
+						"value": "vendor431",
+						"label": "Элюсан НПЦ ООО"
+					],
+					[
+						"value": "vendor432",
+						"label": "Эманси Лаборатория ООО"
+					],
+					[
+						"value": "vendor433",
+						"label": "Эско-Фарм ООО"
+					],
+					[
+						"value": "vendor434",
+						"label": "Ювикс-Фарм"
+					],
+					[
+						"value": "vendor435",
+						"label": "Юг Фармацевтическая Фабрика ООО"
+					],
+					[
+						"value": "vendor436",
+						"label": "Юнифарм ООО"
+					],
+					[
+						"value": "vendor437",
+						"label": "Юнифарм ООО "
+					],
+					[
+						"value": "vendor438",
+						"label": "Ягодное ЗАО"
+					],
+					[
+						"value": "vendor439",
+						"label": "Янтарное ООО"
+					]
+				]} />
+			</filter-accordeon>
+		</div>
+
+		<div class="shop-category-filters__filter">
+			<filter-accordeon title="Действующее вещество" type="active-ingredient">
+				<filter-search-list items={[
+					[
+						"value": "active-ingredient1",
+						"label": "Bifidobacterium animalis subsp. lactis (BB-12)"
+					],
+					[
+						"value": "active-ingredient2",
+						"label": "D-манноза"
+					],
+					[
+						"value": "active-ingredient3",
+						"label": "L-Тирозин"
+					],
+					[
+						"value": "active-ingredient4",
+						"label": "L-Фенилаланин"
+					],
+					[
+						"value": "active-ingredient5",
+						"label": "L-аргинин"
+					],
+					[
+						"value": "active-ingredient6",
+						"label": "L-карнитин"
+					],
+					[
+						"value": "active-ingredient7",
+						"label": "L-карнитин + Витамин B2"
+					],
+					[
+						"value": "active-ingredient8",
+						"label": "L-карнитин L-тартрат"
+					],
+					[
+						"value": "active-ingredient9",
+						"label": "L-карнитина"
+					],
+					[
+						"value": "active-ingredient10",
+						"label": "L-лизин"
+					],
+					[
+						"value": "active-ingredient11",
+						"label": "L-триптофан"
+					],
+					[
+						"value": "active-ingredient12",
+						"label": "Lactobacillus brevis CECT7480 + Lactobacillus plantarum CECT7481 + Pedicoccus acidilactici"
+					],
+					[
+						"value": "active-ingredient13",
+						"label": "Lactobacillus plantarum CECT7527, CECT7528, CECT7529"
+					],
+					[
+						"value": "active-ingredient14",
+						"label": "Lactobacillus plantarum DR7"
+					],
+					[
+						"value": "active-ingredient15",
+						"label": "Lactobacillus plantarum I1001"
+					],
+					[
+						"value": "active-ingredient16",
+						"label": "Lactobacillus reuteri Protectis"
+					],
+					[
+						"value": "active-ingredient17",
+						"label": "Lactobacillus rhamnosus GG"
+					],
+					[
+						"value": "active-ingredient18",
+						"label": "Lactobacillus rhamnosus GG (LGG®)"
+					],
+					[
+						"value": "active-ingredient19",
+						"label": "Lactobacillus sakei Probio 65"
+					],
+					[
+						"value": "active-ingredient20",
+						"label": "PylopassTM"
+					],
+					[
+						"value": "active-ingredient21",
+						"label": "Алтея экстракт + Солодки экстракт + Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient22",
+						"label": "Альфа-галактозидаза"
+					],
+					[
+						"value": "active-ingredient23",
+						"label": "Альфа-липоевая кислота"
+					],
+					[
+						"value": "active-ingredient24",
+						"label": "Аскорбат кальция"
+					],
+					[
+						"value": "active-ingredient25",
+						"label": "Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient26",
+						"label": "Аскорбиновая кислота (Витамин С)"
+					],
+					[
+						"value": "active-ingredient27",
+						"label": "Аскорбиновая кислота + Цинк"
+					],
+					[
+						"value": "active-ingredient28",
+						"label": "Бета-каротин + Витамин Е + Витамин С "
+					],
+					[
+						"value": "active-ingredient29",
+						"label": "Биотин"
+					],
+					[
+						"value": "active-ingredient30",
+						"label": "Бифидобактерии, Лактобактерии"
+					],
+					[
+						"value": "active-ingredient31",
+						"label": "Валериана + Мята + Мелисса"
+					],
+					[
+						"value": "active-ingredient32",
+						"label": "Валериана + Хмель + Мята"
+					],
+					[
+						"value": "active-ingredient33",
+						"label": "Витамин А + Витамин Е"
+					],
+					[
+						"value": "active-ingredient34",
+						"label": "Витамин В12"
+					],
+					[
+						"value": "active-ingredient35",
+						"label": "Витамин Е"
+					],
+					[
+						"value": "active-ingredient36",
+						"label": "Витамин К2 + Холекальциферол"
+					],
+					[
+						"value": "active-ingredient37",
+						"label": "Витамин С"
+					],
+					[
+						"value": "active-ingredient38",
+						"label": "Витамин С + Цинк"
+					],
+					[
+						"value": "active-ingredient39",
+						"label": "Гиалуроновая кислота"
+					],
+					[
+						"value": "active-ingredient40",
+						"label": "Гиалуроновая кислота "
+					],
+					[
+						"value": "active-ingredient41",
+						"label": "Гидролизат коллагена"
+					],
+					[
+						"value": "active-ingredient42",
+						"label": "Гинкго Билоба"
+					],
+					[
+						"value": "active-ingredient43",
+						"label": "Гинкго билоба экстракт + Глицин"
+					],
+					[
+						"value": "active-ingredient44",
+						"label": "Глицин"
+					],
+					[
+						"value": "active-ingredient45",
+						"label": "Глицин "
+					],
+					[
+						"value": "active-ingredient46",
+						"label": "Глицин + Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient47",
+						"label": "Глицин + В1 + В6 + В12"
+					],
+					[
+						"value": "active-ingredient48",
+						"label": "Глицин + Витамин D3"
+					],
+					[
+						"value": "active-ingredient49",
+						"label": "Глицин + Пассифлора + Гриффония"
+					],
+					[
+						"value": "active-ingredient50",
+						"label": "Глицин + Пассифлора + Гриффония "
+					],
+					[
+						"value": "active-ingredient51",
+						"label": "Глюкозамин + Хондроитин"
+					],
+					[
+						"value": "active-ingredient52",
+						"label": "Глюкозамин + хондроитин"
+					],
+					[
+						"value": "active-ingredient53",
+						"label": "Двуспиральная рибонуклеиновая кислота (дсРНК)"
+					],
+					[
+						"value": "active-ingredient54",
+						"label": "Декстроза"
+					],
+					[
+						"value": "active-ingredient55",
+						"label": "Дигидрокверцетин"
+					],
+					[
+						"value": "active-ingredient56",
+						"label": "Диоксид кремния"
+					],
+					[
+						"value": "active-ingredient57",
+						"label": "Железо + Витамин С"
+					],
+					[
+						"value": "active-ingredient58",
+						"label": "Зверобой + Хмель + Боярышник"
+					],
+					[
+						"value": "active-ingredient59",
+						"label": "Изофлавоны (генистеин)"
+					],
+					[
+						"value": "active-ingredient60",
+						"label": "Индол-3-карбинол + Брокколи"
+					],
+					[
+						"value": "active-ingredient61",
+						"label": "Инозид + фолиевая кислота"
+					],
+					[
+						"value": "active-ingredient62",
+						"label": "Инозит + L-метилфолат кальция"
+					],
+					[
+						"value": "active-ingredient63",
+						"label": "Инулин + масляная кислота"
+					],
+					[
+						"value": "active-ingredient64",
+						"label": "Йод"
+					],
+					[
+						"value": "active-ingredient65",
+						"label": "Календулы лекарственной цветки"
+					],
+					[
+						"value": "active-ingredient66",
+						"label": "Калия йодид"
+					],
+					[
+						"value": "active-ingredient67",
+						"label": "Кальция глюконат"
+					],
+					[
+						"value": "active-ingredient68",
+						"label": "Карнозин"
+					],
+					[
+						"value": "active-ingredient69",
+						"label": "Кислота лимонная безводная"
+					],
+					[
+						"value": "active-ingredient70",
+						"label": "Колекальциферол"
+					],
+					[
+						"value": "active-ingredient71",
+						"label": "Колекальциферол "
+					],
+					[
+						"value": "active-ingredient72",
+						"label": "Концентрат сушеного топинамбура"
+					],
+					[
+						"value": "active-ingredient73",
+						"label": "Коэнзим Q 10"
+					],
+					[
+						"value": "active-ingredient74",
+						"label": "Коэнзим Q10"
+					],
+					[
+						"value": "active-ingredient75",
+						"label": "Коэнзим Q10 + Витамин Е"
+					],
+					[
+						"value": "active-ingredient76",
+						"label": "Кремний + биотин + цинк"
+					],
+					[
+						"value": "active-ingredient77",
+						"label": "Лактобактерии + бифидобактерии"
+					],
+					[
+						"value": "active-ingredient78",
+						"label": "Лактоза"
+					],
+					[
+						"value": "active-ingredient79",
+						"label": "Левокарнитин"
+					],
+					[
+						"value": "active-ingredient80",
+						"label": "Лецитин"
+					],
+					[
+						"value": "active-ingredient81",
+						"label": "Льняное масло"
+					],
+					[
+						"value": "active-ingredient82",
+						"label": "Лютеин"
+					],
+					[
+						"value": "active-ingredient83",
+						"label": "Магний"
+					],
+					[
+						"value": "active-ingredient84",
+						"label": "Магний + В1 + В6 + В9"
+					],
+					[
+						"value": "active-ingredient85",
+						"label": "Магний + Витамин B6"
+					],
+					[
+						"value": "active-ingredient86",
+						"label": "Масляный раствор убихинона (коэнзим Q10)"
+					],
+					[
+						"value": "active-ingredient87",
+						"label": "Мед + Экстракт шалфея"
+					],
+					[
+						"value": "active-ingredient88",
+						"label": "Метилметионинсульфония хлорид"
+					],
+					[
+						"value": "active-ingredient89",
+						"label": "Мультивитамины"
+					],
+					[
+						"value": "active-ingredient90",
+						"label": "Мумие очищенное"
+					],
+					[
+						"value": "active-ingredient91",
+						"label": "Натрия пикосульфат"
+					],
+					[
+						"value": "active-ingredient92",
+						"label": "Облепихи масло"
+					],
+					[
+						"value": "active-ingredient93",
+						"label": "Одуванчика корни"
+					],
+					[
+						"value": "active-ingredient94",
+						"label": "Омега 3"
+					],
+					[
+						"value": "active-ingredient95",
+						"label": "Омега 3-6-9"
+					],
+					[
+						"value": "active-ingredient96",
+						"label": "Омега-3"
+					],
+					[
+						"value": "active-ingredient97",
+						"label": "Папайи энзимы"
+					],
+					[
+						"value": "active-ingredient98",
+						"label": "Пивные дрожжи"
+					],
+					[
+						"value": "active-ingredient99",
+						"label": "Подорожник"
+					],
+					[
+						"value": "active-ingredient100",
+						"label": "Подорожник + Мать-и-мачеха + Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient101",
+						"label": "Поливитамин"
+					],
+					[
+						"value": "active-ingredient102",
+						"label": "Пробиотические микроорганизмы"
+					],
+					[
+						"value": "active-ingredient103",
+						"label": "Пустырник + Витамин С"
+					],
+					[
+						"value": "active-ingredient104",
+						"label": "Пустырник + Магний + В6"
+					],
+					[
+						"value": "active-ingredient105",
+						"label": "Пустырника экстракт + Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient106",
+						"label": "Расторопша"
+					],
+					[
+						"value": "active-ingredient107",
+						"label": "Расторопша пятнистая"
+					],
+					[
+						"value": "active-ingredient108",
+						"label": "Расторопши масло"
+					],
+					[
+						"value": "active-ingredient109",
+						"label": "Расторопши экстракт"
+					],
+					[
+						"value": "active-ingredient110",
+						"label": "Рыбий жир"
+					],
+					[
+						"value": "active-ingredient111",
+						"label": "Рыбий жир из печени трески"
+					],
+					[
+						"value": "active-ingredient112",
+						"label": "Рыбный жир"
+					],
+					[
+						"value": "active-ingredient113",
+						"label": "Селексен + Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient114",
+						"label": "Селен"
+					],
+					[
+						"value": "active-ingredient115",
+						"label": "Симетикон"
+					],
+					[
+						"value": "active-ingredient116",
+						"label": "Симетикон + Фенхель"
+					],
+					[
+						"value": "active-ingredient117",
+						"label": "Таурин"
+					],
+					[
+						"value": "active-ingredient118",
+						"label": "Таурин + Черники экстракт"
+					],
+					[
+						"value": "active-ingredient119",
+						"label": "Фермент лактаза"
+					],
+					[
+						"value": "active-ingredient120",
+						"label": "Фолиевая кислота + В6 + В12"
+					],
+					[
+						"value": "active-ingredient121",
+						"label": "Фолиевая кислота + Йод"
+					],
+					[
+						"value": "active-ingredient122",
+						"label": "Хитозан"
+					],
+					[
+						"value": "active-ingredient123",
+						"label": "Хлорофилл"
+					],
+					[
+						"value": "active-ingredient124",
+						"label": "Холекальциферол"
+					],
+					[
+						"value": "active-ingredient125",
+						"label": "Холекальциферол "
+					],
+					[
+						"value": "active-ingredient126",
+						"label": "Холин + Инозитол +Метионин"
+					],
+					[
+						"value": "active-ingredient127",
+						"label": "Хондроитин + Глюкозамин"
+					],
+					[
+						"value": "active-ingredient128",
+						"label": "Хондроитин + Глюкозамин + Гиалуронат натрия"
+					],
+					[
+						"value": "active-ingredient129",
+						"label": "Хром"
+					],
+					[
+						"value": "active-ingredient130",
+						"label": "Хрома пиколинат"
+					],
+					[
+						"value": "active-ingredient131",
+						"label": "Целлюлоза микрокристаллическая"
+					],
+					[
+						"value": "active-ingredient132",
+						"label": "Цинк"
+					],
+					[
+						"value": "active-ingredient133",
+						"label": "Цинк + В6"
+					],
+					[
+						"value": "active-ingredient134",
+						"label": "Цинк + Витамин С"
+					],
+					[
+						"value": "active-ingredient135",
+						"label": "Цинка пиколинат "
+					],
+					[
+						"value": "active-ingredient136",
+						"label": "Черники обыкновенной плоды"
+					],
+					[
+						"value": "active-ingredient137",
+						"label": "Шалфея лекарственного листьев экстракт"
+					],
+					[
+						"value": "active-ingredient138",
+						"label": "Шиповника плодов экстракт"
+					],
+					[
+						"value": "active-ingredient139",
+						"label": "Эвкалипт"
+					],
+					[
+						"value": "active-ingredient140",
+						"label": "Экстракт гинкго билоба + Глицин"
+					],
+					[
+						"value": "active-ingredient141",
+						"label": "Экстракт грейпфрута"
+					],
+					[
+						"value": "active-ingredient142",
+						"label": "Экстракт исландского мха"
+					],
+					[
+						"value": "active-ingredient143",
+						"label": "Экстракт корня солодки + Аскорбиновая кислота"
+					],
+					[
+						"value": "active-ingredient144",
+						"label": "Экстракт куркумы "
+					],
+					[
+						"value": "active-ingredient145",
+						"label": "Экстракт листьев артишока колючего"
+					],
+					[
+						"value": "active-ingredient146",
+						"label": "Экстракт мартинии душистой, экстракт коры белой ивы; рутин"
+					],
+					[
+						"value": "active-ingredient147",
+						"label": "Экстракт прополиса"
+					],
+					[
+						"value": "active-ingredient148",
+						"label": "Экстракт семян расторопши + флаволигнаны"
+					],
+					[
+						"value": "active-ingredient149",
+						"label": "Экстракт эхинацеи + Ментол"
+					],
+					[
+						"value": "active-ingredient150",
+						"label": "Элеутерококк"
+					],
+					[
+						"value": "active-ingredient151",
+						"label": "Эхинацеи пурпурной экстракт"
+					],
+					[
+						"value": "active-ingredient152",
+						"label": "Янтарная кислота"
+					],
+					[
+						"value": "active-ingredient153",
+						"label": "вещество 1"
+					],
+					[
+						"value": "active-ingredient154",
+						"label": "дсРНК"
+					]
+				]} />
+			</filter-accordeon>
+		</div>
+
+		<div class="shop-category-filters__buttons">
+			<form-button type="reset" theme="light" size="tight" disabled={true}>Сбросить</form-button>
+			<form-button class="shop-category-filters__button-apply" size="tight">Применить</form-button>
+		</div>
+	</div>
+</form>

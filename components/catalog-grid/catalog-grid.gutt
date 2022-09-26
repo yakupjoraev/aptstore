@@ -1,0 +1,107 @@
+<import name="common-header" from="../common-header/common-header.gutt" />
+
+<div class="catalog-grid">
+	<common-header>Каталог aptstore.ru</common-header>
+
+	<div class="catalog-grid__grid">
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="discounts.svg" />
+			</span>
+			<span class="catalog-grid__label">Акции</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="dietary-supplement.svg" />
+			</span>
+			<span class="catalog-grid__label">БАД</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="household-chemicals.svg" />
+			</span>
+			<span class="catalog-grid__label">Бытовая химия</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="vitamins.svg" />
+			</span>
+			<span class="catalog-grid__label">Витамины</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="cosmetics.svg" />
+			</span>
+			<span class="catalog-grid__label">Гигиена и&nbsp;косметика</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="diet-sports.svg" />
+			</span>
+			<span class="catalog-grid__label">Диета, спорт, питание</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="medications.svg" />
+			</span>
+			<span class="catalog-grid__label">Лекарственные препараты</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="mom-and-baby.svg" />
+			</span>
+			<span class="catalog-grid__label">Мама и малыш</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="medical-products.svg" />
+			</span>
+			<span class="catalog-grid__label">Медицинские изделия</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="medical-devices.svg" />
+			</span>
+			<span class="catalog-grid__label">Медицинские приборы</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="optics.svg" />
+			</span>
+			<span class="catalog-grid__label">Оптика</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="orthopedic-products.svg" />
+			</span>
+			<span class="catalog-grid__label">Ортопедические изделия</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="rest.svg" />
+			</span>
+			<span class="catalog-grid__label">Прочие товары</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="other.svg" />
+			</span>
+			<span class="catalog-grid__label">Разное</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="insect-repellents.svg" />
+			</span>
+			<span class="catalog-grid__label">Средства от&nbsp;насекомых</span>
+		</a>
+		<a href="category.html" class="catalog-grid__link">
+			<span class="catalog-grid__icon">
+				<inline-svg src="sets.svg" />
+			</span>
+			<span class="catalog-grid__label">Наборы</span>
+		</a>
+
+		<span class="catalog-grid__blank"></span>
+		<span class="catalog-grid__blank"></span>
+	</div>
+</div>

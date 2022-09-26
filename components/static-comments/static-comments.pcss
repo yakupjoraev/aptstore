@@ -1,0 +1,43 @@
+@import url('../../layouts/variables.pcss');
+
+.static-comments {
+	margin-top: 24px;
+}
+
+.static-comments__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (--tablet) {
+		justify-content: flex-start;
+	}
+}
+
+.static-comments__heading {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	color: var(--black);
+
+	@media (--tablet) {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+.static-comments__leave {
+	margin-left: 20px;
+	text-align: right;
+
+	@media (--tablet) {
+		margin-left: 14px;
+	}
+}
+
+.static-comments__leave-comment {
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--secondary);
+	text-decoration: none;
+}

@@ -1,0 +1,153 @@
+@keyframes modal-window-appears {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes modal-window-disappears {
+	to {
+		opacity: 0;
+	}
+}
+
+.modal-window {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	opacity: 0;
+
+	&.show {
+		display: block;
+		animation: modal-window-appears 0.3s ease-in-out forwards;
+	}
+
+	&.hide {
+		opacity: 1;
+		animation: modal-window-disappears 0.3s ease-in-out forwards;
+	}
+}
+
+@keyframes appears-animation {
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes disappears-left-animation {
+	to {
+		opacity: 0;
+		transform: translate(-50px, 0);
+	}
+}
+
+@keyframes disappears-bottom-animation {
+	to {
+		opacity: 0;
+		transform: translate(0, 50px);
+	}
+}
+
+.modal-window__frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	box-sizing: border-box;
+	padding: 12px;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+
+	&.appears-top {
+		display: flex;
+		transform: translate(0, -50px);
+		animation: appears-animation 0.3s ease-in-out forwards;
+	}
+
+	&.appears-left {
+		display: flex;
+		transform: translate(50px, 0);
+		animation: appears-animation 0.3s ease-in-out forwards;
+	}
+
+	&.disappears-left {
+		opacity: 1;
+		transform: translate(0, 0);
+		animation: disappears-left-animation 0.3s ease-in-out forwards;
+	}
+
+	&.disappears-bottom {
+		opacity: 1;
+		transform: translate(0, 0);
+		animation: disappears-bottom-animation 0.3s ease-in-out forwards;
+	}
+
+	@media (width >= 440px) {
+		padding: 30px;
+	}
+}
+
+.modal-window__content {
+	max-width: 95%;
+
+	@media (width >= 440px) {
+		position: relative;
+	}
+}
+
+.modal-window__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	padding: 0;
+	width: 44px;
+	height: 44px;
+	background: resolve('./close.svg') center no-repeat;
+	font-size: 0;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	@media (width >= 440px) {
+		top: -13px;
+		right: -45px;
+	}
+}
+
+.modal-window__columns {
+	@media (--desktop-small) {
+		display: flex;
+	}
+
+	& > * {
+		flex-shrink: 0;
+	}
+}
+
+.modal-window__column {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__column > * {
+	flex-grow: 1;
+}
+
+.modal-window__column:nth-child(n+2) {
+	display: none;
+
+	@media (--desktop-small) {
+		display: flex;
+	}
+}

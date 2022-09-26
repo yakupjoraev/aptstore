@@ -1,0 +1,58 @@
+@import url('../../layouts/variables.pcss');
+
+.product-comments-media {
+	@media (--tablet) {
+		margin-top: 36px;
+	}
+}
+
+.product-comments-media__header {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.product-comments-media__photos {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -6px;
+	height: 110px;
+	overflow: hidden;
+}
+
+.product-comments-media__photo {
+	position: relative;
+	border-radius: 20px;
+	margin: 12px 6px 0;
+
+	&::before,
+	&::after {
+		content: '';
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		width: 100%;
+	}
+
+	&::before {
+		top: 0;
+		bottom: 0;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.9);
+	}
+
+	&::after {
+		content: '+' counter(product-comment-photo);
+		counter-increment: product-comment-photo -1;
+		position: absolute;
+		top: 50%;
+		margin-top: -0.5em;
+		text-align: center;
+		color: var(--secondary);
+	}
+
+	&.last-visible::before,
+	&.last-visible::after {
+		visibility: visible;
+	}
+}

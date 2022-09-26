@@ -1,0 +1,50 @@
+.swich-button {
+	align-self: center;
+}
+
+.swich-button__label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.swich-button__checkbox {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.swich-button__slider {
+	position: relative;
+	width: 50px;
+	height: 26px;
+	background-color: #ccc;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.swich-button__slider::before {
+	position: absolute;
+	content: '';
+	left: 2px;
+	bottom: 2px;
+	height: 22px;
+	width: 22px;
+	border-radius: 20px;
+	background-color: white;
+	transition: transform 0.1s ease-in-out;
+}
+
+.swich-button__checkbox:checked + .swich-button__slider {
+	background-color: var(--secondary);
+}
+
+.swich-button__checkbox:focus + .swich-button__slider {
+	box-shadow: 0 0 1px var(--secondary);
+}
+
+.swich-button__checkbox:checked + .swich-button__slider::before {
+	transform: translateX(24px);
+}

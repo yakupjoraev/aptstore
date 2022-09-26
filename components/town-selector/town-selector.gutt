@@ -1,0 +1,125 @@
+<import name="modal-window" from="../modal-window/modal-window.gutt" />
+<import name="scrollable-area" from="../scrollable-area/scrollable-area.gutt" />
+
+<modal-window name="town-selector" no-close-button={true}>
+	<div class="town-selector" data-town-selector>
+		<h3 class="town-selector__header">Выберите город</h3>
+		<button type="button" class="town-selector__close" data-close>Закрыть</button>
+
+		<div class="town-selector__current-value">
+			Ваш город: <strong>Петропавловск-Камчатский</strong>
+		</div>
+
+		<div class="town-selector__field">
+			<input class="town-selector__input" type="text" name="search-town" placeholder="Напишите город" />
+			<button type="button" class="town-selector__clear" data-clear>Очистить</button>
+		</div>
+
+		<div class="town-selector__list">
+			<scrollable-area>
+				<ul class="town-selector__items">
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Москва</strong>
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Санкт-Петербург</strong>
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Пермь,</strong> Пермский край
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Нижний Новгород,</strong> Нижегородская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Новосибирск,</strong> Новосибирская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Ростов-на-Дону,</strong> Ростовская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Воронеж,</strong> Воронежская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Краснодар,</strong> Краснодарский Край
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Екатеринбург,</strong> Свердловская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Уфа,</strong> Республика Башкортостан
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Казань,</strong> Республика Татарстан
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Тюмень,</strong> Тюменская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Челябинск,</strong> Челябирская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Самара,</strong> Самарская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Красноярск,</strong> Красноярский край
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Новосибирск,</strong> Новосибирская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Ставрополь,</strong> Ставропольский край
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Кемерово,</strong> Кемеровская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Рязань,</strong> Рязанская область
+						</button>
+					</li>
+					<li class="town-selector__item">
+						<button type="button" class="town-selector__town">
+							<strong>Саранск,</strong> Республика Мордовия
+						</button>
+					</li>
+				</ul>
+			</scrollable-area>
+		</div>
+	</div>
+</modal-window>

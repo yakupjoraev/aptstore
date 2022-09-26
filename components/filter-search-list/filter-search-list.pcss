@@ -1,0 +1,51 @@
+@import url('../../layouts/variables.pcss');
+
+.filter-search-list {
+}
+
+.filter-search-list__filter {
+	box-sizing: border-box;
+	border: 1px solid var(--light-gray);
+	border-radius: 20px;
+	padding: 8px 10px;
+	width: 100%;
+	height: 30px;
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 14px;
+	box-shadow: 0 30px 30px rgba(196, 196, 196, 0.13);
+	outline: none;
+
+	&::placeholder {
+		color: var(--light-gray);
+	}
+
+	@media (--tablet) {
+		padding: 11px 20px;
+		height: 40px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+.filter-search-list__items {
+	margin-top: 10px;
+	height: 130px;
+
+	@media (--tablet) {
+		margin-top: 15px;
+		height: 260px;
+	}
+}
+
+.filter-search-list__item {
+	position: relative;
+
+	& + & {
+		margin-top: 6px;
+
+		@media (--tablet) {
+			margin-top: 15px;
+		}
+	}
+}

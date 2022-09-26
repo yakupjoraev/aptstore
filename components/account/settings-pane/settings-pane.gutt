@@ -1,0 +1,81 @@
+<import name="account-pane" from="../account-pane/account-pane.gutt" />
+<import name="delivery-card" from="../../delivery-card/delivery-card.gutt" />
+<import name="change-delivery-option-modal" from="../change-delivery-option-modal/change-delivery-option-modal.gutt" />
+<import name="change-delivery-office-modal" from="../change-delivery-office-modal/change-delivery-office-modal.gutt" />
+<import name="change-payment-method-modal" from="../change-payment-method-modal/change-payment-method-modal.gutt" />
+
+<param name={$class} value="" />
+
+<account-pane class={classes("settings-pane", $class)}>
+	<div class="settings-pane__title">
+		<span class="settings-pane__title-label">Настройки</span>
+	</div>
+
+	<div class="settings-pane__section">
+		<div class="settings-pane__section-title">
+			<span>Способ доставки по&nbsp;умолчанию</span>
+			<button class="settings-pane__edit-button" type="button" data-open-modal="change-delivery-option-modal">
+				<inline-svg src="./settings-pane-edit.svg" />
+			</button>
+		</div>
+
+		<delivery-card
+			class="settings-pane__delivery-card"
+			title="Самовывоз"
+			description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+			start-price="200 ₽"
+			price="0 ₽"
+			flat={true}
+			tags={[
+				[
+					"type": "discount",
+					"label": "Скидка"
+				],
+				[
+					"type": "gift",
+					"label": "Подарок"
+				],
+				[
+					"type": "free",
+					"label": "Б"
+				]
+			]}
+		/>
+	</div>
+
+	<div class="settings-pane__section">
+		<div class="settings-pane__section-title">
+			<span>Пункт выдачи по&nbsp;умолчанию</span>
+			<button class="settings-pane__edit-button" type="button" data-open-modal="change-delivery-office-modal">
+				<inline-svg src="./settings-pane-edit.svg" />
+			</button>
+		</div>
+
+		<div class="settings-pane__delivery">
+			<div class="settings-pane__delivery-name">Ваша № 1</div>
+			<div class="settings-pane__delivery-address">ул. Раменки, д. 3, с. 1</div>
+			<div class="settings-pane__delivery-contacts">
+				м. Раменки, 3 мин<br />
+				Ежедневно: 09:00-21:00
+			</div>
+			<div class="settings-pane__delivery-phone">8 (495) 419 18 18</div>
+		</div>
+	</div>
+
+	<div class="settings-pane__section">
+		<div class="settings-pane__section-title">
+			<span>Способ оплаты по&nbsp;умолчанию</span>
+			<button class="settings-pane__edit-button" type="button" data-open-modal="change-payment-method-modal">
+				<inline-svg src="./settings-pane-edit.svg" />
+			</button>
+		</div>
+
+		<div class="settings-pane__payment">
+			Наличными курьеру
+		</div>
+	</div>
+</account-pane>
+
+<change-delivery-option-modal />
+<change-delivery-office-modal />
+<change-payment-method-modal />

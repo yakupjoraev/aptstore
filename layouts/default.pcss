@@ -1,0 +1,142 @@
+@import url('./variables.pcss');
+
+html {
+	height: 100%;
+}
+
+body {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	font: 16px/1.25 'Roboto', sans-serif;
+}
+
+a,
+button {
+	transition: all 0.1s ease-in-out;
+}
+
+a:hover,
+button:hover {
+	transition: all 0s step-start;
+}
+
+a {
+	text-decoration: none;
+	color: var(--secondary);
+}
+
+input,
+textarea,
+button {
+	font: inherit;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+button:disabled {
+	cursor: default;
+}
+
+img {
+	max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type='text']::-ms-clear { display: none; width: 0; height: 0; }
+input[type='text']::-ms-reveal { display: none; width: 0; height: 0; }
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration { display: none; }
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input[type='number']:hover,
+input[type='number']:focus {
+	-moz-appearance: number-input;
+}
+
+input,
+textarea {
+	&:focus {
+		border-color: var(--secondary);
+		outline: var(--secondary);
+	}
+}
+
+.container {
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 var(--padding-base);
+	max-width: calc(1300px + var(--padding-base) * 2);
+
+	@media (--mobile-medium) {
+		padding: 0 var(--padding-mobile);
+		max-width: calc(1300px + var(--padding-mobile) * 2);
+	}
+
+	@media (--desktop-small) {
+		padding: 0 var(--padding-desktop);
+		max-width: calc(1300px + var(--padding-desktop) * 2);
+	}
+}
+
+.section {
+	margin-top: 50px;
+	width: 100%;
+
+	@media (--mobile-medium) {
+		margin-top: 40px;
+	}
+
+	@media (--desktop-medium) {
+		margin-top: 80px;
+	}
+}
+
+.root {
+	position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	& > *:nth-child(2) {
+		box-sizing: border-box;
+		flex-grow: 1;
+		width: 100%;
+	}
+
+	&.dragover::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 5;
+		background: rgba(0, 0, 0, 0.3);
+		pointer-events: none;
+	}
+}
+
+.page {
+	margin-top: 30px;
+
+	@media (--tablet) {
+		margin-top: 40px;
+	}
+}

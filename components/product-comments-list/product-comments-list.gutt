@@ -1,0 +1,66 @@
+<import name="drop-down" from="../dropdown/dropdown.gutt" />
+<import name="form-checkbox" from="../form/checkbox/checkbox.gutt" />
+<import name="comment-list" from="../comment-list/comment-list.gutt" />
+
+<param name={$comments} value={[
+	[
+		"name": "Алексей",
+		"bought": true,
+		"date": "11 сентября 2021",
+		"rating": 5,
+		"worth": "выгодная цена , качество!",
+		"defect": "нет",
+		"comment": "хорошо обезбалиевает! отлично помогает при головных и друших болях! только сильно им нельзя злаупотреблят ,  разжижает кровь и может идти кровь носом ! а так отличное средство от всего!",
+		"likes": 7,
+		"dislikes": 1,
+		"active": "like",
+		"attachments": [
+			"comment-attachment1.jpg",
+			"comment-attachment2.jpg"
+		],
+		"answers": [
+			[
+				"name": "Aptstore.ru",
+				"userpic": "apt-userpic.jpg",
+				"reply": "Алексей",
+				"verified": true,
+				"date": "13 сентября 2021",
+				"comment": "нельзя применять людям с повышенной кислотностью.",
+				"likes": 5,
+				"dislikes": 1,
+				"active": "dislike",
+				"attachments": [
+					"comment-attachment1.jpg",
+					"comment-attachment2.jpg"
+				]
+			]
+		]
+	],
+	[
+		"name": "Борис С.",
+		"bought": true,
+		"date": "11 сентября 2021",
+		"rating": 5,
+		"worth": "выгодная цена , качество!",
+		"defect": "нет",
+		"comment": "хорошо обезбалиевает! отлично помогает при головных и друших болях! только сильно им нельзя злаупотреблят ,  разжижает кровь и может идти кровь носом ! а так отличное средство от всего!",
+		"likes": 5,
+		"dislikes": 2
+	]
+]} />
+
+<div class="product-comments-list">
+	<div class="product-comments-list__controls">
+		<div class="product-comments-list__select">
+			<drop-down label="Сначала популярные" value="popular" theme="light">
+				<button type="button" value="popular">Сначала популярные</button>
+				<button type="button" value="cheep">Сначала дешевые</button>
+			</drop-down>
+		</div>
+
+		<form-checkbox class="product-comments-list__checkbox" name="only-photo" size="l" />
+		<label class="product-comments-list__only-photo" for="only-photo">Только с&nbsp;фото</label>
+	</div>
+
+	<comment-list comments={$comments} />
+</div>

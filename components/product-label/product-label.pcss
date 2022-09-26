@@ -1,0 +1,26 @@
+@import url('../../layouts/variables.pcss');
+
+.product-label {
+	z-index: 2;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: inline-block;
+	border-radius: 15px;
+	padding: 4px 8px;
+	max-width: 100%;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	color: var(--white);
+	background: var(--primary);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	&.product-label--GIFT {
+		background: #4b90b7;
+	}
+
+	&.product-label--SET {
+		background: #e1c533;
+	}
+}

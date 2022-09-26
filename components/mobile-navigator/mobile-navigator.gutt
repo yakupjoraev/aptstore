@@ -1,0 +1,17 @@
+<div class="mobile-navigator">
+	<ul class="mobile-navigator__list">
+		<li class="mobile-navigator__item">
+			<a href="" class="mobile-navigator__link mobile-navigator__link--home">Главная</a>
+		</li>
+		<li class="mobile-navigator__item">
+			<a href="" class="mobile-navigator__link mobile-navigator__link--catalog">Каталог</a>
+		</li>
+		<li class="mobile-navigator__item">
+			<a href="" class="mobile-navigator__link mobile-navigator__link--shop">Корзина</a>
+			<span class="mobile-navigator__notification">23</span>
+		</li>
+		<li class="mobile-navigator__item">
+			<button type="button" class="mobile-navigator__link mobile-navigator__link--profile" data-open-modal="signin">Профиль</button>
+		</li>
+	</ul>
+</div>

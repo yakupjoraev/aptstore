@@ -1,0 +1,7 @@
+<param name={$tight} value={false} />
+
+<div class="products-grid">
+	<div class={classes("products-grid__content", $tight ?? "products-grid__content--tight" !! "")}>
+		{$children}
+	</div>
+</div>

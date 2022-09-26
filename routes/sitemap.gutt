@@ -1,0 +1,19 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="site-map" from="../components/site-map/site-map.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps path={[
+			[
+				"url": "index.html",
+				"label": "Главная"
+			],
+			[
+				"label": "Карта сайта"
+			]
+		]} />
+
+		<site-map />
+	</div>
+</default-layout>

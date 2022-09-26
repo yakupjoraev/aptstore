@@ -1,0 +1,8 @@
+<param name={$class} value="" />
+<param name={$type} value="text" />
+<param name={$placeholder} value="" />
+
+<label class="input">
+	<input class={classes("input__input", $class)} type={$type} placeholder={$placeholder} />
+	{$children}
+</label>

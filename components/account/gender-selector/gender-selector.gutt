@@ -1,0 +1,15 @@
+<div class="account-gender-selector">
+	<div class="account-gender-selector__title">Пол</div>
+
+	<label class="account-gender-selector__element">
+		<input class="account-gender-selector__input" type="radio" name="gender" value="male" id="gender-male" checked />
+		<span class="account-gender-selector__label">Мужской</span>
+	</label>
+
+	/
+
+	<label class="account-gender-selector__element">
+		<input class="account-gender-selector__input" type="radio" name="gender" value="female" id="gender-female" />
+		<span class="account-gender-selector__label">Женский</span>
+	</label>
+</div>

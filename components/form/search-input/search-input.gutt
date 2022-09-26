@@ -1,0 +1,9 @@
+<param name={$class} value="" />
+<param name={$placeholder} value="Метро или адрес" />
+
+<div class={classes("search-input", $class)}>
+	<input type="search" placeholder={$placeholder} class="search-input__search" />
+	<button type="submit" class="search-input__button">
+		<inline-svg src="search-input__search.svg" />
+	</button>
+</div>

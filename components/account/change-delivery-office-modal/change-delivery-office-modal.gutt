@@ -1,0 +1,12 @@
+<import name="modal-window" from="../../modal-window/modal-window.gutt" />
+<import name="selected-map-list" from="../../selected-map-list/selected-map-list.gutt" />
+
+<modal-window name="change-delivery-office-modal">
+	<div class="change-delivery-office-modal">
+		<h3 class="change-delivery-option-modal__title">Выбрать способ доставки по&nbsp;умолчанию</h3>
+
+		<div class="change-delivery-option-modal__select-map-list">
+			<selected-map-list class-content="change-delivery-option-modal__content"  text-btn="Выбрать эту" />
+		</div>
+	</div>
+</modal-window>

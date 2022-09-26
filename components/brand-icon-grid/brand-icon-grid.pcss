@@ -1,0 +1,51 @@
+@import url('../../layouts/variables.pcss');
+
+.brand-icon-grid {
+	margin: 0 -5px;
+	display: flex;
+	flex-wrap: wrap;
+
+	@media (--desktop-medium) {
+		margin: 0 -10px;
+	}
+}
+
+.brand-icon-grid__item {
+	margin: 30px 5px 0;
+	width: calc(50% - 10px);
+	height: 105px;
+
+	@media (--tablet) {
+		width: 184px;
+		height: 125px;
+	}
+
+	@media (--desktop-medium) {
+		margin: 30px 10px 0;
+		width: 200px;
+		height: 125px;
+	}
+}
+
+.brand-icon-grid__figure {
+	width: 105px;
+	height: 60px;
+}
+
+.brand-icon-grid__preview {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.brand-icon-grid__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	color: var(--black);
+}
+
+.brand-icon-grid__title {
+	margin-top: 5px;
+}

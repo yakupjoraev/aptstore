@@ -1,0 +1,4 @@
+<param name={$class} value="" />
+<param name={$checked} value={false} />
+
+<button type="button" class={classes("favorite-button", $class, $checked ?? "favorite-button--checked" !! "")}>like</button>

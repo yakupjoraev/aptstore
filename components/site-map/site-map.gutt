@@ -1,0 +1,707 @@
+<import name="common-header" from="../common-header/common-header.gutt" />
+
+<param name={$data} value={[
+	[
+		"label": "Главная",
+		"href": "index.html"
+	],
+	[
+		"label": "Наши аптеки",
+		"href": ""
+	],
+	[
+		"label": "Каталог",
+		"href": "catalog.html",
+		"sections": [
+			[
+				"label": "% Акции",
+				"href": "category.html"
+			],
+			[
+				"label": "Бад",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Бальзамы",
+						"href": "category.html"
+					],
+					[
+						"label": "Витаминные добавки",
+						"href": "category.html"
+					],
+					[
+						"label": "Витаминные добавки для глаз",
+						"href": "category.html"
+					],
+					[
+						"label": "Витаминные добавки для женщин",
+						"href": "category.html"
+					],
+					[
+						"label": "Витаминные добавки для мужчин",
+						"href": "category.html"
+					],
+					[
+						"label": "Гематоген и батончики",
+						"href": "category.html"
+					],
+					[
+						"label": "Пивные дрожжи",
+						"href": "category.html"
+					],
+					[
+						"label": "Прочие БАД для внутреннего применения",
+						"href": "category.html"
+					],
+					[
+						"label": "Рыбий жир и омега-3",
+						"href": "category.html"
+					],
+					[
+						"label": "Фиточай/чай",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Бытовая химия",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Чистящие средства",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Витамины",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Витамин С",
+						"href": "category.html"
+					],
+					[
+						"label": "Витаминные комплексы",
+						"href": "category.html"
+					],
+					[
+						"label": "Витаминные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Минеральные вещества",
+						"href": "category.html"
+					],
+					[
+						"label": "Поливитаминные препараты",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Гигиена и косметика",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Женская гигиена",
+						"href": "category.html"
+					],
+					[
+						"label": "Масла эфирные, косметические",
+						"href": "category.html"
+					],
+					[
+						"label": "Массаж и расслабление",
+						"href": "category.html"
+					],
+					[
+						"label": "Мужская гигиена",
+						"href": "category.html"
+					],
+					[
+						"label": "Мыло и средства для ванны и душа",
+						"href": "category.html"
+					],
+					[
+						"label": "Средства гигиены",
+						"href": "category.html"
+					],
+					[
+						"label": "Средства гигиены и косметики",
+						"href": "category.html"
+					],
+					[
+						"label": "Средства для защиты от солнца и для загара",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за волосами",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за губами",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за лицом",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за ногами",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за полостью рта",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за руками и ногтями",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за телом",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Диета, спорт, питание",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Все для снижения веса",
+						"href": "category.html"
+					],
+					[
+						"label": "Диетические продукты",
+						"href": "category.html"
+					],
+					[
+						"label": "Пищевые продукты",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Лекарственные препараты",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Антибактериальные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Антисептики и дезинфицирующие средства",
+						"href": "category.html"
+					],
+					[
+						"label": "Вредные привычки",
+						"href": "category.html"
+					],
+					[
+						"label": "Гомеопатические препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Гормональные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Дерматологические препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Дыхательная система",
+						"href": "category.html"
+					],
+					[
+						"label": "Иммунодепрессанты",
+						"href": "category.html"
+					],
+					[
+						"label": "Иммуномодулирующие препараты и иммунодепрессанты",
+						"href": "category.html"
+					],
+					[
+						"label": "Костно-мышечная система",
+						"href": "category.html"
+					],
+					[
+						"label": "Кровь и кровообращение",
+						"href": "category.html"
+					],
+					[
+						"label": "Мочеполовая система",
+						"href": "category.html"
+					],
+					[
+						"label": "Нервная система",
+						"href": "category.html"
+					],
+					[
+						"label": "Обезболивающие препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Органы чувств/зрение, слух",
+						"href": "category.html"
+					],
+					[
+						"label": "Пищеварительная система",
+						"href": "category.html"
+					],
+					[
+						"label": "Пищеварительный тракт и обмен веществ",
+						"href": "category.html"
+					],
+					[
+						"label": "Препараты для лечения геморроя",
+						"href": "category.html"
+					],
+					[
+						"label": "Препараты повышающие иммунитет",
+						"href": "category.html"
+					],
+					[
+						"label": "Препараты при простудных заболеваниях и гриппе",
+						"href": "category.html"
+					],
+					[
+						"label": "Противоаллергические препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Противовирусные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Противовоспалительные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Противогрибковые препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Противоопухолевые препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Противопаразитарные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Растворители для лекарственных препаратов",
+						"href": "category.html"
+					],
+					[
+						"label": "Растворы для парентерального питания",
+						"href": "category.html"
+					],
+					[
+						"label": "Растительные, натуральные препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Сердечно-сосудистые препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Стоматологические препараты",
+						"href": "category.html"
+					],
+					[
+						"label": "Тонизирующие препараты",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Мама и малыш",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Беременным и кормящим мамам",
+						"href": "category.html"
+					],
+					[
+						"label": "Все для кормления детей",
+						"href": "category.html"
+					],
+					[
+						"label": "Детская гигиена и уход",
+						"href": "category.html"
+					],
+					[
+						"label": "Детское питание",
+						"href": "category.html"
+					],
+					[
+						"label": "Подгузники и пеленки",
+						"href": "category.html"
+					],
+					[
+						"label": "Пустышки, прорезыватели и игрушки",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Медицинские изделия",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Аппликаторы Кузнецова",
+						"href": "category.html"
+					],
+					[
+						"label": "Аптечки",
+						"href": "category.html"
+					],
+					[
+						"label": "Беруши",
+						"href": "category.html"
+					],
+					[
+						"label": "Гигиена полости носа",
+						"href": "category.html"
+					],
+					[
+						"label": "Изделия из резины",
+						"href": "category.html"
+					],
+					[
+						"label": "Лечебная одежда",
+						"href": "category.html"
+					],
+					[
+						"label": "Ортопедические изделия",
+						"href": "category.html"
+					],
+					[
+						"label": "Перевязочные материалы",
+						"href": "category.html"
+					],
+					[
+						"label": "Презервативы, гель-смазки",
+						"href": "category.html"
+					],
+					[
+						"label": "Растворы для линз и глаз",
+						"href": "category.html"
+					],
+					[
+						"label": "Расходные изделия",
+						"href": "category.html"
+					],
+					[
+						"label": "Спирали медицинские",
+						"href": "category.html"
+					],
+					[
+						"label": "Тесты диагностические",
+						"href": "category.html"
+					],
+					[
+						"label": "Уход за больными",
+						"href": "category.html"
+					],
+					[
+						"label": "Шприцы",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Медицинские приборы",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Анализаторы",
+						"href": "category.html"
+					],
+					[
+						"label": "Весы",
+						"href": "category.html"
+					],
+					[
+						"label": "Глюкометры",
+						"href": "category.html"
+					],
+					[
+						"label": "Ингаляторы /небулайзеры",
+						"href": "category.html"
+					],
+					[
+						"label": "Ирригаторы",
+						"href": "category.html"
+					],
+					[
+						"label": "Массажеры",
+						"href": "category.html"
+					],
+					[
+						"label": "Молокоотсосы",
+						"href": "category.html"
+					],
+					[
+						"label": "Облучатели",
+						"href": "category.html"
+					],
+					[
+						"label": "Расходный материал/ланцеты, тест-полоски, манжеты",
+						"href": "category.html"
+					],
+					[
+						"label": "Стетоскопы",
+						"href": "category.html"
+					],
+					[
+						"label": "Термометры",
+						"href": "category.html"
+					],
+					[
+						"label": "Тонометры",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Оптика",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Линзы",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Ортопедические изделия",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Бандажи",
+						"href": "category.html"
+					],
+					[
+						"label": "Бинты эластичные",
+						"href": "category.html"
+					],
+					[
+						"label": "Компрессионный трикотаж",
+						"href": "category.html"
+					],
+					[
+						"label": "Корсеты и корректоры осанки",
+						"href": "category.html"
+					],
+					[
+						"label": "Массажеры и коврики",
+						"href": "category.html"
+					],
+					[
+						"label": "Ортезы",
+						"href": "category.html"
+					],
+					[
+						"label": "Средства реабилитации",
+						"href": "category.html"
+					],
+					[
+						"label": "Стельки и корректоры стопы",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Прочие товары",
+				"href": "category.html"
+			],
+			[
+				"label": "Разное",
+				"href": "category.html"
+			],
+			[
+				"label": "Средства от насекомых",
+				"href": "category.html",
+				"items": [
+					[
+						"label": "Защита для детей",
+						"href": "category.html"
+					],
+					[
+						"label": "От клещей",
+						"href": "category.html"
+					],
+					[
+						"label": "От летающих насекомых",
+						"href": "category.html"
+					],
+					[
+						"label": "Педикулез",
+						"href": "category.html"
+					]
+				]
+			],
+			[
+				"label": "Сеты",
+				"href": "category.html"
+			]
+		]
+	],
+	[
+		"label": "Корзина",
+		"href": "basket.html"
+	],
+	[
+		"label": "Готовые",
+		"href": "",
+		"sections": [
+			[
+				"label": "Страницы",
+				"href": "",
+				"items": [
+					[
+						"label": "Наши аптеки / пункты выдачи",
+						"href": "delivery-office.html"
+					],
+					[
+						"label": "Поиск бренда расширенный",
+						"href": "brand-search-extended.html"
+					],
+					[
+						"label": "Поиск бренда по букве",
+						"href": "brand-search-letter.html"
+					],
+					[
+						"label": "Поиск бренда простой",
+						"href": "brand-search-simplified.html"
+					],
+					[
+						"label": "Поиск бренда результат",
+						"href": "brand-search-result.html"
+					],
+					[
+						"label": "Страница бренда",
+						"href": "brand.html"
+					],
+					[
+						"label": "Каталог бренда",
+						"href": "brand-category.html"
+					],
+					[
+						"label": "Акции",
+						"href": "discounts.html"
+					],
+					[
+						"label": "Промо страница",
+						"href": "promo.html"
+					],
+					[
+						"label": "Страница препарата",
+						"href": "medecine.html"
+					],
+					[
+						"label": "Страница сета",
+						"href": "set.html"
+					],
+					[
+						"label": "Добавить отзыв",
+						"href": "add-comment.html"
+					],
+					[
+						"label": "Корзина",
+						"href": "basket.html"
+					],
+					[
+						"label": "Каталог",
+						"href": "catalog.html"
+					],
+					[
+						"label": "Категория",
+						"href": "category.html"
+					],
+					[
+						"label": "Страница продукта",
+						"href": "product.html"
+					],
+					[
+						"label": "История заказов",
+						"href": "order-list.html"
+					]
+				]
+			]
+		]
+	],
+	[
+		"label": "Оплата и доставка",
+		"href": ""
+	],
+	[
+		"label": "Задать вопрос",
+		"href": ""
+	],
+	[
+		"label": "Информация об условиях розничной продажи лекарственных препаратов дистанционным способом",
+		"href": ""
+	],
+	[
+		"label": "Пользовательское соглашение",
+		"href": ""
+	],
+	[
+		"label": "Политика по обработке ПД",
+		"href": ""
+	],
+	[
+		"label": "Контакты",
+		"href": ""
+	],
+	[
+		"label": "Статьи",
+		"href": ""
+	],
+	[
+		"label": "Авторизация",
+		"href": ""
+	]
+]} />
+
+<div class="site-map">
+	<common-header>Карта сайта</common-header>
+
+	<for-each item={$category} from={$data}>
+		<div class="site-map__category">
+			<div class="site-map__category-label">
+				<a href={$category.href}>{$category.label}</a>
+			</div>
+
+			<if test={$category.sections?}>
+				<div class="site-map__sections">
+					<for-each item={$section} from={$category.sections}>
+						<div class="site-map__section">
+							<div class="site-map__section-label">
+								<a href={$section.href}>{$section.label}</a>
+							</div>
+
+							<if test={$section.items?}>
+								<div class={classes("site-map__items", arr_len($section.items) < 6 ?? "site-map__items--single" !! "")}>
+									<for-each item={$item} from={$section.items}>
+										<div class="site-map__item">
+											<div class="site-map__item-label">
+												<a href={$item.href}>{$item.label}</a>
+											</div>
+										</div>
+									</for-each>
+								</div>
+							</if>
+						</div>
+					</for-each>
+				</div>
+			</if>
+		</div>
+	</for-each>
+</div>
+

@@ -1,0 +1,34 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="brand-page" from="../components/brand-page/brand-page.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps
+			brand={[
+				"img": "brand-vichy.png",
+				"url": "brand.html",
+				"title": "Виши"
+			]}
+			path={[
+				[
+					"url": "index.html",
+					"label": "Главная"
+				],
+				[
+					"url": "brands.html",
+					"label": "Наши бренды"
+				],
+				[
+					"label": "Бренды на «V»",
+					"url": "brand-letter.html"
+				],
+				[
+					"label": "Vichy"
+				]
+			]}
+		/>
+
+		<brand-page />
+	</div>
+</default-layout>

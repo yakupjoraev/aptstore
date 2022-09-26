@@ -1,0 +1,83 @@
+<import name="form-input" from="../form/input/input.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+<import name="shop-terminal-modal" from="../shop-terminal-modal/shop-terminal-modal.gutt" />
+
+<param name={$show-buttons} value={true} />
+<param name={$show-promo} value={true} />
+
+<div class="shop-terminal" data-shop-terminal>
+	<h3 class="shop-terminal__title">
+		Ваш заказ
+
+		<span class="shop-terminal__amount">2 товара</span>
+	</h3>
+
+	{$children}
+
+	<div class="shop-terminal__list">
+		<div class="shop-terminal__item">
+			<div class="shop-terminal__label">Товары</div>
+			<div class="shop-terminal__price">1140 ₽</div>
+		</div>
+
+		<div class="shop-terminal__item">
+			<div class="shop-terminal__label">Доставка</div>
+			<div class="shop-terminal__price">0 ₽</div>
+		</div>
+
+		<div class="shop-terminal__item">
+			<div class="shop-terminal__label">Скидка</div>
+			<div class="shop-terminal__price">−90 ₽</div>
+		</div>
+
+		<div class="shop-terminal__item">
+			<div class="shop-terminal__label">Начислено баллов</div>
+			<div class="shop-terminal__price shop-terminal__price--positive">+10 B</div>
+		</div>
+	</div>
+
+	<div class="shop-terminal__discount">
+		<div class="shop-terminal__text">Промокод</div>
+		<div class="shop-terminal__sum">- 190 ₽</div>
+	</div>
+
+	<if test={$show-promo}>
+		<div class="shop-terminal__promo">
+			<form-input class="shop-terminal__promo-input" placeholder="Промокод">
+				<button type="button" class="shop-terminal__plus">+</button>
+			</form-input>
+		</div>
+	</if>
+
+	<div class="shop-terminal__total">
+		<div class="shop-terminal__total-label">Итого</div>
+		<div class="shop-terminal__total-price">
+			<strike class="shop-terminal__total-origin-price">1140 ₽</strike>
+			<span>1050 ₽</span>
+		</div>
+	</div>
+
+	<div class="shop-terminal__gift">
+		<div class="shop-terminal__gift-label">Vichy Capital Soleil набор д/путешествия по всему миру без ограничений
+		</div>
+	</div>
+
+	<if test={$show-buttons}>
+		<div class="shop-terminal__buttons">
+			<form-button class="shop-terminal__gift-button" size="large" full-width={true} action="open-modal"
+				action-value="shop-terminal-gift">
+				<span class="shop-terminal__gift-button-label">Выбрать подарок</span>
+			</form-button>
+			<form-button size="large" full-width={true}>Начать оформление</form-button>
+		</div>
+
+		<div class="shop-terminal__action-panel" data-shop-terminal-action-panel>
+			<form-button class="shop-terminal__action-panel-button" size="large" full-width={true}>
+				<span>Начать оформление</span>
+				<span>1050 ₽</span>
+			</form-button>
+		</div>
+	</if>
+</div>
+
+<shop-terminal-modal />

@@ -1,0 +1,13 @@
+<param name={$title} value="" />
+<param name={$type} value="" />
+
+<div class="filter-accordeon">
+	<input class="filter-accordeon__control" type="checkbox" id={$type} />
+	<label class="filter-accordeon__title" for={$type}>{$title}</label>
+
+	<div class="filter-accordeon__content">
+		{$children}
+	</div>
+
+	<button type="button" class="filter-accordeon__reset">Сбросить</button>
+</div>

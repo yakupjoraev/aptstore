@@ -1,0 +1,106 @@
+<div class="search-form" data-search-form>
+	<form class="search-form__form" action="" method="post">
+		<button type="button" class="search-form__location" data-location>Везде</button>
+		<div class="search-form__field">
+			<input class="search-form__input" type="text" placeholder="Поиск препаратов" data-search-input />
+			<button class="search-form__clear" type="button" data-clear>Очистить</button>
+		</div>
+		<button class="search-form__submit" type="submit">Найти</button>
+		<button class="search-form__cancel" type="button" data-cancel>Отмена</button>
+	</form>
+
+	<div class="search-form__results">
+		<div class="search-form__suggests">
+			<button type="button" class="search-form__suggest">Антибиотик</button>
+			<button type="button" class="search-form__suggest">Антиоксиданты</button>
+			<button type="button" class="search-form__suggest">Антигистаминные</button>
+			<button type="button" class="search-form__suggest">Анти ангин</button>
+			<button type="button" class="search-form__suggest">Антиодепресанты</button>
+			<button type="button" class="search-form__suggest">Антисептик</button>
+			<button type="button" class="search-form__suggest">Аналог</button>
+		</div>
+
+		<ul class="search-form__list">
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__recent"><strong>Анти</strong>каленин</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__recent"><strong>Анти</strong>лысенин</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__query">Простир<strong>aнти</strong></a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__query"><strong>Анти</strong>каленин</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__query"><strong>Анти</strong>лысенин</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__query">Простир<strong>aнти</strong></a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<strong>Анти</strong>септик Спреи <span class="search-form__category">Меры предосторожности  /  Антисептики</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<span class="search-form__picture">
+						<img src="components/search-form/product1.png" alt="" class="search-form__logo" />
+					</span>
+					<strong>Анти</strong>Стелька Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)
+					<span class="search-form__category">Ортопедические изделия / обувь</span>
+					<span class="search-form__price">1730&nbsp;₽</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<span class="search-form__picture">
+						<img src="components/search-form/product1.png" alt="" class="search-form__logo" />
+					</span>
+					<strong>Анти</strong>Ren <span class="search-form__price">258&nbsp;₽</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<strong>Анти</strong>септик Спреи <span class="search-form__category">Меры предосторожности  /  Антисептики</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<span class="search-form__picture">
+						<img src="components/search-form/product1.png" alt="" class="search-form__logo" />
+					</span>
+					<strong>Анти</strong>Стелька Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)
+					<span class="search-form__category">Ортопедические изделия / обувь</span>
+					<span class="search-form__price">1730&nbsp;₽</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<span class="search-form__picture">
+						<img src="components/search-form/product1.png" alt="" class="search-form__logo" />
+					</span>
+					<strong>Анти</strong>Ren <span class="search-form__price">258&nbsp;₽</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<span class="search-form__brand">
+						<img src="components/search-form/anti.png" alt="" class="search-form__logo" />
+					</span>
+					<strong>Анти</strong>Ren <span class="search-form__category">Бренд</span>
+				</a>
+			</li>
+			<li class="search-form__item">
+				<a href="" class="search-form__link search-form__product">
+					<span class="search-form__brand">
+						<img src="components/search-form/anti.png" alt="" class="search-form__logo" />
+					</span>
+					<strong>Анти</strong>Ren <span class="search-form__category">Бренд</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

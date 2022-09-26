@@ -1,0 +1,15 @@
+<import name="sharing-popup" from="../sharing-popup/sharing-popup.gutt" />
+<import name="favorite-button" from="../favorite-button/favorite-button.gutt" />
+
+<div class="product-like-share">
+	<div class="product-like-share__content">
+		{$children}
+	</div>
+	<div class="product-like-share__buttons">
+		<favorite-button />
+
+		<sharing-popup class="product-like-share__share">
+			<button type="button" class="product-like-share__button product-like-share__button--share">share</button>
+		</sharing-popup>
+	</div>
+</div>

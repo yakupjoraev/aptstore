@@ -1,0 +1,21 @@
+<import name="form-button" from="../form/button/button.gutt" />
+
+<param name={$class} value="" />
+
+<div class="pagination">
+	<ul class={classes("pagination__pages", $class)}>
+		<li class="pagination__item">
+			<a href="" class="pagination__link">1</a>
+		</li>
+		<li class="pagination__item">
+			<span class="pagination__current">2</span>
+		</li>
+		<li class="pagination__item">
+			<a href="" class="pagination__link">3</a>
+		</li>
+	</ul>
+
+	<div class="pagination__show-more">
+		<form-button href="" size="large">Показать ещё</form-button>
+	</div>
+</div>

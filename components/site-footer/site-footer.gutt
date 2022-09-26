@@ -1,0 +1,79 @@
+<footer class="site-footer">
+	<div class="container site-footer__container">
+		<div class="site-footer__columns">
+			<div class="site-footer__column">
+				<div class="site-footer__logo">
+					<a href=""><img src="components/site-footer/logo.svg" alt="aptstore" /></a>
+				</div>
+
+				<ul class="site-footer__list site-footer__list--info">
+					<li class="site-footer__item">
+						Лицензия на осуществление фармацевтической деятельности ЛО-77-02-011246 от 17.11.2020 Скачать.
+					</li>
+					<li class="site-footer__item site-footer__item--agelimit">
+						Возрастные ограничения <span class="site-footer__item--age">18+</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="site-footer__column">
+				<ul class="site-footer__list site-footer__list--columns">
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Пункты выдачи</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Оплата и доставка</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Задать вопрос</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Информация об условиях розничной продажи лекарственных препаратов дистанционным способом</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Пользовательское соглашение</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Политика по обработке ПД</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Контактные данные</a>
+					</li>
+					<li class="site-footer__item">
+						<a href="" class="site-footer__link">Статьи</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="site-footer__column site-footer__contacts">
+				<div class="site-footer__phone">+7 495 419 18 18</div>
+
+				<div class="site-footer__socials">
+					<div class="site-footer__social-head">Мы в социальных сетях</div>
+
+					<ul class="site-footer__social-items">
+						<li class="site-footer__social">
+							<a href="" class="site-footer__social-link"></a>
+						</li>
+
+						<li class="site-footer__social">
+							<a href="" class="site-footer__social-link"></a>
+						</li>
+
+						<li class="site-footer__social">
+							<a href="" class="site-footer__social-link"></a>
+						</li>
+
+						<li class="site-footer__social">
+							<a href="" class="site-footer__social-link"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer__copyright">
+		Общество с ограниченной ответственностью «Аптека-риэлти», 2021
+	</div>
+</footer>

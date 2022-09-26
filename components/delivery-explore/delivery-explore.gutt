@@ -1,0 +1,49 @@
+<import name="form-button" from="../form/button/button.gutt" />
+<import name="search-input" from="../form/search-input/search-input.gutt" />
+<import name="swich-button" from="../form/swich-button/swich-button.gutt" />
+<import name="delivery-map" from="../delivery-map/delivery-map.gutt" />
+<import name="address-list" from="../address-list/address-list.gutt" />
+
+<div class="delivery-explore">
+	<div class="delivery-explore__search-swich">
+		<div class="delivery-explore__search">
+			<search-input />
+		</div>
+
+		<div class="delivery-explore__swich">
+			<button type="submit" class="delivery-explore__burger">
+				<inline-svg src="swich-button-burger.svg" />
+			</button>
+
+			<div class="delivery-explore__content">
+				<p class="delivery-explore__desc">
+					Фильтры
+				</p>
+
+				<div class="delivery-explore__group">
+					<swich-button>
+						<span class="delivery-explore__sum">Только крулосуточные <span>(5)</span></span>
+					</swich-button>
+				</div>
+
+				<div class="delivery-explore__group">
+					<swich-button checked>
+						<span class="delivery-explore__sum">Работаю сейчас <span>(50)</span></span>
+					</swich-button>
+				</div>
+
+				<div class="delivery-explore__group">
+					<swich-button checked>
+						<span class="delivery-explore__sum">Осуществляет доставку <span>(26)</span></span>
+					</swich-button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="delivery-explore__map-list">
+		<delivery-map />
+
+		<address-list />
+	</div>
+</div>

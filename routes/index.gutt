@@ -1,0 +1,390 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="banner-grid" from="../components/banner-grid/banner-grid.gutt" />
+<import name="section-links" from="../components/section-links/section-links.gutt" />
+<import name="section-link" from="../components/section-links/section-link.gutt" />
+<import name="products-grid" from="../components/products-grid/products-grid.gutt" />
+<import name="product-card" from="../components/product-card/product-card.gutt" />
+<import name="index-list" from="../components/index-list/index-list.gutt" />
+<import name="news-column" from="../components/news-column/news-column.gutt" />
+<import name="one-three-columns" from="../components/one-three-columns/one-three-columns.gutt" />
+<import name="content-block" from="../components/content-block/content-block.gutt" />
+<import name="y-map" from="../components/y-map/y-map.gutt" />
+
+<default-layout>
+	<div class="container">
+		<banner-grid
+			banners={[
+				[
+					"type": "slider",
+					"items": [
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner1-l.jpg",
+								"m": "banner1-m.jpg",
+								"s": "banner1-s.jpg",
+								"xs": "banner1-xs.jpg"
+							],
+							"modifier": "large",
+							"title": "Средства для улучшения кровообращения",
+							"description": "— Снимает напряжение в мышцах<br />— Отчищает сосуды<br />— Стабилизирует давление",
+							"button": "Узнать больше"
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner1-l.jpg",
+								"m": "banner1-m.jpg",
+								"s": "banner1-s.jpg",
+								"xs": "banner1-xs.jpg"
+							],
+							"modifier": "large",
+							"title": "Средства для улучшения кровообращения",
+							"description": "— Отчищает сосуды<br />— Снимает напряжение в мышцах<br />— Стабилизирует давление",
+							"button": "Узнать меньше"
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner1-l.jpg",
+								"m": "banner1-m.jpg",
+								"s": "banner1-s.jpg",
+								"xs": "banner1-xs.jpg"
+							],
+							"modifier": "large",
+							"title": "Средства для улучшения кровообращения",
+							"description": "— Снимает напряжение в мышцах<br />— Стабилизирует давление<br />— Отчищает сосуды",
+							"button": "Узнать больше"
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner1-l.jpg",
+								"m": "banner1-m.jpg",
+								"s": "banner1-s.jpg",
+								"xs": "banner1-xs.jpg"
+							],
+							"modifier": "large",
+							"title": "Средства для улучшения кровообращения",
+							"description": "— Стабилизирует давление<br />— Снимает напряжение в мышцах<br />— Отчищает сосуды",
+							"button": "Узнать нужное"
+						]
+					]
+				],
+				[
+					"type": "row",
+					"items": [
+						[
+							"modifier": "medium",
+							"href": "index.html",
+							"source": [
+								"l": "medium-banner-l.jpg",
+								"m": "medium-banner-m.jpg",
+								"s": "medium-banner-s.jpg",
+								"xs": "medium-banner-xs.jpg"
+							],
+							"title": "Сет для улучшения пищеворения",
+							"description": "Топ препоратов подобранных по рекомендациям гастроэндокинологов",
+							"label": "Товаров - 5 шт."
+						],
+						[
+							"modifier": "medium",
+							"href": "index.html",
+							"source": [
+								"l": "medium-banner-l.jpg",
+								"m": "medium-banner-m.jpg",
+								"s": "medium-banner-s.jpg",
+								"xs": "medium-banner-xs.jpg"
+							],
+							"title": "Сет по уходу за кожей лица",
+							"description": "Топ препоратов подобранных по рекомендациям гастроэндокинологов",
+							"label": "Товаров - 3 шт."
+						]
+					]
+				],
+				[
+					"type": "row",
+					"items": [
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner4-l.png",
+								"m": "banner4-m.png",
+								"s": "banner4-s.png",
+								"xs": "banner4-xs.png"
+							]
+						]
+					]
+				],
+				[
+					"type": "row",
+					"items": [
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner5-l.png",
+								"m": "banner5-m.png",
+								"s": "banner5-s.png",
+								"xs": "banner5-xs.png"
+							]
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner6-l.png",
+								"m": "banner6-m.png",
+								"s": "banner6-s.png",
+								"xs": "banner6-xs.png"
+							]
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner7-l.png",
+								"m": "banner7-l.png",
+								"s": "banner7-l.png",
+								"xs": "banner7-l.png"
+							]
+						]
+					]
+				],
+				[
+					"type": "inline",
+					"items": [
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner8-l.png",
+								"m": "banner8-m.png",
+								"s": "banner8-s.png",
+								"xs": "banner8-xs.png"
+							]
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner9-l.png",
+								"m": "banner9-m.png",
+								"s": "banner9-s.png",
+								"xs": "banner9-xs.png"
+							]
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner10-l.png",
+								"m": "banner10-m.png",
+								"s": "banner10-s.png",
+								"xs": "banner10-xs.png"
+							]
+						],
+						[
+							"href": "index.html",
+							"source": [
+								"l": "banner11-l.png",
+								"m": "banner11-l.png",
+								"s": "banner11-l.png",
+								"xs": "banner11-l.png"
+							]
+						]
+					]
+				]
+			]}
+		/>
+
+		<section class="section">
+			<section-links title="Специальные предложения">
+				<section-link href="discounts.html">Скидки</section-link>
+				<section-link href="gifts.html">Подарки</section-link>
+				<section-link href="promos.html">Акции</section-link>
+			</section-links>
+
+			<div class="index-page__products">
+				<products-grid>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						rating={3}
+						type="discount"
+						tag="Скидка"
+						amount="60"
+						preview="product-preview1.jpg"
+					/>
+					<product-card
+						title="Флорадикс Магнезиум 250мл фл."
+						price="580"
+						rating={1}
+						amount="60"
+						preview="product-preview2.jpg"
+					/>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						type="GIFT"
+						tag="Подарок"
+						amount="60"
+						preview="product-preview3.jpg"
+					/>
+					<product-card
+						title="Флорадикс Магнезиум 250мл фл."
+						price="15 530"
+						notice="Требуется рецепт"
+						amount="60"
+						preview="product-preview4.jpg"
+					/>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						rating={4}
+						type="SET"
+						tag="3+1=5"
+						amount="60"
+						preview="product-preview1.jpg"
+					/>
+					<product-card
+						title="Флорадикс Магнезиум 250мл фл."
+						price="580"
+						rating={1}
+						amount="60"
+						preview="product-preview2.jpg"
+					/>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						rating={5}
+						tag="Скидка"
+						amount="60"
+						preview="product-preview3.jpg"
+					/>
+					<product-card
+						title="Флорадикс Магнезиум 250мл фл."
+						price="15 530"
+						rating={2}
+						amount="60"
+						preview="product-preview4.jpg"
+					/>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						rating={5}
+						tag="Скидка"
+						amount="60"
+						preview="product-preview1.jpg"
+					/>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						rating={3}
+						type="discount"
+						tag="Скидка"
+						amount="60"
+						preview="product-preview1.jpg"
+					/>
+					<product-card
+						title="Флорадикс Магнезиум 250мл фл."
+						price="580"
+						rating={1}
+						amount="60"
+						preview="product-preview2.jpg"
+					/>
+					<product-card
+						title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+						origin-price="580"
+						price="550"
+						discount="5%"
+						type="GIFT"
+						tag="Подарок"
+						amount="60"
+						preview="product-preview3.jpg"
+					/>
+				</products-grid>
+			</div>
+		</section>
+
+		<one-three-columns>
+			<news-column news={[
+				[
+					"title": "Какой респиратор купить для защиты от пыли и инфекций",
+					"date": "17 сентября 2021",
+					"preview": "news-preview1.jpg"
+				],
+				[
+					"title": "Менструальный цикл: физиологическая норма",
+					"date": "16 сентября 2021",
+					"preview": "news-preview2.jpg"
+				],
+				[
+					"title": "Презервативы Дюрекс",
+					"date": "10 сентября 2021",
+					"preview": "news-preview3.jpg"
+				],
+				[
+					"title": "Стресс – реакция организма на нервное перенапряжение",
+					"date": "01 сентября 2021",
+					"preview": "news-preview4.jpg"
+				],
+				[
+					"title": "Чеснок – полезный природный продукт",
+					"date": "31 сентября 2021",
+					"preview": "news-preview5.jpg"
+				]
+			]} />
+
+			<content-block>
+				<h2>Aptstore&nbsp;— сервис по&nbsp;заказу лекарств и&nbsp;товаров для&nbsp;красоты в&nbsp;Москве</h2>
+
+				<p>Интернет-аптека AptStore представляет собой удобный сервис, который пользуется большой популярностью среди населения Москвы и Московской области. В представленном каталоге можно найти любой препарат и совершить покупку всего в пару кликов на максимально простых и выгодных условиях. Настоящие профессионалы помогут пользователям подобрать необходимую продукцию, оформить и осуществить доставку в кратчайшие сроки. Решив совершить покупку в режиме онлайн, клиент сможет самостоятельно оценить все плюсы работы компетентного персонала, удаленного оформления заказа и быстрой доставки.</p>
+
+				<h3>Ассортимент медикаментов</h3>
+
+				<p>Аптека предлагает большой выбор лекарственных препаратов. Ассортимент регулярно пополняется с учетом выпуска новых медикаментов, растущего спроса и пожеланий покупателя.</p>
+				<p><strong>В каталоге всегда можно найти следующие позиции препаратов:</strong></p>
+
+				<ul>
+					<li>лекарства отечественного и зарубежного производства, помогающих при разных недомоганиях и заболеваниях: более 7000 наименований;</li>
+					<li>медицинские приборы и изделия (тонометр, термометр, эластичные бинты, шприцы, фиксаторы и др.): более 200 видов;</li>
+					<li>косметические и гигиенические средства, необходимые для ухода за телом (шампуни, крема, мыло), включая косметику, оказывающую лечебное воздействие: более 3000 позиций;</li>
+					<li>детская продукция и товары для мамочек, в перечень которых входят средства для ежедневного ухода и специализированная бытовая химия;</li>
+					<li>спортивные товары и здоровое питание: около 250 наименований;</li>
+					<li>биологически активные добавки для улучшения различных процессов в организме. Эффективные препараты восполняют нехватку витаминов и минералов, что позволяет поддерживать физическое здоровье и эмоциональное состояние на должном уровне: более 1000 наименований;</li>
+					<li>прочие товары и изделия медицинского назначения</li>
+				</ul>
+
+				<hr class="content-block__cut" data-content-cut />
+
+				<p>Интернет-аптека AptStore представляет собой удобный сервис, который пользуется большой популярностью среди населения Москвы и Московской области. В представленном каталоге можно найти любой препарат и совершить покупку всего в пару кликов на максимально простых и выгодных условиях. Настоящие профессионалы помогут пользователям подобрать необходимую продукцию, оформить и осуществить доставку в кратчайшие сроки. Решив совершить покупку в режиме онлайн, клиент сможет самостоятельно оценить все плюсы работы компетентного персонала, удаленного оформления заказа и быстрой доставки.</p>
+
+				<h3>Ассортимент медикаментов</h3>
+
+				<p>Аптека предлагает большой выбор лекарственных препаратов. Ассортимент регулярно пополняется с учетом выпуска новых медикаментов, растущего спроса и пожеланий покупателя.</p>
+				<p><strong>В каталоге всегда можно найти следующие позиции препаратов:</strong></p>
+
+				<ul>
+					<li>лекарства отечественного и зарубежного производства, помогающих при разных недомоганиях и заболеваниях: более 7000 наименований;</li>
+					<li>медицинские приборы и изделия (тонометр, термометр, эластичные бинты, шприцы, фиксаторы и др.): более 200 видов;</li>
+					<li>косметические и гигиенические средства, необходимые для ухода за телом (шампуни, крема, мыло), включая косметику, оказывающую лечебное воздействие: более 3000 позиций;</li>
+					<li>детская продукция и товары для мамочек, в перечень которых входят средства для ежедневного ухода и специализированная бытовая химия;</li>
+					<li>спортивные товары и здоровое питание: около 250 наименований;</li>
+					<li>биологически активные добавки для улучшения различных процессов в организме. Эффективные препараты восполняют нехватку витаминов и минералов, что позволяет поддерживать физическое здоровье и эмоциональное состояние на должном уровне: более 1000 наименований;</li>
+					<li>прочие товары и изделия медицинского назначения</li>
+				</ul>
+			</content-block>
+		</one-three-columns>
+
+		<index-list />
+	</div>
+
+	<y-map />
+</default-layout>

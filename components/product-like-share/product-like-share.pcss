@@ -1,0 +1,48 @@
+@import url('../../layouts/variables.pcss');
+
+.product-like-share {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.product-like-share__content {
+	box-sizing: border-box;
+	padding: 0 var(--padding-base) 24px 0;
+	width: calc(100% - 95px);
+
+	@media (--mobile-medium) {
+		padding-right: var(--padding-mobile);
+	}
+
+	@media (--tablet) {
+		padding: 0;
+		width: 100%;
+	}
+}
+
+.product-like-share__buttons {
+	margin-left: 20px;
+	width: 75px;
+
+	@media (--tablet) {
+		display: none;
+	}
+}
+
+.product-like-share__button {
+	border: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	background: none;
+	margin-left: 10px;
+	background: resolve('./share.svg') center no-repeat;
+	background-size: 100%;
+}
+
+.product-like-share__share {
+	top: 0;
+	right: 0;
+}

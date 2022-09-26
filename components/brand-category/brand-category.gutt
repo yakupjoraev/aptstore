@@ -1,0 +1,48 @@
+<import name="drop-down" from="../dropdown/dropdown.gutt" />
+<import name="shop-category-filters" from="../shop-category-filters/shop-category-filters.gutt" />
+<import name="shop-category-sorting" from="../shop-category-sorting/shop-category-sorting.gutt" />
+
+<div class="shop-category">
+	<div class="shop-category__aside">
+		<div class="shop-category__strategy">
+			<drop-down value="all" label="Весь ассортимент" theme="light">
+				<button type="button" class="shop-category__category-option" data-value="all">Весь ассортимент</button>
+				<button type="button" class="shop-category__category-option" data-value="face-care">Уход для лица</button>
+				<button type="button" class="shop-category__category-option" data-value="body-care">Уход для тела</button>
+				<button type="button" class="shop-category__category-option" data-value="makeup">Макияж</button>
+				<button type="button" class="shop-category__category-option" data-value="sunshine">Солнце</button>
+			</drop-down>
+		</div>
+
+		<div class="shop-category__controls">
+			<div class="shop-category__category">
+				<drop-down value="all" label="Весь ассортимент">
+					<button type="button" class="shop-category__category-option" data-value="all">Весь ассортимент</button>
+					<button type="button" class="shop-category__category-option" data-value="face-care">Уход для лица</button>
+					<button type="button" class="shop-category__category-option" data-value="body-care">Уход для тела</button>
+					<button type="button" class="shop-category__category-option" data-value="makeup">Макияж</button>
+					<button type="button" class="shop-category__category-option" data-value="sunshine">Солнце</button>
+				</drop-down>
+			</div>
+
+			<a href="" class="shop-category__about">О бренде</a>
+
+			<shop-category-filters />
+
+			<shop-category-sorting media="mobile" />
+		</div>
+	</div>
+
+	<div class="shop-category__content">
+		<div class="shop-category__header">
+			<h2 class="shop-category__heading">VICHY уход для лица</h2>
+
+			<shop-category-sorting media="tablet" />
+		</div>
+
+
+		<div class="shop-category__products">
+			{$children}
+		</div>
+	</div>
+</div>

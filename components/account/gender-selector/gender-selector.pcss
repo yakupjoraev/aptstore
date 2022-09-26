@@ -1,0 +1,36 @@
+@import url('../../../layouts/variables.pcss');
+
+.account-gender-selector {
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 25px;
+	padding: 8px 24px 0;
+	min-width: 205px;
+	height: 50px;
+	background: #f9f9f9;
+	color: var(--secondary);
+}
+
+.account-gender-selector__title {
+	font-size: 12px;
+	line-height: 14px;
+	color: var(--secondary);
+}
+
+.account-gender-selector__element {
+	color: var(--black);
+}
+
+.account-gender-selector__input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.account-gender-selector__label {
+	color: var(--light-gray);
+}
+
+.account-gender-selector__input:checked + .account-gender-selector__label {
+	color: var(--black);
+}

@@ -1,0 +1,174 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="y-map" from="../components/y-map/y-map.gutt" />
+<import name="content-block" from="../components/content-block/content-block.gutt" />
+
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="brand-category" from="../components/brand-category/brand-category.gutt" />
+<import name="products-grid" from="../components/products-grid/products-grid.gutt" />
+<import name="product-card" from="../components/product-card/product-card.gutt" />
+<import name="x-pagination" from="../components/pagination/pagination.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps
+			brand={[
+				"img": "brand-vichy.png",
+				"url": "brand.html",
+				"title": "Виши"
+			]}
+			path={[
+				[
+					"url": "index.html",
+					"label": "Главная"
+				],
+				[
+					"url": "catalog.html",
+					"label": "Каталог"
+				],
+				[
+					"label": "БАД"
+				]
+			]}
+		/>
+
+		<brand-category>
+			<products-grid tight={true}>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={3}
+					type="discount"
+					tag="Скидка"
+					amount="60"
+					preview="product-preview1.jpg"
+				/>
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="580"
+					rating={1}
+					amount="60"
+					preview="product-preview2.jpg"
+				/>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					type="GIFT"
+					tag="Подарок"
+					amount="60"
+					preview="product-preview3.jpg"
+				/>
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="15 530"
+					notice="Требуется рецепт"
+					amount="60"
+					preview="product-preview4.jpg"
+				/>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={4}
+					type="SET"
+					tag="3+1=5"
+					amount="60"
+					preview="product-preview1.jpg"
+				/>
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="580"
+					rating={1}
+					amount="60"
+					preview="product-preview2.jpg"
+				/>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={5}
+					tag="Скидка"
+					amount="60"
+					preview="product-preview3.jpg"
+				/>
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="15 530"
+					rating={2}
+					amount="60"
+					preview="product-preview4.jpg"
+				/>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={5}
+					tag="Скидка"
+					amount="60"
+					preview="product-preview1.jpg"
+				/>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={3}
+					type="discount"
+					tag="Скидка"
+					amount="60"
+					preview="product-preview1.jpg"
+				/>
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="580"
+					rating={1}
+					amount="60"
+					preview="product-preview2.jpg"
+				/>
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					type="GIFT"
+					tag="Подарок"
+					amount="60"
+					preview="product-preview3.jpg"
+				/>
+			</products-grid>
+
+			<x-pagination />
+		</brand-category>
+
+		<div class="section">
+			<content-block>
+				<h2>Aptstore&nbsp;— сервис по&nbsp;заказу лекарств и&nbsp;товаров для&nbsp;красоты в&nbsp;Москве</h2>
+
+				<p>Интернет-аптека AptStore представляет собой удобный сервис, который пользуется большой популярностью среди населения Москвы и Московской области. В представленном каталоге можно найти любой препарат и совершить покупку всего в пару кликов на максимально простых и выгодных условиях. Настоящие профессионалы помогут пользователям подобрать необходимую продукцию, оформить и осуществить доставку в кратчайшие сроки. Решив совершить покупку в режиме онлайн, клиент сможет самостоятельно оценить все плюсы работы компетентного персонала, удаленного оформления заказа и быстрой доставки.</p>
+
+				<h3>Ассортимент медикаментов</h3>
+
+				<p>Аптека предлагает большой выбор лекарственных препаратов. Ассортимент регулярно пополняется с учетом выпуска новых медикаментов, растущего спроса и пожеланий покупателя.</p>
+				<p><strong>В каталоге всегда можно найти следующие позиции препаратов:</strong></p>
+
+				<ul>
+					<li>лекарства отечественного и зарубежного производства, помогающих при разных недомоганиях и заболеваниях: более 7000 наименований;</li>
+					<li>медицинские приборы и изделия (тонометр, термометр, эластичные бинты, шприцы, фиксаторы и др.): более 200 видов;</li>
+					<li>косметические и гигиенические средства, необходимые для ухода за телом (шампуни, крема, мыло), включая косметику, оказывающую лечебное воздействие: более 3000 позиций;</li>
+					<li>детская продукция и товары для мамочек, в перечень которых входят средства для ежедневного ухода и специализированная бытовая химия;</li>
+					<li>спортивные товары и здоровое питание: около 250 наименований;</li>
+					<li>биологически активные добавки для улучшения различных процессов в организме. Эффективные препараты восполняют нехватку витаминов и минералов, что позволяет поддерживать физическое здоровье и эмоциональное состояние на должном уровне: более 1000 наименований;</li>
+					<li>прочие товары и изделия медицинского назначения</li>
+				</ul>
+			</content-block>
+		</div>
+	</div>
+
+	<y-map />
+</default-layout>

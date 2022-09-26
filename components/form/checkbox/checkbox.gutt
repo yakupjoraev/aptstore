@@ -1,0 +1,11 @@
+<param name={$name} value={"checkbox" ++ num_rand()} />
+<param name={$size} value="a" />
+<param name={$class} value="" />
+<param name={$disabled} value={false} />
+<param name={$checked} value={false} />
+
+<label class={classes("checkbox", "checkbox--size-" ++ $size, $disabled ?? "checkbox--disabled" !! "", $class)} for={$name}>
+	<input class="checkbox" type="checkbox" id={$name} disabled={$disabled} checked={$checked} />
+	<span class="checkbox__element"></span>
+	{$children}
+</label>

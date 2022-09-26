@@ -1,0 +1,62 @@
+<import name="common-header" from="../common-header/common-header.gutt" />
+<import name="search-input" from="../form/search-input/search-input.gutt" />
+<import name="address-list-order" from="../address-list-order/address-list-order.gutt" />
+<import name="delivery-map" from="../delivery-map/delivery-map.gutt" />
+<import name="search-swich-filter" from="../search-swich-filter/search-swich-filter.gutt" />
+
+<param name={$class-content} value="" />
+<param name={$text-btn} value="Забрать через 1-2 дня" />
+
+<div class="selected-map-list">
+	<input
+		class="selected-map-list__input"
+		type="radio"
+		name="selected-map-list"
+		value="map"
+		id="selected-map-list-map"
+		checked
+	/>
+	<input
+		class="selected-map-list__input"
+		type="radio"
+		name="selected-map-list"
+		value="list"
+		id="selected-map-list-list"
+	/>
+
+	<div class="selected-map-list__header">
+		<!-- <search-input class="selected-map-list__search-input" placeholder="Найти по адресу или по станции метро" /> -->
+
+		<search-swich-filter class="selected-map-list__search-filter" form-class="selected-map-list__search-filter-form" />
+
+		<div class="selected-map-list__switches">
+			<label for="selected-map-list-map" class="selected-map-list__switcher selected-map-list__switcher--map">
+				На карте
+			</label>
+
+			<label for="selected-map-list-list" class="selected-map-list__switcher selected-map-list__switcher--list">
+				Списком
+			</label>
+		</div>
+
+		<div class="selected-map-list__switches-mobile">
+			<label for="selected-map-list-map" class="selected-map-list__mobile-map">
+				<inline-svg src="selected-map-list__mobile-map.svg" />
+			</label>
+
+			<label for="selected-map-list-list" class="selected-map-list__mobile-list ">
+				<inline-svg src="selected-map-list__mobile-list.svg" />
+			</label>
+		</div>
+	</div>
+
+	<div class={classes("selected-map-list__content", $class-content)}>
+		<div class="selected-map-list__map">
+			<delivery-map class="selected-map-list__delivery-map" text-btn={$text-btn} />
+		</div>
+
+		<div class="selected-map-list__addresses">
+			<address-list-order />
+		</div>
+	</div>
+</div>

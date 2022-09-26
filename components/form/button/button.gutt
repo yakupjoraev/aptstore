@@ -1,0 +1,46 @@
+<param name={$type} value="button" />
+<param name={$theme} value="colored" /><!-- colored, light -->
+<param name={$class} value="" />
+<param name={$href} value={false} />
+<param name={$action} value="" />
+<param name={$action-value} value="" />
+<param name={$full-width} value={false} />
+<param name={$disabled} value={false} />
+<param name={$size} value="regular" /><!-- small, tight, regular, large -->
+
+<variable name={$classes} value={classes(
+	"button",
+	"button--size-" ++ $size,
+	"button--theme-" ++ $theme,
+	$full-width ?? "button--full-width" !! "",
+	$class
+)} />
+
+<switch>
+	<case test={$href}>
+		<a href={$href} class={$classes}>
+			<if test={str_len($action)}>
+				<attribute name={"data-" ++ $action} value={$action-value} />
+			</if>
+			{$children}
+		</a>
+	</case>
+	<case test={$type == "upload"}>
+		<label class={$classes}>
+			<input class="button__upload" type="file">
+				<if test={str_len($action)}>
+					<attribute name={"data-" ++ $action} value={$action-value} />
+				</if>
+			</input>
+			{$children}
+		</label>
+	</case>
+	<default>
+		<button class={$classes} type={$type} disabled={$disabled}>
+			<if test={str_len($action)}>
+				<attribute name={"data-" ++ $action} value={$action-value} />
+			</if>
+			{$children}
+		</button>
+	</default>
+</switch>

@@ -1,0 +1,13 @@
+<param name={$name} value="" />
+<param name={$no-close-button} value={false} />
+
+<div class="modal-window" data-modal-window>
+	<div class="modal-window__frame" data-modal={$name}>
+		<div class="modal-window__content">
+			<if test={!$no-close-button}>
+				<button class="modal-window__close" type="button" data-close>Закрыть</button>
+			</if>
+			{$children}
+		</div>
+	</div>
+</div>

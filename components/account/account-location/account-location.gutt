@@ -1,0 +1,5 @@
+<div class="account-location">
+	<button type="button" class="account-location__button" data-open-modal="town-selector">
+		<span class="account-location__label">Москва и область</span>
+	</button>
+</div>

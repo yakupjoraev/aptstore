@@ -1,0 +1,87 @@
+@import url('../../layouts/variables.pcss');
+
+.sharing-popup {
+	position: relative;
+	display: inline;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.sharing-popup__open {
+	display: inline;
+}
+
+.sharing-popup__popup {
+	position: absolute;
+	z-index: 7;
+	display: none;
+	flex-direction: column;
+	border-radius: 12px;
+	padding: 13px 18px 16px 12px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	background: var(--white);
+
+	&::before {
+		content: '';
+		display: block;
+		margin-left: auto;
+		width: 18px;
+		height: 4px;
+		background: resolve('./dots.svg');
+	}
+}
+
+.sharing-popup.open .sharing-popup__popup {
+	display: flex;
+}
+
+.ya-share2__list {
+	margin-top: 13px;
+}
+
+.ya-share2__item + .ya-share2__item {
+	margin-top: 5px;
+}
+
+.ya-share2__link {
+	border: 0;
+	padding: 2px 0 2px 30px;
+	background: none;
+	text-align: left;
+	color: var(--gray);
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.ya-share2__item_service_vkontakte .ya-share2__link {
+	background: resolve('./vk.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_telegram .ya-share2__link {
+	background: resolve('./tg.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_odnoklassniki .ya-share2__link {
+	background: resolve('./ok.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_moimir .ya-share2__link {
+	background: resolve('./mm.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_twitter .ya-share2__link {
+	background: resolve('./tw.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_viber .ya-share2__link {
+	background: resolve('./vb.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_whatsapp .ya-share2__link {
+	background: resolve('./whatsapp.svg') left top no-repeat;
+}
+
+.ya-share2__item_service_skype .ya-share2__link {
+	background: resolve('./skype.svg') left top no-repeat;
+}

@@ -1,0 +1,31 @@
+<param name={$path} value={[]} />
+<param name={$show-on-mobile} value={false} />
+
+<div class={classes(
+	"bread-crumps",
+	$brand? ?? "bread-crumps--branded" !! "",
+	$show-on-mobile ?? "bread-crumps--show-on-mobile" !! ""
+)}>
+	<if test={$brand?}>
+		<div class="bread-crumps__brand">
+			<a class="bread-crumps__goback" href="">Назад</a>
+
+			<a class="bread-crumps__brand-link" href={$brand.url}>
+				<img src={"storage/" ++ $brand.img} alt={$brand.title} />
+			</a>
+		</div>
+	</if>
+
+	<for-each item={$item} from={$path}>
+		<div class="bread-crumps__item">
+			<switch>
+				<case test={$item.url?}>
+					<a class="bread-crumps__link" href={$item.url}>{$item.label}</a>
+				</case>
+				<default>
+					{$item.label}
+				</default>
+			</switch>
+		</div>
+	</for-each>
+</div>

@@ -1,0 +1,119 @@
+<import name="form-button" from="../form/button/button.gutt" />
+
+<div class="address-list">
+	<ul class="address-list__items">
+		<li class="address-list__item">
+			<h5 class="address-list__title">Ваша № 1</h5>
+			<address class="address-list__address">ул. Раменки,<br /> д. 3. с1</address>
+		</li>
+		<li class="address-list__item">
+			<p class="address-list__text">м. Раменки <br /><span>3 мин</span></p>
+		</li>
+		<li class="address-list__item">
+			<time class="address-list__time">Ежедневно: 09:00-21:00</time>
+		</li>
+		<li class="address-list__item">
+			<div class="address-list__deliver">
+				<inline-svg src="address-list__deliver.svg" />
+				<p>Доставим сюда</p>
+				<button type="submit" class="address-list__deliver-close">
+					<inline-svg class="address-list__deliver-close" src="address-list__deliver-close.svg" />
+				</button>
+			</div>
+		</li>
+	</ul>
+
+	<ul class="address-list__items">
+		<li class="address-list__item">
+			<h5 class="address-list__title">Ваша № 1</h5>
+			<address class="address-list__address">ул. Большая Филевская, <br /> д. 21, с. 1</address>
+		</li>
+		<li class="address-list__item">
+			<p class="address-list__text">м. Фили<br /><span>1 мин</span></p>
+		</li>
+		<li class="address-list__item">
+			<time class="address-list__time">Понедельник-Пятница: 09:30-18:30</time>
+			<time class="address-list__time">Cуббота-Воскресенье 08:00-15:00</time>
+		</li>
+		<li class="address-list__item">
+			<form-button class="address-list__button" type="submit" size="large" theme="light" full-width={true}>
+				Запомнить для заказа
+			</form-button>
+		</li>
+	</ul>
+
+	<ul class="address-list__items">
+		<li class="address-list__item">
+			<h5 class="address-list__title">Ваша № 1</h5>
+			<address class="address-list__address">ул. Промылшленная, <br />д. 2к, с. 1, корпус 32в</address>
+		</li>
+		<li class="address-list__item">
+			<p class="address-list__text">м. Раменким. Филевский парк<br /><span>3 мин</span></p>
+		</li>
+		<li class="address-list__item">
+			<time class="address-list__time">Понедельник-Пятница: 08:00-21:00</time>
+			<time class="address-list__time">Воскресенье: 10:00-21:00</time>
+			<time class="address-list__time">Cуббота: 09:00-21:00</time>
+		</li>
+		<li class="address-list__item">
+			<form-button class="address-list__button" type="submit" size="large" theme="light" full-width={true}>
+				Запомнить для заказа
+			</form-button>
+		</li>
+	</ul>
+
+	<ul class="address-list__items">
+		<li class="address-list__item">
+			<h5 class="address-list__title">Ваша № 1</h5>
+			<address class="address-list__address">ш. Валоколамское,<br />д. 21, с. 1</address>
+		</li>
+		<li class="address-list__item">
+			<p class="address-list__text">м. Академика<br /> Королева<br /><span>12 мин</span></p>
+		</li>
+		<li class="address-list__item">
+			<time class="address-list__time">Понедельник-Пятница: 09:30-18:30</time>
+			<time class="address-list__time">Cуббота-Воскресенье 08:00-15:00</time>
+		</li>
+		<li class="address-list__item">
+			<form-button class="address-list__button" type="submit" size="large" theme="light" full-width={true}>
+				Запомнить для заказа
+			</form-button>
+		</li>
+	</ul>
+
+	<ul class="address-list__items">
+		<li class="address-list__item">
+			<h5 class="address-list__title">Ваша № 1</h5>
+			<address class="address-list__address">ул. Гринчука,<br />д. 267, с. 34</address>
+		</li>
+		<li class="address-list__item">
+			<p class="address-list__text">м. Фили<br /><span>3 мин</span></p>
+		</li>
+		<li class="address-list__item">
+			<time class="address-list__time">Круглосуточно</time>
+		</li>
+		<li class="address-list__item">
+			<form-button class="address-list__button" type="submit" size="large" theme="light" full-width={true}>
+				Запомнить для заказа
+			</form-button>
+		</li>
+	</ul>
+
+	<ul class="address-list__items">
+		<li class="address-list__item">
+			<h5 class="address-list__title">Ваша № 1</h5>
+			<address class="address-list__address">Одинцово<br />ул. Маршала Ушакова,<br />д. 3. с1</address>
+		</li>
+		<li class="address-list__item">
+			<!-- <p class="address-list__text">м. Раменки <br />3 мин</p> -->
+		</li>
+		<li class="address-list__item">
+			<time class="address-list__time">Ежедневно: 09:00-21:00</time>
+		</li>
+		<li class="address-list__item">
+			<form-button class="address-list__button" type="submit" size="large" theme="light" full-width={true}>
+				Запомнить для заказа
+			</form-button>
+		</li>
+	</ul>
+</div>

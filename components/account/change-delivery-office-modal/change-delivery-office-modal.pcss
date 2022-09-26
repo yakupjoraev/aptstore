@@ -1,0 +1,63 @@
+@import url('../../../layouts/variables.pcss');
+
+.change-delivery-office-modal {
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 12px;
+	background: var(--white);
+
+	@media (--tablet) {
+		width: 680px;
+		padding: 24px 20px;
+	}
+
+	@media (--desktop-small) {
+		width: 850px;
+	}
+
+	@media (--desktop-medium) {
+		width: 970px;
+	}
+}
+
+.change-delivery-office-modal__title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--black);
+
+	@media (--tablet) {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+.change-delivery-option-modal__select-map-list {
+	margin-top: 16px;
+}
+
+.change-delivery-option-modal__content {
+	overflow: auto;
+	margin: 0 calc(var(--padding-base) * -1) calc(var(--padding-base) * -1);
+	height: 400px;
+	scrollbar-color: var(--secondary) #e5e5e5;
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #e5e5e5;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 100px;
+		box-shadow: inset 0 0 6px var(--secondary);
+	}
+
+	@media (--tablet) {
+		margin: 0 calc(var(--padding-mobile) * -1) -24px;
+	}
+}

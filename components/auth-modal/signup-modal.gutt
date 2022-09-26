@@ -1,0 +1,18 @@
+<import name="modal-window" from="../modal-window/modal-window.gutt" />
+<import name="modal-window-columns" from="../modal-window/modal-window-columns.gutt" />
+<import name="modal-window-column" from="../modal-window/modal-window-column.gutt" />
+<import name="bonus-program" from="../bonus-program/bonus-program.gutt" />
+<import name="signup-form" from="../auth-form/signup-form.gutt" />
+
+<modal-window name="signup">
+	<div class="auth-modal">
+		<modal-window-columns>
+			<modal-window-column>
+				<signup-form />
+			</modal-window-column>
+			<modal-window-column>
+				<bonus-program />
+			</modal-window-column>
+		</modal-window-columns>
+	</div>
+</modal-window>

@@ -1,0 +1,34 @@
+<import name="banner-slider" from="../banner-slider/banner-slider.gutt" />
+<import name="banner-element" from="../banner/banner.gutt" />
+
+<param name={$banners} value={[]} />
+
+<div class="banner-grid">
+	<for-each item={$row} from={$banners}>
+		<switch>
+			<case test={$row.type == "slider"}>
+				<div class="banner-grid__slider">
+					<banner-slider>
+						<for-each item={$banner} from={$row.items}>
+							<banner-element data={$banner} />
+						</for-each>
+					</banner-slider>
+				</div>
+			</case>
+			<case test={$row.type == "inline"}>
+				<div class={"banner-grid__inline banner-grid__inline--s" ++ arr_len($row.items)}>
+					<for-each item={$banner} from={$row.items}>
+						<banner-element data={$banner} />
+					</for-each>
+				</div>
+			</case>
+			<default>
+				<div class={"banner-grid__row banner-grid__row--s" ++ arr_len($row.items)}>
+					<for-each item={$banner} from={$row.items}>
+						<banner-element data={$banner} />
+					</for-each>
+				</div>
+			</default>
+		</switch>
+	</for-each>
+</div>

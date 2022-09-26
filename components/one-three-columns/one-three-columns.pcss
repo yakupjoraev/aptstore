@@ -1,0 +1,47 @@
+@import url('../../layouts/default.pcss');
+
+.one-three-columns {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+
+	@media (--mobile-medium) {
+		margin-top: 40px;
+	}
+
+	@media (--desktop-small) {
+		margin-top: 95px;
+	}
+
+	@media (--desktop-medium) {
+		flex-direction: row;
+	}
+
+	&.one-three-columns--since-tablet {
+		@media (--tablet) {
+			flex-direction: row;
+		}
+	}
+
+	&.one-three-columns--since-desktop {
+		@media (--desktop-small) {
+			flex-direction: row;
+		}
+	}
+}
+
+.one-three-columns > * + * {
+	margin-top: 50px;
+
+	@media (--desktop-medium) {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+}
+
+@media (--desktop-medium) {
+	.one-three-columns > *:nth-child(1) {
+		width: 300px;
+		flex-shrink: 0;
+	}
+}

@@ -1,0 +1,6 @@
+<param name={$type} value="P_SPECIALOFFER" />
+<param name={$class} value="" />
+
+<div class={classes("product-label", $class, "product-label--" ++ $type)}>
+	{$children}
+</div>

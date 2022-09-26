@@ -1,0 +1,4 @@
+<div class="y-map">
+	<h3 class="y-map__title container">53 Аптеки в городе Москве</h3>
+	<div class="y-map__map" id="bx_831553309_LS_map_continer"></div>
+</div>

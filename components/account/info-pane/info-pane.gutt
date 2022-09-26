@@ -1,0 +1,28 @@
+<import name="account-pane" from="../account-pane/account-pane.gutt" />
+<import name="form-button" from="../../form/button/button.gutt" />
+
+<param name={$class} value="" />
+
+<account-pane class={classes("info-pane", $class)}>
+	<div class="info-pane__title">Иван</div>
+
+	<ul class="info-pane__list">
+		<li class="info-pane__item">
+			<a href="" class="info-pane__link">Заказы</a>
+		</li>
+		<li class="info-pane__item">
+			<span class="info-pane__current">Личные данные</span>
+		</li>
+		<li class="info-pane__item">
+			<a href="" class="info-pane__link">Избранное <span class="info-pane__amount">(0)</span></a>
+		</li>
+		<li class="info-pane__item">
+			<a href="" class="info-pane__link">Начислено баллов</a>
+			<span class="info-pane__points">238 B</span>
+		</li>
+	</ul>
+
+	<div class="info-pane__buttons">
+		<form-button theme="light" size="large" full-width={true}>Выйти</form-button>
+	</div>
+</account-pane>

@@ -1,0 +1,20 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - '*'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: makingoff/php-node:alpha4
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_SECRET_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOST }}
+      - run: npm ci --only=production
+      - run: npm run build
+      - run: npx rsync --archive --verbose --compress --human-readable --progress --recursive --delete --files-from=.rsyncrc . ${{ secrets.HOST }}:/var/www/apt-store.alekseychikin.ru/${GITHUB_REF_NAME}/
+

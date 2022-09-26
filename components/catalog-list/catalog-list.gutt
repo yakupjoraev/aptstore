@@ -1,0 +1,107 @@
+<div class="catalog-list" data-catalog-list>
+	<ul class="catalog-list__categories" data-categories>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link" data-open-subcategory="1">% Акции</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link" data-open-subcategory="2">Беременным и кормящим мамам</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Оптика</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">БАД</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Лекарственные препараты</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Ортопедические изделия</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Бытовая химия</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Мама и малыш</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Прочие товары</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Витамины</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Медицинские изделия</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Разное</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Гигиена и косметика</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Медицинские приборы</a>
+		</li>
+		<li class="catalog-list__category">
+			<a href="catalog.html" class="catalog-list__link">Средства от насекомых</a>
+		</li>
+	</ul>
+
+	<div class="catalog-list__subcategory" data-subcategory="1">
+		<h3 class="catalog-list__subcategory-header">
+			<button type="button" class="catalog-list__subcategory-back" data-back>Назад</button>
+			Акции
+			<button type="button" class="catalog-list__subcategory-close" data-close>Закрыть</button>
+		</h3>
+
+		<ul class="catalog-list__subcategory-list">
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link" data-open-subcategory="2">Беременным и кормящим мамам</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Все для кормления детей</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Детская гигиена и уход</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Детское питание</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Подгузники и пеленки</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Пустышки, прорезыватели и игрушки</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="catalog-list__subcategory" data-subcategory="2">
+		<h3 class="catalog-list__subcategory-header">
+			<button type="button" class="catalog-list__subcategory-back" data-back>Назад</button>
+			Беременным и кормящим мамам
+			<button type="button" class="catalog-list__subcategory-close" data-close>Закрыть</button>
+		</h3>
+
+		<ul class="catalog-list__subcategory-list">
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Беременным и кормящим мамам</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Все для кормления детей</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Детская гигиена и уход</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Детское питание</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Подгузники и пеленки</a>
+			</li>
+			<li class="catalog-list__subcategory-item">
+				<a href="catalog.html" class="catalog-list__subcategory-link">Пустышки, прорезыватели и игрушки</a>
+			</li>
+		</ul>
+	</div>
+</div>

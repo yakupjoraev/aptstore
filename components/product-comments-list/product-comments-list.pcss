@@ -1,0 +1,33 @@
+@import url('../../layouts/variables.pcss');
+
+.product-comments-list__controls {
+	display: flex;
+	align-items: center;
+
+	@media (--tablet) {
+		border-bottom: 1px solid var(--light-gray);
+		padding-bottom: 26px;
+	}
+}
+
+.product-comments-list__checkbox {
+	margin-left: 16px;
+	flex-shrink: 0;
+
+	@media (--tablet) {
+		margin-left: 50px;
+	}
+}
+
+.product-comments-list__only-photo {
+	margin-left: 10px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1;
+	color: var(--black);
+
+	@media (--tablet) {
+		font-size: 18px;
+		line-height: 21px;
+	}
+}

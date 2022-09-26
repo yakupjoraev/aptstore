@@ -1,0 +1,43 @@
+<import name="comment-list" from="../comment-list/comment-list.gutt" />
+
+<param name={$comments} value={[
+	[
+		"name": "Алексей",
+		"date": "11 сентября 2021",
+		"comment": "хорошо обезбалиевает! отлично помогает при головных и друших болях! только сильно им нельзя злаупотреблят ,  разжижает кровь и может идти кровь носом ! а так отличное средство от всего!",
+		"likes": 7,
+		"dislikes": 1,
+		"answers": [
+			[
+				"name": "Aptstore.ru",
+				"userpic": "apt-userpic.jpg",
+				"verified": true,
+				"reply": "Алексей",
+				"date": "13 сентября 2021",
+				"comment": "нельзя применять людям с повышенной кислотностью.",
+				"likes": 5,
+				"dislikes": 1
+			]
+		]
+	],
+	[
+		"name": "Борис С.",
+		"date": "11 сентября 2021",
+		"comment": "хорошо обезбалиевает! отлично помогает при головных и друших болях! только сильно им нельзя злаупотреблят ,  разжижает кровь и может идти кровь носом ! а так отличное средство от всего!",
+		"likes": 5,
+		"dislikes": 2
+	]
+]} />
+
+<div class="static-comments">
+	<div class="static-comments__head">
+		<h3 class="static-comments__heading">Комментарии:</h3>
+		<div class="static-comments__leave">
+			<a class="static-comments__leave-comment" href="add-comment.html">Оставить комментарий</a>
+		</div>
+	</div>
+
+	<div class="static-comments__comments">
+		<comment-list comments={$comments} />
+	</div>
+</div>

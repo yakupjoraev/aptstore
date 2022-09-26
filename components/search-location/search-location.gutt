@@ -1,0 +1,52 @@
+<div class="search-location" data-search-location>
+	<ul class="search-location__list">
+		<li class="search-location__item search-location__item--all">
+			<button type="button" class="search-location__button checked" data-button="Искать везде">Искать везде</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="% Акции">% Акции</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Диета, спорт, питание">Диета, спорт, питание</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Оптика">Оптика</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="БАД">БАД</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Лекарственные препараты">Лекарственные препараты</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Ортопедические изделия">Ортопедические изделия</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Бытовая">Бытовая химия</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Мама и малыш">Мама и малыш</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Прочие товары">Прочие товары</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Витамины">Витамины</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Медицинские изделия">Медицинские изделия</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Разное">Разное</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Гигиена и косметика">Гигиена и косметика</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Медицинские приборы">Медицинские приборы</button>
+		</li>
+		<li class="search-location__item">
+			<button type="button" class="search-location__button" data-button="Средства от насекомых">Средства от насекомых</button>
+		</li>
+	</ul>
+</div>

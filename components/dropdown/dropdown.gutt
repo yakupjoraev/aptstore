@@ -1,0 +1,16 @@
+<import name="scrollable-area" from="../scrollable-area/scrollable-area.gutt" />
+
+<param name={$class} value="" />
+<param name={$theme} value="" />
+<param name={$value} value="" />
+<param name={$label} value="" />
+
+<div class={classes("dropdown", $class, str_len($theme) > 0 ?? "dropdown--" ++ $theme !! "")} data-dropdown>
+	<button class="dropdown__toggle" type="button" data-dropdown-toggle data-value={$value}>{$label}</button>
+
+	<div class="dropdown__popup">
+		<scrollable-area>
+			{$children}
+		</scrollable-area>
+	</div>
+</div>

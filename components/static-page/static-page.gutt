@@ -1,0 +1,193 @@
+<import name="product-slider" from="../product-slider/product-slider.gutt" />
+<import name="product-card" from="../product-card/product-card.gutt" />
+<import name="news-column" from="../news-column/news-column.gutt" />
+<import name="static-comments" from="../static-comments/static-comments.gutt" />
+
+<section class="static-page">
+	<div class="static-page__content">
+		{$children}
+
+		<div class="static-page__date">Опубликовано: 1 Марта 2021</div>
+
+		<div class="static-page__aside">
+			<div class="static-page__news">
+				<news-column compacted={true} news={[
+					[
+						"title": "Какой респиратор купить для защиты от пыли и инфекций",
+						"date": "17 сентября 2021",
+						"preview": "news-preview1.jpg"
+					],
+					[
+						"title": "Менструальный цикл: физиологическая норма",
+						"date": "16 сентября 2021",
+						"preview": "news-preview2.jpg"
+					],
+					[
+						"title": "Презервативы Дюрекс",
+						"date": "10 сентября 2021",
+						"preview": "news-preview3.jpg"
+					],
+					[
+						"title": "Стресс – реакция организма на нервное перенапряжение",
+						"date": "01 сентября 2021",
+						"preview": "news-preview4.jpg"
+					],
+					[
+						"title": "Чеснок – полезный природный продукт",
+						"date": "31 сентября 2021",
+						"preview": "news-preview5.jpg"
+					]
+				]} />
+			</div>
+		</div>
+	</div>
+
+	<div class="static-page__footer">
+		<div class="static-page__disclaimer">
+			Все представленные на сайте материалы предназначены исключительно для образовательных целей и не предназначены для медицинских консультаций, диагностики или лечения. Администрация сайта, редакторы и авторы статей не несут ответственности за любые последствия и убытки, которые могут возникнуть при использовании материалов сайта.
+		</div>
+
+		<product-slider title="Интересные товары">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				notice="Требуется рецепт"
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={4}
+				type="SET"
+				tag="3+1=5"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				rating={2}
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+		</product-slider>
+
+		<static-comments />
+
+		<div class="static-page__news">
+			<news-column compacted={true} news={[
+				[
+					"title": "Какой респиратор купить для защиты от пыли и инфекций",
+					"date": "17 сентября 2021",
+					"preview": "news-preview1.jpg"
+				],
+				[
+					"title": "Менструальный цикл: физиологическая норма",
+					"date": "16 сентября 2021",
+					"preview": "news-preview2.jpg"
+				],
+				[
+					"title": "Презервативы Дюрекс",
+					"date": "10 сентября 2021",
+					"preview": "news-preview3.jpg"
+				],
+				[
+					"title": "Стресс – реакция организма на нервное перенапряжение",
+					"date": "01 сентября 2021",
+					"preview": "news-preview4.jpg"
+				],
+				[
+					"title": "Чеснок – полезный природный продукт",
+					"date": "31 сентября 2021",
+					"preview": "news-preview5.jpg"
+				]
+			]} />
+		</div>
+	</div>
+</section>

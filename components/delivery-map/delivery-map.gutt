@@ -1,0 +1,29 @@
+<import name="form-button" from="../form/button/button.gutt" />
+
+<param name={$class} value="" />
+<param name={$text-btn} value="Запомнить для заказа" />
+
+<div class={classes("delivery-map", $class)} data-delivery-map>
+	<div class="delivery-map__map" style="background: url('storage/map.jpg'); background-size: cover; background-position: center" data-delivery-map-map></div>
+
+	<div class="delivery-map__tooltip" data-delivery-map-tooltip>
+		<button class="delivery-map__tooltip-close" type="button" data-delivery-map-close>Close</button>
+		<div class="delivery-map__tooltip-content">
+			<h5 class="delivery-map__title">
+				Ваша № 1
+			</h5>
+
+			<address class="delivery-map__address">
+				ул. Раменки, д. 3. с1 <br />
+				8 (495) 419 18 18 <br />
+				м. Раменки - 3 мин
+			</address>
+
+			<time class="delivery-map__time">
+				Ежедневно: 09:00-21:00
+			</time>
+
+			<form-button type="submit" size="tight" full-width={true}>{$text-btn}</form-button>
+		</div>
+	</div>
+</div>

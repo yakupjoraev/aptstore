@@ -1,0 +1,38 @@
+<param name={$tabs} value={[]} />
+
+<div class="product-tabs" data-product-tabs>
+	<for-each item={$tab} key={$index} from={$tabs}>
+		<input
+			class="product-tabs__input"
+			type="radio"
+			name="product-tabs"
+			value={$index}
+			id={"product-tab-" ++ $index}
+			checked={$index == 0}
+			data-product-tabs-input
+		/>
+	</for-each>
+
+	<div class="product-tabs__tabs">
+		<for-each item={$tab} key={$index} from={$tabs}>
+			<label class="product-tabs__tab" for={"product-tab-" ++ $index}>
+				{$tab}
+			</label>
+		</for-each>
+	</div>
+
+	<div class="product-tabs__content">
+		<for-each item={$child} key={$index} from={$children}>
+			<div class="product-tabs__block">
+				<label class="product-tabs__tab" for={"product-tab-" ++ $index}>
+					{$tabs[$index]}
+					<inline-svg src="./tab-arrow.svg" />
+				</label>
+
+				<div class="product-tabs__section" data-product-tabs-section>
+					{$child}
+				</div>
+			</div>
+		</for-each>
+	</div>
+</div>

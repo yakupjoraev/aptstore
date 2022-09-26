@@ -1,0 +1,164 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="delivery-explore" from="../components/delivery-explore/delivery-explore.gutt" />
+<import name="product-slider" from="../components/product-slider/product-slider.gutt" />
+<import name="product-card" from="../components/product-card/product-card.gutt" />
+<import name="news-row" from="../components/news-row/news-row.gutt" />
+<import name="index-list" from="../components/index-list/index-list.gutt" />
+<import name="common-header" from="../components/common-header/common-header.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps path={[
+			[
+			"url" : "index.html" ,
+			"label" : "Главная"
+			],
+			[
+			"label" : "Наши аптеки"
+			]
+			]} />
+		<div class="delivery-office__title">
+			<common-header>Пункты выдачи <span class="delivery-office__counter">(54)</span></common-header>
+		</div>
+
+		<delivery-explore />
+
+		<div class="delivery-office__slider">
+			<product-slider title="Интересные товары">
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия  (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={3}
+					type="discount"
+					tag="Скидка"
+					amount="60"
+					preview="product-preview1.jpg" />
+
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="580"
+					rating={1}
+					amount="60"
+					preview="product-preview2.jpg" />
+
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					type="GIFT"
+					tag="Подарок"
+					amount="60"
+					preview="product-preview3.jpg" />
+
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="15 530"
+					notice="Требуется рецепт"
+					amount="60"
+					preview="product-preview4.jpg" />
+
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={4}
+					type="SET"
+					tag="3+1=5"
+					amount="60"
+					preview="product-preview1.jpg" />
+
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="580"
+					rating={1}
+					amount="60"
+					preview="product-preview2.jpg" />
+
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={5}
+					tag="Скидка"
+					amount="60"
+					preview="product-preview3.jpg" />
+
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="15 530"
+					rating={2}
+					amount="60"
+					preview="product-preview4.jpg" />
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={5}
+					tag="Скидка"
+					amount="60"
+					preview="product-preview1.jpg" />
+
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					rating={3}
+					type="discount"
+					tag="Скидка"
+					amount="60"
+					preview="product-preview1.jpg" />
+
+				<product-card
+					title="Флорадикс Магнезиум 250мл фл."
+					price="580"
+					rating={1}
+					amount="60"
+					preview="product-preview2.jpg" />
+
+				<product-card
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580"
+					price="550"
+					discount="5%"
+					type="GIFT"
+					tag="Подарок"
+					amount="60"
+					preview="product-preview3.jpg" />
+			</product-slider>
+		</div>
+
+		<news-row news={[
+			[
+				"title": "Какой респиратор купить для защиты от пыли и инфекций" ,
+				"date": "17 сентября 2021" ,
+				"preview": "news-preview1.jpg"
+			],
+			[
+				"title": "Менструальный цикл: физиологическая норма" ,
+				"date": "16 сентября 2021" ,
+				"preview": "news-preview2.jpg"
+			],
+			[
+				"title": "Презервативы Дюрекс" ,
+				"date": "10 сентября 2021" ,
+				"preview": "news-preview3.jpg"
+			],
+			[
+				"title": "Стресс – реакция организма на нервное перенапряжение" ,
+				"date": "01 сентября 2021" ,
+				"preview": "news-preview4.jpg"
+			]
+		]} />
+
+		<index-list />
+	</div>
+</default-layout>
+

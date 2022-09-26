@@ -1,0 +1,24 @@
+<import name="product-comments-rating" from="../product-comments-rating/product-comments-rating.gutt" />
+<import name="product-comments-media" from="../product-comments-media/product-comments-media.gutt" />
+<import name="product-comments-list" from="../product-comments-list/product-comments-list.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+
+<div class="product-comments">
+	<div class="product-comments__content">
+		<div class="product-comments__media">
+			<h3 class="product-comments__header">Отзывы о товаре <sup class="product-comments__count">534</sup></h3>
+
+			<product-comments-media />
+		</div>
+
+		<div class="product-comments__rating">
+			<product-comments-rating />
+
+			<form-button class="product-comments__add-comment" href="add-comment.html" size="large" full-width={true}>Оставить отзыв</form-button>
+		</div>
+
+		<div class="product-comments__comments">
+			<product-comments-list />
+		</div>
+	</div>
+</div>

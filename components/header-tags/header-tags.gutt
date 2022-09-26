@@ -1,0 +1,12 @@
+<ul class="header-tags">
+	<li class="header-tags__tag"><span class="header-tag__active">Акции</span></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Красота</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Худеем</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Детство</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Спорт</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Суставы</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">БАД</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Лекарства</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Витамины</a></li>
+	<li class="header-tags__tag"><a href="" class="header-tag__link">Оптика</a></li>
+</ul>

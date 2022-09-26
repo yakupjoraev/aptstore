@@ -1,0 +1,5 @@
+<div class="banner-slider" data-banner-slider>
+	<div class="banner-slider__content" data-content>
+		{$children}
+	</div>
+</div>

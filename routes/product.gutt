@@ -1,0 +1,256 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="product-preview" from="../components/product-preview/product-preview.gutt" />
+<import name="index-list" from="../components/index-list/index-list.gutt" />
+<import name="product-slider" from="../components/product-slider/product-slider.gutt" />
+<import name="product-card" from="../components/product-card/product-card.gutt" />
+<import name="simple-slider" from="../components/simple-slider/simple-slider.gutt" />
+<import name="analog-masonry" from="../components/analog-masonry/analog-masonry.gutt" />
+<import name="instruction-use" from="../components/instruction-use/instruction-use.gutt" />
+<import name="product-tabs" from="../components/product-tabs/product-tabs.gutt" />
+<import name="content-block" from="../components/content-block/content-block.gutt" />
+<import name="product-comments" from="../components/product-comments/product-comments.gutt" />
+<import name="product-like-share" from="../components/product-like-share/product-like-share.gutt" />
+
+<default-layout empty-basket={true} headless={true}>
+	<div class="container">
+		<product-like-share>
+			<bread-crumps path={[
+				[
+					"url": "index.html",
+					"label": "Главная"
+				],
+				[
+					"url": "catalog.html",
+					"label": "Каталог товаров"
+				],
+				[
+					"label": "Мама и малыш",
+					"url": "category.html"
+				],
+				[
+					"label": "Витаминные добавки",
+					"url": "category.html"
+				],
+				[
+					"label": "Мини Доктор энергия пастилки жевательные 30шт витамины"
+				]
+			]} />
+		</product-like-share>
+
+		<product-preview
+			title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+		/>
+
+		<simple-slider title="Аналоги">
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="3480" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="480" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="130" />
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="3480" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="480" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="130" />
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="3480" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="480" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="130" />
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="3480" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="480" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="130" />
+		</simple-slider>
+
+		<instruction-use preview="product1.jpg" title="Инструкция по&nbsp;применению">
+			<h4>Состав</h4>
+
+			<ul>
+				<li>Аппарат магнитотерапевтический «АЛМАГ+» 1 шт</li>
+				<li>Комплект принадлежностей</li>
+				<li>Руководство по эксплуатации 1 шт</li>
+				<li>Потребительская тара 1 шт</li>
+			</ul>
+
+			<h4>Противопоказания</h4>
+
+			<ul>
+				<li>Острые гнойно-воспалительные заболевания</li>
+				<li>Аневризма аорты</li>
+				<li>Беременность</li>
+				<li>Системные заболевания крови</li>
+				<li>Злокачественные новообразования</li>
+				<li>Тиреотоксикоз</li>
+				<li>Алкогольная интоксикация</li>
+				<li>Мерцательная аритмия</li>
+				<li>Наличие имплантируемого кардиостимулятора в зоне воздействия</li>
+			</ul>
+
+			<h4>Описание</h4>
+
+			<p>
+				Аппарат предназначен для физиотерапевтического лечения и проведения восстановительно-реабилитационных мероприятий низкочастотным низкоинтенсивным бегущим и неподвижным импульсным магнитным полем в условиях лечебных, лечебно-профилактических учреждений, а также в домашних условиях по рекомендации врача.<br/>
+				Современный отечественный аппарат АЛМАГ+ предназначен для лечения в стационарных, амбулаторных и домашних условиях ряда заболеваний:
+			</p>
+
+			<ul>
+				<li>Артриты, артрозы, остеохондроз</li>
+				<li>Грыжа межпозвоночного диска</li>
+				<li>Подагра</li>
+				<li>Сколиоз</li>
+				<li>Остеопороз</li>
+				<li>Травмы (переломы) Алмаг+ создан специально для лечения ваших суставов! АЛМАГ+ помогает на профессиональном уровне:</li>
+				<li>эффективно устранить воспаление и боль</li>
+				<li>способствовать восстановлению активности</li>
+				<li>снять мышечный спазм и отек тканей</li>
+				<li>предупредить обострения хронических заболеваний</li>
+				<li>замедлить прогрессирование болезни</li>
+				<li>улучшить двигательные функции</li>
+				<li>АЛМАГ+ содержит в себе 3 уникальных режима, оптимально настроенных на решение определенных задач:</li>
+				<li>Режим против воспаления и боли - разработан для максимально быстрого избавления от боли различного происхождения и снятия воспаления.</li>
+				<li>Педиатрический - подходит для лечения детей от 1 месяца. Это одна из уникальных особенностей АЛМАГа+ не только на отечественном рынке медицинской техники, но и на мировом!</li>
+				<li>Основной - позаимствован у аппарата-предшественника АЛМАГа-01 как многократно доказавший свою эффективность в ходе многочисленных клинических исследований.</li>
+			</ul>
+		</instruction-use>
+
+		<product-slider title="Рекомендуемые">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+		</product-slider>
+
+		<product-slider title="С товаром часто покупают">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				notice="Требуется рецепт"
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={4}
+				type="SET"
+				tag="3+1=5"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				rating={2}
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+		</product-slider>
+
+		<product-tabs tabs={["Подробная информация", "Отзывы"]}>
+			<content-block>
+				<h2>Подробная информация</h2>
+
+				<h4>Состав</h4>
+
+				<p>Глюкозный сироп, сахар, вода, желатин, витамин С, лимонная кислота (Е330) (регулятор кислотности), натуральный ароматизатор (малиновый), витамин Е, цинк, карнаубский воск (Е 903) (глазирователь), экстракт куркумы (краситель), витамин B6, витамин А, фолиевая кислота, витамин D3 (холекальциферол), витамин B12.</p>
+
+				<h4>Противопоказания</h4>
+
+				<p>Индивидуальная непереносимость компонентов БАД.</p>
+
+				<h4>Способ применения и дозы</h4>
+
+				<p>Рекомендации по приёму:</p>
+
+				<p>Детям старше 3-х лет по 1 жевательной пастилке в день во время еды. Продолжительность приема и повторные курсы - по рекомендации врача.</p>
+
+				<p>Перед применением рекомендуется проконсультироваться с врачом.</p>
+
+				<h4>Условия хранения</h4>
+
+				<p>Хранить в недоступном для детей месте при температуре не выше +25 С и относительной влажности 75%.</p>
+
+				<h4>Срок годности</h4>
+
+				<p>24 месяца</p>
+
+				<h4>Особые указания</h4>
+
+				<p>Биологически активная добавка к пище. Не является лекарственным средством.</p>
+
+				<h4>Описание</h4>
+
+				<p>Биологически активная добавка к пище МИНИ Доктор Энергия (MINI Doctor Energy).</p>
+
+				<p>Способствует укреплению иммунитета, выработке энергии и устойчивости к нагрузкам, концентрации внимания, улучшению памяти и умственному развитию, повышению стрессоустойчивости. Рекомендуется в качестве биологически активной добавки к пище для детей старше 3-х лет - дополнительного источника витамина С, витамина Е, витамина А, цинка, витамина D3, витамина B6, витамина B12, фолиевой кислоты.</p>
+
+				<h4>Форма выпуска</h4>
+
+				<p>Жевательные пастилки массой 3,5 г каждая по 30 штук во флаконе</p>
+			</content-block>
+
+			<product-comments />
+		</product-tabs>
+
+		<index-list />
+	</div>
+</default-layout>

@@ -1,0 +1,9 @@
+<import name="form-checkbox" from="../form/checkbox/checkbox.gutt" />
+
+<param name={$value} value="" />
+<param name={$label} value="" />
+
+<div class="filter-search-checkbox">
+	<form-checkbox class="filter-search-checkbox__checkbox" name={$value} size="a" />
+	<label class="filter-search-checkbox__label" for={$value}>{$label}</label>
+</div>

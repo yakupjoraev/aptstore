@@ -1,0 +1,59 @@
+@import url('../../layouts/variables.pcss');
+
+.product-discounts__title {
+	margin: 25px 0;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.product-discounts__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px;
+}
+
+.product-discounts__item {
+	margin: 10px;
+	border-radius: 8px;
+	width: calc(100% - 20px);
+	text-decoration: none;
+
+	&:hover {
+		box-shadow: 0 5px 20px rgba(196, 196, 196, 0.2);
+
+		& .product-discounts__description {
+			color: var(--secondary);
+		}
+	}
+
+	@media (--mobile-medium) {
+		width: calc(50% - 20px);
+	}
+
+	@media (--tablet) {
+		margin: 10px 10px;
+		width: calc(33.3333% - 20px);
+	}
+
+	@media (--desktop-small) {
+		width: calc(25% - 20px);
+	}
+}
+
+.product-discounts__figure {
+	text-align: center;
+}
+
+.product-discounts__preview {
+	width: 100%;
+	max-width: 100%;
+}
+
+.product-discounts__description {
+	padding: 16px 20px;
+	min-height: 63px;
+	font-size: 18px;
+	line-height: 21px;
+	color: var(--black);
+}

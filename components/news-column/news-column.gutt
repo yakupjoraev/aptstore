@@ -1,0 +1,28 @@
+<param name={$news} value={[]} />
+<param name={$compacted} value={false} />
+
+<div class={classes("news-column", $compacted ?? "news-column--compacted" !! "")}>
+	<div class="news-column__header">
+		<h3 class="news-column__header-label">Новости и&nbsp;статьи</h3>
+		<div class="news-column__more news-column__more--top">
+			<a href="" class="news-column__more-link">Больше информации &gt;</a>
+		</div>
+	</div>
+
+	<for-each item={$item} from={$news}>
+		<div class="news-column__item">
+			<figure class="news-column__preview">
+				<img src={"storage/" ++ $item.preview} alt={$item.title} />
+			</figure>
+
+			<div class="news-column__content">
+				<div class="news-column__title">{$item.title}</div>
+				<div class="news-column__date">{$item.date}</div>
+			</div>
+		</div>
+	</for-each>
+
+	<div class="news-column__more news-column__more--bottom">
+		<a href="" class="news-column__more-link">Больше информации &gt;</a>
+	</div>
+</div>

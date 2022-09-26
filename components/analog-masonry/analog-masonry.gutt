@@ -1,0 +1,30 @@
+<param name={$preview} value="" />
+<param name={$title} value="" />
+<param name={$price} value="" />
+<param name={$special-price} value="" />
+<param name={$special-label} value="" />
+
+<div class="analog-masonry">
+	<figure class="analog-masonry__preview">
+		<img src={"storage/" ++ $preview} alt={$title} />
+	</figure>
+
+	<p class="analog-masonry__title">{$title}</p>
+	<p class="analog-masonry__price">
+		<switch>
+			<case test={str_len($special-price) > 0}>
+				<stroke>{$price}&thinsp;₽</stroke>
+			</case>
+			<default>
+				{$price}&thinsp;₽
+			</default>
+		</switch>
+
+		<if test={str_len($special-price) > 0}>
+			<span class="analog-masonry__special-price">
+				<span class="analog-masonry__special-label">{$special-label ++ " "}</span>
+				{$special-price}&thinsp;₽
+			</span>
+		</if>
+	</p>
+</div>

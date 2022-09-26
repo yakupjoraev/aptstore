@@ -1,0 +1,12 @@
+<import name="modal-window" from="../../modal-window/modal-window.gutt" />
+<import name="payment-methods" from="../../payment-methods/payment-methods.gutt" />
+
+<modal-window name="change-payment-method-modal">
+	<div class="change-payment-method-modal">
+		<h3 class="change-payment-method-modal__title">Выбрать способ оплаты по&nbsp;умолчанию</h3>
+
+		<div class="change-payment-method-modal__methods">
+			<payment-methods />
+		</div>
+	</div>
+</modal-window>

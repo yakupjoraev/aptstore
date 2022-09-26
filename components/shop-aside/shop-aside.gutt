@@ -1,0 +1,30 @@
+<import name="form-button" from="../form/button/button.gutt" />
+
+<param name={$compact} value={false} />
+
+<div class={classes("shop-aside", $compact ?? "shop-aside--compact" !! "")}>
+	<h3 class="shop-aside__username">Иван</h3>
+
+	<ul class="shop-aside__list">
+		<li class="shop-aside__item">
+			<a class="shop-aside__link shop-aside__active" href="order-list.html">Заказы</a>
+		</li>
+
+		<li class="shop-aside__item">
+			<a class="shop-aside__link" href="account.html">Личные данные</a>
+		</li>
+
+		<li class="shop-aside__item"><a class="shop-aside__link" href="">Избранное</a>
+			<span class="shop-aside__sum">(0)</span>
+		</li>
+
+		<li class="shop-aside__item"><a class="shop-aside__link" href="">Начислено баллов</a>
+			<span class="shop-aside__score">238 B</span></li>
+
+		<li class="shop-aside__item">
+			<form-button class="shop-aside__link shop-aside__btn" type="submit" size="large" theme="light" full-width={true}>
+				Выйти
+			</form-button>
+		</li>
+	</ul>
+</div>

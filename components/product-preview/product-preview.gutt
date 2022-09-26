@@ -1,0 +1,285 @@
+<import name="amount-controls" from="../amount-controls/amount-controls.gutt" />
+<import name="sharing-popup" from="../sharing-popup/sharing-popup.gutt" />
+<import name="favorite-button" from="../favorite-button/favorite-button.gutt" />
+<import name="product-label" from="../product-label/product-label.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+
+<param name={$title} value="" />
+<param name={$rating} value={4} />
+
+<div class="product-preview" data-product-preview>
+	<div class="product-preview__previews">
+		<div class="product-preview__thumbnails">
+			<button class="product-preview__thumbnails-button product-preview__thumbnails-button--up" type="button"
+				data-product-preview-thumbnails-up>
+				<inline-svg src="product-preview-arrow.svg" />
+			</button>
+			<button class="product-preview__thumbnails-button product-preview__thumbnails-button--down" type="button"
+				data-product-preview-thumbnails-down>
+				<inline-svg src="product-preview-arrow.svg" />
+			</button>
+
+			<div class="product-preview__thumbnails-wrapper" data-product-preview-thumbnails-wrapper>
+				<div class="product-preview__thumbnails-content" data-product-preview-thumbnails-content>
+					<a href="storage/product1.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="0">
+						<img src="storage/product1.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-2.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="1">
+						<img src="storage/product1-2.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-3.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="2">
+						<img src="storage/product1-3.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-4.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="3">
+						<img src="storage/product1-4.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="4">
+						<img src="storage/product1.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-2.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="5">
+						<img src="storage/product1-2.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-3.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="6">
+						<img src="storage/product1-3.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-4.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="7">
+						<img src="storage/product1-4.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="8">
+						<img src="storage/product1.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-2.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="9">
+						<img src="storage/product1-2.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-3.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="10">
+						<img src="storage/product1-3.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-4.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="11">
+						<img src="storage/product1-4.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="12">
+						<img src="storage/product1.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-2.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="13">
+						<img src="storage/product1-2.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-3.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="14">
+						<img src="storage/product1-3.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+					<a href="storage/product1-4.jpg" class="product-preview__thumbnail-link" target="_blank" data-slide="15">
+						<img src="storage/product1-4.jpg" alt="" class="product-preview__thumbnail" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<favorite-button class="product-preview__favorite" />
+
+		<div class="product-preview__tags">
+			<product-label>Скидка</product-label>
+		</div>
+
+		<div class="product-preview__previews-slider">
+			<div class="product-preview__previews-content" data-product-preview-content>
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-2.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-3.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-4.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-2.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-3.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-4.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-2.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-3.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-4.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-2.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-3.jpg" alt="" class="product-preview__image" />
+				</figure>
+
+				<figure class="product-preview__preview" data-product-preview-slide>
+					<img data-fancybox="images" src="storage/product1-4.jpg" alt="" class="product-preview__image" />
+				</figure>
+			</div>
+		</div>
+
+		<div class="product-preview__previews-indicators">
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="0">0</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="1">1</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="2">2</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="3">3</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="4">4</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="5">5</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="6">6</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="7">7</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="8">8</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="9">9</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="10">10</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="11">11</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="12">12</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="13">13</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="14">14</button>
+			<button type="button" class="product-preview__previews-indicator" data-product-preview-indicator
+				data-slide="15">15</button>
+		</div>
+	</div>
+
+	<div class="product-preview__rating">
+		<div class="product-preview__rating-progress" style={"width: " ++ (($rating / 5) * 100) ++ " %"}>{$rating}</div>
+	</div>
+
+	<h1 class="product-preview__title">
+		<span class="product-preview__title-label">
+			{$title}
+		</span>
+		<span class="product-preview__share">
+			<sharing-popup class="product-preview__share-popup">
+				<button type="button" class="product-preview__share-button">share</button>
+			</sharing-popup>
+		</span>
+	</h1>
+
+	<div class="product-preview__description">
+		<div class="product-preview__controls">
+			<div class="product-preview__prices">
+				<div class="product-preview__price-title">Цена:</div>
+
+				<strike class="product-preview__origin-price">75 580 ₽</strike>
+				<div class="product-preview__discount">- 15%</div>
+				<div class="product-preview__price product-preview__price--reduced">4&nbsp;250&nbsp;₽</div>
+			</div>
+
+			<div class="product-preview__buttons" data-buy-controls>
+				<form-button full-width="true" action="buy">Купить</form-button>
+			</div>
+
+			<div class="product-preview__buttons" data-amount-controls style="display: none">
+				<amount-controls />
+			</div>
+
+			<ul class="product-preview__price-list">
+				<li class="product-preview__price-item">
+					<div class="product-preview__price-icon">
+						<inline-svg src="delivery.svg" />
+					</div>
+
+					<p class="product-preview__price-info">
+						Доставка в&nbsp;<span class="product-preview__price-info--green">77&nbsp;аптек<br /></span> в&nbsp;Москве
+						и&nbsp;МО<br />
+						<span class="product-preview__price-info--black">завтра</span> - Бесплатно
+					</p>
+				</li>
+
+				<li class="product-preview__price-item">
+					<div class="product-preview__price-icon">
+						<inline-svg src="pay.svg" />
+					</div>
+
+					<p class="product-preview__price-info">
+						Оплата при получении
+					</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="product-preview__params">
+			<dl class="product-preview__param">
+				<dt class="product-preview__param-term">Артикул:</dt>
+				<dd class="product-preview__param-desc">10025413</dd>
+			</dl>
+			<dl class="product-preview__param">
+				<dt class="product-preview__param-term">Форма выпуска:</dt>
+				<dd class="product-preview__param-desc">Жевательные пастилки массой 3,5 г каждая по 30 штук во флаконе</dd>
+			</dl>
+			<dl class="product-preview__param">
+				<dt class="product-preview__param-term">Производитель:</dt>
+				<dd class="product-preview__param-desc">Master Pharm Polska Sp.z.o.o.</dd>
+			</dl>
+			<dl class="product-preview__param">
+				<dt class="product-preview__param-term">Действующее вещество:</dt>
+				<dd class="product-preview__param-desc"><a href="">Антропритартонацителелен</a></dd>
+			</dl>
+			<dl class="product-preview__param">
+				<dt class="product-preview__param-term">Годен до:</dt>
+				<dd class="product-preview__param-desc">01.11.2022</dd>
+			</dl>
+		</div>
+	</div>
+
+	<div class="product-preview__content">
+		{$children}
+	</div>
+
+	<div class="product-preview__disclaimers">
+		<div class="product-preview__disclaimer product-preview__disclaimer--external-view">
+			Внешний вид товара может отличатьсяот изображенного на фотографии
+		</div>
+
+		<div class="product-preview__disclaimer product-preview__disclaimer--contraindications">
+			Есть противопоказания, проконсультируйтесь с врачом
+		</div>
+
+		<div class="product-preview__disclaimer product-preview__disclaimer--recipe">
+			Требуется Рецепт. Рецепт остается в аптеке
+		</div>
+	</div>
+</div>

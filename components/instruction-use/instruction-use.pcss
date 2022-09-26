@@ -1,0 +1,139 @@
+@import url('../../layouts/variables.pcss');
+
+.instruction-use {
+	position: relative;
+	margin-top: 20px;
+	border-radius: 8px;
+	background: var(--white);
+	box-shadow: 0px 30px 30px rgba(196, 196, 196, 0.13);
+
+	@media (--tablet) {
+		margin-top: 60px;
+	}
+}
+
+.instruction-use__head {
+	display: flex;
+	align-items: center;
+	padding: 10px 55px 10px 10px;
+
+	& svg {
+		position: absolute;
+		top: 25px;
+		right: 26px;
+	}
+
+	@media (--tablet) {
+		padding: 32px 90px 32px 32px;
+
+		& svg {
+			top: 55px;
+			right: 30px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	@media (--desktop-medium) {
+		padding: 44px 66px;
+
+		& svg {
+			top: 69px;
+			right: 56px;
+		}
+	}
+}
+
+.instruction-use__preview {
+	flex-shrink: 0;
+	width: 55px;
+	height: 55px;
+	font-size: 10px;
+	text-align: center;
+
+	& img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	@media (--tablet) {
+		width: 84px;
+		height: 84px;
+	}
+}
+
+.instruction-use__title {
+	margin-left: 6px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+
+	@media (--tablet) {
+		margin-left: 43px;
+		font-size: 36px;
+		line-height: 42px;
+	}
+}
+
+.instruction-use__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 80px;
+	cursor: pointer;
+	font-size: 0;
+
+	@media (--tablet) {
+		height: 150px;
+	}
+
+	@media (--desktop-medium) {
+		height: 172px;
+	}
+}
+
+.instruction-use__input:hover ~ .instruction-use__head svg {
+	& rect {
+		fill: var(--secondary);
+	}
+
+	& path {
+		stroke: var(--white);
+	}
+}
+
+.instruction-use__input {
+	position: absolute;
+	visibility: none;
+	pointer-events: none;
+}
+
+.instruction-use__content {
+	display: none;
+	padding: 0 10px;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		height: 16px;
+	}
+
+	@media (--tablet) {
+		padding: 0 32px;
+
+		&::after {
+			height: 40px;
+		}
+	}
+
+	@media (--desktop-medium) {
+		padding: 0 66px;
+
+		&::after {
+			height: 60px;
+		}
+	}
+}

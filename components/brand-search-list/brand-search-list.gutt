@@ -1,0 +1,58 @@
+<param name={$data} value={[]} />
+
+<div class="brand-search-list">
+	<for-each item={$section} from={$data}>
+		<switch>
+			<case test={$section.category?}>
+				<div class="brand-search-list__category">
+					<a class="brand-search-list__category-link" href={$section.url}>{$section.category}</a>
+
+					<if test={$section.showlink}>
+						<a class="brand-search-list__letter-link" href={$section.url}>Все бренды от {$section.category}</a>
+					</if>
+				</div>
+			</case>
+			<default>
+				<div class="brand-search-list__section">
+					<if test={$section.letter?}>
+						<div class="brand-search-list__letter">
+							<span>
+								{$section.letter}
+							</span>
+
+							<switch>
+								<case test={$section.url?}>
+									<a class="brand-search-list__letter-link" href="brand-search-extended.html">
+										Весь список
+									</a>
+								</case>
+								<default>
+									<a class="brand-search-list__letter-link" href="brand-search-letter.html">
+										Все бренды на {$section.letter}
+									</a>
+								</default>
+							</switch>
+						</div>
+					</if>
+
+					<div class="brand-search-list__items">
+						<for-each item={$item} from={$section.items}>
+							<div class="brand-search-list__item">
+								<switch>
+									<case test={$section.url?}>
+										<a href="" class="brand-search-list__item-link">
+											{$item}
+										</a>
+									</case>
+									<default>
+										{$item}
+									</default>
+								</switch>
+							</div>
+						</for-each>
+					</div>
+				</div>
+			</default>
+		</switch>
+	</for-each>
+</div>

@@ -1,0 +1,17 @@
+<import name="scrollable-area" from="../scrollable-area/scrollable-area.gutt" />
+<import name="filter-search-checkbox" from="../filter-search-checkbox/filter-search-checkbox.gutt" />
+
+<param name={$items} value={[]} />
+
+<div class="filter-search-list">
+	<input class="filter-search-list__filter" type="text" placeholder="Я ищу" />
+	<div class="filter-search-list__items">
+		<scrollable-area>
+			<for-each item={$item} from={$items}>
+				<div class="filter-search-list__item">
+					<filter-search-checkbox value={$item.value} label={$item.label} />
+				</div>
+			</for-each>
+		</scrollable-area>
+	</div>
+</div>

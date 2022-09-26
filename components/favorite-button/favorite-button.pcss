@@ -1,0 +1,29 @@
+.favorite-button {
+	border: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	background: resolve('./favorite-button-nocheck.svg') center no-repeat;
+	background-size: 100%;
+
+	&:hover {
+		background-image: resolve('./favorite-button-hover.svg');
+	}
+
+	&:active {
+		background-image: resolve('./favorite-button-checked.svg');
+	}
+}
+
+.favorite-button--checked {
+	background-image: resolve('./favorite-button-checked.svg');
+
+	&:hover {
+		background-image: resolve('./favorite-button-hover.svg');
+	}
+
+	&:active {
+		background-image: resolve('./favorite-button-nocheck.svg');
+	}
+}

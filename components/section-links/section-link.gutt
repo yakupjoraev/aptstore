@@ -1,0 +1,5 @@
+<param name={$href} value="" />
+
+<li class="section-links__item">
+	<a class="section-links__link" href={$href}>{$children}</a>
+</li>

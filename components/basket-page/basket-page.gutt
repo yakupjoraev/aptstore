@@ -1,0 +1,260 @@
+<import name="common-header" from="../common-header/common-header.gutt" />
+<import name="delivery-card" from="../delivery-card/delivery-card.gutt" />
+<import name="form-checkbox" from="../form/checkbox/checkbox.gutt" />
+<import name="amount-controls" from="../amount-controls/amount-controls.gutt" />
+<import name="shop-terminal" from="../shop-terminal/shop-terminal.gutt" />
+<import name="product-label" from="../product-label/product-label.gutt" />
+<import name="account-pane" from="../account/account-pane/account-pane.gutt" />
+
+<param name={$products} value={[
+	[
+		"preview": "product-preview1.jpg",
+		"tag": "Скидка",
+		"title": "Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+",
+		"available": "3",
+		"amount": "1",
+		"item-price": "530 ₽",
+		"origin-price": "580 ₽",
+		"discount": "50 ₽",
+		"price": "530 ₽"
+	],
+	[
+		"preview": "product-preview2.jpg",
+		"tag": "Скидка",
+		"title": "Флорадикс Магнезиум 250мл фл.",
+		"available": "18",
+		"amount": "2",
+		"item-price": "260 ₽",
+		"origin-price": "560 ₽",
+		"discount": " 40 ₽",
+		"price": "530 ₽"
+	],
+	[
+		"preview": "product-preview3.jpg",
+		"tag": "",
+		"title": "Тонометр АНД UA-888 E автомат стандарт. манжета (эконом)",
+		"available": "5",
+		"amount": "1",
+		"item-price": "8530 ₽",
+		"price": "8530 ₽"
+	],
+	[
+		"preview": "product-preview1.jpg",
+		"title": "Доксиламин-сз таблетки п.п.о 15мг 30 шт",
+		"recipe-only": true,
+		"amount": "1",
+		"item-price": "8530 ₽",
+		"price": "8530 ₽"
+	],
+	[
+		"preview": "product-preview4.jpg",
+		"tag": "Набор",
+		"title": "Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+",
+		"available": "2",
+		"amount": "1",
+		"item-price": "1560₽",
+		"origin-price": "1560 ₽",
+		"discount": "60 ₽",
+		"price": "1560 ₽",
+		"set": [
+			[
+				"label": "La Roche-Posay Effaclar гель 400мл очищающий",
+				"amount": "1"
+			],
+			[
+				"label": "7 Days Candy Shop маска д/кожи вокруг глаз 10г PINK VENUS с экстрактом Клубники и Протеинами молока",
+				"amount": "2"
+			],
+			[
+				"label": "Эльгидиум Анти-Плак з/паста Арт.D00041 50мл п/зубного налета",
+				"amount": "1"
+			],
+			[
+				"label": "Эльгидиум Блэк з/нить Арт.D00028 50м с хлоргесидином черная",
+				"amount": "3"
+			]
+		]
+	]
+]} />
+
+<div class="basket-page">
+	<div class="basket-page__content">
+		<account-pane>
+			<common-header>Выберите способ доставки</common-header>
+
+			<div class="basket-page__delivery-options">
+				<label class="basket-page__delivery-option">
+					<input type="radio" name="delivery-type" value="courier" id="delivery-courier" />
+					<delivery-card
+						title="Доставка курьером"
+						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+						start-price="200 ₽"
+						price="300 ₽"
+						compact={true}
+						tags={[
+							[
+								"type": "discount",
+								"label": "Скидка"
+							],
+							[
+								"type": "gift",
+								"label": "Подарок"
+							],
+							[
+								"type": "free",
+								"label": "Б"
+							]
+						]}
+					/>
+				</label>
+
+				<label class="basket-page__delivery-option">
+					<input type="radio" name="delivery-type" value="pickup" id="delivery-pickup" />
+					<delivery-card
+						title="Самовывоз"
+						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+						start-price="200 ₽"
+						price="0 ₽"
+						compact={true}
+						tags={[
+							[
+								"type": "discount",
+								"label": "Скидка"
+							],
+							[
+								"type": "free",
+								"label": "Б"
+							]
+						]}
+					/>
+				</label>
+
+				<label class="basket-page__delivery-option">
+					<input type="radio" name="delivery-type" value="pickup-now" id="delivery-pickup-now" />
+					<delivery-card
+						title="Самовывоз через час"
+						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+						start-price="1000 ₽"
+						price="0 ₽"
+						compact={true}
+					/>
+				</label>
+			</div>
+
+			<div class="basket-page__disclaimers">
+				<div class="basket-page__disclaimer">Рецептурные препараты можно забрать только в аптеке</div>
+				<div class="basket-page__disclaimer">Не все товары в корзине доступны для выбранного способа доставки</div>
+			</div>
+
+			<div class="basket-page__items">
+				<div class="basket-page__thead">
+					<form-checkbox size="l">
+						<span class="basket-page__select-all">Выбрать всё</span>
+					</form-checkbox>
+
+					<button type="button" class="basket-page__clear">Очистить корзину</button>
+				</div>
+
+				<for-each item={$product} key={$index} from={$products}>
+					<div class="basket-page__item">
+						<div class="basket-page__item-content">
+							<div class="basket-page__flag">
+								<form-checkbox size="l" disabled={$product['recipe-only']} />
+							</div>
+
+							<figure class="basket-page__figure">
+								<img class="basket-page__preview" src={"storage/" ++ $product.preview} alt="" />
+							</figure>
+
+							<div class={classes(
+								"basket-page__product-name",
+								$product.discount? || $product.set? || $product['recipe-only'] ?? "basket-page__product-name--discounted" !! "",
+								$product['recipe-only'] ?? "basket-page__product-name--recipe-needed" !! ""
+							)}>
+								<if test={$product.discount? || $product.set?}>
+									<product-label class="basket-page__tag">
+										<switch>
+											<case test={$product.set?}>Набор</case>
+											<default>Скидка</default>
+										</switch>
+									</product-label>
+								</if>
+
+								<if test={$product['recipe-only']}>
+									<product-label class="basket-page__tag basket-page__tag--receip">По рецепту</product-label>
+								</if>
+								<div>{$product.title}</div>
+
+								<if test={$product['recipe-only']}>
+									<div class="basket-page__no-delivery">Недоступен для доставки курьером</div>
+								</if>
+							</div>
+
+							<div class="basket-page__meta-price">
+								<if test={$product.available?}>
+									<div class="basket-page__available">Доступно к заказу {$product.available} шт.</div>
+								</if>
+
+								<div class="basket-page__controls">
+									<amount-controls value={$product.amount} disabled={$product['recipe-only']} />
+								</div>
+								<div class="basket-page__peritem">{$product['item-price']} / шт.</div>
+							</div>
+
+							<div class="basket-page__prices">
+								<if test={$product['origin-price']?}>
+									<div class="basket-page__origin">
+										<stroke class="basket-page__stroke">{$product['origin-price']}</stroke>
+										<span class="basket-page__discount">Скидка {$product.discount}</span>
+									</div>
+								</if>
+
+								<div class="basket-page__price">{$product.price}</div>
+
+								<button class="basket-page__remove" type="button">Удалить</button>
+							</div>
+						</div>
+
+						<if test={$product.set?}>
+							<div class="basket-page__set">
+								<input class="basket-page__hidden-input" type="checkbox" id={"show-set-" ++ $index} />
+								<label class="basket-page__show-set" for={"show-set-" ++ $index}>Состав набора</label>
+
+								<ol class="basket-page__set-list">
+									<for-each item={$setitem} key={$set-index} from={$product.set}>
+										<li class="basket-page__set-item">
+											<span class="basket-page__set-title">
+												<a class="basket-page__set-link" href="set.html">{$setitem.label}</a>
+												<span class="basket-page__set-amount">{$setitem.amount} шт.</span>
+											</span>
+										</li>
+									</for-each>
+								</ol>
+							</div>
+						</if>
+					</div>
+				</for-each>
+			</div>
+		</account-pane>
+
+		<div class="basket-page__banner">
+			<a href="" class="">
+				<img src="components/basket-page/basket-banner.jpg" alt="" />
+			</a>
+		</div>
+	</div>
+
+	<div class="basket-page__aside">
+		<account-pane class="basket-page__aside-error">
+			<div class="basket-page__aside-error-label">
+				Укажите способ доставки
+			</div>
+		</account-pane>
+
+		<div class="basket-page__aside-content">
+			<account-pane>
+				<shop-terminal />
+			</account-pane>
+		</div>
+	</div>
+</div>

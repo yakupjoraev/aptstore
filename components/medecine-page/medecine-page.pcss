@@ -1,0 +1,150 @@
+@import url('../../layouts/variables.pcss');
+
+.medecine-page {
+	margin-top: 40px;
+
+	@media (--tablet) {
+		margin-top: 50px;
+	}
+}
+
+.medecine-page__cards {
+	margin-top: 16px;
+
+	@media (--tablet) {
+		margin-top: 40px;
+	}
+
+	@media (--desktop-small) {
+		margin-top: 50px;
+	}
+}
+
+.medecine-page__cards-container {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 calc(var(--padding-base) * -1);
+	padding: 10px 0 30px;
+	transition: max-height 0.15s ease-in-out;
+
+	@media (--mobile-medium) {
+		margin: 0 calc(var(--padding-mobile) * -1);
+	}
+
+	@media (--tablet) {
+		margin: 0 -10px;
+	}
+}
+
+.medecine-page__cards-container > * {
+	width: 50%;
+
+	&:nth-child(n+2) {
+		border-left-width: 0;
+	}
+
+	&:nth-child(n+3) {
+		border-top-width: 0;
+	}
+
+	@media (width >= 600px) {
+		width: 33.33333%;
+
+		&:nth-child(n+2) {
+			border-left-width: 1px;
+		}
+
+		&:nth-child(n+3) {
+			border-top-width: 1px;
+		}
+
+		&:nth-child(3n+2),
+		&:nth-child(3n+3) {
+			border-left-width: 0;
+		}
+
+		&:nth-child(n+4) {
+			border-top-width: 0;
+		}
+	}
+
+	@media (--tablet) {
+		margin: 10px;
+		width: calc(33.33333% - 20px);
+	}
+
+	@media (width >= 890px) {
+		margin: 20px;
+		width: calc(33.33333% - 40px);
+	}
+
+	@media (--desktop-small) {
+		width: calc(25% - 40px);
+	}
+
+	@media (--desktop-medium) {
+		width: calc(20% - 40px);
+	}
+}
+
+.medecine-page__blank {
+	border-radius: 16px;
+	background: #f8f7f8;
+}
+
+.medecine-page__buttons {
+	text-align: center;
+}
+
+.medecine-page .medecine-page__content-block {
+	@media (--desktop-small) {
+		margin-top: 20px;
+	}
+}
+
+.medecine-page__menu {
+	padding: 20px;
+
+	@media (--desktop-small) {
+		position: sticky;
+		top: 0;
+		left: 0;
+		height: fit-content;
+	}
+}
+
+.medecine-page__menu-title {
+	margin-bottom: 16px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	color: var(--black);
+}
+
+.medecine-page__list {
+	display: flex;
+	flex-direction: column;
+
+	@media (--desktop-small) {
+		width: 270px;
+	}
+}
+
+.medecine-page__item {
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
+
+.medecine-page__link {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+	color: var(--black);
+
+	&:hover {
+		color: var(--secondary);
+	}
+}

@@ -1,0 +1,166 @@
+<div class="index-list">
+	<h3 class="index-list__header">Поиск лекарств по&nbsp;алфавиту в&nbsp;Москве</h3>
+
+	<ul class="index-list__list">
+		<li class="index-list__item">
+			<a href="" class="index-list__link">А</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Б</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">В</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Г</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Д</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Е</a>
+		</li>
+		<li class="index-list__item">Ё</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Ж</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">З</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">И</a>
+		</li>
+		<li class="index-list__item">Й</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">К</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Л</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">М</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Н</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">О</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">П</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Р</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">С</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Т</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">У</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Ф</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Х</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Ц</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Ч</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Ш</a>
+		</li>
+		<li class="index-list__item">Щ</li>
+		<li class="index-list__item">Ъ</li>
+		<li class="index-list__item">Ы</li>
+		<li class="index-list__item">Ь</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Э</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Ю</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Я</a>
+		</li>
+	</ul>
+
+	<ul class="index-list__list">
+		<li class="index-list__item">
+			<a href="" class="index-list__link">A</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">B</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">C</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">D</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">E</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">F</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">G</a>
+		</li>
+		<li class="index-list__item">H</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">I</a>
+		</li>
+		<li class="index-list__item">J</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">K</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">L</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">M</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">N</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">O</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">P</a>
+		</li>
+		<li class="index-list__item">Q</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">R</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">S</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">T</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">U</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">V</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">W</a>
+		</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">X</a>
+		</li>
+		<li class="index-list__item">Y</li>
+		<li class="index-list__item">
+			<a href="" class="index-list__link">Z</a>
+		</li>
+	</ul>
+</div>

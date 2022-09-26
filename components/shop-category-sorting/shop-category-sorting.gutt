@@ -1,0 +1,57 @@
+<import name="form-checkbox" from="../form/checkbox/checkbox.gutt" />
+
+<param name={$media} value="mobile" />
+
+<div class="shop-category-sorting">
+	<switch>
+		<case test={$media == "tablet"}>
+			<div class="shop-category-sorting__section shop-category-sorting__section--tablet">
+				<div class="shop-category-sorting__heading">Сортировать:</div>
+
+				<ul class="shop-category-sorting__options">
+					<li class="shop-category-sorting__option">
+						<a href="" class="shop-category-sorting__option-link">По умолчанию</a>
+					</li>
+					<li class="shop-category-sorting__option">
+						<a href="" class="shop-category-sorting__option-link shop-category-sorting__option-link--active">Популярности</a>
+					</li>
+					<li class="shop-category-sorting__option">
+						<a href="" class="shop-category-sorting__option-link">Цене</a>
+					</li>
+				</ul>
+
+				<div class="shop-category-sorting__promo">
+					<form-checkbox name="soring-promo" size="s" />
+					<label class="shop-category-sorting__promo-label" for="soring-promo">Товары с акциями</label>
+				</div>
+			</div>
+		</case>
+
+		<default>
+			<div class="shop-category-sorting__section shop-category-sorting__section--mobile" data-shop-category-sorting>
+				<button class="shop-category-sorting__button" type="button" data-shop-category-sorting-toggle>
+					<inline-svg src="./shop-category-sorting.svg" />
+				</button>
+
+				<div class="shop-category-sorting__content">
+					<div class="shop-category-sorting__heading">Сортировка</div>
+
+					<ul class="shop-category-sorting__options">
+						<li class="shop-category-sorting__option">
+							<a href="" class="shop-category-sorting__option-link">По умолчанию</a>
+						</li>
+						<li class="shop-category-sorting__option">
+							<a href="" class="shop-category-sorting__option-link shop-category-sorting__option-link--active">По популярности</a>
+						</li>
+						<li class="shop-category-sorting__option">
+							<a href="" class="shop-category-sorting__option-link">По цене</a>
+						</li>
+						<li class="shop-category-sorting__option">
+							<a href="" class="shop-category-sorting__option-link">По скидке</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</default>
+	</switch>
+</div>

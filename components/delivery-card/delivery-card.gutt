@@ -1,0 +1,36 @@
+<param name={$class} value="" />
+<param name={$title} value="" />
+<param name={$description} value="" />
+<param name={$start-price} value="" />
+<param name={$price} value="" />
+<param name={$tags} value={[]} />
+<param name={$compact} value={false} />
+<param name={$flat} value={false} />
+
+<div class={classes(
+	"delivery-card",
+	$compact ?? "delivery-card--compact" !! "",
+	$flat ?? "delivery-card--flat" !! "",
+	$class
+)}>
+	<div class="delivery-card__title">{$title}</div>
+
+	<div class="delivery-card__description">{$description}</div>
+
+	<div class="delivery-card__start-price">от {$start-price}</div>
+
+	<div class="delivery-card__bottom">
+		<div class="delivery-card__price">{$price}</div>
+
+		<div class="delivery-card__tags">
+			<switch>
+				<case test={arr_len($tags) > 0}>
+					<for-each item={$tag} from={$tags}>
+						<div class={classes("delivery-card__tag", "delivery-card__tag--" ++ $tag.type)}>{$tag.label}</div>
+					</for-each>
+				</case>
+				<default>Без бонусов, скидок, акций</default>
+			</switch>
+		</div>
+	</div>
+</div>

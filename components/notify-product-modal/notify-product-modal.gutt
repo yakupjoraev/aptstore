@@ -1,0 +1,44 @@
+<import name="modal-window" from="../modal-window/modal-window.gutt" />
+<import name="modal-window-columns" from="../modal-window/modal-window-columns.gutt" />
+<import name="modal-window-column" from="../modal-window/modal-window-column.gutt" />
+
+<modal-window name="notify-product" no-close-button={true}>
+	<div class="notify-product-modal">
+		<h3 class="notify-product-modal__header">
+			Сообщить о&nbsp;поступлении
+		</h3>
+
+		<button class="notify-product-modal__close" data-close>Закрыть</button>
+
+		<div class="notify-product-modal__product">
+			<figure class="notify-product-modal__figure">
+				<img src="" alt="" class="notify-product-modal__preview" data-preview />
+			</figure>
+
+			<p class="notify-product-modal__title" data-title></p>
+			<p class="notify-product-modal__pack" data-pack></p>
+		</div>
+
+		<form class="notify-product-modal__form" action="" data-notify-modal-form>
+			<div class="notify-product-modal__field">
+				<input class="notify-product-modal__input" type="text" autocomplete="fullname" placeholder="Как вас зовут" />
+			</div>
+
+			<div class="notify-product-modal__field">
+				<input class="notify-product-modal__input" type="tel" autocomplete="tel" placeholder="Номер телефона" />
+			</div>
+
+			<div class="notify-product-modal__field">
+				<input class="notify-product-modal__input" type="email" autocomplete="email" placeholder="Эл. почта" />
+			</div>
+
+			<div class="notify-product-modal__control">
+				<button type="submit" class="notify-product-modal__button">Сообщить</button>
+			</div>
+		</form>
+
+		<div class="notify-product-modal__legal">
+			Продолжая пользоваться сайтом, вы соглашаетесь с&nbsp;<a href="">правилами работы сервиса</a> aptstor.ru
+		</div>
+	</div>
+</modal-window>

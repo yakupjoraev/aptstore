@@ -1,0 +1,4 @@
+<param name={$class} value="" />
+<param name={$since} value="base" /><!-- base, mobile, tablet, desktop, large -->
+
+<div class={classes("account-pane", "account-pane--since-" ++ $since, $class)}>{$children}</div>

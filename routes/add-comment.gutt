@@ -1,0 +1,8 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="add-comment" from="../components/add-comment/add-comment.gutt" />
+
+<default-layout>
+	<div class="container">
+		<add-comment />
+	</div>
+</default-layout>

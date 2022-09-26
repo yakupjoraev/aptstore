@@ -1,0 +1,72 @@
+<param name={$data} value={[
+	[
+		"preview": "brand-icon1.png",
+		"title": "vilenta"
+	],
+	[
+		"preview": "brand-icon2.png",
+		"title": "Velvet"
+	],
+	[
+		"preview": "brand-icon3.png",
+		"title": "VICHI"
+	],
+	[
+		"preview": "brand-icon4.png",
+		"title": "Veet"
+	],
+	[
+		"preview": "brand-icon5.png",
+		"title": "VEGETABLE BEAUTY"
+	],
+	[
+		"preview": "brand-icon6.png",
+		"title": "VAGISIL"
+	],
+	[
+		"preview": "brand-icon7.png",
+		"title": "Vitalograph"
+	],
+	[
+		"preview": "brand-icon1.png",
+		"title": "vilenta"
+	],
+	[
+		"preview": "brand-icon2.png",
+		"title": "Velvet"
+	],
+	[
+		"preview": "brand-icon3.png",
+		"title": "VICHI"
+	],
+	[
+		"preview": "brand-icon4.png",
+		"title": "Veet"
+	],
+	[
+		"preview": "brand-icon5.png",
+		"title": "VEGETABLE BEAUTY"
+	],
+	[
+		"preview": "brand-icon6.png",
+		"title": "VAGISIL"
+	],
+	[
+		"preview": "brand-icon7.png",
+		"title": "Vitalograph"
+	]
+]} />
+
+<div class="brand-icon-grid">
+	<for-each item={$brand} from={$data}>
+		<div class="brand-icon-grid__item">
+			<a href="" class="brand-icon-grid__link">
+				<figure class="brand-icon-grid__figure">
+					<img src={"storage/" ++ $brand.preview} alt={$brand.title} class="brand-icon-grid__preview" />
+				</figure>
+
+				<span class="brand-icon-grid__title">{$brand.title}</span>
+			</a>
+		</div>
+	</for-each>
+</div>

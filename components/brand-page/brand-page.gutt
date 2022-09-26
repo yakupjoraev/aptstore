@@ -1,0 +1,345 @@
+<import name="drop-down" from="../dropdown/dropdown.gutt" />
+<import name="news-column" from="../news-column/news-column.gutt" />
+<import name="banner-slider" from="../banner-slider/banner-slider.gutt" />
+<import name="banner-element" from="../banner/banner.gutt" />
+<import name="product-slider" from="../product-slider/product-slider.gutt" />
+<import name="product-card" from="../product-card/product-card.gutt" />
+
+<section class="brand-page">
+	<div class="brand-page__left-column">
+		<div class="brand-page__navigation">
+			<div class="brand-page__strategy">
+				<drop-down label="Направления VICHY" value="" theme="light">
+					<button type="button" class="brand-page__category-option" data-value="aqualia-thermal">Aqualia Thermal</button>
+					<button type="button" class="brand-page__category-option" data-value="capital-ideal-soleil">Capital Ideal Soleil</button>
+					<button type="button" class="brand-page__category-option" data-value="deodorants">Deodorants</button>
+					<button type="button" class="brand-page__category-option" data-value="dercos">Dercos</button>
+					<button type="button" class="brand-page__category-option" data-value="dercos-densi-solitions">Dercos Densi Solitions</button>
+				</drop-down>
+			</div>
+
+			<div class="brand-page__dropdown brand-page__dropdown--adaptive brand-page__dropdown--categories" data-brand-page-dropdown="">
+				<button class="brand-page__dropdown-button" type="button" data-brand-page-dropdown-toggle="" data-value="all">
+					<inline-svg src="brand-page-settings.svg" />
+					Весь ассортимент
+				</button>
+
+				<div class="brand-page__category-popup">
+					<button type="button" class="brand-page__category-option" data-value="all">Весь ассортимент</button>
+					<button type="button" class="brand-page__category-option" data-value="face-care">Уход для лица</button>
+					<button type="button" class="brand-page__category-option" data-value="body-care">Уход для тела</button>
+					<button type="button" class="brand-page__category-option" data-value="makeup">Макияж</button>
+					<button type="button" class="brand-page__category-option" data-value="sunshine">Солнце</button>
+				</div>
+			</div>
+
+			<a href="" class="brand-page__about">О бренде</a>
+		</div>
+
+		<div class="brand-page__news">
+			<news-column compacted={true} news={[
+				[
+					"title": "Какой респиратор купить для защиты от пыли и инфекций",
+					"date": "17 сентября 2021",
+					"preview": "news-preview1.jpg"
+				],
+				[
+					"title": "Менструальный цикл: физиологическая норма",
+					"date": "16 сентября 2021",
+					"preview": "news-preview2.jpg"
+				],
+				[
+					"title": "Презервативы Дюрекс",
+					"date": "10 сентября 2021",
+					"preview": "news-preview3.jpg"
+				],
+				[
+					"title": "Стресс – реакция организма на нервное перенапряжение",
+					"date": "01 сентября 2021",
+					"preview": "news-preview4.jpg"
+				],
+				[
+					"title": "Чеснок – полезный природный продукт",
+					"date": "31 сентября 2021",
+					"preview": "news-preview5.jpg"
+				]
+			]} />
+		</div>
+	</div>
+
+	<div class="brand-page__slider">
+		<div class="brand-page__slider-content">
+			<banner-slider>
+				<banner-element data={[
+					"href": "product.html",
+					"source": [
+						"xs": "brandbanner1.png"
+					]
+				]}>
+					<span class="brand-page__slider-label">Узнать больше</span>
+				</banner-element>
+				<banner-element data={[
+					"href": "product.html",
+					"source": [
+						"xs": "brandbanner1.png"
+					]
+				]}>
+					<span class="brand-page__slider-label">Узнать больше</span>
+				</banner-element>
+			</banner-slider>
+		</div>
+	</div>
+
+	<div class="brand-page__banners">
+		<div class="brand-page__banners-content">
+			<a href="" class="brand-page__banner">
+				<img src="storage/brand-banner1.jpg" alt="" />
+				<span class="brand-page__banner-label">К покупкам</span>
+			</a>
+			<a href="" class="brand-page__banner">
+				<img src="storage/brand-banner2.jpg" alt="" />
+				<span class="brand-page__banner-label">К покупкам</span>
+			</a>
+			<a href="" class="brand-page__banner">
+				<img src="storage/brand-banner3.jpg" alt="" />
+				<span class="brand-page__banner-label">К покупкам</span>
+			</a>
+			<a href="" class="brand-page__banner">
+				<img src="storage/brand-banner4.jpg" alt="" />
+				<span class="brand-page__banner-label">К покупкам</span>
+			</a>
+			<a href="" class="brand-page__banner">
+				<img src="storage/brand-banner5.jpg" alt="" />
+				<span class="brand-page__banner-label">К покупкам</span>
+			</a>
+			<a href="" class="brand-page__banner">
+				<img src="storage/brand-banner6.jpg" alt="" />
+				<span class="brand-page__banner-label">К покупкам</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="brand-page__sandbox">
+		<product-slider title="Новинки">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				notice="Требуется рецепт"
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={4}
+				type="SET"
+				tag="3+1=5"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				rating={2}
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+		</product-slider>
+
+		<product-slider title="Бестселлеры">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				notice="Требуется рецепт"
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={4}
+				type="SET"
+				tag="3+1=5"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				rating={2}
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+		</product-slider>
+	</div>
+</section>

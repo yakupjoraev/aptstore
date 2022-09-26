@@ -1,0 +1,95 @@
+@import url('../../layouts/variables.pcss');
+
+.products-grid__content {
+	margin: 0 calc(var(--padding-base) * -1 - 1px);
+	display: flex;
+	flex-wrap: wrap;
+
+	@media (--mobile-medium) {
+		margin: 0 calc(var(--padding-mobile) * -1 - 1px);
+	}
+
+	@media (--tablet) {
+		margin: -20px -10px 0;
+	}
+
+	@media (width >= 890px) {
+		margin: -40px -20px 0;
+	}
+}
+
+.products-grid__content > * {
+	width: 50%;
+
+	&:nth-child(n+2) {
+		border-left-width: 0;
+	}
+
+	&:nth-child(n+3) {
+		border-top-width: 0;
+	}
+
+	@media (width >= 600px) {
+		width: 33.33333%;
+
+		&:nth-child(n+2) {
+			border-left-width: 1px;
+		}
+
+		&:nth-child(n+3) {
+			border-top-width: 1px;
+		}
+
+		&:nth-child(3n+2),
+		&:nth-child(3n+3) {
+			border-left-width: 0;
+		}
+
+		&:nth-child(n+4) {
+			border-top-width: 0;
+		}
+	}
+
+	@media (--tablet) {
+		margin: 20px 10px 0;
+		width: calc(33.33333% - 20px);
+	}
+
+	@media (width >= 890px) {
+		margin: 40px 20px 0;
+		width: calc(33.33333% - 40px);
+	}
+
+	@media (--desktop-small) {
+		width: calc(25% - 40px);
+	}
+
+	@media (--desktop-medium) {
+		width: calc(20% - 40px);
+	}
+}
+
+.products-grid__content--tight {
+	@media (width >= 890px) {
+		margin: -20px -10px 0;
+	}
+}
+
+.products-grid__content--tight > * {
+	@media (--tablet) {
+		margin: 20px 10px 0;
+		width: calc(50% - 20px);
+	}
+
+	@media (width >= 890px) {
+		width: calc(50% - 20px);
+	}
+
+	@media (--desktop-small) {
+		width: calc(33.33333% - 20px);
+	}
+
+	@media (--desktop-medium) {
+		width: calc(25% - 20px);
+	}
+}

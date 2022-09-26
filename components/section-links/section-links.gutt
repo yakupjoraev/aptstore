@@ -1,0 +1,6 @@
+<param name={$title} value="" />
+
+<div class="section-links container">
+	<h3 class="section-links__title">{$title}</h3>
+	<ul class="section-links__list">{$children}</ul>
+</div>

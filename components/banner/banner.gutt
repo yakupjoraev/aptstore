@@ -1,0 +1,37 @@
+<param name={$data} value={[]} />
+
+<a href={$data.href} class={classes("banner", $data.modifier ?? "banner--" ++ $data.modifier !! "")}>
+	<span class="banner__content">
+		<picture class="banner__pucture">
+			<if test={$data.source.l?}>
+				<source srcset={"storage/" ++ $data.source.l} media="(min-width: 1200px)" />
+			</if>
+			<if test={$data.source.m?}>
+				<source srcset={"storage/" ++ $data.source.m} media="(min-width: 800px)" />
+			</if>
+			<if test={$data.source.s?}>
+				<source srcset={"storage/" ++ $data.source.s} media="(min-width: 480px)" />
+			</if>
+			<img class="banner__image" src={"storage/" ++ $data.source.xs} />
+		</picture>
+
+		<if test={$data.label?}>
+			<span class="banner__label">{$data.label}</span>
+		</if>
+
+		<span class="banner__text">
+			<if test={$data.title?}>
+				<span class="banner__title">{$data.title}</span>
+			</if>
+
+			<if test={$data.description?}>
+				<span class="banner__description">{$data.description}</span>
+			</if>
+
+			<if test={$data.button?}>
+				<span class="banner__more">{$data.button}</span>
+			</if>
+		</span>
+	</span>
+	{$children}
+</a>

@@ -1,0 +1,44 @@
+@import url('../../layouts/variables.pcss');
+
+.y-map {
+	margin: 40px 0 -40px;
+
+	@media (--tablet) {
+		margin-bottom: -50px;
+	}
+
+	@media (--mobile-medium) {
+		margin-top: 75px;
+	}
+
+	@media (--desktop-small) {
+		margin-top: 60px;
+	}
+
+	@media (--desktop-medium) {
+		margin: 70px 0 -77px;
+	}
+}
+
+.y-map__title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	color: var(--black);
+
+	@media (--desktop-small) {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+.y-map__map {
+	margin-top: 20px;
+	height: 305px;
+	background: #e7e7e7;
+
+	@media (--desktop-small) {
+		margin-top: 30px;
+		height: 480px;
+	}
+}

@@ -1,0 +1,35 @@
+<import name="site-header" from="../components/site-header/site-header.gutt" />
+<import name="site-footer" from="../components/site-footer/site-footer.gutt" />
+<import name="catalog-list" from="../components/catalog-list/catalog-list.gutt" />
+<import name="message-modal" from="../components/message-modal/message-modal.gutt" />
+<import name="notify-product-modal" from="../components/notify-product-modal/notify-product-modal.gutt" />
+<import name="mobile-navigator" from="../components/mobile-navigator/mobile-navigator.gutt" />
+<import name="town-selector" from="../components/town-selector/town-selector.gutt" />
+<import name="search-location" from="../components/search-location/search-location.gutt" />
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="fonts/fonts.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<link rel="stylesheet" href="bundle.css" />
+	<title>AptStore.ru</title>
+</head>
+<body>
+	<div class="root">
+		<site-header empty-basket={$empty-basket} headless={$headless} />
+		{$children}
+		<site-footer />
+		<catalog-list />
+		<message-modal />
+		<notify-product-modal />
+		<mobile-navigator />
+		<town-selector />
+		<search-location />
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

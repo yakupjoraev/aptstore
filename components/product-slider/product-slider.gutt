@@ -1,0 +1,9 @@
+<param name={$title} value="" />
+
+<div class="product-slider" data-product-slider>
+	<h3 class="product-slider__title">{$title}</h3>
+
+	<div class="product-slider__content" data-product-slider-content>
+		{$children}
+	</div>
+</div>

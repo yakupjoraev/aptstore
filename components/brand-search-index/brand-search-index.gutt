@@ -1,0 +1,81 @@
+<variable name={$cirilyc} value={[
+	'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я'
+]} />
+<variable name={$latin} value={[
+	'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+]} />
+<variable name={$numbers} value={[
+	'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'
+]} />
+
+<div class="brand-search-index">
+	<input class="brand-search-index__input" type="radio" name="brand-search-index" value="all" id="brand-search-index-all" checked />
+	<input class="brand-search-index__input" type="radio" name="brand-search-index" value="cirylic" id="brand-search-index-cirylic" />
+	<input class="brand-search-index__input" type="radio" name="brand-search-index" value="latin" id="brand-search-index-latin" />
+	<input class="brand-search-index__input" type="radio" name="brand-search-index" value="numbers" id="brand-search-index-numbers" />
+
+	<div class="brand-search-index__headers">
+		<label class="brand-search-index__label" name="all" for="brand-search-index-all">Все бренды</label>
+		<label class="brand-search-index__label brand-search-index__label--hidden" name="cirylic" for="brand-search-index-cirylic">А-Я</label>
+		<label class="brand-search-index__label brand-search-index__label--hidden" name="latin" for="brand-search-index-latin">A-Z</label>
+		<label class="brand-search-index__label brand-search-index__label--hidden" name="numbers" for="brand-search-index-numbers">0-9</label>
+	</div>
+
+	<ul class="brand-search-index__list" name="cirylic">
+		<for-each item={$symbol} key={$index} from={$cirilyc}>
+			<li class="brand-search-index__item">
+				<switch>
+					<case test={$index % 4 == 3}>
+						{$symbol}
+					</case>
+					<default>
+						<a href="brand-search-letter.html" class="brand-search-index__link">{$symbol}</a>
+					</default>
+				</switch>
+			</li>
+		</for-each>
+	</ul>
+
+	<ul class="brand-search-index__list" name="latin">
+		<for-each item={$symbol} key={$index} from={$latin}>
+			<li class="brand-search-index__item">
+				<switch>
+					<case test={$index % 5 == 4}>
+						{$symbol}
+					</case>
+					<default>
+						<a href="brand-search-letter.html" class="brand-search-index__link">{$symbol}</a>
+					</default>
+				</switch>
+			</li>
+		</for-each>
+	</ul>
+
+	<ul class="brand-search-index__list" name="numbers">
+		<for-each item={$symbol} from={$numbers}>
+			<li class="brand-search-index__item">
+				<a href="brand-search-letter.html" class="brand-search-index__link">{$symbol}</a>
+			</li>
+		</for-each>
+	</ul>
+
+	<form class="brand-search-index__form" action="" method="post">
+		<input class="brand-search-index__search" type="text" placeholder="Поиск по названию" data-brand-search-index-input />
+
+		<button class="brand-search-index__search-clear" type="button" data-brand-search-index-clear>
+			<inline-svg src="brand-search-index-clear.svg" />
+		</button>
+
+		<ul class="brand-search-index__result" data-brand-search-index-result>
+			<li class="brand-search-index__result-item">
+				<a href="brand.html" class="brand-search-index__result-link">Veet</a>
+			</li>
+			<li class="brand-search-index__result-item">
+				<a href="brand.html" class="brand-search-index__result-link">Veetable</a>
+			</li>
+			<li class="brand-search-index__result-item">
+				<a href="brand.html" class="brand-search-index__result-link">Veetable 2</a>
+			</li>
+		</ul>
+	</form>
+</div>

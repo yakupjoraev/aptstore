@@ -1,0 +1,9 @@
+<import name="brand-search-index" from="../brand-search-index/brand-search-index.gutt" />
+
+<div class="brand-search">
+	<h1 class="brand-search__header">Наши бренды</h1>
+
+	<brand-search-index />
+
+	{$children}
+</div>

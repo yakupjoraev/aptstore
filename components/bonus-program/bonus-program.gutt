@@ -1,0 +1,10 @@
+<div class="bonus-program">
+	<p class="bonus-program__title">Бонусная программа</p>
+	<p class="bonus-program__content">
+		Получайте скидки, подарки и&nbsp;бонусы доступные только для&nbsp;авторизованных пользователей
+	</p>
+
+	<div class="bonus-program__more">
+		<a class="bonus-program__more-link" href="">Подробнее</a>
+	</div>
+</div>

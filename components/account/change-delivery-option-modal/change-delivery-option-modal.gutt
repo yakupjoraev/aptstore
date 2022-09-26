@@ -1,0 +1,63 @@
+<import name="modal-window" from="../../modal-window/modal-window.gutt" />
+<import name="delivery-card" from="../../delivery-card/delivery-card.gutt" />
+
+<modal-window name="change-delivery-option-modal">
+	<div class="change-delivery-option-modal">
+		<h3 class="change-delivery-option-modal__title">Выбрать способ доставки по&nbsp;умолчанию</h3>
+
+		<div class="change-delivery-option-modal__delivery-options">
+			<label class="change-delivery-option-modal__delivery-option">
+				<input class="change-delivery-option-modal__input" type="radio" name="delivery-type" value="courier" id="delivery-courier" checked />
+				<delivery-card
+					title="Доставка курьером"
+					description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+					start-price="200 ₽"
+					price="300 ₽"
+					compact={true}
+					tags={[
+						[
+							"type": "discount",
+							"label": "Скидка"
+						],
+						[
+							"type": "gift",
+							"label": "Подарок"
+						],
+						[
+							"type": "free",
+							"label": "Б"
+						]
+					]}
+				/>
+			</label>
+
+			<label class="change-delivery-option-modal__delivery-option">
+				<input class="change-delivery-option-modal__input" type="radio" name="delivery-type" value="pickup" id="delivery-pickup" />
+				<delivery-card
+					title="Самовывоз"
+					description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+					start-price="200 ₽"
+					price="0 ₽"
+					compact={true}
+					tags={[
+						[
+							"type": "discount",
+							"label": "Скидка"
+						],
+						[
+							"type": "free",
+							"label": "Б"
+						]
+					]}
+				/>
+			</label>
+
+			<label class="change-delivery-option-modal__delivery-empty">
+			</label>
+		</div>
+
+		<div class="change-delivery-option-modal__disclaimer">
+			Рецептурные препараты можно забрать только в аптеке
+		</div>
+	</div>
+</modal-window>

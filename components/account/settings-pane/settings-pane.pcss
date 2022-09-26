@@ -1,0 +1,86 @@
+@import url('../../../layouts/variables.pcss');
+
+.settings-pane__title {
+	border-bottom: 2px solid #f8f7f8;
+	padding-bottom: 16px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: var(--black);
+}
+
+.settings-pane__title-label {
+	position: relative;
+	padding: 0 31px;
+	background: resolve('./settings-pane-settings.svg') no-repeat;
+}
+
+.settings-pane__section {
+	margin-top: 5px;
+
+	& + & {
+		margin-top: 20px;
+	}
+}
+
+.settings-pane__section-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px 0;
+}
+
+.settings-pane__edit-button {
+	margin: 2px 0 0 10px;
+	border: 0;
+	padding: 0;
+	width: 21px;
+	height: 21px;
+	background: none;
+
+	&:hover path {
+		fill: var(--secondary);
+	}
+}
+
+.settings-pane__delivery-card {
+	margin-top: 10px;
+}
+
+.settings-pane__delivery {
+	color: var(--black);
+}
+
+.settings-pane__delivery-name {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.settings-pane__delivery-address {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.settings-pane__delivery-contacts {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 21px;
+}
+
+.settings-pane__delivery-phone {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.settings-pane__payment {
+	height: 25px;
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--black);
+}

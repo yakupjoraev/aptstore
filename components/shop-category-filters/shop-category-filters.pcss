@@ -1,0 +1,138 @@
+@import url('../../layouts/variables.pcss');
+
+.shop-category-filters {
+	box-sizing: border-box;
+
+	&::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: none;
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	&.active {
+		&::before {
+			z-index: 5;
+			display: block;
+
+			@media (--tablet) {
+				display: none;
+			}
+		}
+
+		& .shop-category-filters__toggle {
+			z-index: 5;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: -5px;
+				left: -21px;
+				width: 74px;
+				height: 44px;
+				z-index: -1;
+				background: resolve('./shop-category-settings-background.svg');
+			}
+
+			& path {
+				stroke: var(--white);
+			}
+
+			& rect {
+				fill: var(--secondary);
+			}
+		}
+
+		& .shop-category-filters__content {
+			z-index: 5;
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	@media (--tablet) {
+		margin-top: 24px;
+	}
+}
+
+.shop-category-filters__toggle {
+	position: relative;
+	margin-left: 5px;
+	border: 0;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	background: none;
+	font-size: 0;
+	outline: none;
+
+	@media (--tablet) {
+		display: none;
+	}
+}
+
+.shop-category-filters__content {
+	position: absolute;
+	top: 38px;
+	left: 0;
+	right: 0;
+	border-radius: 16px;
+	padding: 15px 13px;
+	visibility: hidden;
+	pointer-events: none;
+	background: var(--white);
+
+	@media (--tablet) {
+		position: static;
+		visibility: visible;
+		border-radius: 0;
+		padding: 0;
+		pointer-events: auto;
+	}
+}
+
+.shop-category-filters__buttons {
+	margin-top: 20px;
+	text-align: center;
+
+	& > * + * {
+		margin-top: 10px;
+	}
+
+	@media (--tablet) {
+		margin-top: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+
+		& > * {
+			margin: 10px 10px 0 0;
+		}
+
+		& > *:last-child {
+			margin: 10px 0 0 0;
+		}
+	}
+}
+
+.shop-category-filters__button-apply {
+	display: none;
+
+	@media (--tablet) {
+		display: inline-block;
+	}
+}
+
+.shop-category-filters__filter {
+	& + & {
+		margin-top: 18px;
+
+		@media (--tablet) {
+			margin-top: 24px;
+		}
+	}
+}

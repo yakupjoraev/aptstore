@@ -1,0 +1,46 @@
+<div class="product-comments-media">
+	<div class="product-comments-media__header">Фото и видео покупателей</div>
+
+	<ul class="product-comments-media__photos" data-product-comments-media>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media1.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media2.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media3.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media4.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media5.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media6.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media1.jpg" alt="" />
+			</a>
+		</li>
+		<li class="product-comments-media__photo">
+			<a href="">
+				<img src="storage/comment-media2.jpg" alt="" />
+			</a>
+		</li>
+	</ul>
+</div>

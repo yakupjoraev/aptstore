@@ -1,0 +1,38 @@
+<form class="auth-form" method="post" action="" name="signup-form">
+	<h3 class="auth-form__header">Регистрация</h3>
+
+	<p class="auth-form__description">SMS c&nbsp;кодом отправлен на&nbsp;номер <span data-phone-placeholder></span></p>
+
+	<div class="auth-form__field" data-code-field>
+		<span class="auth-form__countdown" data-countdown></span>
+		<input
+			type="tel"
+			autocomplete="one-time-code"
+			name="code"
+			class="auth-form__input"
+			id="signup-code"
+			placeholder="Код из SMS"
+		/>
+		<button
+			class="auth-form__label-button"
+			type="button"
+			style="display: none"
+			data-resend-code
+		>Получить новый код</button>
+	</div>
+
+	<div class="auth-form__field">
+		<input
+			type="text"
+			autocomplete="name"
+			name="name"
+			class="auth-form__input"
+			id="signup-name"
+			placeholder="Введите имя"
+		/>
+	</div>
+
+	<div class="auth-form__field">
+		<button class="auth-form__button" type="submit" disabled data-submit>Продолжить</button>
+	</div>
+</form>

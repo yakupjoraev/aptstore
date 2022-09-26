@@ -1,0 +1,89 @@
+<import name="header-tags" from="../header-tags/header-tags.gutt" />
+<import name="search-form" from="../search-form/search-form.gutt" />
+<import name="shop-widget" from="../shop-widget/shop-widget.gutt" />
+
+<param name={$headless} value={false} />
+
+<header class={classes("site-header", $headless ?? "site-header--hidden" !! "" )}>
+	<div class="container--header">
+		<div class="site-header__support">
+			Служба поддержки работет с 8:00 до 22:00
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="site-header__wrapper">
+			<div class="site-header__preambule">
+				<div class="site-header__town-selector">
+					Ваш город:
+					<button type="button" class="site-header__town-selector-button" data-open-modal="town-selector">
+						<span class="site-header__town-selector-underline">Петропавловск-Камчатский</span>
+					</button>
+				</div>
+				<!-- <div class="site-header__support">
+				Служба поддержки работет с 8:00 до 22:00
+			</div> -->
+				<div class="site-header__phone site-header__phone--one">+7 495 419 18 18</div>
+				<div class="site-header__phone site-header__phone--two">8 800 600 83 03</div>
+			</div>
+
+			<div class="site-header__items">
+				<a href="index.html"><img class="site-header__logo" src="components/site-header/logo.svg"
+						alt="aptstore.ru" /></a>
+
+				<button type="button" class="site-header__catalog-button" data-open-catalog>
+					<svg class="site-header__catalog-icon" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1h22.5M1 9.5h15.5M1 18h22.5" stroke="#8BBD3F" stroke-width="2" stroke-linecap="round" />
+					</svg>
+					Каталог товаров
+				</button>
+
+				<div class="site-header__search">
+					<search-form />
+					<div class="site-header__search-hint">
+						<strong>Пример:</strong>
+						<button class="site-header__search-example" type="button"
+							data-fill-search-example="Аспирин">Аспирин</button>,
+						<button class="site-header__search-example" type="button" data-fill-search-example="от аллергии">от
+							аллергии</button>
+					</div>
+				</div>
+
+				<div class="site-header__shop-widget">
+					<shop-widget empty-basket={$empty-basket} />
+				</div>
+
+				<div class="site-header__phone-mobile" data-site-header-mobile-wrapper>
+					<div class="site-header__mobile-inner" data-site-header-mobile-inner>
+						<div class="site-header__mobile-body">
+							<div class="site-header__mobile-header">
+								<a href="index.html"><img class="site-header__logo" src="components/site-header/logo.svg"
+										alt="aptstore.ru" /></a>
+								<div class="site-header__mobile-icon" data-site-header-mobile-close></div>
+							</div>
+
+							<div class="site-header__mobile-support">
+								Служба поддержки работет с 8:00 до 22:00
+							</div>
+							<div class="site-header__mobile-phone">+7 495 419 18 18</div>
+							<div class="site-header__mobile-phone">8 800 600 83 03</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="site-header__tags">
+				<header-tags />
+			</div>
+
+			<div class="site-header__town-selector site-header__town-selector--mobile">
+				Ваш город:
+				<button type="button" class="site-header__town-selector-button" data-open-modal="town-selector">
+					<span class="site-header__town-selector-underline">Петропавловск-Камчатский</span>
+				</button>
+			</div>
+		</div>
+
+	</div>
+
+</header>

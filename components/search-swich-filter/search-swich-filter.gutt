@@ -1,0 +1,45 @@
+<import name="swich-button" from="../form/swich-button/swich-button.gutt" />
+
+<param name={$class} value="" />
+<param name={$form-class} value="" />
+<param name={$placeholder} value="Найти по адресу или по станции метро" />
+
+<div class={classes("search-swich-filter", $class)}>
+	<form class={classes("search-swich-filter__form", $form-class)} action="" method="post">
+		<input type="search" placeholder={$placeholder} class="search-swich-filter__input" />
+
+		<button type="submit" class="search-swich-filter__submit">
+			<inline-svg src="search-input__search.svg" />
+		</button>
+	</form>
+
+	<div class="search-swich-filter__swich">
+		<button type="button" class="search-swich-filter__burger">
+			<inline-svg src="swich-button-burger.svg" />
+		</button>
+
+		<div class="search-swich-filter__content">
+			<p class="search-swich-filter__desc">
+				Фильтры
+			</p>
+
+			<div class="search-swich-filter__group">
+				<swich-button>
+					<span class="search-swich-filter__sum">Только крулосуточные <span>(5)</span></span>
+				</swich-button>
+			</div>
+
+			<div class="search-swich-filter__group">
+				<swich-button checked>
+					<span class="search-swich-filter__sum">Работаю сейчас <span>(50)</span></span>
+				</swich-button>
+			</div>
+
+			<div class="search-swich-filter__group">
+				<swich-button checked>
+					<span class="search-swich-filter__sum">Осуществляет доставку <span>(26)</span></span>
+				</swich-button>
+			</div>
+		</div>
+	</div>
+</div>

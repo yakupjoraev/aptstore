@@ -1,0 +1,402 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="product-preview" from="../components/product-preview/product-preview.gutt" />
+<import name="index-list" from="../components/index-list/index-list.gutt" />
+<import name="product-slider" from="../components/product-slider/product-slider.gutt" />
+<import name="product-card" from="../components/product-card/product-card.gutt" />
+<import name="simple-slider" from="../components/simple-slider/simple-slider.gutt" />
+<import name="analog-masonry" from="../components/analog-masonry/analog-masonry.gutt" />
+<import name="instruction-use" from="../components/instruction-use/instruction-use.gutt" />
+<import name="product-tabs" from="../components/product-tabs/product-tabs.gutt" />
+<import name="content-block" from="../components/content-block/content-block.gutt" />
+<import name="product-comments" from="../components/product-comments/product-comments.gutt" />
+<import name="product-like-share" from="../components/product-like-share/product-like-share.gutt" />
+
+<default-layout headless={true}>
+	<div class="container">
+		<product-like-share>
+			<bread-crumps path={[
+				[
+					"url": "index.html",
+					"label": "Главная"
+				],
+				[
+					"url": "catalog.html",
+					"label": "Каталог товаров"
+				],
+				[
+					"label": "Мама и малыш",
+					"url": "category.html"
+				],
+				[
+					"label": "Витаминные добавки",
+					"url": "category.html"
+				],
+				[
+					"label": "Мини Доктор энергия пастилки жевательные 30шт витамины"
+				]
+			]} />
+		</product-like-share>
+
+		<product-preview
+			title="Набор энергия пастилки жевательные 30шт витамины д/детей 3+"
+		>
+			<simple-slider title="Состав набора">
+				<analog-masonry
+					preview="analog-masonry2.jpg"
+					title="Вайт Гло (White Glo) система-экспресс отбеливания"
+					price="480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry3.jpg"
+					title="Фитоуспоковенок Мишутка сироп 100МЛ"
+					price="130"
+					special-price="110"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry1.jpg"
+					title="Levrana маска-скатка Арт.FML09 100мл детокс"
+					price="3480"
+					special-price="370"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry2.jpg"
+					title="Вайт Гло (White Glo) система-экспресс отбеливания"
+					price="480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry1.jpg"
+					title="Levrana маска-скатка Арт.FML09 100мл детокс"
+					price="3480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry3.jpg"
+					title="Фитоуспоковенок Мишутка сироп 100МЛ"
+					price="130"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry2.jpg"
+					title="Вайт Гло (White Glo) система-экспресс отбеливания"
+					price="480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry1.jpg"
+					title="Levrana маска-скатка Арт.FML09 100мл детокс"
+					price="3480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry3.jpg"
+					title="Фитоуспоковенок Мишутка сироп 100МЛ"
+					price="130"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry2.jpg"
+					title="Вайт Гло (White Glo) система-экспресс отбеливания"
+					price="480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry1.jpg"
+					title="Levrana маска-скатка Арт.FML09 100мл детокс"
+					price="3480"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+				<analog-masonry
+					preview="analog-masonry3.jpg"
+					title="Фитоуспоковенок Мишутка сироп 100МЛ"
+					price="130"
+					special-price="130"
+					special-label="Цена в наборе"
+				/>
+			</simple-slider>
+		</product-preview>
+
+		<product-slider title="Рекомендуемые">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				notice="Требуется рецепт"
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={4}
+				type="SET"
+				tag="3+1=5"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				rating={2}
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+		</product-slider>
+
+		<product-slider title="С товаром часто покупают">
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				notice="Требуется рецепт"
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={4}
+				type="SET"
+				tag="3+1=5"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="15 530"
+				rating={2}
+				amount="60"
+				preview="product-preview4.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={5}
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				rating={3}
+				type="discount"
+				tag="Скидка"
+				amount="60"
+				preview="product-preview1.jpg"
+			/>
+			<product-card
+				title="Флорадикс Магнезиум 250мл фл."
+				price="580"
+				rating={1}
+				amount="60"
+				preview="product-preview2.jpg"
+			/>
+			<product-card
+				title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+				origin-price="580"
+				price="550"
+				discount="5%"
+				type="GIFT"
+				tag="Подарок"
+				amount="60"
+				preview="product-preview3.jpg"
+			/>
+		</product-slider>
+
+		<product-tabs tabs={["Подробная информация", "Отзывы"]}>
+			<content-block>
+				<h2>Подробная информация</h2>
+
+				<h4>Состав</h4>
+
+				<p>Глюкозный сироп, сахар, вода, желатин, витамин С, лимонная кислота (Е330) (регулятор кислотности), натуральный ароматизатор (малиновый), витамин Е, цинк, карнаубский воск (Е 903) (глазирователь), экстракт куркумы (краситель), витамин B6, витамин А, фолиевая кислота, витамин D3 (холекальциферол), витамин B12.</p>
+
+				<h4>Противопоказания</h4>
+
+				<p>Индивидуальная непереносимость компонентов БАД.</p>
+
+				<h4>Способ применения и дозы</h4>
+
+				<p>Рекомендации по приёму:</p>
+
+				<p>Детям старше 3-х лет по 1 жевательной пастилке в день во время еды. Продолжительность приема и повторные курсы - по рекомендации врача.</p>
+
+				<p>Перед применением рекомендуется проконсультироваться с врачом.</p>
+
+				<h4>Условия хранения</h4>
+
+				<p>Хранить в недоступном для детей месте при температуре не выше +25 С и относительной влажности 75%.</p>
+
+				<h4>Срок годности</h4>
+
+				<p>24 месяца</p>
+
+				<h4>Особые указания</h4>
+
+				<p>Биологически активная добавка к пище. Не является лекарственным средством.</p>
+
+				<h4>Описание</h4>
+
+				<p>Биологически активная добавка к пище МИНИ Доктор Энергия (MINI Doctor Energy).</p>
+
+				<p>Способствует укреплению иммунитета, выработке энергии и устойчивости к нагрузкам, концентрации внимания, улучшению памяти и умственному развитию, повышению стрессоустойчивости. Рекомендуется в качестве биологически активной добавки к пище для детей старше 3-х лет - дополнительного источника витамина С, витамина Е, витамина А, цинка, витамина D3, витамина B6, витамина B12, фолиевой кислоты.</p>
+
+				<h4>Форма выпуска</h4>
+
+				<p>Жевательные пастилки массой 3,5 г каждая по 30 штук во флаконе</p>
+			</content-block>
+
+			<product-comments />
+		</product-tabs>
+
+		<index-list />
+	</div>
+</default-layout>

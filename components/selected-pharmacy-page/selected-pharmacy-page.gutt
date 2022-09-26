@@ -1,0 +1,36 @@
+<import name="common-header" from="../common-header/common-header.gutt" />
+<import name="shop-terminal" from="../shop-terminal/shop-terminal.gutt" />
+<import name="account-pane" from="../account/account-pane/account-pane.gutt" />
+<import name="selected-map-list" from="../selected-map-list/selected-map-list.gutt" />
+<import name="account-location" from="../account/account-location/account-location.gutt" />
+
+<div class="selected-pharmacy-page__location">
+	<account-location />
+</div>
+
+<div class="selected-pharmacy-page">
+	<div class="selected-pharmacy-page__inner">
+		<account-pane since="desktop">
+			<div class="selected-pharmacy-page__header">
+				<common-header>Оформление заказа</common-header>
+			</div>
+
+			<div class="selected-pharmacy-page__map-list">
+				<selected-map-list class-content="selected-pharmacy-page__content" />
+			</div>
+		</account-pane>
+	</div>
+
+	<div class="selected-pharmacy-page__aside">
+		<div class="selected-pharmacy-page__notice">
+			<inline-svg src="selected-pharmacy-page-notice.svg" />
+			<p>Укажите адрес</p>
+		</div>
+
+		<div class="selected-pharmacy-page__terminal">
+			<account-pane>
+				<shop-terminal show-buttons={false}  show-promo={false} />
+			</account-pane>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,44 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="content-block" from="../components/content-block/content-block.gutt" />
+<import name="one-three-columns" from="../components/one-three-columns/one-three-columns.gutt" />
+<import name="medecine-page" from="../components/medecine-page/medecine-page.gutt" />
+<import name="delivery-explore" from="../components/delivery-explore/delivery-explore.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps path={[
+			[
+				"url" : "index.html",
+				"label" : "Главная"
+			],
+			[
+				"url" : "index.html",
+				"label" : "Алфавит препаратов"
+			],
+			[
+				"url" : "index.html",
+				"label" : "Препараты на «Д»"
+			],
+			[
+				"label" : "Д Пантенол"
+			]
+		]} />
+
+		<medecine-page />
+
+		<h4 class="medecine__title">
+			Доставка заказа в Москве
+		</h4>
+
+		<p class="medecine__text">
+			Заказывая на aptstore.ru, можно выбрать доставку в удобную для вас аптеку рядом с домом или по дороге на работу.
+		</p>
+
+		<a class="medecine__link" href="">
+			Все пункты доставки в Москве – 54 аптек
+		</a>
+
+		<delivery-explore />
+	</div>
+</default-layout>

@@ -1,0 +1,122 @@
+<import name="amount-controls" from="../amount-controls/amount-controls.gutt" />
+<import name="favorite-button" from="../favorite-button/favorite-button.gutt" />
+<import name="product-label" from="../product-label/product-label.gutt" />
+<import name="form-button" from="../form/button/button.gutt" />
+
+<param name={$fabricator} value="" />
+<param name={$title} value="" />
+<param name={$origin-price} value="" />
+<param name={$price} value="" />
+<param name={$discount} value="" />
+<param name={$rating} value={0} />
+<param name={$type} value="P_SPECIALOFFER" />
+<param name={$tag} value="" />
+<param name={$amount} value="" />
+<param name={$preview} value="" />
+<param name={$notice} value="" />
+<param name={$withdraw} value={false} />
+<param name={$action} value="" />
+<param name={$action-value} value="" />
+<param name={$class} value="" />
+
+<div class="product-card" data-product-card>
+	<switch>
+		<case test={str_len($action) > 0}>
+			<attribute name={"data-" ++ $action} value={$action-value} />
+		</case>
+		<default>
+			<a class="product-card__link" href="product.html">{$title}</a>
+		</default>
+	</switch>
+
+	<favorite-button class="product-card__favorite" />
+
+	<div class="product-card__auth-warn">
+		<span class="product-card__auth-warn-arrow"></span>
+		<div class="product-card__auth-warn-title">Внимание!</div>
+
+		<div class="product-card__auth-warn-desc">
+			Для того чтобы список избранных товаров сохрнился на будущее, необходимо авторизоваться или зарегистрироваться если вы не сделали этого раньше.
+		</div>
+
+		<div class="product-card__auth-warn-buttons">
+			<form-button action="open-modal" size="tight" action-value="signin">Авторизоваться</form-button>
+			<form-button theme="light" size="tight">Я понимаю, не сейчас</form-button>
+		</div>
+	</div>
+
+	<div class="product-card__tags">
+		<if test={str_len($tag)}>
+			<product-label type={$type}>{$tag}</product-label>
+		</if>
+	</div>
+
+	<figure class="product-card__preview">
+		<img src={"storage/" ++ $preview} alt={$title} data-preview />
+	</figure>
+
+	<div class="product-card__additional">
+		<if test={$rating > 0}>
+			<div class="product-card__rating">
+				<div class="product-card__rating-progress" style={"width: " ++ (($rating / 5) * 100) ++ "%"}>{$rating}</div>
+			</div>
+		</if>
+
+		<if test={str_len($notice) > 0}>
+			<div class="product-card__notice">
+				{$notice}
+			</div>
+		</if>
+	</div>
+
+	<switch>
+		<case test={str_len($action) > 0}>
+			<a href="product.html" target="_blank">
+				<p class={classes("product-card__title", $class)} data-title={$title}>{$title}</p>
+			</a>
+		</case>
+		<default>
+			<p class={classes("product-card__title", $class)} data-title={$title}>{$title}</p>
+		</default>
+	</switch>
+
+	<if test={str_len($fabricator) > 0}>
+		<p class="product-card__fabricator">{$fabricator}</p>
+	</if>
+
+	<if test={str_len($amount)}>
+		<p class="product-card__pack" data-pack={$amount}>{$amount} шт. в уп.</p>
+	</if>
+
+	<div class="product-card__bottom">
+		<switch>
+			<case test={$withdraw}>
+				<p class="product-card__withdraw">Нет в наличии</p>
+
+				<div class="product-card__buttons">
+					<form-button action="notify" size="tight" theme="light">Сообщить</form-button>
+				</div>
+			</case>
+			<default>
+				<div class="product-card__prices">
+					<if test={str_len($origin-price)}>
+						<div class="product-card__origin">
+							<strike class="product-card__origin-price">{$origin-price}₽</strike>
+							<div class="product-card__discount">−{$discount}</div>
+						</div>
+					</if>
+
+					<div class="product-card__price">{$price}&nbsp;₽</div>
+				</div>
+
+				<div class="product-card__buttons" data-buy-controls>
+					<form-button action="buy">Купить</form-button>
+				</div>
+
+				<div class="product-card__buttons" data-amount-controls style="display: none">
+					<amount-controls />
+				</div>
+			</default>
+		</switch>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+<form class="auth-form" method="post" action="" name="signin-form">
+	<h3 class="auth-form__header">Авторизация</h3>
+
+	<p class="auth-form__description" data-description>Давайте авторизуемся по&nbsp;вашему номеру телефона</p>
+
+	<div class="auth-form__field" data-tel-field>
+		<input
+			type="tel"
+			autocomplete="tel-country-code tel"
+			name="tel"
+			class="auth-form__input"
+			id="signin-tel"
+			placeholder="Введите номер телефона"
+		/>
+	</div>
+
+	<div class="auth-form__field" data-code-field style="display: none">
+		<span class="auth-form__countdown" data-countdown></span>
+		<input
+			type="tel"
+			autocomplete="one-time-code"
+			name="code"
+			class="auth-form__input"
+			id="signin-code"
+			placeholder="Код из SMS"
+		/>
+		<button
+			class="auth-form__label-button"
+			type="button"
+			style="display: none"
+			data-resend-code
+		>Получить новый код</button>
+	</div>
+
+	<div class="auth-form__field" data-submit-field>
+		<button class="auth-form__button" type="submit" disabled data-submit>Получить СМС-код</button>
+	</div>
+
+	<div class="auth-form__legal" data-legal>
+		Продолжая пользоваться сайтом, вы соглашаетесь с&nbsp;<a href="">правилами работы сервиса</a> aptstor.ru
+	</div>
+
+	<div class="auth-form__go-back" data-go-back style="display: none">
+		<button type="button" class="auth-form__go-back-button" data-go-back-button>Назад</button>
+	</div>
+</form>

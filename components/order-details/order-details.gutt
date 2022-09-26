@@ -1,0 +1,317 @@
+<import name="drop-down" from="../dropdown/dropdown.gutt" />
+<import name="shop-aside" from="../shop-aside/shop-aside.gutt" />
+
+<div class="order-details">
+	<h1 class="order-details__title">История заказов</h1>
+
+	<div class="order-details__container">
+		<div class="order-details__content">
+			<drop-down class="order-details__conditions-mobile" label="Состояние:" value="" theme="light">
+				<button type="button" class="order-details__option" data-value="">Все</button>
+				<button type="button" class="order-details__option" data-value="">Оплачен</button>
+				<button type="button" class="order-details__option" data-value="">Готов к выдаче</button>
+				<button type="button" class="order-details__option" data-value="">Завершен</button>
+				<button type="button" class="order-details__option" data-value="">Возврат средств</button>
+				<div class="order-details__other-mobile">
+					<button type="button" class="order-details__option order-details__option-other" data-value="">Другое
+						<inline-svg src="order-details-arrow.svg" />
+					</button>
+
+					<ul class="order-details__other-list">
+						<li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">В обработке</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Измененный</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Отмененый пользователем</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Не получен</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Кончился срок хранения</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Постоянный</button>
+            </li>
+					</ul>
+				</div>
+
+			</drop-down>
+
+			<ul class="order-details__conditions">
+				<li class="order-details__condition">
+					<p class="order-details__txt">Состояние:</p>
+				</li>
+
+				<li class="order-details__condition">
+					<button type="submit" class="order-details__btn order-details__btn-active">Все</button>
+				</li>
+
+				<li class="order-details__condition">
+					<button type="submit" class="order-details__btn">Оплачен</button>
+				</li>
+
+				<li class="order-details__condition">
+					<button type="submit" class="order-details__btn">Готов к выдаче</button>
+				</li>
+
+				<li class="order-details__condition">
+					<button type="submit" class="order-details__btn">Завершен</button>
+				</li>
+
+				<li class="order-details__condition">
+					<button type="submit" class="order-details__btn">Возврат средств</button>
+				</li>
+
+				<li class="order-details__condition order-details__other">
+					<button type="submit" class="order-details__btn order-details__btn-other">Другое
+						<inline-svg src="order-details-arrow.svg" />
+					</button>
+
+					<ul class="order-details__other-list">
+						<li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">В обработке</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Измененный</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Отмененый пользователем</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Не получен</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Кончился срок хранения</button>
+            </li>
+            <li class="order-details__other-item">
+              <button type="button" class="order-details__other-btn" data-value="">Постоянный</button>
+            </li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="order-details__wrapper">
+				<div class="order-details__body">
+					<div class="order-details__texts">
+						<div class="order-details__order">
+							<p class="order-details__count">Заказ №856</p>
+							<p class="order-details__time">от 19 января 2022</p>
+						</div>
+
+						<div class="order-details__num">
+							<h4 class="order-details__header">Ваша № 1</h4>
+							<address class="order-details__address">ул. Раменки, д. 3, с. 1</address>
+							<p class="order-details__distance">м. Раменки, 3 мин</p>
+							<time class="order-details__period">Ежедневно: 09:00-21:00</time>
+							<span class="order-details__sum">530 ₽</span>
+						</div>
+					</div>
+
+					<div class="order-details__products">
+						<div class="order-details__pictures">
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+
+
+					<span class="order-details__sum-mobile">
+						2530 ₽
+					</span>
+
+					<div class="order-details__status order-details__status-gray">
+						<p class="order-details__info">Заказ в обработке</p>
+					</div>
+				</div>
+
+				<div class="order-details__body">
+					<div class="order-details__texts">
+						<div class="order-details__order">
+							<p class="order-details__count">Заказ №8156</p>
+							<p class="order-details__time">от 19 января 2022</p>
+						</div>
+
+						<div class="order-details__num">
+							<h4 class="order-details__header">Ваша № 1</h4>
+							<address class="order-details__address">пр-т. Мира, д. 20, с. 13</address>
+							<p class="order-details__distance">м. Китай Город, 3 мин</p>
+							<time class="order-details__period">Ежедневно: 09:00-21:00</time>
+							<span class="order-details__sum">1530 ₽</span>
+						</div>
+
+					</div>
+					<div class="order-details__products">
+						<div class="order-details__pictures">
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+						</div>
+					</div>
+
+
+					<span class="order-details__sum-mobile">
+						2530 ₽
+					</span>
+
+					<div class="order-details__status order-details__status-green">
+						<p class="order-details__info">Заказ выполнен</p>
+						<p class="order-details__date">18 января 2022</p>
+					</div>
+				</div>
+
+				<div class="order-details__body">
+					<div class="order-details__texts">
+						<div class="order-details__order">
+							<p class="order-details__count">Заказ №8185</p>
+							<p class="order-details__time">от 19 января 2022</p>
+						</div>
+
+						<div class="order-details__num">
+							<h4 class="order-details__header">Ваша № 1</h4>
+							<address class="order-details__address">пр-т. Мира, д. 20, с. 13</address>
+							<p class="order-details__distance">м. Китай Город, 3 мин</p>
+							<time class="order-details__period">Ежедневно: 09:00-21:00</time>
+							<span class="order-details__sum">
+								<inline-svg class="order-details__watch" src="order-details-watch.svg" />2530 ₽
+							</span>
+						</div>
+					</div>
+
+					<div class="order-details__products">
+						<div class="order-details__pictures">
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+								<inline-svg class="order-details__watch" src="order-details-watch.svg" />
+								<p class="order-details__label">Цена: +150 ₽</p>
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img order-details__img-gray" src="../../storage/order-details1.jpg" alt="" />
+								<inline-svg class="order-details__watch" src="order-details-watch.svg" />
+								<p class="order-details__label">Удален</p>
+							</div>
+						</div>
+					</div>
+
+
+					<span class="order-details__sum-mobile">
+						<inline-svg class="order-details__watch" src="order-details-watch.svg" />	2530 ₽
+					</span>
+
+					<div class="order-details__status order-details__status-yellow">
+						<p class="order-details__info">Заказ собран</p>
+						<p class="order-details__date">
+							<inline-svg class="order-details__watch" src="order-details-watch-white.svg" />Есть измениия
+						</p>
+					</div>
+				</div>
+
+				<div class="order-details__body">
+					<div class="order-details__texts">
+						<div class="order-details__order">
+							<p class="order-details__count">Заказ №8185</p>
+							<p class="order-details__time">от 19 января 2022</p>
+						</div>
+
+						<div class="order-details__num">
+							<h4 class="order-details__header">Ваша № 1</h4>
+							<address class="order-details__address">пр-т. Мира, д. 20, с. 13</address>
+							<p class="order-details__distance">м. Китай Город, 3 мин</p>
+							<time class="order-details__period">Ежедневно: 09:00-21:00</time>
+							<span class="order-details__sum">
+								<inline-svg class="order-details__watch" src="order-details-watch.svg" />2530 ₽
+							</span>
+						</div>
+					</div>
+
+					<div class="order-details__products">
+						<div class="order-details__pictures">
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img" src="../../storage/order-details1.jpg" alt="" />
+								<inline-svg class="order-details__watch" src="order-details-watch.svg" />
+								<p class="order-details__label">Цена: +150 ₽</p>
+							</div>
+
+							<div class="order-details__image">
+								<img class="order-details__img order-details__img-gray" src="../../storage/order-details1.jpg" alt="" />
+								<inline-svg class="order-details__watch" src="order-details-watch.svg" />
+								<p class="order-details__label">Удален</p>
+							</div>
+						</div>
+					</div>
+
+
+					<span class="order-details__sum-mobile">
+						<inline-svg class="order-details__watch" src="order-details-watch.svg" />2530 ₽
+					</span>
+
+					<div class="order-details__status order-details__status-red">
+						<p class="order-details__info">Заказ отменен</p>
+						<p class="order-details__date">20 января 2022</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="order-details__aside">
+			<shop-aside />
+		</div>
+	</div>
+</div>

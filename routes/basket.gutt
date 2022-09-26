@@ -1,0 +1,21 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="basket-page" from="../components/basket-page/basket-page.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps
+			path={[
+				[
+					"url": "index.html",
+					"label": "Главная"
+				],
+				[
+					"label": "Корзина"
+				]
+			]}
+		/>
+
+		<basket-page />
+	</div>
+</default-layout>

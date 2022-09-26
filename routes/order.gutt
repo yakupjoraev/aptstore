@@ -1,0 +1,149 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="account-pane" from="../components/account/account-pane/account-pane.gutt" />
+<import name="info-pane" from="../components/account/info-pane/info-pane.gutt" />
+<import name="common-header" from="../components/common-header/common-header.gutt" />
+<import name="delivery-card" from="../components/delivery-card/delivery-card.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps path={[
+			[
+				"url": "index.html",
+				"label": "Главная"
+			],
+			[
+				"url": "account.html",
+				"label": "Личный кабинет"
+			],
+			[
+				"label": "Заказы",
+				"url": "order-list.html"
+			],
+			[
+				"label": "Заказ 856"
+			]
+		]} />
+	</div>
+
+	<div class="container">
+		<div class="order page">
+			<div class="order__thanks">Спасибо, Ваш заказ оформлен</div>
+
+			<div class="order__content">
+				<account-pane since="tablet">
+					<div class="order__header">
+						<common-header>
+							Информация о заказе 856
+						</common-header>
+						<span class="order__header-date">от 19 января 2022</span>
+
+						<!-- order__header-status--pending, order__header-status--succeeded, order__header-status--changed, order__header-status--canceled -->
+						<div class="order__header-status order__header-status--changed">
+							Заказ в обработке
+							<span class="order__header-status-label order__header-status-label--changed">Есть измениия</span>
+						</div>
+					</div>
+
+					<div class="order__products">
+						<div class="order__product">
+							<figure class="order__product-figure">
+								<img class="order__product-preview" alt="" src="storage/product-preview1.jpg" />
+							</figure>
+							<div class="order__product-name">
+								Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+
+							</div>
+							<div class="order__product-amount">1 шт.</div>
+							<div class="order__product-prices">
+								<div class="order__product-refer">
+									<div class="order__product-origin">580 ₽</div>
+									<div class="order__product-discount">Скидка 50 ₽</div>
+								</div>
+								<div class="order__product-price">530 ₽</div>
+							</div>
+						</div>
+
+						<div class="order__product">
+							<figure class="order__product-figure">
+								<img class="order__product-preview" alt="" src="storage/product-preview2.jpg" />
+							</figure>
+							<div class="order__product-name">
+								Флорадикс Магнезиум 250мл фл.
+							</div>
+							<div class="order__product-amount">10 шт.</div>
+							<div class="order__product-prices">
+								<div class="order__product-refer">
+									<div class="order__product-origin">580 ₽</div>
+									<div class="order__product-discount">Скидка 50 ₽</div>
+								</div>
+								<div class="order__product-price">530 ₽</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="order__delivery">
+						<div class="order__delivery-data">
+							<delivery-card
+								title="Самовывоз"
+								description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+								start-price="200 ₽"
+								price="0 ₽"
+								tags={[
+									[
+										"type": "discount",
+										"label": "Скидка"
+									],
+									[
+										"type": "gift",
+										"label": "Подарок"
+									],
+									[
+										"type": "free",
+										"label": "Б"
+									]
+								]}
+							/>
+
+							<div class="order__delivery-offices">
+								<div class="order__subtitle">Адрес получения</div>
+
+								<div class="order__delivery-office">
+									<div class="order__delivery-name">Ваша № 1</div>
+									<div class="order__delivery-address">ул. Раменки, д. 3, с. 1</div>
+									<div class="order__delivery-contacts">м. Раменки, 3 мин<br />Ежедневно: 09:00-21:00</div>
+									<div class="order__delivery-phone">8 (495) 419 18 18</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="order__delivery-map" style="background: url('storage/map.jpg'); background-size: cover; background-position: center"></div>
+					</div>
+
+					<div class="order__detail">
+						<div class="order__subtitle">Способ оплаты</div>
+
+						<div class="order__detail-description">Наличными при получении</div>
+					</div>
+
+					<div class="order__detail">
+						<div class="order__subtitle">Адрес получения</div>
+
+						<div class="order__detail-description">
+							Эл. почта: mail@mysite.ru<br/>Телефон: +7 856 658 55 66
+						</div>
+					</div>
+
+					<div class="order__action">
+						<form-button class="order__button" size="large" theme="light">Отменить</form-button>
+
+						<div class="order__total">Итого: <span class="order__total-amount">1050 ₽</span></div>
+					</div>
+				</account-pane>
+			</div>
+
+			<div class="order__aside">
+				<info-pane />
+			</div>
+		</div>
+	</div>
+</default-layout>

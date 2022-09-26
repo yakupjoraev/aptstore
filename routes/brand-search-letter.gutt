@@ -1,0 +1,49 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="brand-search" from="../components/brand-search/brand-search.gutt" />
+<import name="brand-search-list" from="../components/brand-search-list/brand-search-list.gutt" />
+
+<default-layout empty-basket={true}>
+	<div class="container">
+		<bread-crumps path={[
+			[
+				"url": "index.html",
+				"label": "Главная"
+			],
+			[
+				"label": "Наши бренды"
+			]
+		]} />
+
+		<brand-search>
+			<brand-search-list data={[
+				[
+					"letter": "V",
+					"url": "brand.html",
+					"items": [
+						"Valaprotect",
+						"Veet",
+						"Velvet",
+						"VENOTEKS",
+						"Venus",
+						"Verba",
+						"Verbena",
+						"Verdan",
+						"Versta",
+						"Vichy",
+						"Viks Wonder",
+						"Vincetca",
+						"Viroxinol",
+						"Vismed",
+						"Vitamin F99",
+						"Vitamin Well",
+						"VitaPlant",
+						"vitateka",
+						"VITIS",
+						"Vitiskin"
+					]
+				]
+			]} />
+		</brand-search>
+	</div>
+</default-layout>

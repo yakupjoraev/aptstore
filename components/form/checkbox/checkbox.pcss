@@ -1,0 +1,55 @@
+@import url('../../../layouts/variables.pcss');
+
+input.checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+
+label.checkbox {
+	display: flex;
+}
+
+.checkbox__element {
+	flex-shrink: 0;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 4px;
+	width: 16px;
+	height: 16px;
+	background: resolve('./mobile-checkbox.svg') 0 -21px no-repeat;
+	cursor: pointer;
+}
+
+label.checkbox--disabled .checkbox__element {
+	background-color: #ddd;
+}
+
+label.checkbox.checkbox--size-l .checkbox__element {
+	width: 24px;
+	height: 24px;
+	background-image: resolve('./checkbox.svg');
+	background-position: 0 0;
+}
+
+@media (--tablet) {
+	label.checkbox.checkbox--size-a .checkbox__element {
+		width: 24px;
+		height: 24px;
+		background-image: resolve('./checkbox.svg');
+		background-position: 0 0;
+	}
+}
+
+input.checkbox:checked + .checkbox__element {
+	background-position: 0 0;
+}
+
+label.checkbox--size-l input.checkbox:checked + .checkbox__element {
+	background-position: -25px 0;
+}
+
+@media (--tablet) {
+	label.checkbox--size-a input.checkbox:checked + .checkbox__element {
+		background-position: -25px 0;
+	}
+}

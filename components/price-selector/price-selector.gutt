@@ -1,0 +1,11 @@
+<div class="price-selector">
+	<div class="price-selector__field" data-price-selector-field>
+		<label for="price-from" class="price-selector__label">От</label>
+		<input class="price-selector__input" type="numeric" id="price-from" name="price-from" placeholder="min" />
+	</div>
+
+	<div class="price-selector__field" data-price-selector-field>
+		<label for="price-to" class="price-selector__label">До</label>
+		<input class="price-selector__input" type="numeric" id="price-to" name="price-to" placeholder="max" />
+	</div>
+</div>

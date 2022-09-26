@@ -1,0 +1,76 @@
+@import url('../../layouts/variables.pcss');
+
+.pagination {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media (--tablet) {
+		margin: 30px -12px 0;
+		flex-wrap: nowrap;
+		align-items: center;
+
+		&::after {
+			content: '';
+			order: 3;
+			flex: 1 1 35%;
+		}
+	}
+}
+
+.pagination__pages {
+	order: 2;
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+
+	@media (--tablet) {
+		order: 1;
+		margin-top: 0;
+		width: auto;
+		flex: 1 1 35%;
+		justify-content: flex-start;
+	}
+}
+
+.pagination__item {
+	line-height: 22px;
+}
+
+.pagination__link {
+	padding: 0 12px;
+	font-size: 16px;
+	color: var(--light-gray);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--secondary);
+	}
+}
+
+.pagination__current {
+	padding: 0 6px;
+	font-size: 18px;
+	color: var(--secondary);
+}
+
+.pagination__show-more {
+	order: 1;
+	min-width: 220px;
+	width: 100%;
+	text-align: center;
+
+	@media (--tablet) {
+		order: 2;
+		width: auto;
+		flex: 1 1 30%;
+	}
+}
+
+.pagination__show-more {
+	margin: 0 20px;
+}

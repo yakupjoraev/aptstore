@@ -1,0 +1,280 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="brand-search" from="../components/brand-search/brand-search.gutt" />
+<import name="brand-search-list" from="../components/brand-search-list/brand-search-list.gutt" />
+
+<default-layout empty-basket={true}>
+	<div class="container">
+		<bread-crumps path={[
+			[
+				"url": "index.html",
+				"label": "Главная"
+			],
+			[
+				"label": "Наши бренды"
+			]
+		]} />
+
+		<brand-search>
+			<brand-search-list data={[
+				[
+					"category": "А-Я",
+					"url": ""
+				],
+				[
+					"letter": "А",
+					"items": [
+						"Абуцел",
+						"Авангард",
+						"Аверсус",
+						"Азри",
+						"АйЧек",
+						"Акавия",
+						"Аквабинт",
+						"Аквалайф",
+						"Аквалор",
+						"АкваОптик",
+						"АкваПилинг",
+						"Аквасол",
+						"Акваэль",
+						"Акку-Чек",
+						"Акнесил",
+						"Активтекс",
+						"Авангард",
+						"Акавия",
+						"Аквалор",
+						"Аверсус",
+						"Алтайский травкник",
+						"Авангард",
+						"Аверсус",
+						"Алберт-Киевгума",
+						"АйЧек",
+						"Акавия",
+						"Аквабинт",
+						"Аквалайф",
+						"Аквалор",
+						"АкваОптик"
+					]
+				],
+				[
+					"letter": "Б",
+					"items": [
+						"БкваПилинг",
+						"Бквасол",
+						"Бкваэль",
+						"Бкку-Чек",
+						"Бкнесил",
+						"Бктивтекс",
+						"Бангард",
+						"Бнтисельеврин",
+						"Бквалор",
+						"Бверсус",
+						"Блтайский травкник",
+						"Бвангард",
+						"Бверсус",
+						"Блберт-Киевгума",
+						"БйЧек",
+						"Бкавия",
+						"Бквабинт",
+						"Бквалайф",
+						"Бквалор",
+						"БкваОптик",
+						"БкваПилинг",
+						"Бквасол",
+						"Бкваэль",
+						"Бкку-Чек",
+						"Бкнесил",
+						"Бктивтекс",
+						"Бвангард",
+						"Бкавия",
+						"Бквалор",
+						"Б версус"
+					]
+				],
+				[
+					"letter": "В",
+					"items": [
+						"ВкваПилинг",
+						"Вквасол",
+						"Вкваэль",
+						"Вкку-Чек",
+						"Внесил",
+						"Вктивтекс",
+						"Внгард",
+						"Внтисельеврин",
+						"Валор",
+						"Вверсус",
+						"Втайский травкник",
+						"Ввангард",
+						"Вверсус",
+						"В-Киевгума",
+						"ВЧек",
+						"Вкавия",
+						"Вквабинт",
+						"Вквалайф",
+						"Вквалор",
+						"ВкваОптик",
+						"ВкваПилинг",
+						"Вквасол",
+						"Вкваэль",
+						"Вкку-Чек",
+						"Вкнесил",
+						"Вктивтекс",
+						"Ввангард",
+						"Вкавия",
+						"Ввалор",
+						"Версус"
+					]
+				],
+				[
+					"category": "A-Z",
+					"url": ""
+				],
+				[
+					"letter": "A",
+					"items": [
+						"__&Anna& HAPPY FEET-купить тапочки шлепанцы сланцы",
+						"_A_V_O_N",
+						"_AAABABY_",
+						"_AAASHOP_",
+						"_acs_37_",
+						"_Active_",
+						"_aladdin_accessories",
+						"_ALEX_",
+						"_ALFA_",
+						"_AlViTek_",
+						"_Amaves-textile_",
+						"_AngaDigi_",
+						"_ANGELINA_",
+						"_ANGORA_",
+						"_AVA_",
+						"_AXY-ax_",
+						"- amitera -",
+						"-A&A-",
+						"-A&B-",
+						"-A&P-",
+						"-Always cheaper",
+						":alpina:",
+						"! ! ACS ! !",
+						"! ! Alice",
+						"! ! Appoli",
+						"! A ДОЖДЕВИК ПЛОТНЫЙ",
+						"! A Носки Женские набор",
+						"! A Носки Мужские набор",
+						"! A Accent",
+						"! A&S Fashion"
+					]
+				],
+				[
+					"letter": "B",
+					"items": [
+						"_baby_",
+						"_BAG FOR YOU",
+						"_Be_zog",
+						"_be.esthetic",
+						"_by Bosya_",
+						"- ballagra -",
+						"-Bенникоф-",
+						"-Balani-",
+						"-BeautyBase-",
+						"-BEGEMOT-",
+						"-BY NECHAGIN-",
+						"-byEpov KIDS-",
+						"! ! ! Brilha",
+						"! ! baX",
+						"! ! Bel bambino ! !",
+						"! Babylight",
+						"! BACKPACK",
+						"! BAG",
+						"! Bant №1 ! Manechkin bant",
+						"! Barez",
+						"! BelOptovik",
+						"! Berchelli",
+						"! BINITA",
+						"! Braganza",
+						"! By spirit",
+						"!!BAYKAR",
+						"!BabyStop",
+						"!BackStrong!",
+						"!BambychaKids!",
+						"!BAPS AMRUT"
+					]
+				],
+				[
+					"letter": "C",
+					"items": [
+						"_candle.studio_",
+						"_CORN",
+						"_Cosiness",
+						"_cozy_home_",
+						"-Calidi-",
+						"-Camelia-",
+						"-CARROT-",
+						"-Charisma Gold-",
+						",Crystalite Bohemia,",
+						"! CLOTHUS",
+						"!Carmen",
+						"!Chance clean",
+						"!Chokocat Вкусные подарки",
+						"!Cozyhome",
+						".Ceramiche Millennio Snc",
+						".Cesky Porcelan",
+						".Cesky Porcelan / Чешский Порцелан",
+						".Cevik",
+						".CHAOAN EVERGREEN ART CRAFT CO., LTD",
+						".CHAOAN EVERGREEN ART CRAFT CO., LTD.",
+						".Combi",
+						".Crystalex CZ",
+						".Crystalite Bohemia",
+						".Crystalite Bohemia / Кристаллайт Богемия",
+						".CTI",
+						".Czech Gold Hands / Чеш Голд Хэндс",
+						"& Cувениры",
+						"& CLIP",
+						"&Case Box",
+						"&Chill Choll"
+					]
+				],
+				[
+					"category": "0-9",
+					"url": "",
+					"showlink": true
+				],
+				[
+					"items": [
+						"! ! ! 4yourbody",
+						"! 1ЖЕНСКИЕ ФУТБОЛКИ",
+						"! 33 удовольствия",
+						"!1 Хоз",
+						"!1батарейки",
+						"!1Home",
+						"!1intimiss",
+						".89",
+						".Ёорк",
+						"/1 DOMA",
+						"& 230;on",
+						"&1sports",
+						"&2021",
+						"&2Банта",
+						"+27",
+						"+2F",
+						"+7 Jeans",
+						"0",
+						"0_o Стикер",
+						"0_o fantasie",
+						"000 Планета картин",
+						"000 Art-Hobby-Market",
+						"000 Bandana party",
+						"000 Toys hobby",
+						"001Пилотка",
+						"003 Med",
+						"01 goods",
+						"01- Атмосфера уюта",
+						"01-ДОМОК",
+						"01-ДУБОК"
+					]
+				]
+			]} />
+		</brand-search>
+	</div>
+</default-layout>

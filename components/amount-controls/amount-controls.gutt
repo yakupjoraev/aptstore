@@ -1,0 +1,6 @@
+<param name={$value} value={1} />
+<param name={$disabled} value={false} />
+
+<button type="button" class="amount-controls__decrease" disabled={$disabled}>−</button>
+<input type="numeric" class="amount-controls__amount" value={$value} disabled={$disabled} />
+<button type="button" class="amount-controls__increase" disabled={$disabled}>+</button>

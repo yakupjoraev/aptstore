@@ -1,0 +1,32 @@
+name: Release
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: makingoff/php-node:alpha4
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci --production
+      - run: npm run build
+      - run: npm run pack
+      - uses: actions/create-release@v1
+        id: create_release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref_name }}
+      - uses: actions/upload-release-asset@v1
+        id: upload_release_asset
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build.tgz
+          asset_name: build.tgz
+          asset_content_type: application/tgz
