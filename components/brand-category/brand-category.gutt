@@ -29,45 +29,23 @@
 							<button type="button" class="brand-page__category-option" data-value="dercos-densi-solitions">Dercos Densi
 								Solitions</button>
 						</drop-down>
+
+						<shop-category-filters />
+
+						<shop-category-sorting media="mobile" />
 					</div>
 
-					<div class="brand-page__dropdown brand-page__dropdown--adaptive brand-page__dropdown--categories"
-						data-brand-page-dropdown="">
-						<button class="brand-page__dropdown-button" type="button" data-brand-page-dropdown-toggle=""
-							data-value="all">
-							<inline-svg src="brand-page-settings.svg" />
-							Весь ассортимент
-						</button>
 
-						<div class="brand-page__category-popup">
-							<button type="button" class="brand-page__category-option" data-value="all">Весь ассортимент</button>
-							<button type="button" class="brand-page__category-option" data-value="face-care">Уход для лица</button>
-							<button type="button" class="brand-page__category-option" data-value="body-care">Уход для тела</button>
-							<button type="button" class="brand-page__category-option" data-value="makeup">Макияж</button>
-							<button type="button" class="brand-page__category-option" data-value="sunshine">Солнце</button>
-						</div>
+					<div class="shop-category__controls">
+						<a href="" class="shop-category__about">О бренде</a>
+
+
 					</div>
+
 				</div>
 			</div>
 		</div>
 
-
-		<div class="shop-category__controls">
-			<div class="shop-category__category">
-				<drop-down value="all" label="Весь ассортимент">
-					<button type="button" class="shop-category__category-option" data-value="all">Весь ассортимент</button>
-					<button type="button" class="shop-category__category-option" data-value="face-care">Уход для лица</button>
-					<button type="button" class="shop-category__category-option" data-value="body-care">Уход для тела</button>
-					<button type="button" class="shop-category__category-option" data-value="makeup">Макияж</button>
-					<button type="button" class="shop-category__category-option" data-value="sunshine">Солнце</button>
-				</drop-down>
-			</div>
-
-			<shop-category-filters />
-
-			<shop-category-sorting media="mobile" />
-			<a href="" class="shop-category__about">О бренде</a>
-		</div>
 
 		<div class="brand-page__news">
 			<news-column compacted={true} news={[ [ "title" : "Какой респиратор купить для защиты от пыли и инфекций" , "date"

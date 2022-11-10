@@ -18,7 +18,8 @@
 				<button type="button" class="shop-category__category-option" data-value="">Медицинские приборы</button>
 				<button type="button" class="shop-category__category-option" data-value="">Оптика</button>
 				<button type="button" class="shop-category__category-option" data-value="">Ортопедические изделия</button>
-				<button type="button" class="shop-category__category-option" data-value="">Какое-то невероятно длинное название категории</button>
+				<button type="button" class="shop-category__category-option" data-value="">Какое-то невероятно длинное название
+					категории</button>
 				<button type="button" class="shop-category__category-option" data-value="">Прочие товары</button>
 				<button type="button" class="shop-category__category-option" data-value="">Разное</button>
 				<button type="button" class="shop-category__category-option" data-value="">Средства от насекомых</button>
