@@ -68,6 +68,16 @@
 			<shop-category-sorting media="mobile" />
 			<a href="" class="shop-category__about">О бренде</a>
 		</div>
+
+		<div class="brand-page__news">
+			<news-column compacted={true} news={[ [ "title" : "Какой респиратор купить для защиты от пыли и инфекций" , "date"
+				: "17 сентября 2021" , "preview" : "news-preview1.jpg" ], [ "title"
+				: "Менструальный цикл: физиологическая норма" , "date" : "16 сентября 2021" , "preview" : "news-preview2.jpg" ],
+				[ "title" : "Презервативы Дюрекс" , "date" : "10 сентября 2021" , "preview" : "news-preview3.jpg" ], [ "title"
+				: "Стресс – реакция организма на нервное перенапряжение" , "date" : "01 сентября 2021" , "preview"
+				: "news-preview4.jpg" ], [ "title" : "Чеснок – полезный природный продукт" , "date" : "31 сентября 2021"
+				, "preview" : "news-preview5.jpg" ] ]} />
+		</div>
 	</div>
 
 	<div class="shop-category__content">
