@@ -2,19 +2,10 @@
 <import name="shop-category-filters" from="../shop-category-filters/shop-category-filters.gutt" />
 <import name="shop-category-sorting" from="../shop-category-sorting/shop-category-sorting.gutt" />
 <import name="brand-page" from="../brand-page/brand-page.gutt" />
+<!-- <import name="content-block" from="../content-block/content-block.gutt" /> -->
 
 <div class="shop-category">
 	<div class="shop-category__aside">
-		<!-- <div class="shop-category__strategy">
-			<drop-down value="all" label="Весь ассортимент" theme="light">
-				<button type="button" class="shop-category__category-option" data-value="all">Весь ассортимент</button>
-				<button type="button" class="shop-category__category-option" data-value="face-care">Уход для лица</button>
-				<button type="button" class="shop-category__category-option" data-value="body-care">Уход для тела</button>
-				<button type="button" class="shop-category__category-option" data-value="makeup">Макияж</button>
-				<button type="button" class="shop-category__category-option" data-value="sunshine">Солнце</button>
-			</drop-down>
-		</div> -->
-
 		<div class="shop-category__brand-page brand-page">
 			<div class="shop-category__left-column brand-page__left-column">
 				<div class="shop-category__navigation brand-page__navigation">
@@ -30,18 +21,24 @@
 								Solitions</button>
 						</drop-down>
 
+						<div class="shop-category__category">
+							<drop-down value="all" label="Весь ассортимент">
+								<button type="button" class="shop-category__category-option" data-value="all">Весь ассортимент</button>
+								<button type="button" class="shop-category__category-option" data-value="face-care">Уход для
+									лица</button>
+								<button type="button" class="shop-category__category-option" data-value="body-care">Уход для
+									тела</button>
+								<button type="button" class="shop-category__category-option" data-value="makeup">Макияж</button>
+								<button type="button" class="shop-category__category-option" data-value="sunshine">Солнце</button>
+							</drop-down>
+						</div>
+
+						<a href="" class="shop-category__about">О бренде</a>
+
 						<shop-category-filters />
 
 						<shop-category-sorting media="mobile" />
 					</div>
-
-
-					<div class="shop-category__controls">
-						<a href="" class="shop-category__about">О бренде</a>
-
-
-					</div>
-
 				</div>
 			</div>
 		</div>
@@ -59,6 +56,16 @@
 	</div>
 
 	<div class="shop-category__content">
+		<div class="articles-detail">
+			<img class="detail_picture" src="storage/promo-image.jpg" alt="detail_picture" />
+			<br />
+			<br />
+
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates perferendis quasi possimus culpa,
+			debitis cum aperiam aliquid vitae commodi temporibus asperiores labore libero similique, soluta laboriosam maiores
+			nemo? Dolorem.
+		</div>
+
 		<div class="shop-category__header">
 			<h2 class="shop-category__heading">VICHY уход для лица</h2>
 

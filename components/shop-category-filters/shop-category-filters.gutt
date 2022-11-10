@@ -10,6 +10,7 @@
 	</button>
 
 	<div class="shop-category-filters__content">
+		<div class="title-h3">Фильтр</div>
 		<div class="shop-category-filters__filter">
 			<filter-accordeon title="Категория" type="category">
 				<filter-search-list items={[
