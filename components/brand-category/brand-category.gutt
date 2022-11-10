@@ -1,10 +1,11 @@
 <import name="drop-down" from="../dropdown/dropdown.gutt" />
 <import name="shop-category-filters" from="../shop-category-filters/shop-category-filters.gutt" />
 <import name="shop-category-sorting" from="../shop-category-sorting/shop-category-sorting.gutt" />
+<import name="brand-page" from="../brand-page/brand-page.gutt" />
 
 <div class="shop-category">
 	<div class="shop-category__aside">
-		<div class="shop-category__strategy">
+		<!-- <div class="shop-category__strategy">
 			<drop-down value="all" label="Весь ассортимент" theme="light">
 				<button type="button" class="shop-category__category-option" data-value="all">Весь ассортимент</button>
 				<button type="button" class="shop-category__category-option" data-value="face-care">Уход для лица</button>
@@ -12,7 +13,44 @@
 				<button type="button" class="shop-category__category-option" data-value="makeup">Макияж</button>
 				<button type="button" class="shop-category__category-option" data-value="sunshine">Солнце</button>
 			</drop-down>
+		</div> -->
+
+		<div class="shop-category__brand-page brand-page">
+			<div class="shop-category__left-column brand-page__left-column">
+				<div class="shop-category__navigation brand-page__navigation">
+					<div class="brand-page__strategy">
+						<drop-down label="Направления VICHY" value="" theme="light">
+							<button type="button" class="brand-page__category-option" data-value="aqualia-thermal">Aqualia
+								Thermal</button>
+							<button type="button" class="brand-page__category-option" data-value="capital-ideal-soleil">Capital Ideal
+								Soleil</button>
+							<button type="button" class="brand-page__category-option" data-value="deodorants">Deodorants</button>
+							<button type="button" class="brand-page__category-option" data-value="dercos">Dercos</button>
+							<button type="button" class="brand-page__category-option" data-value="dercos-densi-solitions">Dercos Densi
+								Solitions</button>
+						</drop-down>
+					</div>
+
+					<div class="brand-page__dropdown brand-page__dropdown--adaptive brand-page__dropdown--categories"
+						data-brand-page-dropdown="">
+						<button class="brand-page__dropdown-button" type="button" data-brand-page-dropdown-toggle=""
+							data-value="all">
+							<inline-svg src="brand-page-settings.svg" />
+							Весь ассортимент
+						</button>
+
+						<div class="brand-page__category-popup">
+							<button type="button" class="brand-page__category-option" data-value="all">Весь ассортимент</button>
+							<button type="button" class="brand-page__category-option" data-value="face-care">Уход для лица</button>
+							<button type="button" class="brand-page__category-option" data-value="body-care">Уход для тела</button>
+							<button type="button" class="brand-page__category-option" data-value="makeup">Макияж</button>
+							<button type="button" class="brand-page__category-option" data-value="sunshine">Солнце</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
 
 		<div class="shop-category__controls">
 			<div class="shop-category__category">
@@ -25,11 +63,10 @@
 				</drop-down>
 			</div>
 
-			<a href="" class="shop-category__about">О бренде</a>
-
 			<shop-category-filters />
 
 			<shop-category-sorting media="mobile" />
+			<a href="" class="shop-category__about">О бренде</a>
 		</div>
 	</div>
 
