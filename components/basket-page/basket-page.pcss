@@ -11,7 +11,7 @@
 
 .basket-page__content {
 	@media (--desktop-medium) {
-		width: calc(100% - 330px);
+		width: 100%;
 	}
 }
 
@@ -61,7 +61,7 @@
 }
 
 .basket-page__delivery-option {
-	& + & {
+	&+& {
 		margin-left: 20px;
 	}
 }
@@ -69,14 +69,14 @@
 .basket-page__disclaimers {
 	margin-top: 20px;
 
-	& > * + * {
+	&>*+* {
 		margin-top: 5px;
 	}
 
 	@media (--tablet) {
 		margin-top: 24px;
 
-		& > * + * {
+		&>*+* {
 			margin-top: 10px;
 		}
 	}
@@ -194,8 +194,8 @@
 	margin-top: -23px;
 }
 
-.basket-page__product-name--recipe-needed ~ .basket-page__meta-price,
-.basket-page__product-name--recipe-needed ~ .basket-page__prices {
+.basket-page__product-name--recipe-needed~.basket-page__meta-price,
+.basket-page__product-name--recipe-needed~.basket-page__prices {
 	margin-top: 55px;
 }
 
@@ -257,8 +257,7 @@
 	color: var(--light-gray);
 	text-align: center;
 
-	@media (--tablet) {
-	}
+	@media (--tablet) {}
 }
 
 .basket-page__prices {
@@ -334,26 +333,89 @@
 }
 
 .basket-page__remove {
-	position: absolute;
-	border: 0;
-	right: 0;
-	bottom: -30px;
-	width: 20px;
-	height: 20px;
-	background: resolve('./basket-page-remove.svg');
+	display: flex;
+	align-items: center;
+	column-gap: 14px;
 	font-size: 0;
 
 	@media (--tablet) {
-		display: none;
-		top: 3px;
-		right: -31px;
-		bottom: auto;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		color: #C4C4C4;
 	}
 }
 
-.basket-page__item:hover .basket-page__remove {
-	display: block;
+.basket-page__like-remove {
+	flex: 0 1 100%;
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	column-gap: 18px;
+	margin: 20px 0 -40px 0;
+
+	@media (--tablet) {
+		flex: 0 1 auto;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 10px;
+		margin: 0;
+	}
 }
+
+
+.basket-page__like-label {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	cursor: pointer;
+}
+
+.basket-page__like-input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.basket-page__like-input:checked~.basket-page__like-icon svg path {
+	fill: var(--primary);
+}
+
+.basket-page__like-icon svg {
+	width: 22px;
+	height: 20px;
+	margin-top: 7px;
+
+	@media (--tablet) {
+		width: 20px;
+		height: 18px;
+		margin-top: 0;
+	}
+}
+
+.basket-page__like-text {
+	display: none;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #C4C4C4;
+
+	@media (--tablet) {
+		display: block;
+	}
+}
+
+.basket-page__remove {}
+
+.basket-page__remove span {
+	display: none;
+
+	@media (--tablet) {
+		display: block;
+	}
+}
+
 
 .basket-page__set {
 	margin-top: 45px;
@@ -385,7 +447,7 @@
 		right: 0;
 		border-style: solid;
 		border-width: 5px 5px 0 5px;
-		border-color:  var(--primary) transparent transparent transparent;
+		border-color: var(--primary) transparent transparent transparent;
 
 		@media (--tablet) {
 			top: 8px;
@@ -398,7 +460,7 @@
 	}
 }
 
-input:checked ~ .basket-page__show-set::after {
+input:checked~.basket-page__show-set::after {
 	border-width: 0 5px 5px 5px;
 	border-color: transparent transparent var(--primary) transparent;
 }
@@ -427,7 +489,7 @@ input:checked ~ .basket-page__show-set::after {
 	}
 }
 
-input:checked ~ .basket-page__set-list {
+input:checked~.basket-page__set-list {
 	max-height: 500px;
 }
 
@@ -442,7 +504,7 @@ input:checked ~ .basket-page__set-list {
 .basket-page__set-item {
 	margin-left: 16px;
 
-	& + & {
+	&+& {
 		margin-top: 10px;
 	}
 }

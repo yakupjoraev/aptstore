@@ -6,76 +6,22 @@
 <import name="product-label" from="../product-label/product-label.gutt" />
 <import name="account-pane" from="../account/account-pane/account-pane.gutt" />
 
-<param name={$products} value={[
-	[
-		"preview": "product-preview1.jpg",
-		"tag": "Скидка",
-		"title": "Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+",
-		"available": "3",
-		"amount": "1",
-		"item-price": "530 ₽",
-		"origin-price": "580 ₽",
-		"discount": "50 ₽",
-		"price": "530 ₽"
-	],
-	[
-		"preview": "product-preview2.jpg",
-		"tag": "Скидка",
-		"title": "Флорадикс Магнезиум 250мл фл.",
-		"available": "18",
-		"amount": "2",
-		"item-price": "260 ₽",
-		"origin-price": "560 ₽",
-		"discount": " 40 ₽",
-		"price": "530 ₽"
-	],
-	[
-		"preview": "product-preview3.jpg",
-		"tag": "",
-		"title": "Тонометр АНД UA-888 E автомат стандарт. манжета (эконом)",
-		"available": "5",
-		"amount": "1",
-		"item-price": "8530 ₽",
-		"price": "8530 ₽"
-	],
-	[
-		"preview": "product-preview1.jpg",
-		"title": "Доксиламин-сз таблетки п.п.о 15мг 30 шт",
-		"recipe-only": true,
-		"amount": "1",
-		"item-price": "8530 ₽",
-		"price": "8530 ₽"
-	],
-	[
-		"preview": "product-preview4.jpg",
-		"tag": "Набор",
-		"title": "Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+",
-		"available": "2",
-		"amount": "1",
-		"item-price": "1560₽",
-		"origin-price": "1560 ₽",
-		"discount": "60 ₽",
-		"price": "1560 ₽",
-		"set": [
-			[
-				"label": "La Roche-Posay Effaclar гель 400мл очищающий",
-				"amount": "1"
-			],
-			[
-				"label": "7 Days Candy Shop маска д/кожи вокруг глаз 10г PINK VENUS с экстрактом Клубники и Протеинами молока",
-				"amount": "2"
-			],
-			[
-				"label": "Эльгидиум Анти-Плак з/паста Арт.D00041 50мл п/зубного налета",
-				"amount": "1"
-			],
-			[
-				"label": "Эльгидиум Блэк з/нить Арт.D00028 50м с хлоргесидином черная",
-				"amount": "3"
-			]
-		]
-	]
-]} />
+<param name={$products} value={[ [ "preview" : "product-preview1.jpg" , "tag" : "Скидка" , "title"
+	: "Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+" , "available" : "3" , "amount" : "1"
+	, "item-price" : "530 ₽" , "origin-price" : "580 ₽" , "discount" : "50 ₽" , "price" : "530 ₽" ], [ "preview"
+	: "product-preview2.jpg" , "tag" : "Скидка" , "title" : "Флорадикс Магнезиум 250мл фл." , "available" : "18"
+	, "amount" : "2" , "item-price" : "260 ₽" , "origin-price" : "560 ₽" , "discount" : " 40 ₽" , "price" : "530 ₽" ],
+	[ "preview" : "product-preview3.jpg" , "tag" : "" , "title"
+	: "Тонометр АНД UA-888 E автомат стандарт. манжета (эконом)" , "available" : "5" , "amount" : "1" , "item-price"
+	: "8530 ₽" , "price" : "8530 ₽" ], [ "preview" : "product-preview1.jpg" , "title"
+	: "Доксиламин-сз таблетки п.п.о 15мг 30 шт" , "recipe-only" : true, "amount" : "1" , "item-price" : "8530 ₽" , "price"
+	: "8530 ₽" ], [ "preview" : "product-preview4.jpg" , "tag" : "Набор" , "title"
+	: "Мини Доктор энергия пастилки жевательные 30шт витамины д/детей 3+" , "available" : "2" , "amount" : "1"
+	, "item-price" : "1560₽" , "origin-price" : "1560 ₽" , "discount" : "60 ₽" , "price" : "1560 ₽" , "set" : [ [ "label"
+	: "La Roche-Posay Effaclar гель 400мл очищающий" , "amount" : "1" ], [ "label"
+	: "7 Days Candy Shop маска д/кожи вокруг глаз 10г PINK VENUS с экстрактом Клубники и Протеинами молока" , "amount"
+	: "2" ], [ "label" : "Эльгидиум Анти-Плак з/паста Арт.D00041 50мл п/зубного налета" , "amount" : "1" ], [ "label"
+	: "Эльгидиум Блэк з/нить Арт.D00028 50м с хлоргесидином черная" , "amount" : "3" ] ] ] ]} />
 
 <div class="basket-page">
 	<div class="basket-page__content">
@@ -85,59 +31,24 @@
 			<div class="basket-page__delivery-options">
 				<label class="basket-page__delivery-option">
 					<input type="radio" name="delivery-type" value="courier" id="delivery-courier" />
-					<delivery-card
-						title="Доставка курьером"
-						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
-						start-price="200 ₽"
-						price="300 ₽"
-						compact={true}
-						tags={[
-							[
-								"type": "discount",
-								"label": "Скидка"
-							],
-							[
-								"type": "gift",
-								"label": "Подарок"
-							],
-							[
-								"type": "free",
-								"label": "Б"
-							]
-						]}
-					/>
+					<delivery-card title="Доставка курьером"
+						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS" start-price="200 ₽"
+						price="300 ₽" compact={true} tags={[ [ "type" : "discount" , "label" : "Скидка" ], [ "type" : "gift"
+						, "label" : "Подарок" ], [ "type" : "free" , "label" : "Б" ] ]} />
 				</label>
 
 				<label class="basket-page__delivery-option">
 					<input type="radio" name="delivery-type" value="pickup" id="delivery-pickup" />
-					<delivery-card
-						title="Самовывоз"
-						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
-						start-price="200 ₽"
-						price="0 ₽"
-						compact={true}
-						tags={[
-							[
-								"type": "discount",
-								"label": "Скидка"
-							],
-							[
-								"type": "free",
-								"label": "Б"
-							]
-						]}
-					/>
+					<delivery-card title="Самовывоз" description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
+						start-price="200 ₽" price="0 ₽" compact={true} tags={[ [ "type" : "discount" , "label" : "Скидка" ],
+						[ "type" : "free" , "label" : "Б" ] ]} />
 				</label>
 
 				<label class="basket-page__delivery-option">
 					<input type="radio" name="delivery-type" value="pickup-now" id="delivery-pickup-now" />
-					<delivery-card
-						title="Самовывоз через час"
-						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS"
-						start-price="1000 ₽"
-						price="0 ₽"
-						compact={true}
-					/>
+					<delivery-card title="Самовывоз через час"
+						description="Минимальная сумма заказа: 200 руб<br/>1-2 дня, сообщим по SMS" start-price="1000 ₽" price="0 ₽"
+						compact={true} />
 				</label>
 			</div>
 
@@ -166,11 +77,9 @@
 								<img class="basket-page__preview" src={"storage/" ++ $product.preview} alt="" />
 							</figure>
 
-							<div class={classes(
-								"basket-page__product-name",
-								$product.discount? || $product.set? || $product['recipe-only'] ?? "basket-page__product-name--discounted" !! "",
-								$product['recipe-only'] ?? "basket-page__product-name--recipe-needed" !! ""
-							)}>
+							<div class={classes( "basket-page__product-name" , $product.discount? || $product.set? ||
+								$product['recipe-only'] ?? "basket-page__product-name--discounted" !! "" , $product['recipe-only']
+								?? "basket-page__product-name--recipe-needed" !! "" )}>
 								<if test={$product.discount? || $product.set?}>
 									<product-label class="basket-page__tag">
 										<switch>
@@ -210,8 +119,41 @@
 								</if>
 
 								<div class="basket-page__price">{$product.price}</div>
+							</div>
 
-								<button class="basket-page__remove" type="button">Удалить</button>
+							<div class="basket-page__like-remove">
+								<label class="basket-page__like-label" for="basket-page-like">
+									<input class="basket-page__like-input" type="checkbox" name="like" id="basket-page-like" />
+									<div class="basket-page__like-icon">
+										<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.7772 15.9182C10.3969 16.2574 9.82232 16.2563 9.44326 15.9157L8.88499 15.4141C4.53722 11.5224 1.66685 8.95572 1.66685 5.80572C1.66083 5.20218 1.77682 4.60351 2.00804 4.04475C2.23925 3.486 2.58104 2.97837 3.01341 2.55158C3.44578 2.12479 3.96005 1.78741 4.52611 1.55917C5.09217 1.33094 5.69866 1.21645 6.3101 1.22239C7.03264 1.22786 7.7456 1.38615 8.40093 1.68659C8.70482 1.82591 8.99304 1.99429 9.26168 2.18881C9.75403 2.54532 10.4642 2.54532 10.9565 2.18881C11.2252 1.99429 11.5134 1.82591 11.8173 1.68659C12.4726 1.38615 13.1856 1.22786 13.9081 1.22239C14.5196 1.21645 15.1261 1.33094 15.6921 1.55917C16.2582 1.78741 16.7724 2.12479 17.2048 2.55158C17.6372 2.97837 17.979 3.486 18.2102 4.04475C18.4414 4.60351 18.5574 5.20218 18.5514 5.80572C18.5514 8.95572 15.681 11.5224 11.3332 15.4224L10.7772 15.9182Z"
+												stroke="#C4C4C4" stroke-width="1.67" />
+										</svg>
+									</div>
+
+									<p class="basket-page__like-text">
+										В избранное
+									</p>
+								</label>
+
+								<button class="basket-page__remove" type="button">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.33594 5H16.6693L15.3526 16.85C15.3075 17.2578 15.1135 17.6346 14.8078 17.9083C14.5021 18.182 14.1062 18.3334 13.6959 18.3333H6.30927C5.89897 18.3334 5.50307 18.182 5.19739 17.9083C4.89172 17.6346 4.69774 17.2578 4.6526 16.85L3.33594 5Z"
+											stroke="#C4C4C4" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+										<path
+											d="M6.12083 2.62185C6.25563 2.33599 6.46892 2.09435 6.73584 1.92511C7.00275 1.75587 7.31229 1.66601 7.62833 1.66602H12.3717C12.6879 1.66585 12.9976 1.75564 13.2646 1.92488C13.5317 2.09413 13.7451 2.33586 13.88 2.62185L15 4.99935H5L6.12083 2.62185Z"
+											stroke="#C4C4C4" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M1.66797 5H18.3346" stroke="#C4C4C4" stroke-width="1.66667" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M8.33594 9.16602V13.3327" stroke="#C4C4C4" stroke-width="1.66667" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M11.668 9.16602V13.3327" stroke="#C4C4C4" stroke-width="1.66667" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span> Удалить</span>
+								</button>
 							</div>
 						</div>
 
@@ -244,7 +186,7 @@
 		</div>
 	</div>
 
-	<div class="basket-page__aside">
+	<!-- <div class="basket-page__aside">
 		<account-pane class="basket-page__aside-error">
 			<div class="basket-page__aside-error-label">
 				Укажите способ доставки
@@ -256,5 +198,5 @@
 				<shop-terminal />
 			</account-pane>
 		</div>
-	</div>
+	</div> -->
 </div>
