@@ -1,0 +1,169 @@
+<div class="release-form">
+	<div class="release-form__top">
+		<img src="storage/product1.jpg" alt="" class="release-form__top-image" />
+		<h3 class="release-form__title">
+			Формы выпуска
+		</h3>
+
+		<div class="release-form__btn">
+			<inline-svg src="release-form-arrow.svg" />
+		</div>
+	</div>
+
+	<div class="release-form__products">
+		<div class="release-form__product">
+			<div class="release-form__product-name">
+				<img class="release-form__product-img" src="storage/product1.jpg" alt="" />
+
+				<div class="release-form__product-labels">
+					<p class="release-form__product-label">
+						Скидка
+					</p>
+
+					<p class="release-form__product-descr">
+						Мини Доктор энергия
+						пастилки жевательные 30шт
+						витамины д/детей 3+
+					</p>
+				</div>
+
+			</div>
+			<div class="release-form__product-order">
+				<p class="release-form__product-available">
+					Доступно к заказу: 3 шт.
+				</p>
+
+				<div class="release-form__product-amount">
+					<div class="release-form__product-minus">
+						-
+					</div>
+
+					<div class="release-form__product-count">
+						1
+					</div>
+
+					<div class="release-form__product-plus">
+						+
+					</div>
+				</div>
+
+				<p class="release-form__product-price">
+					530 ₽ / шт.
+				</p>
+			</div>
+			<div class="release-form__product-prices">
+				<p class="release-form__product-old">
+					580 ₽
+					<span class="release-form__product-discont">
+						Скидка 50 ₽
+					</span>
+				</p>
+
+				<p class="release-form__product-sum">
+					530 ₽
+				</p>
+			</div>
+			<button class="release-form__product-btn button button--theme-colored">Купить</button>
+		</div>
+
+		<div class="release-form__product">
+			<div class="release-form__product-name">
+				<img class="release-form__product-img" src="storage/product1.jpg" alt="" />
+
+				<div class="release-form__product-labels">
+
+					<p class="release-form__product-descr">
+						Мини Доктор энергия
+						пастилки жевательные 30шт
+						витамины д/детей 3+
+					</p>
+				</div>
+
+			</div>
+			<div class="release-form__product-order">
+				<p class="release-form__product-available">
+					Доступно к заказу: 3 шт.
+				</p>
+
+				<div class="release-form__product-amount">
+					<div class="release-form__product-minus">
+						-
+					</div>
+
+					<div class="release-form__product-count">
+						1
+					</div>
+
+					<div class="release-form__product-plus">
+						+
+					</div>
+				</div>
+
+				<p class="release-form__product-price">
+					530 ₽ / шт.
+				</p>
+			</div>
+			<div class="release-form__product-prices release-form__product-prices--not-discont">
+				<p class="release-form__product-sum">
+					1 530 ₽
+				</p>
+			</div>
+			<button class="release-form__product-btn button button--theme-colored">Купить</button>
+		</div>
+
+		<div class="release-form__product">
+			<div class="release-form__product-name">
+				<img class="release-form__product-img" src="storage/product1.jpg" alt="" />
+
+				<div class="release-form__product-labels">
+					<p class="release-form__product-label">
+						Скидка
+					</p>
+
+					<p class="release-form__product-descr">
+						Мини Доктор энергия
+						пастилки жевательные 30шт
+						витамины д/детей 3+
+					</p>
+				</div>
+
+			</div>
+			<div class="release-form__product-order">
+				<p class="release-form__product-available">
+					Доступно к заказу: 3 шт.
+				</p>
+
+				<div class="release-form__product-amount">
+					<div class="release-form__product-minus">
+						-
+					</div>
+
+					<div class="release-form__product-count">
+						1
+					</div>
+
+					<div class="release-form__product-plus">
+						+
+					</div>
+				</div>
+
+				<p class="release-form__product-price">
+					530 ₽ / шт.
+				</p>
+			</div>
+			<div class="release-form__product-prices">
+				<p class="release-form__product-old">
+					580 ₽
+					<span class="release-form__product-discont">
+						Скидка 50 ₽
+					</span>
+				</p>
+
+				<p class="release-form__product-sum">
+					530 ₽
+				</p>
+			</div>
+			<button class="release-form__product-btn button button--theme-colored">Купить</button>
+		</div>
+	</div>
+</div>

@@ -15,6 +15,10 @@
 	}
 }
 
+.product-preview~.release-form {
+	margin-top: 30px;
+}
+
 .product-preview__previews {
 	position: relative;
 	margin-top: 45px;
@@ -86,7 +90,7 @@
 	display: flex;
 	flex-direction: column;
 
-	& > * + * {
+	&>*+* {
 		margin-top: 5px;
 	}
 }
@@ -146,7 +150,7 @@
 	flex-direction: column;
 	align-items: flex-end;
 
-	& > * + * {
+	&>*+* {
 		margin-top: 5px;
 	}
 }
@@ -161,7 +165,7 @@
 	display: flex;
 	justify-content: center;
 
-	& > * + * {
+	&>*+* {
 		margin-left: 5px;
 	}
 
@@ -423,7 +427,7 @@
 
 	@media (--desktop-medium) {
 		top: 36px;
-    right: -63px;
+		right: -63px;
 		padding: 8px;
 		margin-left: 0;
 	}
@@ -490,7 +494,7 @@
 }
 
 .product-preview__param {
-	& + & {
+	&+& {
 		margin-top: 20px;
 	}
 
@@ -569,7 +573,7 @@
 	line-height: 16px;
 	color: rgba(0, 0, 0, 0.5);
 
-	& + & {
+	&+& {
 		margin-top: 10px;
 	}
 
@@ -616,7 +620,7 @@
 .product-preview__price-item {
 	display: flex;
 
-	&:not(:last-child){
+	&:not(:last-child) {
 		margin-bottom: 15px;
 	}
 
@@ -645,4 +649,223 @@
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 20px;
+}
+
+
+
+/* block dosages */
+
+.product-preview__dosages-dropdown {
+	display: block;
+	min-width: 290px;
+	margin-bottom: 20px;
+
+	@media (--desktop-small) {
+		margin-bottom: 0;
+	}
+
+	@media (--desktop-medium) {
+		display: none;
+	}
+}
+
+.product-preview__dosages-dropdown .scrollable-area {
+	padding-right: 0;
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .dropdown__toggle {
+	border: 1px solid var(--light-gray);
+	color: var(--light-gray);
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .dropdown__toggle::before {
+	top: 12px;
+	width: 13px;
+	height: 13px;
+	background-image: resolve('./dropdown-arrow-gray.svg');
+	background-repeat: no-repeat;
+	transform: rotate(0);
+	background-size: contain;
+
+	@media (--tablet) {
+		top: 17px;
+		right: 25px;
+	}
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .dropdown__popup {
+	padding: 44px 15px 5px 15px;
+	border: none;
+	background: var(--white);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
+	color: var(--gray);
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--gray);
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-count {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: var(--light-gray);
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-option:not(:last-child) {
+	border-bottom: 1px solid var(--light-gray);
+}
+
+.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-option--active {
+	color: var(--secondary);
+}
+
+.product-preview__dosages {
+	padding: 20px 0;
+	border-top: 2px solid #f8f7f8;
+
+
+	@media (--desktop-small) {
+		display: flex;
+		column-gap: 40px;
+	}
+
+	@media (--desktop-medium) {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(2, 575px);
+	}
+
+}
+
+.product-preview__dosage {
+	display: none;
+
+
+	@media (--desktop-medium) {
+		display: block;
+	}
+}
+
+.product-preview__dosage--active {
+	display: block;
+}
+
+.product-preview__dosage-name {
+	display: none;
+
+	@media (--desktop-medium) {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 21px;
+		color: var(--black);
+	}
+}
+
+.product-preview__dosage-list {
+	width: fit-content;
+	margin: 0 auto;
+
+	@media (--tablet) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 30px;
+	}
+
+	@media (--desktop-small) {
+		justify-content: flex-start;
+		margin: 0;
+	}
+
+
+	@media (--desktop-medium) {
+		flex-wrap: nowrap;
+		column-gap: 20px;
+	}
+
+}
+
+.product-preview__dosage-item {
+	background-color: var(--white);
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	transition: box-shadow 0.2s ease;
+}
+
+.product-preview__dosage-item:not(:last-child) {
+	margin-bottom: 10px;
+
+	@media (--tablet) {
+		margin-bottom: 0;
+	}
+}
+
+.product-preview__dosage-item:hover {
+
+	@media (--desktop-medium) {
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.product-preview__dosage-item:hover .product-preview__dosage-price {
+
+	@media (--desktop-medium) {
+		color: var(--secondary);
+	}
+}
+
+.product-preview__dosage-link {
+	display: flex;
+	column-gap: 8px;
+	padding: 6px;
+}
+
+.product-preview__dosage-image {
+	width: 50px;
+	height: 50px;
+}
+
+.product-preview__dosage-info {
+	color: #000000;
+	text-align: right;
+}
+
+.product-preview__dosage-amount {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	margin-bottom: 7px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.product-preview__dosage-amount span {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.product-preview__dosage-price {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 23px;
+	color: var(--black);
+	transition: color 0.2s ease;
+}
+
+.product-preview__dosage-item--active {
+	border: 2px solid var(--secondary);
+	box-shadow: none;
 }

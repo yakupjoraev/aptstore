@@ -1,0 +1,31 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="bread-crumps" from="../components/bread-crumps/bread-crumps.gutt" />
+<import name="product-preview" from="../components/product-preview/product-preview.gutt" />
+<import name="product-preview-2" from="../components/product-preview-2/product-preview-2.gutt" />
+<import name="index-list" from="../components/index-list/index-list.gutt" />
+<import name="product-slider" from="../components/product-slider/product-slider.gutt" />
+<import name="product-card" from="../components/product-card/product-card.gutt" />
+<import name="simple-slider" from="../components/simple-slider/simple-slider.gutt" />
+<import name="analog-masonry" from="../components/analog-masonry/analog-masonry.gutt" />
+<import name="instruction-use" from="../components/instruction-use/instruction-use.gutt" />
+<import name="product-tabs" from="../components/product-tabs/product-tabs.gutt" />
+<import name="content-block" from="../components/content-block/content-block.gutt" />
+<import name="product-comments" from="../components/product-comments/product-comments.gutt" />
+<import name="product-like-share" from="../components/product-like-share/product-like-share.gutt" />
+<import name="release-form" from="../components/release-form/release-form.gutt" />
+
+<default-layout empty-basket={true} headless={true}>
+	<div class="container">
+		<product-like-share>
+			<bread-crumps path={[ [ "url" : "index.html" , "label" : "Главная" ], [ "url" : "catalog.html" , "label"
+				: "Каталог товаров" ], [ "label" : "Мама и малыш" , "url" : "category.html" ], [ "label" : "Витаминные добавки"
+				, "url" : "category.html" ], [ "label" : "Мини Доктор энергия пастилки жевательные 30шт витамины" ] ]} />
+		</product-like-share>
+
+		<product-preview-2
+			title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)" />
+
+		<release-form />
+
+	</div>
+</default-layout>
