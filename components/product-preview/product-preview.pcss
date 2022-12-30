@@ -552,6 +552,7 @@
 		order: 5;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin: 8px -15px 0;
 		border-top: 2px solid #f8f7f8;
 		padding-top: 26px;
@@ -581,28 +582,41 @@
 		margin: 10px 15px 0;
 		max-width: 295px;
 		flex-shrink: 0;
+		flex-basis: 50%;
 	}
 
 	@media (--desktop-small) {
 		max-width: none;
 		flex-grow: 1;
 		flex-shrink: 1;
+		flex-basis: 25%;
 	}
 }
 
 .product-preview__disclaimer--external-view {
-	background: resolve('./warn-external-view.svg') no-repeat;
+	background: resolve('./warn-external-view.svg') left center no-repeat;
 }
 
 .product-preview__disclaimer--contraindications {
-	background: resolve('./warn-contraindications.svg') no-repeat;
+	background: resolve('./warn-contraindications.svg') left center no-repeat;
 }
 
 .product-preview__disclaimer--recipe {
 	display: none;
 	font-weight: 700;
 	color: var(--primary);
-	background: resolve('./warn-recipe.svg') no-repeat;
+	background: resolve('./warn-recipe.svg') left center no-repeat;
+
+	@media (--tablet) {
+		display: flex;
+	}
+}
+
+.product-preview__disclaimer--cold {
+	display: none;
+	font-weight: 700;
+	color: #43CFFC;
+	background: resolve('./warn-cold.svg') left center no-repeat;
 
 	@media (--tablet) {
 		display: flex;
