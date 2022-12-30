@@ -21,7 +21,7 @@
 
 <div class="product-card" data-product-card>
 	<switch>
-		<case test={str_len($action) > 0}>
+		<case test={str_len($action)> 0}>
 			<attribute name={"data-" ++ $action} value={$action-value} />
 		</case>
 		<default>
@@ -31,12 +31,26 @@
 
 	<favorite-button class="product-card__favorite" />
 
+	<div class="product-card__requirements">
+		<div class="product-card__requirement product-card__requirement--cold">
+			<img class="product-card__requirement-icon" src="components/product-card/cold-icon.svg" alt="Хранить в холоде" />
+			<p class="product-card__requirement-descr">Хранить в холоде</p>
+		</div>
+
+		<div class="product-card__requirement product-card__requirement--recipe">
+			<img class="product-card__requirement-icon" src="components/product-card/recipe-icon.svg"
+				alt="Требуется рецепт" />
+			<p class="product-card__requirement-descr">Требуется рецепт</p>
+		</div>
+	</div>
+
 	<div class="product-card__auth-warn">
 		<span class="product-card__auth-warn-arrow"></span>
 		<div class="product-card__auth-warn-title">Внимание!</div>
 
 		<div class="product-card__auth-warn-desc">
-			Для того чтобы список избранных товаров сохрнился на будущее, необходимо авторизоваться или зарегистрироваться если вы не сделали этого раньше.
+			Для того чтобы список избранных товаров сохрнился на будущее, необходимо авторизоваться или зарегистрироваться
+			если вы не сделали этого раньше.
 		</div>
 
 		<div class="product-card__auth-warn-buttons">
@@ -56,13 +70,13 @@
 	</figure>
 
 	<div class="product-card__additional">
-		<if test={$rating > 0}>
+		<if test={$rating> 0}>
 			<div class="product-card__rating">
-				<div class="product-card__rating-progress" style={"width: " ++ (($rating / 5) * 100) ++ "%"}>{$rating}</div>
+				<div class="product-card__rating-progress" style={"width: " ++ (($rating / 5) * 100) ++ " %"}>{$rating}</div>
 			</div>
 		</if>
 
-		<if test={str_len($notice) > 0}>
+		<if test={str_len($notice)> 0}>
 			<div class="product-card__notice">
 				{$notice}
 			</div>
@@ -70,7 +84,7 @@
 	</div>
 
 	<switch>
-		<case test={str_len($action) > 0}>
+		<case test={str_len($action)> 0}>
 			<a href="product.html" target="_blank">
 				<p class={classes("product-card__title", $class)} data-title={$title}>{$title}</p>
 			</a>
@@ -80,7 +94,7 @@
 		</default>
 	</switch>
 
-	<if test={str_len($fabricator) > 0}>
+	<if test={str_len($fabricator)> 0}>
 		<p class="product-card__fabricator">{$fabricator}</p>
 	</if>
 
