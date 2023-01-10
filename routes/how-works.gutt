@@ -1,0 +1,9 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="how-works-page" from="../components/how-works-page/how-works-page.gutt" />
+
+<default-layout>
+	<div class="container">
+	<how-works-page />
+
+	</div>
+</default-layout>

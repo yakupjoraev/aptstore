@@ -1,0 +1,154 @@
+<import name="catalog-grid" from="../catalog-grid/catalog-grid.gutt" />
+<import name="index-list" from="../index-list/index-list.gutt" />
+<import name="y-map" from="../y-map/y-map.gutt" />
+
+<div class="how-works-page">
+
+	<div class="how-works-page__header">
+		<div class="how-works-page__banner">
+			<div class="how-works-page__sum">
+				300&nbsp;₽
+			</div>
+
+			<h1 class="how-works-page__discont">
+				СКИДКА ПО
+				<span class="how-works-page__discont-green">
+					ПЕРСОНАЛЬНОМУ
+				</span>
+				ПРОМОКОДУ
+				<span class="how-works-page__discont-green">
+					НА ПЕРВЫЙ
+				</span>
+				ЗАКАЗ
+			</h1>
+
+			<p class="how-works-page__ordering">
+				при заказе от 3000 рублей
+			</p>
+
+			<a class="how-works-page__registered" href="#">Зарегистрироваться</a>
+		</div>
+
+		<div class="how-works-page__info">
+			<img class="how-works-page__question" src="../components/how-works-page/how-works-girl.png"
+				alt="Как это работает?" />
+
+			<div class="how-works-page__steps-container">
+				<h2 class="how-works-page__title">
+					Как
+					<span class="how-works-page__title--green">
+						это
+					</span>
+					<br />
+					работает?
+				</h2>
+
+				<ul class="how-works-page__steps">
+					<li class="how-works-page__step">
+						<div class="how-works-page__step-icon">
+							<inline-svg src="./how-works-src.svg" />
+						</div>
+
+						<p class="how-works-page__step-text">
+							Воспользуйтесь
+							<span class="how-works-page__step-text--green">поиском</span>
+							, чтобы найти необходимые товары
+						</p>
+					</li>
+
+					<li class="how-works-page__step how-works-page__step--arrow"></li>
+
+					<li class="how-works-page__step">
+						<div class="how-works-page__step-icon">
+							<inline-svg src="./how-works-code.svg" />
+						</div>
+
+						<p class="how-works-page__step-text">
+							Введите ваш промо код в поле при оформлении
+							<span class="how-works-page__step-text--black">первого</span>
+							заказа
+						</p>
+					</li>
+
+					<li class="how-works-page__step how-works-page__step--arrow"></li>
+
+					<li class="how-works-page__step">
+						<div class="how-works-page__step-icon">
+							<inline-svg src="./how-works-order.svg" />
+						</div>
+
+						<p class="how-works-page__step-text">
+							Заберите заказ в ближайшем к вам
+							<span class="how-works-page__step-text--green">пункте выдачи</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="how-works-page__benefits">
+			<h3 class="how-works-page__benefits-title">
+				Наши
+				<span class="how-works-page__benefits-title--red">
+					преимущества
+				</span>
+			</h3>
+
+			<ul class="how-works-page__list">
+				<li class="how-works-page__item">
+					<div class="how-works-page__item-icon">
+						<inline-svg src="./how-works-benefits-1.svg" />
+					</div>
+
+					<p class="how-works-page__item-descr">
+						Ассортимент более
+
+						<span class="how-works-page__item-descr--green">
+							7000 товаров
+						</span>
+					</p>
+				</li>
+				<li class="how-works-page__item">
+					<div class="how-works-page__item-icon">
+						<inline-svg src="./how-works-benefits-2.svg" />
+					</div>
+
+					<p class="how-works-page__item-descr">
+						Ежедневные скидки и акции
+					</p>
+				</li>
+				<li class="how-works-page__item">
+					<div class="how-works-page__item-icon">
+						<inline-svg src="./how-works-benefits-3.svg" />
+					</div>
+
+					<p class="how-works-page__item-descr">
+
+						<span class="how-works-page__item-descr--green">
+							Более 1500
+						</span>
+						пунктов выдачи в Москве и МО
+					</p>
+				</li>
+				<li class="how-works-page__item">
+					<div class="how-works-page__item-icon">
+						<inline-svg src="./how-works-benefits-4.svg" />
+					</div>
+
+					<p class="how-works-page__item-descr">
+						Готовность заказа всего за 1 день
+					</p>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+
+
+	<catalog-grid />
+
+	<index-list />
+
+	<y-map />
+</div>
