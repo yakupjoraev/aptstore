@@ -11,13 +11,13 @@
 			</div>
 
 			<h1 class="how-works-page__discont">
-				СКИДКА ПО
+				СКИДКА ПО&nbsp;
 				<span class="how-works-page__discont-green">
-					ПЕРСОНАЛЬНОМУ
+					ПЕРСОНАЛЬНОМУ&nbsp;
 				</span>
-				ПРОМОКОДУ
+				ПРОМОКОДУ&nbsp;
 				<span class="how-works-page__discont-green">
-					НА ПЕРВЫЙ
+					НА ПЕРВЫЙ&nbsp;
 				</span>
 				ЗАКАЗ
 			</h1>
@@ -35,9 +35,9 @@
 
 			<div class="how-works-page__steps-container">
 				<h2 class="how-works-page__title">
-					Как
+					Как&nbsp;
 					<span class="how-works-page__title--green">
-						это
+						это&nbsp;
 					</span>
 					<br />
 					работает?
@@ -50,9 +50,9 @@
 						</div>
 
 						<p class="how-works-page__step-text">
-							Воспользуйтесь
-							<span class="how-works-page__step-text--green">поиском</span>
-							, чтобы найти необходимые товары
+							Воспользуйтесь&nbsp;
+							<span class="how-works-page__step-text--green">поиском</span>,
+							&nbsp; чтобы найти необходимые товары
 						</p>
 					</li>
 
@@ -64,8 +64,8 @@
 						</div>
 
 						<p class="how-works-page__step-text">
-							Введите ваш промо код в поле при оформлении
-							<span class="how-works-page__step-text--black">первого</span>
+							Введите ваш промо код в поле при оформлении&nbsp;
+							<span class="how-works-page__step-text--black">первого</span>&nbsp;
 							заказа
 						</p>
 					</li>
@@ -78,7 +78,7 @@
 						</div>
 
 						<p class="how-works-page__step-text">
-							Заберите заказ в ближайшем к вам
+							Заберите заказ в ближайшем к вам&nbsp;
 							<span class="how-works-page__step-text--green">пункте выдачи</span>
 						</p>
 					</li>
@@ -88,7 +88,7 @@
 
 		<div class="how-works-page__benefits">
 			<h3 class="how-works-page__benefits-title">
-				Наши
+				Наши&nbsp;
 				<span class="how-works-page__benefits-title--red">
 					преимущества
 				</span>
@@ -101,7 +101,7 @@
 					</div>
 
 					<p class="how-works-page__item-descr">
-						Ассортимент более
+						Ассортимент более&nbsp;
 
 						<span class="how-works-page__item-descr--green">
 							7000 товаров
@@ -125,7 +125,7 @@
 					<p class="how-works-page__item-descr">
 
 						<span class="how-works-page__item-descr--green">
-							Более 1500
+							Более 1500&nbsp;
 						</span>
 						пунктов выдачи в Москве и МО
 					</p>
