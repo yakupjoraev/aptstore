@@ -21,7 +21,7 @@
 
 .product-preview__previews {
 	position: relative;
-	margin-top: 45px;
+	margin-top: 0;
 	flex-shrink: 0;
 
 	@media (--tablet) {
@@ -114,7 +114,7 @@
 .product-preview__preview {
 	flex-shrink: 0;
 	width: 100%;
-	height: 195px;
+	height: 240px;
 	font-size: 10px;
 	text-align: center;
 	cursor: zoom-in;
@@ -161,7 +161,7 @@
 }
 
 .product-preview__previews-indicators {
-	margin-top: 5px;
+	margin-top: 15px;
 	display: flex;
 	justify-content: center;
 
@@ -188,7 +188,7 @@
 }
 
 .product-preview__rating {
-	margin-top: 10px;
+	margin-top: 15px;
 	width: 120px;
 	height: 24px;
 	background: resolve('./icon-star.svg');
@@ -287,7 +287,7 @@
 	z-index: 3;
 	box-sizing: border-box;
 	margin-top: 50px;
-	padding: 15px 0 30px;
+	padding: 5px 0 25px;
 	width: 100%;
 	white-space: nowrap;
 	background: var(--white);
@@ -462,7 +462,7 @@
 
 .product-preview__buttons {
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 5px;
 	text-align: center;
 	width: 200px;
 
@@ -478,8 +478,13 @@
 	}
 }
 
+.product-preview__buttons .button {
+	width: 95%;
+	font-size: 15px;
+}
+
 .product-preview__params {
-	margin-top: 50px;
+	margin-top: 20px;
 
 	@media (--tablet) {
 		order: 1;
@@ -882,4 +887,15 @@
 .product-preview__dosage-item--active {
 	border: 2px solid var(--secondary);
 	box-shadow: none;
+}
+
+@media (max-width: 767px) {
+	.container_product_detail #sp-inline-rating-container {
+		margin-top: 5px;
+	}
+
+	.b24-widget-button-position-bottom-right {
+		right: 30px;
+		bottom: 70px;
+	}
 }
