@@ -132,4 +132,5 @@ function shopTerminalModalInit(selector) {
 	})
 }
 
-window.shopTerminalModalInit = shopTerminalModalInit
+// window.shopTerminalModalInit = shopTerminalModalInit;
+shopTerminalModalInit('.shop-terminal-modal');

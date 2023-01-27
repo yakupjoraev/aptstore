@@ -9,82 +9,57 @@
 			</h3>
 
 			<div class="shop-terminal-modal__top">
-				<div class="shop-terminal-modal__pagination" data-shop-terminal-pagination></div>
+				<div class="shop-terminal-modal__pagination" data-shop-terminal-pagination>
+				</div>
 			</div>
+
 		</div>
 
 		<div class="shop-terminal-modal__slider">
 			<div class="shop-terminal-modal__content" data-shop-terminal-slider-content>
-				<product-card
-					action="choose"
-					action-action="1"
+				<product-card action="choose" action-action="1"
 					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
-					origin-price="580"
-					price="550"
-					discount="5%"
-					rating={3}
-					type="discount"
-					tag="Скидка"
-					amount="60"
-					preview="product-preview1.jpg"
-				/>
-				<product-card
-					action="choose"
-					action-action="1"
-					title="Флорадикс Магнезиум 250мл фл."
-					price="580"
-					rating={1}
-					amount="60"
-					preview="product-preview2.jpg"
-				/>
-				<product-card
-					action="choose"
-					action-action="1"
+					origin-price="580" price="550" discount="5%" rating={3} type="discount" tag="Скидка" amount="60"
+					preview="product-preview1.jpg" />
+				<product-card action="choose" action-action="1" title="Флорадикс Магнезиум 250мл фл." price="580" rating={1}
+					amount="60" preview="product-preview2.jpg" />
+				<product-card action="choose" action-action="1"
 					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
-					origin-price="580"
-					price="550"
-					discount="5%"
-					type="GIFT"
-					tag="Подарок"
-					amount="60"
-					preview="product-preview3.jpg"
-				/>
-				<product-card
-					action="choose"
-					action-action="1"
-					title="Флорадикс Магнезиум 250мл фл."
-					price="15 530"
-					notice="Требуется рецепт"
-					amount="60"
-					preview="product-preview4.jpg"
-				/>
-				<product-card
-					action="choose"
-					action-action="1"
+					origin-price="580" price="550" discount="5%" type="GIFT" tag="Подарок" amount="60"
+					preview="product-preview3.jpg" />
+				<product-card action="choose" action-action="1" title="Флорадикс Магнезиум 250мл фл." price="15 530"
+					notice="Требуется рецепт" amount="60" preview="product-preview4.jpg" />
+				<product-card action="choose" action-action="1"
 					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
-					origin-price="580"
-					price="550"
-					discount="5%"
-					rating={4}
-					type="SET"
-					tag="3+1=5"
-					amount="60"
-					preview="product-preview1.jpg"
-				/>
-				<product-card
-					action="choose"
-					action-action="1"
-					title="Флорадикс Магнезиум 250мл фл."
-					price="580"
-					rating={1}
-					amount="60"
-					preview="product-preview2.jpg"
-				/>
+					origin-price="580" price="550" discount="5%" rating={4} type="SET" tag="3+1=5" amount="60"
+					preview="product-preview1.jpg" />
+				<product-card action="choose" action-action="1" title="Флорадикс Магнезиум 250мл фл." price="580" rating={1}
+					amount="60" preview="product-preview2.jpg" />
+
+				<product-card action="choose" action-action="1"
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580" price="550" discount="5%" rating={3} type="discount" tag="Скидка" amount="60"
+					preview="product-preview1.jpg" />
+				<product-card action="choose" action-action="1" title="Флорадикс Магнезиум 250мл фл." price="580" rating={1}
+					amount="60" preview="product-preview2.jpg" />
+				<product-card action="choose" action-action="1"
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580" price="550" discount="5%" type="GIFT" tag="Подарок" amount="60"
+					preview="product-preview3.jpg" />
+				<product-card action="choose" action-action="1" title="Флорадикс Магнезиум 250мл фл." price="15 530"
+					notice="Требуется рецепт" amount="60" preview="product-preview4.jpg" />
+				<product-card action="choose" action-action="1"
+					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
+					origin-price="580" price="550" discount="5%" rating={4} type="SET" tag="3+1=5" amount="60"
+					preview="product-preview1.jpg" />
+				<product-card action="choose" action-action="1" title="Флорадикс Магнезиум 250мл фл." price="580" rating={1}
+					amount="60" preview="product-preview2.jpg" />
 			</div>
 		</div>
 
 		<div class="shop-terminal-modal__bottom">
-			<div class="shop-terminal-modal__pagination" data-shop-terminal-pagination></div>
+			<div class="shop-terminal-modal__pagination" data-shop-terminal-pagination>
+			</div>
 		</div>
 	</div>
 </modal-window>
