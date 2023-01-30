@@ -2,8 +2,8 @@ var toArray = require('../../libs/helpers').toArray
 var createElement = require('../../libs/helpers').createElement
 var BaseSlider = require('../base-slider/base-slider')
 
-function shopTerminalModalInit(selector) {
-	var container = document.querySelector(selector)
+function shopTerminalModalInit() {
+	var container = document.querySelector('[data-shop-terminal-slider]')
 	var content = container.querySelector('[data-shop-terminal-slider-content]')
 	var slides = toArray(content.childNodes).filter(function (node) { return node.nodeType === 1 })
 	var paginations = toArray(container.querySelectorAll('[data-shop-terminal-pagination]'))
@@ -132,5 +132,7 @@ function shopTerminalModalInit(selector) {
 	})
 }
 
-window.shopTerminalModalInit = shopTerminalModalInit('[data-modal="shop-terminal-gift"]');
-// shopTerminalModalInit('.shop-terminal-modal');
+// window.shopTerminalModalInit = shopTerminalModalInit;
+// // shopTerminalModalInit('.shop-terminal-modal');
+module.exports = shopTerminalModalInit
+

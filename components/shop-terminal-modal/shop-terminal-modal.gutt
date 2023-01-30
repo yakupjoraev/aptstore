@@ -2,7 +2,7 @@
 <import name="product-card" from="../product-card/product-card.gutt" />
 
 <modal-window name="shop-terminal-gift">
-	<div class="shop-terminal-modal">
+	<div class="shop-terminal-modal" data-shop-terminal-slider>
 		<div class="shop-terminal-modal__header">
 			<h3 class="shop-terminal-modal__title">
 				Выберите подарок за заказ
@@ -17,6 +17,8 @@
 
 		<div class="shop-terminal-modal__slider">
 			<div class="shop-terminal-modal__content" data-shop-terminal-slider-content>
+
+
 				<product-card action="choose" action-action="1"
 					title="Vichy Capital Soleil набор д/путешествия (молочко 50+ 100мл+спрей вуаль 50+ 75мл миц вода 100мл+минерал 89 10мл)"
 					origin-price="580" price="550" discount="5%" rating={3} type="discount" tag="Скидка" amount="60"
