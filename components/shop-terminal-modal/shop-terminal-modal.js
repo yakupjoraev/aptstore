@@ -158,6 +158,10 @@ function shopTerminalModalInit() {
 		}
 
 		var content = container.querySelector('[data-shop-terminal-slider-content]')
+
+		if (!content) {
+			return null
+		}
 		var slides = toArray(content.childNodes).filter(function (node) { return node.nodeType === 1 })
 		var paginations = toArray(container.querySelectorAll('[data-shop-terminal-pagination]'))
 		var previousButton = container.querySelector("button[data-previous]");
