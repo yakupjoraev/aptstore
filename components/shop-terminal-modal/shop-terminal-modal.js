@@ -145,14 +145,18 @@ var BaseSlider = require('../base-slider/base-slider')
 
 function shopTerminalModalInit() {
 	var shopTerminalSlider = document.querySelector('[data-shop-terminal-slider]')
-	var isMobile = false
 
+	// if (!shopTerminalSlider) {
+	// 	return null
+	// }
 
-	// sliderNodes.forEach(init)
 	init(shopTerminalSlider)
 
-
 	function init(container) {
+		if (!container) {
+			return null
+		}
+
 		var content = container.querySelector('[data-shop-terminal-slider-content]')
 		var slides = toArray(content.childNodes).filter(function (node) { return node.nodeType === 1 })
 		var paginations = toArray(container.querySelectorAll('[data-shop-terminal-pagination]'))
