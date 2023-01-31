@@ -140,16 +140,12 @@
 
 
 var toArray = require('../../libs/helpers').toArray
-// var getStyle = require('../../libs/helpers').getStyle
 var createElement = require('../../libs/helpers').createElement
 var BaseSlider = require('../base-slider/base-slider')
 
 function shopTerminalModalInit() {
-	// var sliderNodes = toArray(document.querySelectorAll('[data-shop-terminal-slider]'))
 	var shopTerminalSlider = document.querySelector('[data-shop-terminal-slider]')
-	// var sliders = []
 	var isMobile = false
-
 
 
 	// sliderNodes.forEach(init)
@@ -172,7 +168,7 @@ function shopTerminalModalInit() {
 				},
 				children: ['Предыдущий']
 			})[0];
-			container.appendChild(previousButton);
+			// container.appendChild(previousButton);
 		}
 
 		var nextButton = container.querySelector("button[data-next]");
@@ -187,7 +183,7 @@ function shopTerminalModalInit() {
 				},
 				children: ['Следующий']
 			})[0];
-			container.appendChild(nextButton);
+			// container.appendChild(nextButton);
 		}
 
 		var pageContainer = createElement({
@@ -196,6 +192,8 @@ function shopTerminalModalInit() {
 				class: 'shop-terminal-modal__pages'
 			}
 		})[0]
+
+
 		var pageButton = createElement({
 			name: 'button',
 			attrs: {
@@ -204,12 +202,16 @@ function shopTerminalModalInit() {
 				'data-slide': ''
 			}
 		})[0]
+
+
 		var activePage = createElement({
 			name: 'span',
 			attrs: {
 				class: 'shop-terminal-modal__page-active'
 			}
 		})[0]
+
+
 		var previousButtons = []
 		var nextButtons = []
 		var pageContainers = []
@@ -223,6 +225,7 @@ function shopTerminalModalInit() {
 			pageContainers.push(pageContainerClone)
 			nextButtons.push(nextClone)
 
+			pagination.innerHTML = ''
 			pagination.appendChild(previousClone)
 			pagination.appendChild(pageContainerClone)
 			pagination.appendChild(nextClone)

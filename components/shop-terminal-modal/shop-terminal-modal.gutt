@@ -8,14 +8,15 @@
 				Выберите подарок за заказ
 			</h3>
 
+
 			<div class="shop-terminal-modal__top">
 				<div class="shop-terminal-modal__pagination" data-shop-terminal-pagination>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="shop-terminal-modal__slider">
+
 			<div class="shop-terminal-modal__content" data-shop-terminal-slider-content>
 
 
