@@ -1,0 +1,234 @@
+<import name="banner-slider" from="../banner-slider/banner-slider.gutt" />
+
+<div class="company">
+	<div class="about-company__inner">
+		<div class="about-company__main">
+			<div class="about-company__header">
+
+				<h1 class="about-company__title--mobile">
+					AptStore – покупайте онлайн
+				</h1>
+
+				<div class="about-company__header-info">
+					<h1 class="about-company__title">
+						AptStore – покупайте онлайн
+					</h1>
+
+					<p class="about-company__descr">
+						Интернет - аптека AptStore. 25 лет на рынке<br /> фармацептики, более
+						<span class="about-company__descr--black">
+							1 миллиона постоянных клиентов,
+						</span>
+						безупречная, отлаженная работа логистики, индивидуальный подход к каждому клиенту.
+					</p>
+				</div>
+				<div class="about-company__header-picture">
+					<picture>
+						<source srcset="../components/about-company/company-header-1.png" media="(min-width: 1200px)" />
+						<img class="about-company__header-img" src="../components/about-company/company-header-2.png"
+							alt="AptStore – покупайте онлайн" />
+					</picture>
+				</div>
+			</div>
+
+			<div class="about-company__infos">
+				<div class="about-company__info">
+					<img class="about-company__info-img" src="../components/about-company/company-info-1.svg"
+						alt="Мы всегда рядом" />
+
+					<div class="about-company__info-texts">
+						<h3 class="about-company__info-title">
+							Мы всегда рядом
+						</h3>
+
+						<p class="about-company__info-descr">
+							К вашим услугам более 90 пунктов самовывоза из аптек и 1500 постаматов, расположенных в Москве и
+							Московской
+							области. Вам больше не придется наматывать километры по городу в поисках нужного препарата, ведь мы всегда
+							рядом с вами.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="about-company__info">
+					<img class="about-company__info-img" src="../components/about-company/company-info-2.svg"
+						alt="	Ваше время - наша забота" />
+
+					<div class="about-company__info-texts">
+						<h3 class="about-company__info-title">
+							Ваше время - наша забота
+						</h3>
+
+						<p class="about-company__info-descr">
+							Мы работаем 24 часа в сутки и 7 дней в неделю для того, чтобы вы могли сделать заказ в любое удобное для
+							вас
+							время. Вам не придется томиться в ожидании выбранного товара, ведь заказ будет готов всего за один день
+						</p>
+					</div>
+
+				</div>
+
+				<div class="about-company__info">
+					<img class="about-company__info-img" src="../components/about-company/company-info-3.svg"
+						alt="Большой выбор" />
+
+					<div class="about-company__info-texts">
+						<h3 class=" about-company__info-title">
+							Большой выбор
+						</h3>
+
+						<p class="about-company__info-descr">
+							В нашем каталоге вы найдете более 7000 наименований товаров. Всегда в наличии не только популярные
+							позиции,
+							но и редкие, дорогостоящие лекарства, БАДы и парафармацевтическая продукция (товары дополнительного
+							аптечного ассортимента). Такому ассортименту может позавидовать любая аптека!
+						</p>
+					</div>
+
+				</div>
+
+				<div class="about-company__info">
+					<img class="about-company__info-img" src="../components/about-company/company-info-4.svg"
+						alt="С нами выгодно" />
+
+					<div class="about-company__info-texts">
+						<h3 class="about-company__info-title">
+							С нами выгодно
+						</h3>
+
+						<p class="about-company__info-descr">
+							Выгода клиента - наш приоритет! Мы можем себе позволить не накручивать цены на ассортимент, ведь для нас
+							важно, чтобы каждый клиент ощутил выгоду от покупок и стал нашим постоянным покупателем. А еще приятнее
+							ваш
+							шопинг сделают ежедневные скидки и регулярные акции.
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="about-company__slider" data-banner-slider>
+				<div class="about-company__slider-content" data-content>
+					<div class="about-company__slide">
+						<picture>
+							<source srcset="../components/about-company/company-slider-1.png" media="(min-width: 1200px)" />
+							<source srcset="../components/about-company/company-slider-2.png" media="(min-width: 767px)" />
+							<img class="about-company__slide-img" src="../components/about-company/company-slider-3.png"
+								alt="AptStore – покупайте онлайн" />
+						</picture>
+
+						<p class="about-company__slide-descr">
+							Нашими партнерами являются более 200 лицензированных производителей и дистрибьюторов. Все препараты
+							содержатся со строгим соблюдением условий, в том числе термолабильные, которые необходимо хранить
+							в холодильнике
+						</p>
+					</div>
+
+					<div class="about-company__slide">
+						<picture>
+							<source srcset="../components/about-company/company-slider-1.png" media="(min-width: 1200px)" />
+							<source srcset="../components/about-company/company-slider-2.png" media="(min-width: 767px)" />
+							<img class="about-company__slide-img" src="../components/about-company/company-slider-3.png"
+								alt="AptStore – покупайте онлайн" />
+						</picture>
+
+						<p class="about-company__slide-descr">
+							Нашими партнерами являются более 200 лицензированных производителей и дистрибьюторов. Все препараты
+							содержатся со строгим соблюдением условий, в том числе термолабильные, которые необходимо хранить
+							в холодильнике
+						</p>
+					</div>
+
+					<div class="about-company__slide">
+						<picture>
+							<source srcset="../components/about-company/company-slider-1.png" media="(min-width: 1200px)" />
+							<source srcset="../components/about-company/company-slider-2.png" media="(min-width: 767px)" />
+							<img class="about-company__slide-img" src="../components/about-company/company-slider-3.png"
+								alt="AptStore – покупайте онлайн" />
+						</picture>
+
+						<p class="about-company__slide-descr">
+							Нашими партнерами являются более 200 лицензированных производителей и дистрибьюторов. Все препараты
+							содержатся со строгим соблюдением условий, в том числе термолабильные, которые необходимо хранить
+							в холодильнике
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="about-company__benefits">
+			<h3 class="about-company__benefits-title">
+				Почему выбирают нас
+			</h3>
+
+			<ul class="about-company__benefits-list">
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-1.svg"
+						alt="Низкие цены" />
+					<h5 class="about-company__benefits-label">
+						Низкие цены
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-2.svg"
+						alt="Акции и скидки" />
+					<h5 class="about-company__benefits-label">
+						Акции и скидки
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-3.svg"
+						alt="Широкий ассортимент" />
+					<h5 class="about-company__benefits-label">
+						Широкий ассортимент
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-4.svg"
+						alt="Быстрая доставка" />
+					<h5 class="about-company__benefits-label">
+						Быстрая доставка
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-5.svg"
+						alt="Контроль качества" />
+					<h5 class="about-company__benefits-label">
+						Контроль качества
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-6.svg"
+						alt="Работа 24/7" />
+					<h5 class="about-company__benefits-label">
+						Работа 24/7
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-7.svg"
+						alt="Более 1 млн клиентов" />
+					<h5 class="about-company__benefits-label">
+						Более 1 млн клиентов
+					</h5>
+				</li>
+
+				<li class="about-company__benefits-item">
+					<img class="about-company__benefits-img" src="../components/about-company/company-benefits-8.svg"
+						alt="25 лет на рынке" />
+					<h5 class="about-company__benefits-label">
+						25 лет на рынке
+					</h5>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
