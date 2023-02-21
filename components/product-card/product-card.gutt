@@ -42,6 +42,11 @@
 				alt="Требуется рецепт" />
 			<p class="product-card__requirement-descr">Требуется рецепт</p>
 		</div>
+
+		<!-- <div class="product-card__requirement product-card__requirement--short">
+			<img class="product-card__requirement-icon" src="components/product-card/short-icon.svg" alt="Короткий срок" />
+			<p class="product-card__requirement-descr">Короткий срок</p>
+		</div> -->
 	</div>
 
 	<div class="product-card__auth-warn">
@@ -125,6 +130,35 @@
 
 				<div class="product-card__buttons" data-buy-controls>
 					<form-button action="buy">Купить</form-button>
+
+				</div>
+
+				<!-- data-product-card-tooltip  -->
+				<div class="product-card__reclame">
+					<div class="product-card__reclame-main" data-product-card-tooltip>
+						Реклама
+						<inline-svg src="i.svg" />
+					</div>
+
+					<div class="product-card__reclame-info" data-product-card-tooltip-content style="display: none;">
+						<div class="product-card__reclame-firm">
+							Рекламодатель: АО ЦВ Протек,
+						</div>
+
+						<div class="product-card__reclame-url">
+							www.protek.ru
+						</div>
+
+						<div class="product-card__reclame-erid">
+							erid: LjN8JwgQw
+						</div>
+
+						<p class="product-card__reclame-descr">
+							Мы помогаем нашим продавцам рассказать об их товарах на Аптстор. Для этого у нас есть разные способы
+							продвижения.
+							<a class="product-card__reclame-link" href="#"> Подробнее о рекламе</a>
+						</p>
+					</div>
 				</div>
 
 				<div class="product-card__buttons" data-amount-controls style="display: none">

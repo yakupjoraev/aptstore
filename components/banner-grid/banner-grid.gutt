@@ -6,7 +6,7 @@
 <div class="banner-grid">
 	<for-each item={$row} from={$banners}>
 		<switch>
-			<case test={$row.type == "slider"}>
+			<case test={$row.type=="slider" }>
 				<div class="banner-grid__slider">
 					<banner-slider>
 						<for-each item={$banner} from={$row.items}>
@@ -15,7 +15,7 @@
 					</banner-slider>
 				</div>
 			</case>
-			<case test={$row.type == "inline"}>
+			<case test={$row.type=="inline" }>
 				<div class={"banner-grid__inline banner-grid__inline--s" ++ arr_len($row.items)}>
 					<for-each item={$banner} from={$row.items}>
 						<banner-element data={$banner} />
@@ -27,6 +27,7 @@
 					<for-each item={$banner} from={$row.items}>
 						<banner-element data={$banner} />
 					</for-each>
+
 				</div>
 			</default>
 		</switch>

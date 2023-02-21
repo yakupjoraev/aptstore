@@ -1,4 +1,4 @@
-@import url('../../layouts/variables.pcss');
+@import url("../../layouts/variables.pcss");
 
 .product-preview {
 	position: relative;
@@ -15,7 +15,7 @@
 	}
 }
 
-.product-preview~.release-form {
+.product-preview ~ .release-form {
 	margin-top: 30px;
 }
 
@@ -90,7 +90,7 @@
 	display: flex;
 	flex-direction: column;
 
-	&>*+* {
+	& > * + * {
 		margin-top: 5px;
 	}
 }
@@ -150,7 +150,7 @@
 	flex-direction: column;
 	align-items: flex-end;
 
-	&>*+* {
+	& > * + * {
 		margin-top: 5px;
 	}
 }
@@ -165,7 +165,7 @@
 	display: flex;
 	justify-content: center;
 
-	&>*+* {
+	& > * + * {
 		margin-left: 5px;
 	}
 
@@ -191,7 +191,7 @@
 	margin-top: 15px;
 	width: 120px;
 	height: 24px;
-	background: resolve('./icon-star.svg');
+	background: resolve("./icon-star.svg");
 	font-size: 0;
 
 	@media (--tablet) {
@@ -202,7 +202,7 @@
 .product-preview__rating-progress {
 	width: inherit;
 	height: inherit;
-	background: resolve('./icon-star-fill.svg');
+	background: resolve("./icon-star-fill.svg");
 }
 
 .product-preview__title {
@@ -254,7 +254,7 @@
 	width: 30px;
 	height: 30px;
 	font-size: 0;
-	background: resolve('./share.svg') center no-repeat;
+	background: resolve("./share.svg") center no-repeat;
 	background-size: 100%;
 }
 
@@ -284,7 +284,7 @@
 	position: fixed;
 	left: 0;
 	bottom: 45px;
-	z-index: 3;
+	z-index: 5;
 	box-sizing: border-box;
 	margin-top: 50px;
 	padding: 5px 0 25px;
@@ -367,7 +367,7 @@
 	line-height: 21px;
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 10px;
 		left: -3px;
@@ -389,7 +389,7 @@
 		font-weight: 500;
 
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 8px;
 			left: -3px;
@@ -439,7 +439,6 @@
 	line-height: 30px;
 	text-align: center;
 	color: var(--primary);
-
 
 	@media (--desktop-small) {
 		margin-right: 70px;
@@ -491,15 +490,13 @@
 		margin-top: 0;
 	}
 
-
 	@media (--desktop-medium) {
 		flex: 0 1 45%;
 	}
-
 }
 
 .product-preview__param {
-	&+& {
+	& + & {
 		margin-top: 20px;
 	}
 
@@ -579,7 +576,7 @@
 	line-height: 16px;
 	color: rgba(0, 0, 0, 0.5);
 
-	&+& {
+	& + & {
 		margin-top: 10px;
 	}
 
@@ -599,18 +596,18 @@
 }
 
 .product-preview__disclaimer--external-view {
-	background: resolve('./warn-external-view.svg') left center no-repeat;
+	background: resolve("./warn-external-view.svg") left center no-repeat;
 }
 
 .product-preview__disclaimer--contraindications {
-	background: resolve('./warn-contraindications.svg') left center no-repeat;
+	background: resolve("./warn-contraindications.svg") left center no-repeat;
 }
 
 .product-preview__disclaimer--recipe {
 	display: none;
 	font-weight: 700;
 	color: var(--primary);
-	background: resolve('./warn-recipe.svg') left center no-repeat;
+	background: resolve("./warn-recipe.svg") left center no-repeat;
 
 	@media (--tablet) {
 		display: flex;
@@ -620,8 +617,8 @@
 .product-preview__disclaimer--cold {
 	display: none;
 	font-weight: 700;
-	color: #43CFFC;
-	background: resolve('./warn-cold.svg') left center no-repeat;
+	color: #43cffc;
+	background: resolve("./warn-cold.svg") left center no-repeat;
 
 	@media (--tablet) {
 		display: flex;
@@ -650,7 +647,6 @@
 
 .product-preview__price-icon {
 	margin-right: 10px;
-
 }
 
 .product-preview__price-info {
@@ -661,7 +657,7 @@
 }
 
 .product-preview__price-info--green {
-	color: #7FC34D;
+	color: #7fc34d;
 }
 
 .product-preview__price-info--black {
@@ -669,8 +665,6 @@
 	font-size: 14px;
 	line-height: 20px;
 }
-
-
 
 /* block dosages */
 
@@ -692,16 +686,20 @@
 	padding-right: 0;
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .dropdown__toggle {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.dropdown__toggle {
 	border: 1px solid var(--light-gray);
 	color: var(--light-gray);
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .dropdown__toggle::before {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.dropdown__toggle::before {
 	top: 12px;
 	width: 13px;
 	height: 13px;
-	background-image: resolve('./dropdown-arrow-gray.svg');
+	background-image: resolve("./dropdown-arrow-gray.svg");
 	background-repeat: no-repeat;
 	transform: rotate(0);
 	background-size: contain;
@@ -712,7 +710,9 @@
 	}
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .dropdown__popup {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.dropdown__popup {
 	padding: 44px 15px 5px 15px;
 	border: none;
 	background: var(--white);
@@ -721,7 +721,9 @@
 	color: var(--gray);
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-option {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.product-preview__dosage-option {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -732,25 +734,30 @@
 	color: var(--gray);
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-count {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.product-preview__dosage-count {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
 	color: var(--light-gray);
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-option:not(:last-child) {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.product-preview__dosage-option:not(:last-child) {
 	border-bottom: 1px solid var(--light-gray);
 }
 
-.product-preview__dosages-dropdown .product-preview__dosages-mobile .product-preview__dosage-option--active {
+.product-preview__dosages-dropdown
+	.product-preview__dosages-mobile
+	.product-preview__dosage-option--active {
 	color: var(--secondary);
 }
 
 .product-preview__dosages {
 	padding: 20px 0;
 	border-top: 2px solid #f8f7f8;
-
 
 	@media (--desktop-small) {
 		display: flex;
@@ -762,12 +769,10 @@
 		gap: 20px;
 		grid-template-columns: repeat(2, 575px);
 	}
-
 }
 
 .product-preview__dosage {
 	display: none;
-
 
 	@media (--desktop-medium) {
 		display: block;
@@ -807,12 +812,10 @@
 		margin: 0;
 	}
 
-
 	@media (--desktop-medium) {
 		flex-wrap: nowrap;
 		column-gap: 20px;
 	}
-
 }
 
 .product-preview__dosage-item {
@@ -831,14 +834,12 @@
 }
 
 .product-preview__dosage-item:hover {
-
 	@media (--desktop-medium) {
 		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 	}
 }
 
 .product-preview__dosage-item:hover .product-preview__dosage-price {
-
 	@media (--desktop-medium) {
 		color: var(--secondary);
 	}

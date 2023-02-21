@@ -1,6 +1,6 @@
 <param name={$data} value={[]} />
 
-<a href={$data.href} class={classes("banner", $data.modifier ?? "banner--" ++ $data.modifier !! "")}>
+<a href={$data.href} class={classes("banner", $data.modifier ?? "banner--" ++ $data.modifier !! "" )}>
 	<span class="banner__content">
 		<picture class="banner__pucture">
 			<if test={$data.source.l?}>

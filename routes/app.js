@@ -36,6 +36,7 @@ require('../components/shop-terminal/shop-terminal')
 require('../components/site-header/site-header')
 require('../components/order-details/order-details')
 require('../components/release-form/release-form')
+require('../components/product-card/product-card-tooltips')
 
 initModalWindows()
 initAuthForm()
