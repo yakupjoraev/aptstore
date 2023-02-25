@@ -1,24 +1,58 @@
-var popper = require('../../libs/popper.min')
-var tippy = require('../../libs/tippy-bundle.umd.min')
+function tooltipBanner() {
+	var tooltipContainer = document.querySelector('[data-tooltip]')
+	if (!tooltipContainer) {
+		return null
+	}
 
-var template = document.querySelector('[data-product-card-tooltip-content]');
+	var tooltipElem;
 
-tippy('[data-product-card-tooltip]', {
-	content: template.innerHTML,
-	allowHTML: true,
+	document.onmouseover = function (event) {
+		var target = event.target;
 
-	// disable arrow
-	arrow: false,
-	followCursor: true,
-	interactive: true,
-});
+		// если у нас есть подсказка...
+		var tooltipHtml = target.dataset.tooltip;
+		if (!tooltipHtml) return;
 
-tippy('[data-banner-tooltip]', {
-	content: template.innerHTML,
-	allowHTML: true,
+		// ...создадим элемент для подсказки
 
-	// disable arrow
-	arrow: false,
-	followCursor: true,
-	interactive: true,
-});
+		tooltipElem = document.createElement('div');
+		tooltipElem.className = 'tooltip';
+		tooltipElem.innerHTML = tooltipHtml;
+		document.body.append(tooltipElem);
+
+		// спозиционируем его сверху от аннотируемого элемента (top-center)
+		var coords = target.getBoundingClientRect();
+
+		var left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+		if (left < 0) left = 0; // не заезжать за левый край окна
+
+		var top = coords.top - tooltipElem.offsetHeight - 5;
+		if (top < 0) { // если подсказка не помещается сверху, то отображать её снизу
+			top = coords.top + target.offsetHeight + 5;
+		}
+
+		tooltipElem.style.left = left + 'px';
+		tooltipElem.style.top = top + 'px';
+	};
+
+	document.onmouseout = function (e) {
+
+		if (tooltipElem) {
+			tooltipElem.remove();
+			tooltipElem = null;
+		}
+
+
+	};
+
+	window.addEventListener('scroll', function () {
+		if (tooltipElem) {
+			tooltipElem.remove();
+			tooltipElem = null;
+		}
+
+	});
+
+}
+
+tooltipBanner();
