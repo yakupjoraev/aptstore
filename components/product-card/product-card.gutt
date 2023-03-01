@@ -130,44 +130,45 @@
 
 				<div class="product-card__buttons" data-buy-controls>
 					<form-button action="buy">Купить</form-button>
-
 				</div>
 
-				<!-- data-product-card-tooltip  -->
-				<div class="product-card__reclame">
-					<div class="product-card__reclame-main" data-tooltip>
-						Реклама
-						<inline-svg src="i.svg" />
-
-
-						<div class="product-card__reclame-content tooltip" role="tooltip" data-tooltip-content>
-							<div class="product-card__reclame-firm">
-								Рекламодатель: АО ЦВ Протек,
-							</div>
-
-							<div class="product-card__reclame-url">
-								www.protek.ru
-							</div>
-
-							<div class="product-card__reclame-erid">
-								erid: LjN8JwgQw
-							</div>
-
-							<p class="product-card__reclame-descr">
-								Мы помогаем нашим продавцам рассказать об их товарах на Аптстор. Для этого у нас есть разные способы
-								продвижения.
-								<a class="product-card__reclame-link" href="#"> Подробнее о рекламе</a>
-							</p>
-
-						</div>
-					</div>
-
-				</div>
 
 				<div class="product-card__buttons" data-amount-controls style="display: none">
 					<amount-controls />
 				</div>
 			</default>
 		</switch>
+	</div>
+
+
+	<!-- data-product-card-tooltip  -->
+	<div class="product-card__reclame">
+		<div class="product-card__reclame-main" data-tooltip>
+			Реклама
+			<inline-svg src="i.svg" />
+
+
+			<div class="product-card__reclame-content tooltip" role="tooltip" data-tooltip-content>
+				<div class="product-card__reclame-firm">
+					Рекламодатель: АО ЦВ Протек,
+				</div>
+
+				<div class="product-card__reclame-url">
+					www.protek.ru
+				</div>
+
+				<div class="product-card__reclame-erid">
+					erid: LjN8JwgQw
+				</div>
+
+				<p class="product-card__reclame-descr">
+					Мы помогаем нашим продавцам рассказать об их товарах на Аптстор. Для этого у нас есть разные способы
+					продвижения.
+					<a class="product-card__reclame-link" href="#"> Подробнее о рекламе</a>
+				</p>
+
+			</div>
+		</div>
+
 	</div>
 </div>
