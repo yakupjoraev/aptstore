@@ -220,43 +220,36 @@
 }
 
 .banner__reclame {
-	display: none;
-
-	@media (--tablet) {
-		position: absolute;
-		bottom: 12px;
-		left: 18px;
-		display: block;
-		cursor: pointer;
-	}
+	position: absolute;
+	bottom: 12px;
+	left: 18px;
+	display: block;
+	cursor: pointer;
 }
 
 .banner__reclame-main {
-	display: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	min-width: 66px;
+	height: 20px;
+	background-color: #f7f7f7;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	color: rgba(23, 37, 0, 0.3);
 
-	@media (--tablet) {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		gap: 2px;
-		min-width: 66px;
-		height: 20px;
-		background-color: #f7f7f7;
-		border-radius: 15px;
-		font-weight: 700;
-		font-size: 10px;
-		line-height: 12px;
-		color: rgba(23, 37, 0, 0.3);
-
-		&:hover {
-			background-color: #172500;
-			color: #ffffff;
-		}
-
-		&:hover svg path {
-			fill: rgba(255, 255, 255, 0.4);
-		}
+	&:hover {
+		background-color: #172500;
+		color: #ffffff;
 	}
+
+	&:hover svg path {
+		fill: rgba(255, 255, 255, 0.4);
+	}
+
 }
 
 
