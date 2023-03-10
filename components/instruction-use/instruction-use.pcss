@@ -2,7 +2,7 @@
 
 .instruction-use {
 	position: relative;
-	margin-top: 20px;
+	margin: 0px 0px 20px 0px;
 	border-radius: 8px;
 	background: var(--white);
 	box-shadow: 0px 30px 30px rgba(196, 196, 196, 0.13);
@@ -94,15 +94,9 @@
 	}
 }
 
-.instruction-use__input:hover ~ .instruction-use__head svg {
-	& rect {
-		fill: var(--secondary);
-	}
-
-	& path {
-		stroke: var(--white);
-	}
-}
+.instruction-use.is-open .icon-arrow{transform: rotate(180deg);}
+.instruction-use.is-open .instruction-use__head svg rect{fill: #ffffff;}
+.instruction-use.is-open .instruction-use__head svg path{stroke: #8bbd3f;}
 
 .instruction-use__input {
 	position: absolute;
