@@ -29,20 +29,21 @@ siteHeaderMobile();
 
 function headerFixed() {
 	if ((window.matchMedia("(min-width: 767px)").matches)) {
-			var fixCatalog = document.querySelector('.catalog-list')
-			var fixSearchLocation = document.querySelector('.search-location')
-			var header = document.querySelector('.site-header')
-			var fixedHeader = document.querySelector('.site-header__wrapper');
-			var breakpoint = header.offsetHeight + header.offsetHeight;
-			if (window.scrollY >= breakpoint) {
-				fixedHeader.classList.add('fixed')
-				fixCatalog.classList.add('fixed')
-				fixSearchLocation.classList.add('fixed')
-			} else {
-				fixedHeader.classList.remove('fixed')
-				fixCatalog.classList.remove('fixed')
-				fixSearchLocation.classList.remove('fixed')
-			}
+		var fixCatalog = document.querySelector('.catalog-list')
+		var fixSearchLocation = document.querySelector('.search-location')
+		var header = document.querySelector('.site-header')
+		var fixedHeader = document.querySelector('.site-header__wrapper');
+		var breakpoint = header.offsetHeight + header.offsetHeight;
+
+		if (window.scrollY >= breakpoint) {
+			fixedHeader.classList.add('fixed')
+			fixCatalog.classList.add('fixed')
+			fixSearchLocation.classList.add('fixed')
+		} else {
+			fixedHeader.classList.remove('fixed')
+			fixCatalog.classList.remove('fixed')
+			fixSearchLocation.classList.remove('fixed')
+		}
 	}
 
 }

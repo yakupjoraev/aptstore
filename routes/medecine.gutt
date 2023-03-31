@@ -6,7 +6,7 @@
 <import name="delivery-explore" from="../components/delivery-explore/delivery-explore.gutt" />
 
 <default-layout>
-	<div class="container">
+	<div class="container container--not-hidden">
 		<bread-crumps path={[
 			[
 				"url" : "index.html",
@@ -27,18 +27,5 @@
 
 		<medecine-page />
 
-		<h4 class="medecine__title">
-			Доставка заказа в Москве
-		</h4>
-
-		<p class="medecine__text">
-			Заказывая на aptstore.ru, можно выбрать доставку в удобную для вас аптеку рядом с домом или по дороге на работу.
-		</p>
-
-		<a class="medecine__link" href="">
-			Все пункты доставки в Москве – 54 аптек
-		</a>
-
-		<delivery-explore />
 	</div>
 </default-layout>

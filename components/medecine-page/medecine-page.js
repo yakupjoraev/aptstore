@@ -91,4 +91,78 @@ function medecinePage() {
 	})
 }
 
-medecinePage()
+medecinePage();
+
+
+// Аккордеон
+function accordion() {
+
+	var faqAccardion = document.querySelector('.faq-accordion')
+
+	if (!faqAccardion) {
+		return null
+	}
+	var items = document.querySelectorAll('.faq-accordion__item-trigger')
+	items.forEach(item => {
+		item.addEventListener('click', () => {
+			var parent = item.parentNode
+			if (parent.classList.contains('faq-accordion__item-active')) {
+				parent.classList.remove('faq-accordion__item-active')
+			} else {
+				document
+					.querySelectorAll('.faq-accordion__item')
+					.forEach(child => child.classList.remove('faq-accordion__item-active'))
+				parent.classList.add('faq-accordion__item-active')
+			}
+		})
+	})
+}
+accordion();
+
+
+function activeLink() {
+	var observer = new IntersectionObserver((entries) => {
+		console.log(entries);
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				document.querySelectorAll('.medecine-page__anchors-link').forEach((link) => {
+					var id = link.getAttribute('href').replace('#', '');
+					if (id === entry.target.id) {
+						link.classList.add('active');
+					} else {
+						link.classList.remove('active');
+					}
+				});
+			}
+		});
+	}, {
+		threshold: 0.2
+	});
+
+	document.querySelectorAll('.medecine-page__section').forEach(section => { observer.observe(section) });
+}
+
+activeLink();
+
+function medecineAnchors() {
+	var medecinePageScroll = document.querySelector('.medecine-page__anchors-container')
+
+	if (!medecinePageScroll) {
+		return null
+	}
+
+	var header = document.querySelector('.site-header')
+	var medecinePageHeader = document.querySelector('.medecine-page__header')
+	var breakpoint = header.offsetHeight + medecinePageHeader.offsetHeight;
+
+	if (window.scrollY >= breakpoint) {
+		medecinePageScroll.classList.add('fixed')
+	} else {
+		medecinePageScroll.classList.remove('fixed')
+	}
+
+}
+window.addEventListener('scroll', medecineAnchors)
+
+medecineAnchors();
+
