@@ -11,7 +11,9 @@ function medecinePage() {
 
 	var content = container.querySelector('[data-medecine-page-products-content]')
 	var buttons = container.querySelector('[data-medecine-page-products-buttons]')
-	var slides = toArray(content.childNodes).filter(function (node) { return node.nodeType === 1 })
+	var slides = toArray(content.childNodes).filter(function (node) {
+		return node.nodeType === 1
+	})
 	var slideStyles = getStyle(slides[0])
 	var slideHeight = (slides[0].offsetHeight + parseInt(slideStyles.marginTop) + parseInt(slideStyles.marginBottom)) * 2
 	var isMobile = true
@@ -119,31 +121,6 @@ function accordion() {
 }
 accordion();
 
-
-function activeLink() {
-	var observer = new IntersectionObserver((entries) => {
-		console.log(entries);
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				document.querySelectorAll('.medecine-page__anchors-link').forEach((link) => {
-					var id = link.getAttribute('href').replace('#', '');
-					if (id === entry.target.id) {
-						link.classList.add('active');
-					} else {
-						link.classList.remove('active');
-					}
-				});
-			}
-		});
-	}, {
-		threshold: 0.2
-	});
-
-	document.querySelectorAll('.medecine-page__section').forEach(section => { observer.observe(section) });
-}
-
-activeLink();
-
 function medecineAnchors() {
 	var medecinePageScroll = document.querySelector('.medecine-page__anchors-container')
 
@@ -165,4 +142,88 @@ function medecineAnchors() {
 window.addEventListener('scroll', medecineAnchors)
 
 medecineAnchors();
+
+
+function activeLink() {
+
+	var medecinePageContainer = document.querySelector('.medecine-page')
+
+	if (!medecinePageContainer) {
+		return null
+	}
+
+	// active class of menu items onscroll
+	window.addEventListener('scroll', () => {
+		var scrollDistance = window.scrollY;
+
+		document.querySelectorAll('.medecine-page__section').forEach((el, i) => {
+			if (el.offsetTop - 160 <= scrollDistance) {
+				document.querySelectorAll('.medecine-page__anchors-link').forEach((el) => {
+					if (el.classList.contains('active')) {
+						el.classList.remove('active');
+					}
+				});
+
+				document.querySelectorAll('.medecine-page__anchors-link')[i].classList.add('active');
+			}
+		});
+	});
+
+	function _createForOfIteratorHelperLoose(o, allowArrayLike) {
+		var it =
+			(typeof Symbol !== "undefined" && o[Symbol.iterator]) || o["@@iterator"];
+		if (it) return (it = it.call(o)).next.bind(it);
+		if (
+			Array.isArray(o) ||
+			(it = _unsupportedIterableToArray(o)) ||
+			(allowArrayLike && o && typeof o.length === "number")
+		) {
+			if (it) o = it;
+			var i = 0;
+			return function () {
+				if (i >= o.length) return { done: true };
+				return { done: false, value: o[i++] };
+			};
+		}
+		throw new TypeError(
+			"Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+		);
+	}
+	function _unsupportedIterableToArray(o, minLen) {
+		if (!o) return;
+		if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+		var n = Object.prototype.toString.call(o).slice(8, -1);
+		if (n === "Object" && o.constructor) n = o.constructor.name;
+		if (n === "Map" || n === "Set") return Array.from(o);
+		if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))
+			return _arrayLikeToArray(o, minLen);
+	}
+	function _arrayLikeToArray(arr, len) {
+		if (len == null || len > arr.length) len = arr.length;
+		for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+		return arr2;
+	}
+	var anchors = document.querySelectorAll('.medecine-page__anchors-link[href*="#"]');
+	var _loop = function _loop() {
+		var anchor = _step.value;
+		anchor.addEventListener("click", function (e) {
+			e.preventDefault();
+			var blockID = anchor.getAttribute("href").substr(1);
+			document.getElementById(blockID).scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			});
+		});
+	};
+	for (
+		var _iterator = _createForOfIteratorHelperLoose(anchors), _step;
+		!(_step = _iterator()).done;
+
+	) {
+		_loop();
+	}
+
+}
+
+activeLink();
 
