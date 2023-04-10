@@ -810,6 +810,7 @@
 	display: flex;
 	gap: 20px;
 	margin-bottom: 50px;
+	padding-bottom: 20px;
 	overflow-x: auto;
 	overflow-y: hidden;
 
@@ -819,10 +820,18 @@
 }
 
 .medecine-page__photos::-webkit-scrollbar {
-	display: none;
+	height: 8px;
+	background-color: #fff;
 }
 
+.medecine-page__photos::-webkit-scrollbar-thumb {
+	background-color: #8bbd3f;
+}
 
+.medecine-page__photos::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+	background-color: #c4c4c4;
+}
 
 .medecine-page__photo {
 	width: 200px;
