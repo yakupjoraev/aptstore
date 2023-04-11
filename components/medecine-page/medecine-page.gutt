@@ -409,7 +409,7 @@
 	</div>
 
 
-	<section class="medecine-page__section medecine-page__info-content" id="anchor-instructions">
+	<div class="medecine-page__section medecine-page__info-content" id="anchor-instructions">
 		<div class="medecine-page__menu">
 			<h3 class="medecine-page__menu-title">Содержание</h3>
 			<ul class="medecine-page__list">
@@ -688,10 +688,10 @@
 			</content-block>
 		</div>
 
-	</section>
+	</div>
 
 
-	<section class="medecine-page__section" id="anchor-photos">
+	<div class="medecine-page__section" id="anchor-photos">
 		<h3 class=" medecine-page__subtitle">
 			Фотографии Лиотон
 		</h3>
@@ -717,9 +717,9 @@
 			</div>
 		</div>
 
-	</section>
+	</div>
 
-	<section class="medecine-page__section medecine-page__photos--certificats" id="anchor-certificates">
+	<div class="medecine-page__section medecine-page__photos--certificats" id="anchor-certificates">
 		<h3 class="medecine-page__subtitle">
 			Сертификаты и лицензии Лиотон
 		</h3>
@@ -745,9 +745,9 @@
 			</div>
 		</div>
 
-	</section>
+	</div>
 
-	<section class="medecine-page__section medecine-page__faq faq-accordion" id="anchor-faq">
+	<div class="medecine-page__section medecine-page__faq faq-accordion" id="anchor-faq">
 		<h3 class="medecine-page__section medecine-page__subtitle">
 			Частые вопросы
 		</h3>
@@ -811,9 +811,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="medecine-page__section medecine-page__delivery-wrapper" id="anchor-delivery">
+	<div class="medecine-page__section medecine-page__delivery-wrapper" id="anchor-delivery">
 		<h4 class="medecine__title">
 			Доставка заказа в Москве
 		</h4>
@@ -827,7 +827,7 @@
 		</a>
 
 		<delivery-explore />
-	</section>
+	</div>
 
 
 </div>
