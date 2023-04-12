@@ -230,12 +230,17 @@
 .medecine-page__anchors-header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	width: 1300px;
-	min-width: 1300px;
+	max-width: 1300px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+}
 
+.medecine-page__anchors-link:not(:last-child) {
+	margin-right: 30px;
+
+	@media (--tablet) {
+		margin-right: 60px;
+	}
 }
 
 .medecine-page__anchors-scrollbar {
@@ -309,6 +314,10 @@
 	height: 46px;
 }
 
+.medecine-page__anchors-container.fixed .medecine-page__anchors-scrollbar {
+	border: 0;
+}
+
 @media (max-width: 1360px) {
 	.medecine-page__anchors-container.fixed {
 		padding-bottom: 7px;
@@ -340,6 +349,7 @@
 	align-items: center;
 	width: fit-content;
 	height: 50px;
+	white-space: nowrap;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
