@@ -152,142 +152,61 @@ function activeLink() {
 		return null
 	}
 
-	// старый вариант
+	// супер вариант
 
-	// var medecineAnchors = document.querySelectorAll('.medecine-page__anchors-link');
-	// var medecineSections = document.querySelectorAll('div');
-	// var scrollDistance = window.scrollY;
-
-	// // active class of menu items onscroll
-	// window.addEventListener('scroll', () => {
-
-	// 	console.log('1');
-	// 	medecineSections.forEach((el, i) => {
-	// 		if (el.offsetTop - 400 <= scrollDistance) {
-	// 			medecineAnchors.forEach((el) => {
-	// 				if (el.classList.contains('active')) {
-	// 					el.classList.remove('active');
-	// 				}
-	// 			});
-
-	// 			medecineAnchors[i].classList.add('active');
-	// 		}
-	// 	});
-	// });
-
-	// window.addEventListener('scroll', () => {
-
-	// })
-
-
-	// новый вариант
-
-	var anchors = document.querySelectorAll('.medecine-page__anchors-link');
-
-	function handleScroll() {
+	// Функция обработки прокрутки страницы для якорных ссылок
+	function handleScroll(selector, offset) {
+		// Получаем все якорные ссылки на странице
+		var anchors = document.querySelectorAll(selector);
+		// Определяем текущее расстояние прокрутки страницы
 		var scrollDistance = window.scrollY;
+		// Обрабатываем каждую якорную ссылку
 		anchors.forEach(anchor => {
+			// Получаем значение атрибута href для якорной ссылки
 			var href = anchor.getAttribute('href');
+			// Находим целевой элемент с помощью значения атрибута href
 			var target = document.querySelector(href);
-			var targetOffsetTop = target !== null ? target.offsetTop : 0;
-			var targetOffsetHeight = target !== null ? target.offsetHeight : 0;
-			if (targetOffsetTop - 400 <= scrollDistance && (targetOffsetTop + targetOffsetHeight) > scrollDistance) {
-				anchors.forEach(a => a.classList.remove('active'));
-				anchor.classList.add('active');
+			// Определяем расстояние от верха страницы до целевого элемента
+			var targetOffsetTop = target ? target.offsetTop : 0;
+			// Определяем высоту целевого элемента
+			var targetOffsetHeight = target ? target.offsetHeight : 0;
+			// Если расстояние от верха страницы до целевого элемента минус отступ меньше или равно текущему расстоянию прокрутки страницы
+			// И расстояние от верха страницы до целевого элемента плюс высота целевого элемента больше текущего расстояния прокрутки страницы,
+			// То добавляем класс "active" текущей якорной ссылке, удаляем класс "active" у всех остальных якорных ссылок
+			if (targetOffsetTop - offset <= scrollDistance && targetOffsetTop + targetOffsetHeight - offset > scrollDistance) {
+				anchors.forEach(a => {
+					if (a === anchor) {
+						a.classList.add('active');
+					} else {
+						a.classList.remove('active');
+					}
+				});
 			} else {
+				// Если текущий целевой элемент не отображается на экране, то удаляем класс "active" у текущей якорной ссылки
 				anchor.classList.remove('active');
 			}
 		});
 	}
 
-	function throttledHandleScroll() {
+	// Функция для задержки обработки прокрутки страницы
+	function throttledHandleScroll(selector, offset) {
+		var scrolling = false;
+		// Если обработка прокрутки страницы уже запущена, то ничего не делаем
 		if (!scrolling) {
 			scrolling = true;
-			requestAnimationFrame(function () {
-				handleScroll();
+			// Запускаем обработку прокрутки страницы через requestAnimationFrame
+			requestAnimationFrame(() => {
+				handleScroll(selector, offset);
 				scrolling = false;
 			});
 		}
 	}
 
-	var scrolling = false;
-	window.addEventListener('scroll', throttledHandleScroll);
-
-	if (window.matchMedia("(max-width: 1200px)").matches) {
-		var anchors = document.querySelectorAll('.medecine-page__anchors-link');
-
-		function handleScroll() {
-			var scrollDistance = window.scrollY;
-			anchors.forEach(anchor => {
-				var href = anchor.getAttribute('href');
-				var target = document.querySelector(href);
-				var targetOffsetTop = target !== null ? target.offsetTop : 0;
-				var targetOffsetHeight = target !== null ? target.offsetHeight : 0;
-				if (targetOffsetTop - 550 <= scrollDistance && (targetOffsetTop + targetOffsetHeight) > scrollDistance) {
-					anchors.forEach(a => a.classList.remove('active'));
-					anchor.classList.add('active');
-				} else {
-					anchor.classList.remove('active');
-				}
-			});
-		}
-
-		function throttledHandleScroll() {
-			if (!scrolling) {
-				scrolling = true;
-				requestAnimationFrame(function () {
-					handleScroll();
-					scrolling = false;
-				});
-			}
-		}
-
-		var scrolling = false;
-		window.addEventListener('scroll', throttledHandleScroll);
-
-	}
-
-	// еще один вариант
-
-	// window.addEventListener('scroll', () => {
-	// 	console.log('1');
-	// 	var scrollDistance = window.scrollY;
-	// 	var anchors = document.querySelectorAll('.medecine-page__anchors-link');
-	// 	anchors.forEach(anchor => {
-	// 		var target = document.querySelector(anchor.getAttribute('href'));
-	// 		if (target !== null && target.offsetTop - 400 <= scrollDistance && (target.offsetTop + target.offsetHeight) > scrollDistance) {
-	// 			anchors.forEach(a => a.classList.remove('active'));
-	// 			anchor.classList.add('active');
-	// 		} else {
-	// 			anchor.classList.remove('active');
-	// 		}
-	// 	});
-	// });
-
-
-	// старый вариант для маленьких размеров
-
-	// if (window.matchMedia("(max-width: 1200px)").matches) {
-
-	// 	// active class of menu items onscroll on max-width: 1200px
-
-	// 	window.addEventListener('scroll', () => {
-	// 		var scrollDistance = window.scrollY;
-
-	// 		document.querySelectorAll('div').forEach((el, i) => {
-	// 			if (el.offsetTop - 550 <= scrollDistance) {
-	// 				document.querySelectorAll('.medecine-page__anchors-link').forEach((el) => {
-	// 					if (el.classList.contains('active')) {
-	// 						el.classList.remove('active');
-	// 					}
-	// 				});
-
-	// 				document.querySelectorAll('.medecine-page__anchors-link')[i].classList.add('active');
-	// 			}
-	// 		});
-	// 	});
-	// }
-
+	// Инициализация функции обработки прокрутки страницы
+	window.addEventListener('scroll', () => {
+		throttledHandleScroll('.medecine-page__anchors-link', 400);
+		throttledHandleScroll('.medecine-page__link', -1100);
+	});
 
 	//smooth scroll to link
 
@@ -297,7 +216,7 @@ function activeLink() {
 		if (it) return (it = it.call(o)).next.bind(it);
 		if (
 			Array.isArray(o) ||
-			(it = _unsupportedIterableToArray(o)) ||
+			(it = _unsupportedIterabvaroArray(o)) ||
 			(allowArrayLike && o && typeof o.length === "number")
 		) {
 			if (it) o = it;
@@ -311,7 +230,7 @@ function activeLink() {
 			"Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
 		);
 	}
-	function _unsupportedIterableToArray(o, minLen) {
+	function _unsupportedIterabvaroArray(o, minLen) {
 		if (!o) return;
 		if (typeof o === "string") return _arrayLikeToArray(o, minLen);
 		var n = Object.prototype.toString.call(o).slice(8, -1);
@@ -326,6 +245,7 @@ function activeLink() {
 		return arr2;
 	}
 	var anchors = document.querySelectorAll('.medecine-page__anchors-link[href*="#"]');
+	var anchorsTwo = document.querySelectorAll('.medecine-page__link[href*="#"]');
 	var _loop = function _loop() {
 		var anchor = _step.value;
 		anchor.addEventListener("click", function (e) {
@@ -343,9 +263,16 @@ function activeLink() {
 
 	) {
 		_loop();
-	}
+	};
 
+
+	for (
+		var _iterator = _createForOfIteratorHelperLoose(anchorsTwo), _step;
+		!(_step = _iterator()).done;
+
+	) {
+		_loop();
+	};
 }
 
 activeLink();
-

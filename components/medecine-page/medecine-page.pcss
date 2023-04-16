@@ -146,6 +146,10 @@
 	}
 }
 
+.medecine-page__link.active {
+	color: var(--secondary);
+}
+
 .medecine-page__content-block h4 {
 	margin: 24px 0 10px;
 }
@@ -167,7 +171,95 @@
 	}
 }
 
+.medecine-page__block>h1 {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+}
 
+.medecine-page__block>h2 {
+	margin: 40px 0 20px;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.medecine-page__block>h3 {
+	margin: 40px 0 10px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.medecine-page__block>h4 {
+	margin: 40px 0 10px;
+	font-size: 24px;
+	line-height: 31px;
+}
+
+.medecine-page__block>p {
+	font-size: 14px;
+	line-height: 18px;
+
+	@media (--tablet) {
+		font-size: 16px;
+		line-height: 21px;
+	}
+}
+
+.medecine-page__block>*:first-child {
+	margin-top: 0;
+}
+
+.medecine-page__block>p.lid {
+	font-size: 16px;
+	line-height: 21px;
+
+	@media (--tablet) {
+		font-size: 18px;
+		line-height: 23px;
+	}
+}
+
+.medecine-page__block>p,
+.medecine-page__block>figure {
+	margin-bottom: 20px;
+}
+
+.medecine-page__block>figure img {
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+.content-block strong {
+	font-weight: bold;
+}
+
+.medecine-page__block>ul {
+	margin-bottom: 40px;
+}
+
+.medecine-page__block>ul li {
+	position: relative;
+	padding-left: 37px;
+	font-size: 14px;
+	line-height: 18px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 9px;
+		left: 0;
+		width: 22px;
+		height: 3px;
+		background: var(--secondary);
+	}
+}
+
+.medecine-page__block>ul li+li {
+	margin-top: 8px;
+}
 
 
 
@@ -252,30 +344,24 @@
 	scrollbar-width: thin;
 
 	@media (--tablet) {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 	}
 
-	@media (--desktop-medium) {
-		margin-bottom: 80px;
-	}
 }
 
 .medecine-page__anchors-scrollbar {
 	border-bottom: 1px solid #F2F2F2;
 }
 
-.medecine-page__anchors-container.fixed~div {
-	margin-top: 90px;
-	transition: all 0.5s linear;
+.medecine-page__anchors-container.fixed~.medecine-page__block--height {
+	height: 90px;
+	transition: height 0.5s linear;
 
 	@media (--tablet) {
-		margin-top: 110px;
-	}
-
-	@media (--desktop-medium) {
-		margin-top: 140px;
+		height: 60px;
 	}
 }
+
 
 .medecine-page__anchors-container.fixed {
 	position: fixed;
@@ -283,7 +369,7 @@
 	left: 0;
 	width: 100%;
 	background-color: var(--white);
-	filter: drop-shadow(0px 9px 10px rgba(0, 0, 0, 0.05));
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.05));
 	animation: fade 0.2s linear;
 	z-index: 9;
 
@@ -379,14 +465,22 @@
 .medecine-page__products {}
 
 .medecine-product {
+	position: relative;
 	display: grid;
 	grid-template-columns: 100px 1fr;
 	gap: 10px 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px dashed #D8D8D8;
+	padding: 20px;
+	background-color: var(--white);
+	box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.08);
+	border-radius: 10px;
 
 	@media (--tablet) {
 		display: flex;
+		padding-bottom: 135px;
+	}
+
+	@media (--desktop-medium) {
+		padding: 30px;
 	}
 }
 
@@ -445,12 +539,19 @@
 	}
 }
 
+.medecine-product__title:hover,
+.medecine-product__title:focus,
+.medecine-product__title:active {
+	color: var(--secondary);
+}
+
 .medecine-product__rows {
 	display: grid;
 	gap: 3px;
 
 	@media (--tablet) {
 		gap: 5px;
+		max-width: 400px;
 	}
 }
 
@@ -463,6 +564,11 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: row;
+	}
+
+	@media (--tablet) {
+		gap: 20px;
+		white-space: nowrap;
 	}
 }
 
@@ -516,12 +622,21 @@
 	grid-template-columns: 120px 1fr;
 
 	@media (--tablet) {
+		display: flex;
+		flex-direction: column;
 		grid-template-columns: repeat(1, 1fr);
+		max-width: 250px;
+		width: 100%;
 		margin-left: auto;
 	}
 
 	@media (--desktop-medium) {
-		grid-template-columns: repeat(2, 1fr);
+		display: grid;
+		grid-template-columns: 1fr 320px;
+		gap: 10px 20px;
+		grid-column: span 1;
+		max-width: 100%;
+		width: auto;
 	}
 }
 
@@ -535,7 +650,7 @@
 	@media (--tablet) {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 6px;
-		align-self: center;
+		align-self: flex-end;
 		margin-bottom: 9px;
 		padding-right: 0;
 		text-align: left;
@@ -545,6 +660,7 @@
 		grid-template-columns: repeat(1, 1fr);
 		grid-row: span 2;
 		justify-self: center;
+		align-self: baseline;
 		gap: 0;
 		margin-bottom: 0;
 	}
@@ -601,9 +717,7 @@
 	}
 }
 
-.medecine-product__buying {
-	margin-bottom: 9px;
-}
+.medecine-product__buying {}
 
 .medecine-product__buy-basket {
 	padding: 0;
@@ -646,11 +760,27 @@
 }
 
 .medecine-product__deliverys {
+	display: grid;
+	gap: 5px;
 	grid-column: span 2;
 	padding: 10px 0;
 
+	@media (--mobile-medium) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	@media (--tablet) {
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (--desktop-medium) {
+		position: static;
 		grid-column: span 1;
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
@@ -667,19 +797,12 @@
 }
 
 .medecine-product__delivery-info {
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 17px;
+	font-size: 14px;
+	line-height: 20px;
 	color: #000000;
-
-	@media (--tablet) {
-		font-size: 14px;
-		line-height: 20px;
-	}
 }
 
 .medecine-product__delivery-info b {
-	display: block;
 	font-weight: 700;
 }
 
@@ -716,7 +839,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 60px 0 70px;
+	margin: 30px 0;
+
+	@media (--tablet) {
+		margin: 30px 0 40px;
+	}
 }
 
 .medecine-page__nav-prev {
@@ -995,4 +1122,23 @@
 
 .content__text:first-child {
 	margin-top: 0;
+}
+
+.medecine-page__favorite {
+	position: absolute;
+	right: 0;
+	top: -4px;
+	width: 22px;
+	height: 28px;
+
+	@media (--tablet) {
+		right: 0;
+		top: -4px;
+		width: 30px;
+	}
+
+	@media (--desktop-medium) {
+		right: 10px;
+		top: 4px;
+	}
 }
