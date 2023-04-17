@@ -107,6 +107,8 @@
 						<form-button class="medecine-product__buy" action="buy" type="submit" size="large" full-width={true}>
 							Купить
 						</form-button>
+
+						<favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" />
 					</div>
 
 					<div class="medecine-product__deliverys">
@@ -199,6 +201,8 @@
 						<form-button class="medecine-product__buy" action="buy" type="submit" size="large" full-width={true}>
 							Купить
 						</form-button>
+
+						<favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" />
 					</div>
 
 					<div class="medecine-product__deliverys">
@@ -290,6 +294,8 @@
 						<form-button class="medecine-product__buy" action="buy" type="submit" size="large" full-width={true}>
 							Купить
 						</form-button>
+
+						<favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" />
 					</div>
 
 					<div class="medecine-product__deliverys">
