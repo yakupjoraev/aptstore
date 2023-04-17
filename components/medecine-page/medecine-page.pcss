@@ -473,6 +473,7 @@
 	background-color: var(--white);
 	box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.08);
 	border-radius: 10px;
+	transition: box-shadow 0.1s linear;
 
 	@media (--tablet) {
 		display: flex;
@@ -482,6 +483,10 @@
 	@media (--desktop-medium) {
 		padding: 30px;
 	}
+}
+
+.medecine-product:hover {
+	box-shadow: 0 0 20px rgba(23, 37, 0, .15), 0 27px 20px rgba(153, 171, 125, .3);
 }
 
 .medecine-product__picture {
@@ -842,6 +847,8 @@
 	margin: 30px 0;
 
 	@media (--tablet) {
+		justify-content: center;
+		gap: 50px;
 		margin: 30px 0 40px;
 	}
 }

@@ -57,11 +57,13 @@
 	<div class="medecine-page__products">
 		<div class="medecine-page__products-list">
 			<div class="medecine-page__product medecine-product">
-				<a href="#" class="medecine-product__picture">
-					<img class="medecine-product__img" src="../../storage/promo-image.jpg" alt="Лиотон 1000 гель 50 г" />
+				<div class="medecine-product__picture">
+					<a href="#">
+						<img class="medecine-product__img" src="../../storage/promo-image.jpg" alt="Лиотон 1000 гель 50 г" />
+					</a>
 					<inline-svg class="medecine-product__discont" src="./discont.svg" />
 					<favorite-button class="medecine-page__favorite" />
-				</a>
+				</div>
 
 				<div class="medecine-product__info">
 					<a href="#" class="medecine-product__title">Лиотон 1000 гель 50 г</a>
@@ -146,11 +148,14 @@
 			</div>
 
 			<div class="medecine-page__product medecine-product">
-				<a href="#" class="medecine-product__picture">
-					<img class="medecine-product__img" src="../../storage/medecine-product-1.png" alt="Лиотон 1000 гель 100 г" />
+				<div class="medecine-product__picture">
+					<a href="#">
+						<img class="medecine-product__img" src="../../storage/medecine-product-1.png"
+							alt="Лиотон 1000 гель 100 г" />
+					</a>
 					<inline-svg class="medecine-product__discont" src="./discont.svg" />
 					<favorite-button class="medecine-page__favorite" />
-				</a>
+				</div>
 
 				<div class="medecine-product__info">
 					<a href="#" class="medecine-product__title">Лиотон 1000 гель 100 г</a>
@@ -235,11 +240,14 @@
 			</div>
 
 			<div class="medecine-page__product medecine-product">
-				<a href="#" class="medecine-product__picture">
-					<img class="medecine-product__img" src="../../storage/medecine-product-1.png"
-						alt="Лиотон гель 1000 МЕ/г 30 г" />
+				<div class="medecine-product__picture">
+					<a href="#">
+						<img class="medecine-product__img" src="../../storage/medecine-product-1.png"
+							alt="Лиотон гель 1000 МЕ/г 30 г" />
+					</a>
+
 					<favorite-button class="medecine-page__favorite" />
-				</a>
+				</div>
 
 				<div class="medecine-product__info">
 					<a href="#" class="medecine-product__title">Лиотон 1000 гель 50 г</a>
