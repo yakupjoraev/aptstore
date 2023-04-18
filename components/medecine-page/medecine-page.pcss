@@ -317,7 +317,13 @@
 	height: auto;
 }
 
-.medecine-page__products {}
+.medecine-page__products {
+	margin-bottom: 30px;
+
+	@media (--tablet) {
+		margin-bottom: 40px;
+	}
+}
 
 .medecine-page__anchors-header {
 	display: flex;
@@ -1166,6 +1172,15 @@
 .medecine-product__buying {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 	gap: 10px;
 	height: fit-content;
+
+	@media (--desktop-medium) {
+		justify-content: center;
+	}
+}
+
+.medecine-page .product-slider {
+	margin-bottom: 30px;
 }
