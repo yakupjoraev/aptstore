@@ -198,6 +198,53 @@
 		</span>
 	</h1>
 
+	<ul class="product-preview__price-list product-preview__price-list--mobile">
+		<li class="product-preview__price-item">
+			<div class="product-preview__price-icon">
+				<inline-svg src="delivery.svg" />
+			</div>
+
+			<p class="product-preview__price-info">
+				Доставка в&nbsp;<a href="#" class="product-preview__price-info--green">77&nbsp;аптек</a>
+				в&nbsp;Москве<br />Получение
+				<span class="product-preview__price-info--black">завтра</span> - Бесплатно
+			</p>
+		</li>
+
+		<li class="product-preview__price-item">
+			<div class="product-preview__price-icon">
+				<inline-svg src="pay.svg" />
+			</div>
+
+			<p class="product-preview__price-info">
+				Оплата при получении наличными или картой
+			</p>
+		</li>
+
+		<div class="product-preview__price-item--line"></div>
+
+		<li class="product-preview__price-item">
+			<div class="product-preview__price-icon">
+				<inline-svg src="geo.svg" />
+			</div>
+			<p class="product-preview__price-info">
+				Доставка в&nbsp;<a href="#" class="product-preview__price-info--green">1471&nbsp;постамат</a>в&nbsp;Москве<br />
+				Получение
+				<span class="product-preview__price-info--black"> завтра</span> - Бесплатно
+			</p>
+		</li>
+
+		<li class="product-preview__price-item">
+			<div class="product-preview__price-icon">
+				<inline-svg src="card.svg" />
+			</div>
+
+			<p class="product-preview__price-info">
+				Оплата картой онлайн
+			</p>
+		</li>
+	</ul>
+
 	<div class="product-preview__description">
 		<div class="product-preview__controls">
 			<div class="product-preview__prices">
@@ -223,8 +270,8 @@
 					</div>
 
 					<p class="product-preview__price-info">
-						Доставка в&nbsp;<span class="product-preview__price-info--green">77&nbsp;аптек<br /></span> в&nbsp;Москве
-						и&nbsp;МО<br />
+						Доставка в&nbsp;<a href="#" class="product-preview__price-info--green">77&nbsp;аптек</a>
+						в&nbsp;Москве<br />Получение
 						<span class="product-preview__price-info--black">завтра</span> - Бесплатно
 					</p>
 				</li>
@@ -235,7 +282,31 @@
 					</div>
 
 					<p class="product-preview__price-info">
-						Оплата при получении
+						Оплата при получении наличными или картой
+					</p>
+				</li>
+
+				<div class="product-preview__price-item--line"></div>
+
+				<li class="product-preview__price-item">
+					<div class="product-preview__price-icon">
+						<inline-svg src="geo.svg" />
+					</div>
+					<p class="product-preview__price-info">
+						Доставка в&nbsp;<a href="#"
+							class="product-preview__price-info--green">1471&nbsp;постамат</a>в&nbsp;Москве<br />
+						Получение
+						<span class="product-preview__price-info--black"> завтра</span> - Бесплатно
+					</p>
+				</li>
+
+				<li class="product-preview__price-item">
+					<div class="product-preview__price-icon">
+						<inline-svg src="card.svg" />
+					</div>
+
+					<p class="product-preview__price-info">
+						Оплата картой онлайн
 					</p>
 				</li>
 			</ul>
