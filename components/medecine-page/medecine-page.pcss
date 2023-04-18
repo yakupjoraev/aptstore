@@ -863,12 +863,18 @@
 	white-space: nowrap;
 	font-size: 14px;
 	line-height: 16px;
+	transition: background-color 0.1s linear, color 0.1s linear;
 
 	@media (--tablet) {
 		display: flex;
 		height: 56px;
 		font-size: 22px;
 		line-height: 26px;
+	}
+
+	&:hover {
+		background-color: var(--secondary);
+		color: var(--white);
 	}
 }
 
@@ -895,6 +901,7 @@
 	font-size: 14px;
 	line-height: 16px;
 	color: #8D9192;
+	transition: background-color 0.1s linear, color 0.1s linear;
 
 	@media (max-width: 359px) {
 		width: 32px;
@@ -902,6 +909,12 @@
 		height: 32px;
 		font-size: 12px;
 		line-height: 14px;
+	}
+
+
+	&:hover {
+		background-color: var(--secondary);
+		color: var(--white);
 	}
 }
 
@@ -946,6 +959,7 @@
 	white-space: nowrap;
 	font-size: 14px;
 	line-height: 16px;
+	transition: background-color 0.1s linear, color 0.1s linear;
 
 	@media (max-width: 359px) {
 		height: 40px;
@@ -957,6 +971,11 @@
 		height: 56px;
 		font-size: 22px;
 		line-height: 26px;
+	}
+
+	&:hover {
+		background-color: var(--secondary);
+		color: var(--white);
 	}
 }
 
