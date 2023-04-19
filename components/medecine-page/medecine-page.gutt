@@ -61,7 +61,7 @@
 					<a href="#">
 						<img class="medecine-product__img" src="../../storage/promo-image.jpg" alt="Лиотон 1000 гель 50 г" />
 					</a>
-					<inline-svg class="medecine-product__discont" src="./discont.svg" />
+					<div class="medecine-product__discont">Акция</div>
 					<favorite-button class="medecine-page__favorite" />
 				</div>
 
@@ -97,8 +97,11 @@
 
 				<div class="medecine-product__price-buy">
 					<div class="medecine-product__price">
-						<p class="medecine-product__price-label">Цена:</p>
-						<strike class="medecine-product__price-old">1286 ₽</strike>
+						<div class="medecine-product__price-top">
+							<!-- <p class="medecine-product__price-label">Цена:</p> -->
+							<strike class="medecine-product__price-old">730.80 ₽</strike>
+							<p class="medecine-product__price-discont">-68%</p>
+						</div>
 						<div class="medecine-product__price-new"> 1086 ₽</div>
 					</div>
 
@@ -108,10 +111,10 @@
 							Купить
 						</form-button>
 
-						<favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" />
+						<!-- <favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" /> -->
 					</div>
 
-					<div class="medecine-product__deliverys">
+					<!-- <div class="medecine-product__deliverys">
 						<div class="medecine-product__delivery">
 							<inline-svg src="./delivery.svg" />
 
@@ -144,7 +147,7 @@
 
 							<p>Оплата картой онлайн</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -155,7 +158,7 @@
 						<img class="medecine-product__img" src="../../storage/medecine-product-1.png"
 							alt="Лиотон 1000 гель 100 г" />
 					</a>
-					<inline-svg class="medecine-product__discont" src="./discont.svg" />
+					<div class="medecine-product__discont">Акция</div>
 					<favorite-button class="medecine-page__favorite" />
 				</div>
 
@@ -191,8 +194,11 @@
 
 				<div class="medecine-product__price-buy">
 					<div class="medecine-product__price">
-						<p class="medecine-product__price-label">Цена:</p>
-						<strike class="medecine-product__price-old">1286 ₽</strike>
+						<div class="medecine-product__price-top">
+							<!-- <p class="medecine-product__price-label">Цена:</p> -->
+							<strike class="medecine-product__price-old">730.80 ₽</strike>
+							<p class="medecine-product__price-discont">-68%</p>
+						</div>
 						<div class="medecine-product__price-new">1380 ₽</div>
 					</div>
 
@@ -202,10 +208,10 @@
 							Купить
 						</form-button>
 
-						<favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" />
+						<!-- <favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" /> -->
 					</div>
 
-					<div class="medecine-product__deliverys">
+					<!-- <div class="medecine-product__deliverys">
 						<div class="medecine-product__delivery">
 							<inline-svg src="./delivery.svg" />
 
@@ -238,7 +244,7 @@
 
 							<p>Оплата картой онлайн</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -285,7 +291,7 @@
 
 				<div class="medecine-product__price-buy">
 					<div class="medecine-product__price">
-						<p class="medecine-product__price-label">Цена:</p>
+						<!-- <p class="medecine-product__price-label">Цена:</p> -->
 						<div class="medecine-product__price-price">560 ₽</div>
 					</div>
 
@@ -295,10 +301,10 @@
 							Купить
 						</form-button>
 
-						<favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" />
+						<!-- <favorite-button class="medecine-page__favorite medecine-page__favorite--mobile" /> -->
 					</div>
 
-					<div class="medecine-product__deliverys">
+					<!-- <div class="medecine-product__deliverys">
 						<div class="medecine-product__delivery">
 							<inline-svg src="./delivery.svg" />
 
@@ -331,7 +337,7 @@
 
 							<p>Оплата картой онлайн</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
