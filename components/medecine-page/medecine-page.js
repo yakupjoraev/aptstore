@@ -130,7 +130,8 @@ function medecineAnchors() {
 
 	var header = document.querySelector('.site-header')
 	var medecinePageHeader = document.querySelector('.medecine-page__header')
-	var breakpoint = header.offsetHeight + medecinePageHeader.offsetHeight;
+	// var breakpoint = header.offsetHeight + medecinePageHeader.offsetHeight;
+	var breakpoint = header.offsetHeight + header.offsetHeight;
 
 	if (window.scrollY >= breakpoint) {
 		medecinePageScroll.classList.add('fixed')
