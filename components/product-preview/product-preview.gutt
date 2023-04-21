@@ -3,12 +3,14 @@
 <import name="favorite-button" from="../favorite-button/favorite-button.gutt" />
 <import name="product-label" from="../product-label/product-label.gutt" />
 <import name="form-button" from="../form/button/button.gutt" />
+<import name="simple-slider" from="../simple-slider/simple-slider.gutt" />
+<import name="analog-masonry" from="../analog-masonry/analog-masonry.gutt" />
 
 <param name={$title} value="" />
 <param name={$rating} value={4} />
 
-<div class="product-preview" data-product-preview>
-	<div class="product-preview__previews">
+<div class="product-preview">
+	<div class="product-preview__previews" data-product-preview>
 		<div class="product-preview__thumbnails">
 			<button class="product-preview__thumbnails-button product-preview__thumbnails-button--up" type="button"
 				data-product-preview-thumbnails-up>
@@ -338,6 +340,35 @@
 
 	<div class="product-preview__content">
 		{$children}
+	</div>
+
+	<div class="product-preview__sets">
+		<simple-slider title="Есть в наборах">
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry1.jpg" title="Levrana маска-скатка Арт.FML09 100мл детокс" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry2.jpg" title="Вайт Гло (White Glo) система-экспресс отбеливания" price="95"
+				special-price="75" special-label="Цена в наборе" />
+			<analog-masonry preview="analog-masonry3.jpg" title="Фитоуспоковенок Мишутка сироп 100МЛ" price="95"
+				special-price="75" special-label="Цена в наборе" />
+		</simple-slider>
 	</div>
 
 	<div class="product-preview__disclaimers">

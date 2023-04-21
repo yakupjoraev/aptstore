@@ -1,0 +1,27 @@
+<div class="loading">
+	<div class="loading__inner">
+		<div class="loading__info">
+			<h1 class="loading__title">
+				Ждём ответа<br />
+				платёжной<br />
+				системы
+			</h1>
+
+			<p class="loading__descr">
+				Открываем безопасный шлюз эквайринга Сбера
+			</p>
+
+			<div class="loading__loading">
+				<div class="loading__progressbar"></div>
+			</div>
+		</div>
+
+		<div class="loading__pictures">
+			<img class="loading__pic" src="../components/loading/loading-bg.png"
+				alt="Открываем безопасный шлюз эквайринга Сбера" />
+			<inline-svg src="sber.svg" />
+		</div>
+
+	</div>
+
+</div>

@@ -102,6 +102,7 @@ function productPreview() {
 			thumbnailsContainer.scrollTop = scrollTop + easeInOut(progress) * 100
 		})
 	})
+
 }
 
 productPreview()

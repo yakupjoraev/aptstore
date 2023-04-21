@@ -1,0 +1,28 @@
+<import name="default-layout" from="../layouts/default.gutt" />
+<import name="loading-page" from="../components/loading/loading.gutt" />
+
+<default-layout>
+	<div class="container">
+		<bread-crumps path={[
+			[
+				"url" : "index.html",
+				"label" : "Главная"
+			],
+			[
+				"url" : "index.html",
+				"label" : "Алфавит препаратов"
+			],
+			[
+				"url" : "index.html",
+				"label" : "Препараты на «Д»"
+			],
+			[
+				"label" : "Д Пантенол"
+			]
+		]} />
+
+			<loading-page />
+
+		</div>
+
+</default-layout>
